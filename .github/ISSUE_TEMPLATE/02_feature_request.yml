@@ -1,0 +1,58 @@
+name: ✨ Feature request
+description: Propose a new capability, adapter, benchmark lane, or doctrine extension.
+title: "[feature] <concise summary>"
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feature requests that preserve governance invariants get prioritized. Features that would cross frozen role boundaries (see ARCHITECTURE.md) are unlikely to be accepted as-is but may inspire cross-repo PRs.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What pain or gap prompted this request?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed capability
+      description: What would the new surface look like? Include example commands, config keys, or adapter method signatures.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Target layer
+      options:
+        - new adapter
+        - new benchmark family
+        - new scorer capability
+        - runtime / conversation pipeline
+        - promotion gate / floor model
+        - arc-rar / omnibinary
+        - training lane
+        - documentation
+        - cross-repo integration
+    validations:
+      required: true
+
+  - type: textarea
+    id: invariants
+    attributes:
+      label: Governance invariants preserved
+      description: List which of the ten invariants in GOVERNANCE_DOCTRINE.md this preserves and which (if any) it redefines.
+      placeholder: "Preserves: 1–10. Redefines: none."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false

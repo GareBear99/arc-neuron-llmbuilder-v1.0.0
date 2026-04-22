@@ -1,0 +1,108 @@
+title: "ARC-Neuron LLMBuilder"
+description: "A governed local AI build-and-memory system with Gate v2, Arc-RAR, Omnibinary, canonical conversation pipeline, draft-critique-revise reflection, and automatic terminology absorption. Part of the seven-repo ARC ecosystem."
+author: Gary Doman
+url: "https://garebear99.github.io"
+baseurl: "/ARC-Neuron-LLMBuilder"
+repository: GareBear99/ARC-Neuron-LLMBuilder
+
+# Minima-compatible theme (the default Jekyll theme on GitHub Pages)
+theme: jekyll-theme-cayman
+
+# SEO
+lang: en
+keywords:
+  - local-ai
+  - governed-ai
+  - llm-builder
+  - promotion-gate
+  - regression-floor
+  - omnibinary
+  - arc-rar
+  - gguf
+  - conversation-pipeline
+  - reflection-loop
+  - terminology-absorption
+  - agentic-ai
+  - on-prem-ai
+  - sovereign-ai
+  - small-language-models
+  - transformer
+  - pytorch
+
+# Social / Open Graph
+github_username: GareBear99
+twitter:
+  username:
+  card: summary_large_image
+
+# Navigation (Markdown files served as pages)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Keep what gets published tight — no pytest/venv/cache/artifacts
+include:
+  - README.md
+  - ARCHITECTURE.md
+  - GOVERNANCE_DOCTRINE.md
+  - ECOSYSTEM.md
+  - QUICKSTART.md
+  - USAGE.md
+  - FAQ.md
+  - GLOSSARY.md
+  - ROADMAP.md
+  - COMPARISON.md
+  - EXAMPLES.md
+  - RELEASE_NOTES_v1.0.0.md
+  - MODEL_CARD_v6_conversation.md
+  - CHANGELOG.md
+  - CONTRIBUTING.md
+  - SECURITY.md
+
+exclude:
+  - .github/
+  - .pytest_cache/
+  - .venv/
+  - arc-venv312/
+  - __pycache__/
+  - tests/
+  - scripts/
+  - runtime/
+  - adapters/
+  - arc_core/
+  - arc_tiny/
+  - arc_neuron_small/
+  - arc_neuron_tokenizer/
+  - scorers/
+  - artifacts/
+  - exports/
+  - results/
+  - reports/
+  - datasets/
+  - benchmarks/
+  - ecosystem/
+  - configs/
+  - specs/
+  - data/
+  - data_manifest/
+  - dist/
+  - Makefile
+  - pyproject.toml
+  - requirements.txt
+  - mcp/
+  - integrations/
+  - templates/
+  - schemas/
+  - manifests/
+  - ops/
+  - runtime.egg-info/
+  - repo-metadata/
+  - "*.py"
+  - "*.sh"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed

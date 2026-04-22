@@ -1,0 +1,124 @@
+# Canonical label set for ARC-Neuron-LLMBuilder issues and PRs.
+# Apply via: `gh label create` or a GitHub Action like `andymckay/labeler`.
+
+# Type
+- name: bug
+  color: d73a4a
+  description: Something is broken.
+
+- name: enhancement
+  color: a2eeef
+  description: New feature or capability.
+
+- name: documentation
+  color: 0075ca
+  description: README, FAQ, GLOSSARY, ARCHITECTURE, etc.
+
+- name: question
+  color: d876e3
+  description: Request for clarification.
+
+- name: triage
+  color: ededed
+  description: Needs initial review.
+
+# Layer
+- name: area/runtime
+  color: 1d76db
+  description: Canonical pipeline, reflection, absorption, terminology.
+
+- name: area/gate
+  color: b60205
+  description: Gate v2, floor model, regression ceilings.
+
+- name: area/archive
+  color: 5319e7
+  description: Arc-RAR bundles, Omnibinary ledger.
+
+- name: area/training
+  color: c5def5
+  description: Native training lane.
+
+- name: area/benchmark
+  color: 006b75
+  description: 165-task suite, scorer, new lanes.
+
+- name: area/adapter
+  color: fbca04
+  description: exemplar / command / llama_cpp_http / openai_compatible.
+
+- name: area/tests
+  color: cfd3d7
+  description: Test suite.
+
+- name: area/ci
+  color: 0e8a16
+  description: GitHub Actions, workflows.
+
+- name: area/ecosystem
+  color: e99695
+  description: Cross-repo integration (ARC-Core, Cleanroom, OmniBinary, Arc-RAR, Language Module).
+
+# Governance
+- name: governance
+  color: 7057ff
+  description: Touches the ten governance invariants.
+
+- name: gate
+  color: b60205
+  description: Gate v2 decision behavior.
+
+# Priority
+- name: priority/high
+  color: e11d21
+  description: Fix ASAP.
+
+- name: priority/medium
+  color: eb6420
+  description: Fix soon.
+
+- name: priority/low
+  color: fbca04
+  description: Eventually.
+
+# Status
+- name: good first issue
+  color: 7057ff
+  description: Easy entry point for new contributors.
+
+- name: help wanted
+  color: 008672
+  description: Community contributions welcome.
+
+- name: in progress
+  color: fbca04
+  description: Actively being worked on.
+
+- name: blocked
+  color: d93f0b
+  description: Waiting on something else.
+
+- name: wontfix
+  color: ffffff
+  description: Not going to be worked on.
+
+- name: duplicate
+  color: cfd3d7
+  description: Already exists in another issue.
+
+# Version targets
+- name: v1.1.0
+  color: 0052cc
+  description: Expanded native lane milestone.
+
+- name: v1.2.0
+  color: 0052cc
+  description: External backend integration milestone.
+
+- name: v1.3.0
+  color: 0052cc
+  description: Multi-repo integration milestone.
+
+- name: v2.0.0
+  color: 0052cc
+  description: Production governance milestone.

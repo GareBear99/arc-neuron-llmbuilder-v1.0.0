@@ -1,0 +1,62 @@
+name: ⚖️ Gate behavior report
+description: Gate v2 decided something you think is wrong — promoted when it should have archived, or vice versa.
+title: "[gate] <concise summary>"
+labels: ["gate", "governance", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gate behavior reports are treated as first-class evidence. Please attach the full `reports/promotion_decision.json` and the scored outputs file.
+
+        Before filing, read [GOVERNANCE_DOCTRINE.md](https://github.com/GareBear99/ARC-Neuron-LLMBuilder/blob/main/GOVERNANCE_DOCTRINE.md) — in particular the ten governance invariants.
+
+  - type: dropdown
+    id: decision_type
+    attributes:
+      label: Decision type you think is wrong
+      options:
+        - promoted a candidate that should have been archived/rejected
+        - archived/rejected a candidate that should have been promoted
+        - regression violation fired incorrectly
+        - floor model check fired incorrectly
+        - hard-reject fired incorrectly
+        - incumbent displacement happened during archive_only
+        - non-promotable adapter somehow became incumbent
+        - other
+    validations:
+      required: true
+
+  - type: textarea
+    id: promotion_receipt
+    attributes:
+      label: Promotion decision receipt
+      description: Paste the full contents of `reports/promotion_decision.json` from the run in question.
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    id: scored_outputs
+    attributes:
+      label: Scored outputs (summary only is fine)
+      description: The `summary` and `overall_weighted_score` from `results/<candidate>_scored.json`.
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    id: incumbent_state
+    attributes:
+      label: Scoreboard state at time of decision
+      description: Paste `results/scoreboard.json` or at minimum the incumbent entry.
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_decision
+    attributes:
+      label: What you think should have happened and why
+      description: Reference the governance invariants or regression ceilings if applicable.
+    validations:
+      required: true

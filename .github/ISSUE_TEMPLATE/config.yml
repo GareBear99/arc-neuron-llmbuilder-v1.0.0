@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask a question (GitHub Discussions)
+    url: https://github.com/GareBear99/ARC-Neuron-LLMBuilder/discussions
+    about: "General questions, show-and-tell, conversation-harvest experiments, and architectural discussion."
+  - name: 📖 Documentation
+    url: https://github.com/GareBear99/ARC-Neuron-LLMBuilder#documentation
+    about: "Read the README, QUICKSTART, ARCHITECTURE, GOVERNANCE_DOCTRINE, FAQ, GLOSSARY, USAGE, and ROADMAP before filing an issue."
+  - name: 🔐 Report a security vulnerability
+    url: https://github.com/GareBear99/ARC-Neuron-LLMBuilder/security/advisories/new
+    about: "Private security disclosures. See SECURITY.md."
+  - name: 💖 Sponsor this work
+    url: https://github.com/sponsors/GareBear99
+    about: "Support ongoing governance hardening across the seven-repo ARC ecosystem."

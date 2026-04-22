@@ -1,0 +1,42 @@
+name: 📊 Benchmark contribution proposal
+description: Propose new benchmark tasks, a new capability lane, or an upgrade to an existing lane.
+title: "[benchmark] <capability> — <concise summary>"
+labels: ["benchmark", "enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Benchmark additions must conform to the schema at [specs/benchmark_schema_v2.yaml](https://github.com/GareBear99/ARC-Neuron-LLMBuilder/blob/main/specs/benchmark_schema_v2.yaml). Every task needs `id`, `capability`, `domain`, `difficulty`, `prompt`, `reference`, `scoring`, `tags`.
+
+  - type: input
+    id: capability
+    attributes:
+      label: Capability name (existing or new)
+      placeholder: "reasoning | critique | repair | continuity | intelligence | out_of_domain | ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Proposed task(s)
+      description: JSONL lines conforming to the benchmark schema. One task per line.
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    id: rubric_changes
+    attributes:
+      label: Rubric scorer updates needed (if any)
+      description: If this adds a new capability bucket, propose the rubric keyword checks for `scorers/rubric.py`.
+    validations:
+      required: false
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why this capability matters
+      description: Explain the operator / governance value. Link to prior promotion receipts if the gap is evidence-based.
+    validations:
+      required: true

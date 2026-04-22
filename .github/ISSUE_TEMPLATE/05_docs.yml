@@ -1,0 +1,25 @@
+name: 📚 Documentation issue
+description: A doc is wrong, missing, confusing, or out of date.
+title: "[docs] <concise summary>"
+labels: ["documentation", "triage"]
+body:
+  - type: input
+    id: doc
+    attributes:
+      label: Affected document
+      placeholder: "README.md | ARCHITECTURE.md | GOVERNANCE_DOCTRINE.md | QUICKSTART.md | USAGE.md | FAQ.md | GLOSSARY.md | ROADMAP.md | COMPARISON.md | EXAMPLES.md | docs/ | ECOSYSTEM.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is wrong or missing
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_text
+    attributes:
+      label: Suggested wording (optional)
+      description: If you can propose the fix, paste it here.

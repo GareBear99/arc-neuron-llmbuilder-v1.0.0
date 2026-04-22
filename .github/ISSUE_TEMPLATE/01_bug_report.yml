@@ -1,0 +1,94 @@
+name: 🐛 Bug report
+description: Something is broken in the governance, training, benchmark, or runtime layer.
+title: "[bug] <concise summary>"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please include enough information to reproduce the bug. Most bugs are isolated to one layer (pipeline / gate / archive / adapter). Identify the layer in the title.
+
+  - type: input
+    id: version
+    attributes:
+      label: Release tag or commit
+      description: e.g. `v1.0.0-governed` or `dc8a4d1`
+      placeholder: v1.0.0-governed
+    validations:
+      required: true
+
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Affected layer
+      options:
+        - canonical conversation pipeline (runtime/)
+        - promotion gate v2 / floor model
+        - arc-rar bundle / omnibinary ledger
+        - native training (scripts/training/)
+        - benchmark / scorer
+        - adapter (exemplar / command / llama_cpp_http / openai_compatible)
+        - language absorption / terminology
+        - tests
+        - documentation
+        - other
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Exact reproduction steps
+      description: Commands that reliably reproduce the issue. Include any env vars and the commit SHA.
+      placeholder: |
+        python3 -m venv .venv && source .venv/bin/activate
+        pip install -r requirements.txt "torch>=2.0" "numpy<2.0"
+        python3 scripts/ops/bootstrap_keys.py
+        python3 scripts/ops/demo_proof_workflow.py
+        # step 5 fails with ...
+      render: bash
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior (errors, logs, receipt paths)
+      description: Paste traceback, the full failing command output, and any relevant report/receipt paths from `reports/` or `results/`.
+    validations:
+      required: true
+
+  - type: input
+    id: python_version
+    attributes:
+      label: Python version
+      placeholder: "3.12.5"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS / platform
+      placeholder: "macOS 14.6 / Ubuntu 22.04 / Windows 11"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Verification
+      options:
+        - label: I have re-run `python3 -m pytest tests/ -q` and included the result.
+          required: true
+        - label: I have read the relevant doc (ARCHITECTURE / GOVERNANCE_DOCTRINE / USAGE) for this layer.
+          required: true
+        - label: I have searched existing issues and discussions.
+          required: true
