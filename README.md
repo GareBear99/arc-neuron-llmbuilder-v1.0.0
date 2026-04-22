@@ -22,6 +22,7 @@
 ## Table of contents
 
 - [Live deployment — continuous-learning AI operative](#live-deployment--continuous-learning-ai-operative)
+- [Operator evidence log](./docs/OPERATOR_EVIDENCE.md)
 - [What this is](#what-this-is)
 - [The ARC Ecosystem](#the-arc-ecosystem)
 - [Support this work](#support-this-work)
@@ -61,6 +62,8 @@ flowchart LR
 ```
 
 Nothing auto-promotes to the curated `seed_examples.jsonl` — ingested data stays in a separate shard so a human curator keeps the final call. Full pipeline: [docs/LIVE_DEPLOYMENT_LEARNING.md](./docs/LIVE_DEPLOYMENT_LEARNING.md). Activation is one secret: `OPERATOR_READ_TOKEN` (PAT with `Actions: Read` on `GareBear99/gh-ai-operator`).
+
+**Live-run evidence**: [docs/OPERATOR_EVIDENCE.md](./docs/OPERATOR_EVIDENCE.md) — chronological log of real runs. First entry (FreeEQ8, Portfolio issue #1) documents the verdict, the JSONL shape, and the ingest manifest with no code changes required to accept it.
 
 ---
 
