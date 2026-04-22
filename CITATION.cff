@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+title: "ARC-Neuron LLMBuilder: A Governed Local AI Build-and-Memory System"
+authors:
+  - family-names: Doman
+    given-names: Gary
+    affiliation: Independent
+message: "If you use this repository, please cite the project metadata in this file."
+abstract: >-
+  ARC-Neuron LLMBuilder is a local-first, governed cognition lab that treats a
+  language model as one artifact inside a lawful promotion lifecycle. It ships
+  a canonical conversation pipeline, a regression-aware promotion gate (Gate v2),
+  a floor model for never-below baselines, draft-critique-revise reflection,
+  automatic terminology absorption from conversation, an indexed Omnibinary
+  ledger with O(1) event lookup, and Arc-RAR restorable archives — all wrapping
+  a replaceable model adapter. The v1.0.0-governed release documents three
+  governed promotions in a row with the last one (`arc_governed_v6_conversation`)
+  trained entirely from conversation-harvested SFT.
+license: MIT
+version: v1.0.0-governed
+date-released: 2026-04-22
+repository-code: "https://github.com/GareBear99/ARC-Neuron-LLMBuilder"
+url: "https://github.com/GareBear99/ARC-Neuron-LLMBuilder"
+keywords:
+  - local-ai
+  - governed-ai
+  - cognition-engine
+  - promotion-gate
+  - regression-floor
+  - omnibinary
+  - arc-rar
+  - gguf
+  - benchmarking
+  - reflection-loop
+  - terminology-absorption
+  - conversation-pipeline
+  - agentic-ai
+  - small-language-models
+  - transformer
+  - pytorch

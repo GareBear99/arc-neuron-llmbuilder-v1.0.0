@@ -1,0 +1,23 @@
+{
+  "language_id": "lang:example",
+  "iso639_3": "exm",
+  "name": "Example Language",
+  "family": "Example Family",
+  "branch": "Example Branch",
+  "parent_language_id": null,
+  "aliases": [
+    "Example Tongue"
+  ],
+  "common_words": [
+    "hello",
+    "thanks"
+  ],
+  "scripts": [
+    "Latn"
+  ],
+  "source_name": "user_submission",
+  "source_ref": null,
+  "confidence": 0.7,
+  "notes": "Fill in verified lineage notes and sources here.",
+  "status": "submitted"
+}

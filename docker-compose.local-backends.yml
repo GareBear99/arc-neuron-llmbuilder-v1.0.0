@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  llama_cpp_server:
+    image: ghcr.io/ggerganov/llama.cpp:server
+    container_name: cognition_lab_llama_cpp
+    command:
+      - -m
+      - /models/model.gguf
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./models:/models:ro
+    profiles: ["llama_cpp"]

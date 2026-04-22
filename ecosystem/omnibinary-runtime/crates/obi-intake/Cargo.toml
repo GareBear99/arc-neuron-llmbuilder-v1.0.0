@@ -1,0 +1,12 @@
+[package]
+name = "obi-intake"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+goblin.workspace = true
+sha2.workspace = true
+hex.workspace = true
+obi-receipts = { path = "../obi-receipts" }

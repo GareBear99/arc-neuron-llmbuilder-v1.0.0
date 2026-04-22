@@ -1,0 +1,62 @@
+{
+  "run_at": "2026-04-21T06:12:50.501377+00:00",
+  "config": {
+    "cycles": 3,
+    "tier": "small",
+    "steps": 150
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "candidate": "cycle_01_061137Z",
+      "ok": true,
+      "val_ppl": 18.4057,
+      "final_loss": 2.903807,
+      "score": 0.62,
+      "failure_count": 0,
+      "decision": "archive_only",
+      "promoted": false,
+      "floor_violations": [],
+      "regression_violations": []
+    },
+    {
+      "cycle": 2,
+      "candidate": "cycle_02_061200Z",
+      "ok": true,
+      "val_ppl": 18.4057,
+      "final_loss": 2.903807,
+      "score": 0.62,
+      "failure_count": 0,
+      "decision": "archive_only",
+      "promoted": false,
+      "floor_violations": [],
+      "regression_violations": []
+    },
+    {
+      "cycle": 3,
+      "candidate": "cycle_03_061224Z",
+      "ok": true,
+      "val_ppl": 18.4057,
+      "final_loss": 2.903807,
+      "score": 0.62,
+      "failure_count": 0,
+      "decision": "archive_only",
+      "promoted": false,
+      "floor_violations": [],
+      "regression_violations": []
+    }
+  ],
+  "summary": {
+    "total_cycles": 3,
+    "completed": 3,
+    "promoted": 0,
+    "archive_only": 3,
+    "rejected": 0,
+    "floor_breaches": 0,
+    "regressions": 0,
+    "score_min": 0.62,
+    "score_max": 0.62,
+    "score_mean": 0.62,
+    "loop_stable": true
+  }
+}

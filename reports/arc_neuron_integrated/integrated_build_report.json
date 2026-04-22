@@ -1,0 +1,70 @@
+{
+  "status": "ok",
+  "seed": 1337,
+  "steps": 120,
+  "batch_size": 8,
+  "corpus_bytes": 350000,
+  "source_stats": [
+    {
+      "source": "repo",
+      "pieces": 161,
+      "chars": 176175
+    },
+    {
+      "source": "arc-language-module-main (5)(1).zip",
+      "pieces": 9,
+      "chars": 36026,
+      "sha256": "fbd77b960d722bba4cd2bf57a486a9e1c2f4e283f7e7f8cf1750e78ea6a6d29e"
+    },
+    {
+      "source": "ARC-Core-main (18).zip",
+      "pieces": 11,
+      "chars": 34786,
+      "sha256": "6010cf9728ca5df3824b2d544ee13f28f5318d088b1ff8b0b07a2b087c251077"
+    },
+    {
+      "source": "arc-lucifer-cleanroom-runtime-main (16).zip",
+      "pieces": 14,
+      "chars": 36741,
+      "sha256": "9d6df95606d664abc29839e5b74fc504f537f4c9add2e118b597fa206afb5d47"
+    },
+    {
+      "source": "omnibinary-runtime-main (1).zip",
+      "pieces": 22,
+      "chars": 39543,
+      "sha256": "8834d793beec9db5194734c338ff95948aa00a805750f8e26aeb7895891cf482"
+    },
+    {
+      "source": "Arc-RAR-main (3).zip",
+      "pieces": 28,
+      "chars": 38791,
+      "sha256": "c046eca4a807eb8877056fefff0a10dacdecda9b7dccef92fad4383c48b4f9f1"
+    }
+  ],
+  "initial_loss": 5.53798246383667,
+  "final_loss": 2.814624786376953,
+  "sample": "ARC-Neuron   pe_  eredgh= ret\n (\",OPry  r son(0ict",
+  "gguf_path": "artifacts/gguf/ARC-Neuron-Tiny-Integrated-0.07M-v0.2-F32.gguf",
+  "ancf_path": "artifacts/ancf/ARC-Neuron-Tiny-Integrated-0.07M-v0.2.ancf",
+  "omnibinary_ledger": "artifacts/omnibinary/arc-neuron-learning-ledger.obin",
+  "arc_rar_bundle": "artifacts/archives/arc-neuron-integrated-demo.arcrar.zip",
+  "parameter_count": 73536,
+  "obi_report": {
+    "path": "/tmp/arcneuron/arc-cognition-core-gguf-enabled/artifacts/omnibinary/arc-neuron-learning-ledger.obin",
+    "event_count": 4,
+    "payload_bytes": 843,
+    "sha256": "f7ab83019b0786bcb3d6730639f87494335adb52c2cdc8a085b9094b438dbf9c"
+  },
+  "ancf_report": {
+    "path": "/tmp/arcneuron/arc-cognition-core-gguf-enabled/artifacts/ancf/ARC-Neuron-Tiny-Integrated-0.07M-v0.2.ancf",
+    "gguf_sha256": "1f5323d4cf9170452c78857e87f603d07aae646582a710bae525d6d32d9236b8",
+    "ancf_sha256": "eb4160916ca62482bd5ec91dd0eaf7d17d7dad571f5e22de5c05f46f9bc3a605",
+    "metadata_bytes": 1426,
+    "payload_bytes": 348640
+  },
+  "archive_report": {
+    "path": "/tmp/arcneuron/arc-cognition-core-gguf-enabled/artifacts/archives/arc-neuron-integrated-demo.arcrar.zip",
+    "sha256": "7bf885e4a4cd5c3ef837d0b65fd69afecb3bc083b714f416dad397464787a660",
+    "file_count": 5
+  }
+}

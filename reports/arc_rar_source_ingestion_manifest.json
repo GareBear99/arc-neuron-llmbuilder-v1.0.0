@@ -1,0 +1,51 @@
+{
+  "source_name": "arc_rar",
+  "source_path": "/mnt/data/Arc-RAR-main (3).zip",
+  "output_path": "datasets/receipt_archive/arc_rar_seed_records.jsonl",
+  "records_written": 12,
+  "doc_count": 12,
+  "created_at": "2026-04-16T02:39:23.562807+00:00",
+  "top_documents": [
+    {
+      "path": "Arc-RAR-main/README.md",
+      "summary": "Arc-RAR | Current truth | This repo is strongest today as: | What works now | Example flows | Archive plane | GUI control plane | arc-rar gui daemon-once | arc-rar gui watch --json | Batch the GUI bri"
+    },
+    {
+      "path": "Arc-RAR-main/apps/linux/arc-rar-gtk/README.md",
+      "summary": "Arc-RAR Linux shell target | First native milestones:"
+    },
+    {
+      "path": "Arc-RAR-main/apps/macos/ArcRAR/README.md",
+      "summary": "Arc-RAR macOS shell target | First native milestones:"
+    },
+    {
+      "path": "Arc-RAR-main/apps/windows/ArcRAR.WinUI/README-IMPLEMENTATION.md",
+      "summary": "WinUI implementation notes | Minimum production UI milestones:"
+    },
+    {
+      "path": "Arc-RAR-main/apps/windows/ArcRAR.WinUI/README.md",
+      "summary": "Arc-RAR Windows shell target | First native milestones:"
+    },
+    {
+      "path": "Arc-RAR-main/docs/architecture.md",
+      "summary": "Architecture | Arc-RAR is split into five layers: | Core principle | Every GUI action must map to: | Validation spine"
+    },
+    {
+      "path": "Arc-RAR-main/docs/comprehensive-production-audit.md",
+      "summary": "Arc-RAR Comprehensive Production Audit | Executive verdict | File-by-file status | Root | Common crate | Core crate | IPC crate | Automation crate | CLI crate | Native apps | Packaging | Scripts | Pro"
+    },
+    {
+      "path": "Arc-RAR-main/docs/implemented-vs-planned.md",
+      "summary": "Implemented vs Planned | Implemented | Partial | Planned / not yet complete | Newly tightened in this pass | Native bridge progress"
+    },
+    {
+      "path": "Arc-RAR-main/docs/symlinks-and-shell-integration.md",
+      "summary": "Symlinks, Launchers, and Shell Integration | Stable binary path doctrine | Preferred install pattern: | Unix-like example | User-local example | Windows example | File associations | macOS | Windows |"
+    },
+    {
+      "path": "Arc-RAR-main/packaging/linux/README.md",
+      "summary": "linux packaging | This folder is still a template area, but it should own:"
+    }
+  ],
+  "notes": "Curated markdown/doc extraction for cognition-core corpus shaping. Review before training."
+}

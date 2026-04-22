@@ -1,0 +1,1 @@
+{"name":"screenshot_attachment","description":"Capture or register screenshot evidence using the AI Screenshot Attachment integration.","entrypoint":"scripts/mcp/screenshot_attachment_tool.py"}

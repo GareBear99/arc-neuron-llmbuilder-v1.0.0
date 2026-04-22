@@ -1,0 +1,3036 @@
+{
+  "results": [
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "cal_bench_001",
+      "benchmark_name": "calibration",
+      "capability": "calibration",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.02,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=calibration with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence",
+        "states_uncertainty",
+        "avoids_false_certainty",
+        "ties_claims_to_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "confidence_alignment": "must avoid exact certainty",
+          "unknowns_stated": "must identify missing evidence",
+          "boundedness": "must rank possibilities or bound claims"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "cal_bench_002",
+      "benchmark_name": "calibration",
+      "capability": "calibration",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=calibration with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence",
+        "states_uncertainty",
+        "avoids_false_certainty",
+        "ties_claims_to_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "confidence_alignment": "must avoid exact certainty",
+          "unknowns_stated": "must identify missing evidence",
+          "boundedness": "must rank possibilities or bound claims"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "cal_bench_003",
+      "benchmark_name": "calibration",
+      "capability": "calibration",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=calibration with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence",
+        "states_uncertainty",
+        "avoids_false_certainty",
+        "ties_claims_to_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "confidence_alignment": "must avoid exact certainty",
+          "unknowns_stated": "must identify missing evidence",
+          "boundedness": "must rank possibilities or bound claims"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "cal_bench_004",
+      "benchmark_name": "calibration",
+      "capability": "calibration",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=calibration with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence",
+        "states_uncertainty",
+        "avoids_false_certainty",
+        "ties_claims_to_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "confidence_alignment": "must avoid exact certainty",
+          "unknowns_stated": "must identify missing evidence",
+          "boundedness": "must rank possibilities or bound claims"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "cal_bench_005",
+      "benchmark_name": "calibration",
+      "capability": "calibration",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=calibration with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence",
+        "states_uncertainty",
+        "avoids_false_certainty",
+        "ties_claims_to_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "confidence_alignment": "must avoid exact certainty",
+          "unknowns_stated": "must identify missing evidence",
+          "boundedness": "must rank possibilities or bound claims"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "cal_bench_006",
+      "benchmark_name": "calibration",
+      "capability": "calibration",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=calibration with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence",
+        "states_uncertainty",
+        "avoids_false_certainty",
+        "ties_claims_to_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "confidence_alignment": "must avoid exact certainty",
+          "unknowns_stated": "must identify missing evidence",
+          "boundedness": "must rank possibilities or bound claims"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "cal_bench_007",
+      "benchmark_name": "calibration",
+      "capability": "calibration",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=calibration with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence",
+        "states_uncertainty",
+        "avoids_false_certainty",
+        "ties_claims_to_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "confidence_alignment": "must avoid exact certainty",
+          "unknowns_stated": "must identify missing evidence",
+          "boundedness": "must rank possibilities or bound claims"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "cal_bench_008",
+      "benchmark_name": "calibration",
+      "capability": "calibration",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=calibration with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence",
+        "states_uncertainty",
+        "avoids_false_certainty",
+        "ties_claims_to_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "confidence_alignment": "must avoid exact certainty",
+          "unknowns_stated": "must identify missing evidence",
+          "boundedness": "must rank possibilities or bound claims"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "cal_bench_009",
+      "benchmark_name": "calibration",
+      "capability": "calibration",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=calibration with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence",
+        "states_uncertainty",
+        "avoids_false_certainty",
+        "ties_claims_to_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "confidence_alignment": "must avoid exact certainty",
+          "unknowns_stated": "must identify missing evidence",
+          "boundedness": "must rank possibilities or bound claims"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "cal_bench_010",
+      "benchmark_name": "calibration",
+      "capability": "calibration",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=calibration with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence",
+        "states_uncertainty",
+        "avoids_false_certainty",
+        "ties_claims_to_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "confidence_alignment": "must avoid exact certainty",
+          "unknowns_stated": "must identify missing evidence",
+          "boundedness": "must rank possibilities or bound claims"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "compress_bench_001",
+      "benchmark_name": "compression",
+      "capability": "compression",
+      "scoring": "retention",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=compression with 4 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "goal_retention": "required",
+          "constraint_retention": "required",
+          "blocker_retention": "required",
+          "next_action_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "compress_bench_002",
+      "benchmark_name": "compression",
+      "capability": "compression",
+      "scoring": "retention",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=compression with 4 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "goal_retention": "required",
+          "constraint_retention": "required",
+          "blocker_retention": "required",
+          "next_action_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "compress_bench_003",
+      "benchmark_name": "compression",
+      "capability": "compression",
+      "scoring": "retention",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=compression with 4 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "goal_retention": "required",
+          "constraint_retention": "required",
+          "blocker_retention": "required",
+          "next_action_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "compress_bench_004",
+      "benchmark_name": "compression",
+      "capability": "compression",
+      "scoring": "retention",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 3,
+      "normalized_score": 0.5,
+      "notes": "Scored against capability=compression with 4 rubric fields. Matched 3 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "goal_retention": "required",
+          "constraint_retention": "required",
+          "blocker_retention": "required",
+          "next_action_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "compress_bench_005",
+      "benchmark_name": "compression",
+      "capability": "compression",
+      "scoring": "retention",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=compression with 4 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "goal_retention": "required",
+          "constraint_retention": "required",
+          "blocker_retention": "required",
+          "next_action_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "compress_bench_006",
+      "benchmark_name": "compression",
+      "capability": "compression",
+      "scoring": "retention",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=compression with 4 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "goal_retention": "required",
+          "constraint_retention": "required",
+          "blocker_retention": "required",
+          "next_action_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "compress_bench_007",
+      "benchmark_name": "compression",
+      "capability": "compression",
+      "scoring": "retention",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 3,
+      "normalized_score": 0.5,
+      "notes": "Scored against capability=compression with 4 rubric fields. Matched 3 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "goal_retention": "required",
+          "constraint_retention": "required",
+          "blocker_retention": "required",
+          "next_action_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "compress_bench_008",
+      "benchmark_name": "compression",
+      "capability": "compression",
+      "scoring": "retention",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=compression with 4 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "goal_retention": "required",
+          "constraint_retention": "required",
+          "blocker_retention": "required",
+          "next_action_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "compress_bench_009",
+      "benchmark_name": "compression",
+      "capability": "compression",
+      "scoring": "retention",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 3,
+      "normalized_score": 0.5,
+      "notes": "Scored against capability=compression with 4 rubric fields. Matched 3 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "goal_retention": "required",
+          "constraint_retention": "required",
+          "blocker_retention": "required",
+          "next_action_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "compress_bench_010",
+      "benchmark_name": "compression",
+      "capability": "compression",
+      "scoring": "retention",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=compression with 4 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "goal_retention": "required",
+          "constraint_retention": "required",
+          "blocker_retention": "required",
+          "next_action_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "crit_bench_001",
+      "benchmark_name": "critique",
+      "capability": "critique",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=critique with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "identifies_missing_evidence",
+        "identifies_scope_risk"
+      ],
+      "task_reference": {
+        "rubric": {
+          "weakness_detection": "must identify major flaw",
+          "missing_evidence_detection": "must note absent root-cause proof or missing safety checks",
+          "regression_risk_detection": "must identify at least one systemic regression risk"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "crit_bench_002",
+      "benchmark_name": "critique",
+      "capability": "critique",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=critique with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "identifies_missing_evidence",
+        "identifies_scope_risk"
+      ],
+      "task_reference": {
+        "rubric": {
+          "weakness_detection": "must identify major flaw",
+          "missing_evidence_detection": "must note absent root-cause proof or missing safety checks",
+          "regression_risk_detection": "must identify at least one systemic regression risk"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "crit_bench_003",
+      "benchmark_name": "critique",
+      "capability": "critique",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=critique with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "identifies_missing_evidence",
+        "identifies_scope_risk"
+      ],
+      "task_reference": {
+        "rubric": {
+          "weakness_detection": "must identify major flaw",
+          "missing_evidence_detection": "must note absent root-cause proof or missing safety checks",
+          "regression_risk_detection": "must identify at least one systemic regression risk"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "crit_bench_004",
+      "benchmark_name": "critique",
+      "capability": "critique",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=critique with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "identifies_missing_evidence",
+        "identifies_scope_risk"
+      ],
+      "task_reference": {
+        "rubric": {
+          "weakness_detection": "must identify major flaw",
+          "missing_evidence_detection": "must note absent root-cause proof or missing safety checks",
+          "regression_risk_detection": "must identify at least one systemic regression risk"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "crit_bench_005",
+      "benchmark_name": "critique",
+      "capability": "critique",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=critique with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "identifies_missing_evidence",
+        "identifies_scope_risk"
+      ],
+      "task_reference": {
+        "rubric": {
+          "weakness_detection": "must identify major flaw",
+          "missing_evidence_detection": "must note absent root-cause proof or missing safety checks",
+          "regression_risk_detection": "must identify at least one systemic regression risk"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "crit_bench_006",
+      "benchmark_name": "critique",
+      "capability": "critique",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=critique with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "identifies_missing_evidence",
+        "identifies_scope_risk"
+      ],
+      "task_reference": {
+        "rubric": {
+          "weakness_detection": "must identify major flaw",
+          "missing_evidence_detection": "must note absent root-cause proof or missing safety checks",
+          "regression_risk_detection": "must identify at least one systemic regression risk"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "crit_bench_007",
+      "benchmark_name": "critique",
+      "capability": "critique",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=critique with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "identifies_missing_evidence",
+        "identifies_scope_risk"
+      ],
+      "task_reference": {
+        "rubric": {
+          "weakness_detection": "must identify major flaw",
+          "missing_evidence_detection": "must note absent root-cause proof or missing safety checks",
+          "regression_risk_detection": "must identify at least one systemic regression risk"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "crit_bench_008",
+      "benchmark_name": "critique",
+      "capability": "critique",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=critique with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "identifies_missing_evidence",
+        "identifies_scope_risk"
+      ],
+      "task_reference": {
+        "rubric": {
+          "weakness_detection": "must identify major flaw",
+          "missing_evidence_detection": "must note absent root-cause proof or missing safety checks",
+          "regression_risk_detection": "must identify at least one systemic regression risk"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "crit_bench_009",
+      "benchmark_name": "critique",
+      "capability": "critique",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=critique with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "identifies_missing_evidence",
+        "identifies_scope_risk"
+      ],
+      "task_reference": {
+        "rubric": {
+          "weakness_detection": "must identify major flaw",
+          "missing_evidence_detection": "must note absent root-cause proof or missing safety checks",
+          "regression_risk_detection": "must identify at least one systemic regression risk"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "crit_bench_010",
+      "benchmark_name": "critique",
+      "capability": "critique",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=critique with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "identifies_missing_evidence",
+        "identifies_scope_risk"
+      ],
+      "task_reference": {
+        "rubric": {
+          "weakness_detection": "must identify major flaw",
+          "missing_evidence_detection": "must note absent root-cause proof or missing safety checks",
+          "regression_risk_detection": "must identify at least one systemic regression risk"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "para_001",
+      "benchmark_name": "paraphrase_stability",
+      "capability": "paraphrase_stability",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=paraphrase_stability with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_validation_or_evidence",
+        "preserves_meaning",
+        "mentions_constraints",
+        "avoids_additional_claims"
+      ],
+      "task_reference": {
+        "rubric": {
+          "stance_consistency": "required",
+          "reasoning_consistency": "required",
+          "doctrine_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "para_002",
+      "benchmark_name": "paraphrase_stability",
+      "capability": "paraphrase_stability",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=paraphrase_stability with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_validation_or_evidence",
+        "preserves_meaning",
+        "mentions_constraints",
+        "avoids_additional_claims"
+      ],
+      "task_reference": {
+        "rubric": {
+          "stance_consistency": "required",
+          "reasoning_consistency": "required",
+          "doctrine_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "para_003",
+      "benchmark_name": "paraphrase_stability",
+      "capability": "paraphrase_stability",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=paraphrase_stability with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_validation_or_evidence",
+        "preserves_meaning",
+        "mentions_constraints",
+        "avoids_additional_claims"
+      ],
+      "task_reference": {
+        "rubric": {
+          "stance_consistency": "required",
+          "reasoning_consistency": "required",
+          "doctrine_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "para_004",
+      "benchmark_name": "paraphrase_stability",
+      "capability": "paraphrase_stability",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=paraphrase_stability with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_validation_or_evidence",
+        "preserves_meaning",
+        "mentions_constraints",
+        "avoids_additional_claims"
+      ],
+      "task_reference": {
+        "rubric": {
+          "stance_consistency": "required",
+          "reasoning_consistency": "required",
+          "doctrine_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "para_005",
+      "benchmark_name": "paraphrase_stability",
+      "capability": "paraphrase_stability",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=paraphrase_stability with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_validation_or_evidence",
+        "preserves_meaning",
+        "mentions_constraints",
+        "avoids_additional_claims"
+      ],
+      "task_reference": {
+        "rubric": {
+          "stance_consistency": "required",
+          "reasoning_consistency": "required",
+          "doctrine_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "para_006",
+      "benchmark_name": "paraphrase_stability",
+      "capability": "paraphrase_stability",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan",
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 6,
+      "normalized_score": 1.0,
+      "notes": "Scored against capability=paraphrase_stability with 3 rubric fields. Matched 6 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "preserves_meaning",
+        "mentions_constraints",
+        "avoids_additional_claims"
+      ],
+      "task_reference": {
+        "rubric": {
+          "stance_consistency": "required",
+          "reasoning_consistency": "required",
+          "doctrine_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "para_007",
+      "benchmark_name": "paraphrase_stability",
+      "capability": "paraphrase_stability",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=paraphrase_stability with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_validation_or_evidence",
+        "preserves_meaning",
+        "mentions_constraints",
+        "avoids_additional_claims"
+      ],
+      "task_reference": {
+        "rubric": {
+          "stance_consistency": "required",
+          "reasoning_consistency": "required",
+          "doctrine_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "para_008",
+      "benchmark_name": "paraphrase_stability",
+      "capability": "paraphrase_stability",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=paraphrase_stability with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_validation_or_evidence",
+        "preserves_meaning",
+        "mentions_constraints",
+        "avoids_additional_claims"
+      ],
+      "task_reference": {
+        "rubric": {
+          "stance_consistency": "required",
+          "reasoning_consistency": "required",
+          "doctrine_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "para_009",
+      "benchmark_name": "paraphrase_stability",
+      "capability": "paraphrase_stability",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=paraphrase_stability with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_validation_or_evidence",
+        "preserves_meaning",
+        "mentions_constraints",
+        "avoids_additional_claims"
+      ],
+      "task_reference": {
+        "rubric": {
+          "stance_consistency": "required",
+          "reasoning_consistency": "required",
+          "doctrine_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "para_010",
+      "benchmark_name": "paraphrase_stability",
+      "capability": "paraphrase_stability",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=paraphrase_stability with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_validation_or_evidence",
+        "preserves_meaning",
+        "mentions_constraints",
+        "avoids_additional_claims"
+      ],
+      "task_reference": {
+        "rubric": {
+          "stance_consistency": "required",
+          "reasoning_consistency": "required",
+          "doctrine_retention": "required"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "plan_bench_001",
+      "benchmark_name": "planning",
+      "capability": "planning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=planning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "step_quality": "must inspect likely boundary and preserve interfaces",
+          "tradeoff_quality": "must prefer targeted patching",
+          "blocker_awareness": "must identify one key risk zone"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "plan_bench_002",
+      "benchmark_name": "planning",
+      "capability": "planning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=planning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "step_quality": "must inspect likely boundary and preserve interfaces",
+          "tradeoff_quality": "must prefer targeted patching",
+          "blocker_awareness": "must identify one key risk zone"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "plan_bench_003",
+      "benchmark_name": "planning",
+      "capability": "planning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=planning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "step_quality": "must inspect likely boundary and preserve interfaces",
+          "tradeoff_quality": "must prefer targeted patching",
+          "blocker_awareness": "must identify one key risk zone"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "plan_bench_004",
+      "benchmark_name": "planning",
+      "capability": "planning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.03,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=planning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "step_quality": "must inspect likely boundary and preserve interfaces",
+          "tradeoff_quality": "must prefer targeted patching",
+          "blocker_awareness": "must identify one key risk zone"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "plan_bench_005",
+      "benchmark_name": "planning",
+      "capability": "planning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=planning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "step_quality": "must inspect likely boundary and preserve interfaces",
+          "tradeoff_quality": "must prefer targeted patching",
+          "blocker_awareness": "must identify one key risk zone"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "plan_bench_006",
+      "benchmark_name": "planning",
+      "capability": "planning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 4,
+      "normalized_score": 0.6667,
+      "notes": "Scored against capability=planning with 3 rubric fields. Matched 4 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "prefers_narrow_change"
+      ],
+      "task_reference": {
+        "rubric": {
+          "step_quality": "must inspect likely boundary and preserve interfaces",
+          "tradeoff_quality": "must prefer targeted patching",
+          "blocker_awareness": "must identify one key risk zone"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "plan_bench_007",
+      "benchmark_name": "planning",
+      "capability": "planning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=planning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "step_quality": "must inspect likely boundary and preserve interfaces",
+          "tradeoff_quality": "must prefer targeted patching",
+          "blocker_awareness": "must identify one key risk zone"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "plan_bench_008",
+      "benchmark_name": "planning",
+      "capability": "planning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.02,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=planning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "step_quality": "must inspect likely boundary and preserve interfaces",
+          "tradeoff_quality": "must prefer targeted patching",
+          "blocker_awareness": "must identify one key risk zone"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "plan_bench_009",
+      "benchmark_name": "planning",
+      "capability": "planning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=planning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "step_quality": "must inspect likely boundary and preserve interfaces",
+          "tradeoff_quality": "must prefer targeted patching",
+          "blocker_awareness": "must identify one key risk zone"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "plan_bench_010",
+      "benchmark_name": "planning",
+      "capability": "planning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=planning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "step_quality": "must inspect likely boundary and preserve interfaces",
+          "tradeoff_quality": "must prefer targeted patching",
+          "blocker_awareness": "must identify one key risk zone"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "quant_001",
+      "benchmark_name": "quantization_retention",
+      "capability": "quantization_retention",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan",
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=quantization_retention with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "mentions_core_behavior",
+        "mentions_regression_threshold"
+      ],
+      "task_reference": {
+        "rubric": {
+          "quality_delta": "bounded",
+          "calibration_delta": "bounded",
+          "repair_delta": "bounded"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "quant_002",
+      "benchmark_name": "quantization_retention",
+      "capability": "quantization_retention",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan",
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=quantization_retention with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "mentions_core_behavior",
+        "mentions_regression_threshold"
+      ],
+      "task_reference": {
+        "rubric": {
+          "quality_delta": "bounded",
+          "calibration_delta": "bounded",
+          "repair_delta": "bounded"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "quant_003",
+      "benchmark_name": "quantization_retention",
+      "capability": "quantization_retention",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan",
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=quantization_retention with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "mentions_core_behavior",
+        "mentions_regression_threshold"
+      ],
+      "task_reference": {
+        "rubric": {
+          "quality_delta": "bounded",
+          "calibration_delta": "bounded",
+          "repair_delta": "bounded"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "quant_004",
+      "benchmark_name": "quantization_retention",
+      "capability": "quantization_retention",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan",
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=quantization_retention with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "mentions_core_behavior",
+        "mentions_regression_threshold"
+      ],
+      "task_reference": {
+        "rubric": {
+          "quality_delta": "bounded",
+          "calibration_delta": "bounded",
+          "repair_delta": "bounded"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "quant_005",
+      "benchmark_name": "quantization_retention",
+      "capability": "quantization_retention",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan",
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=quantization_retention with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "mentions_core_behavior",
+        "mentions_regression_threshold"
+      ],
+      "task_reference": {
+        "rubric": {
+          "quality_delta": "bounded",
+          "calibration_delta": "bounded",
+          "repair_delta": "bounded"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "quant_006",
+      "benchmark_name": "quantization_retention",
+      "capability": "quantization_retention",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan",
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=quantization_retention with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "mentions_core_behavior",
+        "mentions_regression_threshold"
+      ],
+      "task_reference": {
+        "rubric": {
+          "quality_delta": "bounded",
+          "calibration_delta": "bounded",
+          "repair_delta": "bounded"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "quant_007",
+      "benchmark_name": "quantization_retention",
+      "capability": "quantization_retention",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan",
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=quantization_retention with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "mentions_core_behavior",
+        "mentions_regression_threshold"
+      ],
+      "task_reference": {
+        "rubric": {
+          "quality_delta": "bounded",
+          "calibration_delta": "bounded",
+          "repair_delta": "bounded"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "quant_008",
+      "benchmark_name": "quantization_retention",
+      "capability": "quantization_retention",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan",
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=quantization_retention with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "mentions_core_behavior",
+        "mentions_regression_threshold"
+      ],
+      "task_reference": {
+        "rubric": {
+          "quality_delta": "bounded",
+          "calibration_delta": "bounded",
+          "repair_delta": "bounded"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "quant_009",
+      "benchmark_name": "quantization_retention",
+      "capability": "quantization_retention",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan",
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=quantization_retention with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "mentions_core_behavior",
+        "mentions_regression_threshold"
+      ],
+      "task_reference": {
+        "rubric": {
+          "quality_delta": "bounded",
+          "calibration_delta": "bounded",
+          "repair_delta": "bounded"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "quant_010",
+      "benchmark_name": "quantization_retention",
+      "capability": "quantization_retention",
+      "scoring": "pairwise",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nPlan: identify the goal, preserve constraints, choose the smallest safe path, then validate.\nCritique: check missing evidence, regression risk, and whether the proposed fix is too broad.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "plan",
+          "critique"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=quantization_retention with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "mentions_core_behavior",
+        "mentions_regression_threshold"
+      ],
+      "task_reference": {
+        "rubric": {
+          "quality_delta": "bounded",
+          "calibration_delta": "bounded",
+          "repair_delta": "bounded"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "reason_001",
+      "benchmark_name": "reasoning",
+      "capability": "reasoning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=reasoning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "correctness": "must reject or conditionally bound the plan if safety/observability is compromised",
+          "evidence_inference_separation": "must separate stated facts from inferred risk",
+          "contradiction_awareness": "must identify the conflicting requirement"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "reason_002",
+      "benchmark_name": "reasoning",
+      "capability": "reasoning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=reasoning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "correctness": "must reject or conditionally bound the plan if safety/observability is compromised",
+          "evidence_inference_separation": "must separate stated facts from inferred risk",
+          "contradiction_awareness": "must identify the conflicting requirement"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "reason_003",
+      "benchmark_name": "reasoning",
+      "capability": "reasoning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=reasoning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "correctness": "must reject or conditionally bound the plan if safety/observability is compromised",
+          "evidence_inference_separation": "must separate stated facts from inferred risk",
+          "contradiction_awareness": "must identify the conflicting requirement"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "reason_004",
+      "benchmark_name": "reasoning",
+      "capability": "reasoning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=reasoning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "correctness": "must reject or conditionally bound the plan if safety/observability is compromised",
+          "evidence_inference_separation": "must separate stated facts from inferred risk",
+          "contradiction_awareness": "must identify the conflicting requirement"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "reason_005",
+      "benchmark_name": "reasoning",
+      "capability": "reasoning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=reasoning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "correctness": "must reject or conditionally bound the plan if safety/observability is compromised",
+          "evidence_inference_separation": "must separate stated facts from inferred risk",
+          "contradiction_awareness": "must identify the conflicting requirement"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "reason_006",
+      "benchmark_name": "reasoning",
+      "capability": "reasoning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=reasoning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "correctness": "must reject or conditionally bound the plan if safety/observability is compromised",
+          "evidence_inference_separation": "must separate stated facts from inferred risk",
+          "contradiction_awareness": "must identify the conflicting requirement"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "reason_007",
+      "benchmark_name": "reasoning",
+      "capability": "reasoning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=reasoning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "correctness": "must reject or conditionally bound the plan if safety/observability is compromised",
+          "evidence_inference_separation": "must separate stated facts from inferred risk",
+          "contradiction_awareness": "must identify the conflicting requirement"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "reason_008",
+      "benchmark_name": "reasoning",
+      "capability": "reasoning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=reasoning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "correctness": "must reject or conditionally bound the plan if safety/observability is compromised",
+          "evidence_inference_separation": "must separate stated facts from inferred risk",
+          "contradiction_awareness": "must identify the conflicting requirement"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "reason_009",
+      "benchmark_name": "reasoning",
+      "capability": "reasoning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=reasoning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "correctness": "must reject or conditionally bound the plan if safety/observability is compromised",
+          "evidence_inference_separation": "must separate stated facts from inferred risk",
+          "contradiction_awareness": "must identify the conflicting requirement"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "reason_010",
+      "benchmark_name": "reasoning",
+      "capability": "reasoning",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 1,
+      "normalized_score": 0.1667,
+      "notes": "Scored against capability=reasoning with 3 rubric fields. Matched 1 of 6 checks.",
+      "matched_checks": [
+        "mentions_validation_or_evidence"
+      ],
+      "task_reference": {
+        "rubric": {
+          "correctness": "must reject or conditionally bound the plan if safety/observability is compromised",
+          "evidence_inference_separation": "must separate stated facts from inferred risk",
+          "contradiction_awareness": "must identify the conflicting requirement"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "repair_bench_001",
+      "benchmark_name": "repair",
+      "capability": "repair",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=repair with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "keeps_fix_small",
+        "adds_regression_protection"
+      ],
+      "task_reference": {
+        "rubric": {
+          "revision_quality": "must narrow scope and target boundary",
+          "repeat_failure_avoidance": "must avoid repeating prior mistake class",
+          "safety_of_repair": "must preserve stable interfaces or validation"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "repair_bench_002",
+      "benchmark_name": "repair",
+      "capability": "repair",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=repair with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "keeps_fix_small",
+        "adds_regression_protection"
+      ],
+      "task_reference": {
+        "rubric": {
+          "revision_quality": "must narrow scope and target boundary",
+          "repeat_failure_avoidance": "must avoid repeating prior mistake class",
+          "safety_of_repair": "must preserve stable interfaces or validation"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "repair_bench_003",
+      "benchmark_name": "repair",
+      "capability": "repair",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=repair with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "keeps_fix_small",
+        "adds_regression_protection"
+      ],
+      "task_reference": {
+        "rubric": {
+          "revision_quality": "must narrow scope and target boundary",
+          "repeat_failure_avoidance": "must avoid repeating prior mistake class",
+          "safety_of_repair": "must preserve stable interfaces or validation"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "repair_bench_004",
+      "benchmark_name": "repair",
+      "capability": "repair",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=repair with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "keeps_fix_small",
+        "adds_regression_protection"
+      ],
+      "task_reference": {
+        "rubric": {
+          "revision_quality": "must narrow scope and target boundary",
+          "repeat_failure_avoidance": "must avoid repeating prior mistake class",
+          "safety_of_repair": "must preserve stable interfaces or validation"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "repair_bench_005",
+      "benchmark_name": "repair",
+      "capability": "repair",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=repair with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "keeps_fix_small",
+        "adds_regression_protection"
+      ],
+      "task_reference": {
+        "rubric": {
+          "revision_quality": "must narrow scope and target boundary",
+          "repeat_failure_avoidance": "must avoid repeating prior mistake class",
+          "safety_of_repair": "must preserve stable interfaces or validation"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "repair_bench_006",
+      "benchmark_name": "repair",
+      "capability": "repair",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=repair with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "keeps_fix_small",
+        "adds_regression_protection"
+      ],
+      "task_reference": {
+        "rubric": {
+          "revision_quality": "must narrow scope and target boundary",
+          "repeat_failure_avoidance": "must avoid repeating prior mistake class",
+          "safety_of_repair": "must preserve stable interfaces or validation"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "repair_bench_007",
+      "benchmark_name": "repair",
+      "capability": "repair",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=repair with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "keeps_fix_small",
+        "adds_regression_protection"
+      ],
+      "task_reference": {
+        "rubric": {
+          "revision_quality": "must narrow scope and target boundary",
+          "repeat_failure_avoidance": "must avoid repeating prior mistake class",
+          "safety_of_repair": "must preserve stable interfaces or validation"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "repair_bench_008",
+      "benchmark_name": "repair",
+      "capability": "repair",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.01,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=repair with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "keeps_fix_small",
+        "adds_regression_protection"
+      ],
+      "task_reference": {
+        "rubric": {
+          "revision_quality": "must narrow scope and target boundary",
+          "repeat_failure_avoidance": "must avoid repeating prior mistake class",
+          "safety_of_repair": "must preserve stable interfaces or validation"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "repair_bench_009",
+      "benchmark_name": "repair",
+      "capability": "repair",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=repair with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "keeps_fix_small",
+        "adds_regression_protection"
+      ],
+      "task_reference": {
+        "rubric": {
+          "revision_quality": "must narrow scope and target boundary",
+          "repeat_failure_avoidance": "must avoid repeating prior mistake class",
+          "safety_of_repair": "must preserve stable interfaces or validation"
+        }
+      }
+    },
+    {
+      "run_id": "run_94520d6a0138",
+      "task_id": "repair_bench_010",
+      "benchmark_name": "repair",
+      "capability": "repair",
+      "scoring": "rubric",
+      "adapter": "heuristic",
+      "prompt_profile": "minimal_doctrine",
+      "model": null,
+      "ok": true,
+      "error": null,
+      "latency_ms": 0.0,
+      "finish_reason": null,
+      "output_text": "Doctrine active.\nRepair: prefer a narrow revision that preserves working interfaces and add a targeted regression test.\nConfidence: bounded by available evidence.",
+      "meta": {
+        "adapter": "heuristic",
+        "matched": [
+          "repair"
+        ],
+        "promotable": false
+      },
+      "backend_identity": "heuristic:synthetic-baseline",
+      "raw_score": 5,
+      "normalized_score": 0.8333,
+      "notes": "Scored against capability=repair with 3 rubric fields. Matched 5 of 6 checks.",
+      "matched_checks": [
+        "mentions_constraints",
+        "mentions_risk_or_tradeoff",
+        "mentions_validation_or_evidence",
+        "keeps_fix_small",
+        "adds_regression_protection"
+      ],
+      "task_reference": {
+        "rubric": {
+          "revision_quality": "must narrow scope and target boundary",
+          "repeat_failure_avoidance": "must avoid repeating prior mistake class",
+          "safety_of_repair": "must preserve stable interfaces or validation"
+        }
+      }
+    }
+  ],
+  "summary": {
+    "calibration": 0.6667,
+    "compression": 0.2667,
+    "critique": 0.6667,
+    "paraphrase_stability": 0.85,
+    "planning": 0.2167,
+    "quantization_retention": 0.8333,
+    "reasoning": 0.1667,
+    "repair": 0.8333
+  },
+  "failure_count": 0,
+  "overall_weighted_score": 0.5625,
+  "scorer_version": "v2-task-aware"
+}

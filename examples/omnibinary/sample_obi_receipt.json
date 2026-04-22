@@ -1,0 +1,12 @@
+{
+  "artifact": "sample.bin",
+  "classification": "unknown_binary_pending_intake",
+  "lane_decision": "managed_preview",
+  "mode": "preflight",
+  "blockers": [
+    "native compatibility unknown",
+    "decoder not yet validated on host"
+  ],
+  "evidence_summary": "Intake completed enough to rule out immediate native execution. Preview/preflight lane selected pending decoder and host validation.",
+  "notes": "No successful execution claimed."
+}

@@ -1,0 +1,442 @@
+{
+  "profiles": [
+    {
+      "language_id": "lang:eng",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "əpɹɒksɪmət",
+      "stress_policy": "lexical_stress",
+      "syllable_template": "(C)(C)(C)V(C)(C)(C)",
+      "examples": {
+        "hello": "həˈloʊ",
+        "world": "wɜːld",
+        "language": "ˈlæŋɡwɪdʒ"
+      },
+      "notes": "Broad English IPA hints only. Significant dialect variation exists (GA vs RP). Not a full phonemic inventory."
+    },
+    {
+      "language_id": "lang:spa",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "aˈpɾoksimado",
+      "stress_policy": "predictable_with_accents",
+      "syllable_template": "(C)(C)V(C)",
+      "examples": {
+        "hola": "ˈola",
+        "gracias": "ˈɡɾasjas",
+        "español": "espaˈɲol"
+      },
+      "notes": "Broad Spanish IPA hints only. Castilian vs Latin American variation not modeled here."
+    },
+    {
+      "language_id": "lang:fra",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "fʁɑ̃sɛ",
+      "stress_policy": "phrase_final",
+      "syllable_template": "(C)(C)V(C)",
+      "examples": {
+        "bonjour": "bɔ̃ˈʒuʁ",
+        "merci": "mɛʁˈsi",
+        "langue": "lɑ̃ɡ"
+      },
+      "notes": "Broad French IPA hints only. Nasal vowels marked. Liaison and elision not modeled."
+    },
+    {
+      "language_id": "lang:deu",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "dɔʏtʃ",
+      "stress_policy": "root_initial",
+      "syllable_template": "(C)(C)(C)V(C)(C)",
+      "examples": {
+        "hallo": "haˈloː",
+        "danke": "ˈdaŋkə",
+        "Sprache": "ˈʃpʁaːxə"
+      },
+      "notes": "Standard German (Hochdeutsch) broad IPA hints. Auslautverhärtung (final obstruent devoicing) applies."
+    },
+    {
+      "language_id": "lang:rus",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "rʲɪˈvʲet",
+      "stress_policy": "lexical_stress",
+      "syllable_template": "(C)(C)(C)V(C)(C)",
+      "examples": {
+        "привет": "prʲɪˈvʲet",
+        "спасибо": "spɐˈsʲibə",
+        "язык": "jɪˈzɨk"
+      },
+      "notes": "Broad Russian IPA hints only. Vowel reduction in unstressed syllables applies. Palatalization pervasive."
+    },
+    {
+      "language_id": "lang:hin",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "d̪ʱən̪jəʋaːd̪",
+      "stress_policy": "light",
+      "syllable_template": "(C)(C)V(C)",
+      "examples": {
+        "धन्यवाद": "d̪ʱən̪jəʋaːd̪",
+        "नमस्ते": "nəməsteː",
+        "हिन्दी": "ˈɦɪndiː"
+      },
+      "notes": "Broad Hindi IPA hints only. Aspirated vs unaspirated and retroflex distinctions marked where known."
+    },
+    {
+      "language_id": "lang:jpn",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "nihoŋɡo",
+      "stress_policy": "pitch_accent",
+      "syllable_template": "(C)V or (C)V̄ or N",
+      "examples": {
+        "こんにちは": "konnitɕiwa",
+        "ありがとう": "aɾiɡatoː",
+        "日本語": "nihoŋɡo"
+      },
+      "notes": "Broad Japanese IPA hints. Mora-timed language. Pitch accent varies by dialect (Tokyo pattern noted). Geminate consonants (っ) not always shown."
+    },
+    {
+      "language_id": "lang:kor",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "han.ɡuk.ʌ",
+      "stress_policy": "syllable_timed_no_fixed_stress",
+      "syllable_template": "(C)V(C)",
+      "examples": {
+        "안녕하세요": "annjʌŋhaseyo",
+        "감사합니다": "kamsaɦamnida",
+        "한국어": "ɦankuɡʌ"
+      },
+      "notes": "Broad Korean IPA hints. Tense/lax/aspirated stop distinction not fully modeled. Final consonant neutralization applies."
+    },
+    {
+      "language_id": "lang:cmn",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "pǔ.tōŋ.xuà",
+      "stress_policy": "tonal_four_tones",
+      "syllable_template": "(C)(G)V(N) where G=glide N=nasal",
+      "examples": {
+        "你好": "nǐ.hǎo",
+        "谢谢": "ɕiɛ̀.ɕiɛ",
+        "普通话": "pǔ.tʰʊŋ.xuâ"
+      },
+      "notes": "Mandarin (Putonghua) broad IPA hints with tone marks. Tonal language: 4 lexical tones plus neutral tone. Pinyin romanization is the standard reference."
+    },
+    {
+      "language_id": "lang:arb",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "ʕarabijja",
+      "stress_policy": "quantity_sensitive",
+      "syllable_template": "(C)(C)V(V)(C)(C)",
+      "examples": {
+        "مرحبا": "maɾħabā",
+        "شكرا": "ʃukɾan",
+        "عربية": "ʕarabijja"
+      },
+      "notes": "Modern Standard Arabic (MSA) broad IPA hints. Pharyngeal and emphatic consonants marked. Short vowels often absent in orthography. Dialect variation is extensive and not modeled."
+    },
+    {
+      "language_id": "lang:tur",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "tʏɾkdʒe",
+      "stress_policy": "word_final_default",
+      "syllable_template": "(C)V(C)(C)",
+      "examples": {
+        "merhaba": "meɾhaˈba",
+        "teşekkürler": "teʃekkyɾˈleɾ",
+        "Türkçe": "ˈtʏɾktʃe"
+      },
+      "notes": "Broad Turkish IPA hints. Vowel harmony (front/back, round/unround) is a fundamental feature. Agglutinative morphology not modeled here."
+    },
+    {
+      "language_id": "lang:tha",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "pʰaːsǎːtʰaj",
+      "stress_policy": "tonal_five_tones",
+      "syllable_template": "(C)(C)V(V)(C) with tone",
+      "examples": {
+        "สวัสดี": "saˈwàtdīː",
+        "ขอบคุณ": "kʰɔ̂ːpkʰun",
+        "ภาษาไทย": "pʰāːsǎːtʰāj"
+      },
+      "notes": "Broad Thai IPA hints. Tonal language: 5 lexical tones. Tones marked on vowels. Initial consonant class interacts with tone. No spaces between words in script."
+    },
+    {
+      "language_id": "lang:por",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "poɾtuɡes",
+      "stress_policy": "lexical_stress_penultimate_default",
+      "syllable_template": "(C)(C)V(C)",
+      "examples": {
+        "obrigado": "obɾiˈɡadu",
+        "bom dia": "bõ ˈdʒiɐ"
+      },
+      "notes": "Broad Portuguese IPA hints. European (EP) and Brazilian (BP) variants differ significantly; these hints approximate EP. Nasal vowels marked where known."
+    },
+    {
+      "language_id": "lang:ita",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "itaˈljano",
+      "stress_policy": "lexical_stress_penultimate_default",
+      "syllable_template": "(C)(C)V(C)",
+      "examples": {
+        "ciao": "tʃao",
+        "grazie": "ˈɡrattsje",
+        "prego": "ˈpɾeɡo"
+      },
+      "notes": "Broad Italian IPA hints. Geminate consonants apply but are not always marked. Standard variety (RP-like Florentine/Roman)."
+    },
+    {
+      "language_id": "lang:nld",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "nɛdərˈlɑnts",
+      "stress_policy": "root_initial",
+      "syllable_template": "(C)(C)(C)V(C)(C)",
+      "examples": {
+        "hallo": "ˈɦɑloː",
+        "dankjewel": "ˈdɑŋkjəˌʋɛl"
+      },
+      "notes": "Broad Dutch IPA hints. Velar fricative /x/ and voiced /ɣ/ are distinctive; shown as x/g here. Standard Dutch (AN - Algemeen Nederlands)."
+    },
+    {
+      "language_id": "lang:pol",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "ˈpɔlskʲi",
+      "stress_policy": "penultimate_fixed",
+      "syllable_template": "(C)(C)(C)V(C)(C)",
+      "examples": {
+        "dziękuję": "d͡ʑɛŋˈkujɛ",
+        "proszę": "ˈpɾɔʂɛ"
+      },
+      "notes": "Broad Polish IPA hints. Nasal vowels /ɛ̃/ /ɔ̃/ before fricatives; palatalised and retroflex distinctions approximated."
+    },
+    {
+      "language_id": "lang:ukr",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "ʊkrɐˈjinsjkɐ",
+      "stress_policy": "lexical_stress",
+      "syllable_template": "(C)(C)(C)V(C)(C)",
+      "examples": {
+        "привіт": "prɪˈwit",
+        "дякую": "ˈdʲakuju"
+      },
+      "notes": "Broad Ukrainian IPA hints. Distinct from Russian: /ɪ/ (и) vs /i/ (і), /ɦ/ (voiced glottal) vs Russian /g/. Palatalisation pervasive."
+    },
+    {
+      "language_id": "lang:vie",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "tiɛŋ˨˩ˀ vjɛt̚˩",
+      "stress_policy": "tonal_six_tones",
+      "syllable_template": "(C)(G)V(C) with tone",
+      "examples": {
+        "xin chào": "siːn˧ tɕâːw˨˩ˀ",
+        "cảm ơn": "kǎːm˧˩ ʔəːn˧"
+      },
+      "notes": "Broad Vietnamese IPA hints. Six lexical tones in Northern Vietnamese (Hanoi). Tonal diacritics in orthography map to IPA tone marks. Southern variety differs substantially."
+    },
+    {
+      "language_id": "lang:ind",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "baˈhasa indoˈnesia",
+      "stress_policy": "penultimate_default",
+      "syllable_template": "(C)(C)V(C)",
+      "examples": {
+        "terima kasih": "tərima ˈkasih",
+        "selamat": "səˈlamat"
+      },
+      "notes": "Broad Indonesian IPA hints. Relatively phonemic spelling; stress is predictable. /r/ is typically a trill or flap. Schwa /ə/ often appears in unstressed syllables."
+    },
+    {
+      "language_id": "lang:ben",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "ˈbaŋla",
+      "stress_policy": "initial_stress_default",
+      "syllable_template": "(C)(C)V(C)",
+      "examples": {
+        "ধন্যবাদ": "d̪ʱɔnːobad̪",
+        "হ্যালো": "ɦjalo"
+      },
+      "notes": "Broad Bengali IPA hints. Retroflex consonants marked. Script is Bangla (Beng). Western Bengali (Kolkata) assumed; Bangladeshi variety differs."
+    },
+    {
+      "language_id": "lang:tam",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "t̪amɨɻ",
+      "stress_policy": "initial_stress_default",
+      "syllable_template": "(C)V(C)",
+      "examples": {
+        "நன்றி": "n̪an̪ɾi",
+        "வணக்கம்": "ʋɐɳɐkkɐm"
+      },
+      "notes": "Broad Tamil IPA hints. Diglossia: formal (centamil) vs colloquial (koduntamil) differ significantly. Retroflex lateral /ɭ/ and rhotic /ɻ/ are distinctive phonemes."
+    },
+    {
+      "language_id": "lang:swa",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "kiˈswahili",
+      "stress_policy": "penultimate_fixed",
+      "syllable_template": "(C)V(C)",
+      "examples": {
+        "asante": "aˈsante",
+        "habari": "haˈbaɾi",
+        "karibu": "kaˈɾibu"
+      },
+      "notes": "Broad Swahili IPA hints. Bantu language with fixed penultimate stress. CV syllable structure predominates. Relatively phonemic Latin orthography."
+    },
+    {
+      "language_id": "lang:nav",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "dɪˈnɛ bɪˈzaːd",
+      "stress_policy": "tonal_high_low",
+      "syllable_template": "(C)V(N) with tone",
+      "examples": {
+        "yá'át'ééh": "jaʔaːtʔeːh",
+        "ahéhee'": "aheheʔ"
+      },
+      "notes": "Broad Navajo (Diné bizaad) IPA hints. Athabaskan tonal language: high/low tone distinction is phonemic. Nasal vowels, glottal stops, and ejective consonants are distinctive. This is a very minimal hint — consult Navajo language resources for authoritative phonology."
+    },
+    {
+      "language_id": "lang:amh",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "amarəɲɲa",
+      "stress_policy": "penultimate_default",
+      "syllable_template": "(C)(C)V(C)",
+      "examples": {
+        "ሰላም": "sɛlam",
+        "አሜሪካ": "amerIka"
+      },
+      "notes": "Broad Amharic IPA hints. Semitic language written in Ge'ez/Ethiopic script (Ethi). Geminate consonants are phonemic. Ejective consonants (ጥ/ፕ/ቅ/ጨ/ፈ) are distinctive. This is a minimal hint — not a full inventory."
+    },
+    {
+      "language_id": "lang:chr",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "tʃɪɾoːkiː",
+      "stress_policy": "lexical_accent",
+      "syllable_template": "(C)V or V with tone",
+      "examples": {
+        "ᎣᏏᏲ": "oˈsiːjo",
+        "ᏗᎠᏁᎵᏙᏗ": "diʔaneːlitoːdi"
+      },
+      "notes": "Broad Cherokee IPA hints. Iroquoian language with a pitch accent system. Each syllabary character encodes a CV syllable (75 characters + ꮝ s). This is a minimal hint — authoritative Cherokee phonology resources should be consulted."
+    },
+    {
+      "language_id": "lang:crk",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "neːhɪjaːweːwin",
+      "stress_policy": "iambic_initial_odd_syllable",
+      "syllable_template": "(C)(C)V(C) with vowel length",
+      "examples": {
+        "ᑖᓂᓯ": "taːnisi",
+        "ᐊᐧᐊᓯᐠ": "awaːsak"
+      },
+      "notes": "Broad Plains Cree (nēhiyawēwin) IPA hints. Algonquian language with contrastive vowel length. Written in both Cree syllabics (Cans) and Latin orthography. This is a very minimal hint — consult the Cree Literacy Network for authoritative phonology."
+    },
+    {
+      "language_id": "lang:fas",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "fɑːrsɪ",
+      "stress_policy": "word_final_default",
+      "syllable_template": "(C)(C)V(C)(C)",
+      "examples": {
+        "سلام": "salɑm",
+        "ممنون": "mamnun",
+        "خوب": "xub"
+      },
+      "notes": "Broad Persian/Farsi IPA hints. Written in Perso-Arabic script with additional letters beyond Arabic. Word-final stress is default. Uvular /q/ and velar fricative /x/ are distinctive. Differs from Dari and Tajik varieties."
+    },
+    {
+      "language_id": "lang:heb",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "ʕivɾit",
+      "stress_policy": "word_final_default",
+      "syllable_template": "(C)(C)V(C)(C)",
+      "examples": {
+        "שלום": "ʃalom",
+        "תודה": "todaː",
+        "כן": "ken"
+      },
+      "notes": "Broad Modern Hebrew IPA hints (Israeli standard). Word-final stress predominates. Pharyngeal distinctions largely neutralised in Modern Israeli Hebrew. Unpointed text common; vowels often inferred."
+    },
+    {
+      "language_id": "lang:mar",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "maɾaːʈʰiː",
+      "stress_policy": "second_syllable_default",
+      "syllable_template": "(C)(C)V(C)",
+      "examples": {
+        "धन्यवाद": "d̪ʱən̪jəʋaːd̪",
+        "नमस्कार": "nəməskaːɾ"
+      },
+      "notes": "Broad Marathi IPA hints. Indo-Aryan, Devanagari script. Retroflexes and aspirates are phonemic. Nasalisation marked on vowels. Similar to Hindi but distinct vocabulary and some phonological differences."
+    },
+    {
+      "language_id": "lang:msa",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "baˈhasa məˈlaju",
+      "stress_policy": "penultimate_default",
+      "syllable_template": "(C)(C)V(C)",
+      "examples": {
+        "terima kasih": "tərima kasih",
+        "selamat": "səlamat",
+        "ya": "ja"
+      },
+      "notes": "Broad Malay IPA hints. Latin script (Rumi); Jawi (Arabic) also used but not modeled here. Closely related to Indonesian; mutual intelligibility high. /r/ varies by region (trill vs uvular)."
+    },
+    {
+      "language_id": "lang:pan",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "pʊnˈdʒaːbɪ",
+      "stress_policy": "tonal_three_tones",
+      "syllable_template": "(C)(C)V(C) with tone",
+      "examples": {
+        "ਧੰਨਵਾਦ": "d̪ʰənn̪ʋaːd̪",
+        "ਸਤ ਸ੍ਰੀ ਅਕਾਲ": "sɐt sɾiː ɐkaːl"
+      },
+      "notes": "Broad Punjabi IPA hints. Indo-Aryan tonal language: three lexical tones (low, mid, high). Gurmukhi script (Guru) standard in India; Shahmukhi (Arabic) in Pakistan. Aspirated consonants and retroflexes are phonemic."
+    },
+    {
+      "language_id": "lang:tel",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "t̪el̪uɡu",
+      "stress_policy": "initial_stress_default",
+      "syllable_template": "(C)(C)V(C)(C)",
+      "examples": {
+        "ధన్యవాదాలు": "d̪ʱɐnjəʋaːd̪aːl̪u",
+        "నమస్కారం": "nɐməskaːɾəm"
+      },
+      "notes": "Broad Telugu IPA hints. Dravidian language with its own script (Telu). Retroflex consonants are phonemic. Vowel length is contrastive. Initial stress default."
+    },
+    {
+      "language_id": "lang:urd",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "ʊrduː",
+      "stress_policy": "penultimate_default",
+      "syllable_template": "(C)(C)V(C)(C)",
+      "examples": {
+        "شکریہ": "ʃʊkɾɪja",
+        "سلام": "salaːm"
+      },
+      "notes": "Broad Urdu IPA hints. Written in Nastaliq (Arabic script). Very close to Hindi in phonology but distinct vocabulary and orthography. Aspirates and retroflexes phonemic. Short vowels typically omitted in script."
+    },
+    {
+      "language_id": "lang:yue",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "jyːt̚˨ jɐw˨˩",
+      "stress_policy": "tonal_six_tones",
+      "syllable_template": "(C)(G)V(N|p|t|k) with tone",
+      "examples": {
+        "你好": "nei˩˧ hou˧˥",
+        "唔該": "m̩˨˩ kɔi˥"
+      },
+      "notes": "Broad Cantonese (Yue Chinese) IPA hints. Six lexical tones. Written with Traditional Chinese characters (Hant). Stop finals /p/, /t/, /k/ are preserved (unlike Mandarin). Yale romanisation or Jyutping are standard references."
+    },
+    {
+      "language_id": "lang:ell",
+      "notation_system": "broad_ipa",
+      "broad_ipa": "elinika",
+      "stress_policy": "lexical_stress_marked",
+      "syllable_template": "(C)(C)V(C)",
+      "examples": {
+        "γεια": "ja",
+        "ευχαριστώ": "efxarisˈto",
+        "καλημέρα": "kaliˈmera"
+      },
+      "notes": "Broad Modern Greek IPA hints. Stress marked in orthography with tonos (΄). Ancient Greek phonology differs significantly. Pitch accent system of Ancient Greek replaced by stress accent in Modern Greek."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+source,purpose,use
+crates/obi-core/src/lib.rs,core execution surface and shared types,distill behavior + eval
+crates/obi-intake/src/lib.rs,binary intake and classification mindset,distill behavior + eval
+crates/obi-policy/src/lib.rs,go/no-go policy reasoning,distill behavior + preference
+crates/obi-ir/src/lib.rs,IR/lowering preview discipline,distill behavior + eval
+crates/obi-receipts/src/lib.rs,receipt structure and evidence discipline,distill behavior + output schema
+docs/preflight-flow.md,preflight-before-run logic,distill behavior + eval
+docs/truth-ledger.md,truth/evidence ledger discipline,distill behavior + preference
+docs/machine-validation-plan.md,machine validation mindset,distill behavior + eval
+docs/acceptance-criteria.md,release/blocker honesty,distill behavior + preference
+docs/decoder-contract.md,decoder contract boundaries,runtime reference + eval
+docs/lowering-contract.md,lowering contract boundaries,runtime reference + eval
+docs/sandbox-contract.md,sandbox boundary discipline,runtime reference + preference
+docs/lane-matrix.md,lane selection matrix,distill behavior + eval
+docs/evidence-pack.md,evidence pack schema mindset,distill behavior + schema

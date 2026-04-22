@@ -1,0 +1,9 @@
+# Global ownership
+* @GareBear99
+
+# Governance and release control
+/.github/ @GareBear99
+/ops/ @GareBear99
+/specs/ @GareBear99
+/configs/ @GareBear99
+/scripts/ @GareBear99

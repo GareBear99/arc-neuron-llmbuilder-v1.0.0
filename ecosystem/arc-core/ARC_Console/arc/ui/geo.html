@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>ARC Geo Console v4</title>
+  <style>
+    :root{--bg:#120f18;--bg2:#1a1326;--panel:#1c1730;--line:#352b52;--text:#efe9ff;--muted:#b8abd9;--accent:#9a71ff;--good:#54d39b;--bad:#ff7f97}
+    *{box-sizing:border-box} body{font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--text);margin:0;padding:18px}
+    .wrap{max-width:1380px;margin:0 auto}.top{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+    .nav a{color:#c9b8ff;text-decoration:none;margin-right:12px}.muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}.stack{display:flex;flex-direction:column;gap:16px}
+    .card{background:rgba(28,23,48,.96);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 18px 45px rgba(0,0,0,.25)}
+    h1,h2,h3{margin:.2rem 0 1rem} h1{font-size:28px} h2{font-size:18px}
+    button,input,select,textarea{background:#151126;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit}
+    button{cursor:pointer;background:linear-gradient(180deg,rgba(154,113,255,.22),rgba(154,113,255,.08))}
+    .good{background:linear-gradient(180deg,rgba(84,211,155,.18),rgba(84,211,155,.06))}
+    .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.grow{flex:1}
+    table{width:100%;border-collapse:collapse} td,th{padding:8px;border-bottom:1px solid #2a2342;text-align:left;font-size:13px;vertical-align:top}
+    pre{white-space:pre-wrap;word-wrap:break-word;background:#100d1d;padding:12px;border-radius:10px;max-height:260px;overflow:auto}
+    .canvas{background:#0f0c1a;border:1px solid var(--line);border-radius:16px;padding:8px}
+    canvas{display:block;width:100%;height:460px;border-radius:12px;background:radial-gradient(circle at 30% 20%, #261d3a 0, #151126 65%, #0d0b14 100%)}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.stat{padding:12px;border:1px solid var(--line);border-radius:14px;background:#171329}.stat .k{font-size:11px;color:var(--muted);text-transform:uppercase}.stat .v{font-size:24px;font-weight:700}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>ARC Geo Console v4</h1>
+      <div class="muted">Spatial operator surface with heatmap, blueprint metadata, calibration profiles, evidence export, and tamper-evident receipts.</div>
+    </div>
+    <div class="nav"><a href="/">Dashboard</a><a href="/ui/signals.html">Signals</a><a href="/ui/graph.html">Graph</a><a href="/ui/timeline.html">Timeline</a><a href="/ui/cases.html">Cases</a></div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="k">Structures</div><div class="v" id="statStructures">0</div></div>
+    <div class="stat"><div class="k">Tracks</div><div class="v" id="statTracks">0</div></div>
+    <div class="stat"><div class="k">Incidents</div><div class="v" id="statIncidents">0</div></div>
+    <div class="stat"><div class="k">Receipts OK</div><div class="v" id="statReceipts">?</div></div>
+  </div>
+
+  <div class="grid" style="margin-top:16px">
+    <div class="stack">
+      <div class="card canvas">
+        <div class="row"><h2 class="grow">Structure Heatmap + Tracks</h2><select id="structureSelect"></select><button onclick="loadAll()">Refresh</button><button onclick="demoTrack()">Demo Track</button></div>
+        <canvas id="map" width="820" height="460"></canvas>
+      </div>
+      <div class="card">
+        <div class="row"><h2 class="grow">Tracks</h2><button onclick="exportEvidence()">Export Evidence</button></div>
+        <table id="tracks"></table>
+      </div>
+      <div class="card">
+        <h2>Receipts</h2>
+        <pre id="receipts">Loading…</pre>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card">
+        <h2>Structures</h2>
+        <table id="structures"></table>
+      </div>
+      <div class="card">
+        <h2>Blueprint Overlays</h2>
+        <div class="row"><input id="bpName" placeholder="Overlay name" class="grow"><input id="bpUrl" placeholder="Image URL" class="grow"></div>
+        <div class="row"><button onclick="saveBlueprint()">Save Overlay</button></div>
+        <table id="blueprints"></table>
+      </div>
+      <div class="card">
+        <h2>Calibration Profiles</h2>
+        <div class="row"><input id="calName" placeholder="Profile name" class="grow"><button onclick="saveCalibration()">Save Profile</button></div>
+        <table id="calibrations"></table>
+      </div>
+      <div class="card">
+        <h2>Incidents</h2>
+        <div class="row"><input id="incidentTitle" placeholder="Incident title" class="grow"><button class="good" onclick="createIncident()">Create</button></div>
+        <table id="incidents"></table>
+      </div>
+      <div class="card">
+        <h2>Output</h2>
+        <pre id="output">Ready.</pre>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+let state = {structures:[], tracks:[], heatmap:null, selected:null};
+const $ = id => document.getElementById(id);
+async function j(url, opts){ const r = await fetch(url, opts); return r.json(); }
+function setOutput(x){ $('output').textContent = typeof x === 'string' ? x : JSON.stringify(x, null, 2); }
+function currentStructure(){ return state.structures.find(s=>s.structure_id === $('structureSelect').value) || state.structures[0]; }
+function project(pt, s, w, h){
+  const lats = s.polygon.map(p=>p[0]), lngs = s.polygon.map(p=>p[1]);
+  const minLat = Math.min(...lats), maxLat = Math.max(...lats), minLng = Math.min(...lngs), maxLng = Math.max(...lngs);
+  const x = ((pt.lng - minLng)/(maxLng-minLng||1))*w;
+  const y = h - ((pt.lat - minLat)/(maxLat-minLat||1))*h;
+  return {x,y};
+}
+function draw(){
+  const c = $('map'), ctx = c.getContext('2d'); ctx.clearRect(0,0,c.width,c.height);
+  const s = currentStructure(); if(!s) return;
+  const pad = 40, w = c.width - pad*2, h = c.height - pad*2;
+  const poly = s.polygon.map(([lat,lng])=>project({lat,lng}, s, w, h));
+  ctx.save(); ctx.translate(pad,pad);
+  if(state.heatmap){
+    for(const cell of state.heatmap.cells){
+      const p = project(cell.center, s, w, h); const cw = w/state.heatmap.grid_size, ch = h/state.heatmap.grid_size;
+      const alpha = Math.min(.78, 0.1 + cell.count*0.14); if(cell.count<=0) continue;
+      ctx.fillStyle = `rgba(154,113,255,${alpha})`; ctx.fillRect(p.x-cw/2, p.y-ch/2, cw, ch);
+    }
+  }
+  ctx.strokeStyle = '#c8b7ff'; ctx.lineWidth = 2; ctx.beginPath(); poly.forEach((p,i)=> i?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y)); ctx.closePath(); ctx.stroke();
+  ctx.fillStyle = 'rgba(201,177,255,.08)'; ctx.fill();
+  for(const t of state.tracks.filter(t=>t.structure_id===s.structure_id).slice(0,40)){
+    const p = project({lat:t.lat,lng:t.lng}, s, w, h);
+    ctx.fillStyle = '#54d39b'; ctx.beginPath(); ctx.arc(p.x,p.y,4+Math.max(0,t.confidence*4),0,Math.PI*2); ctx.fill();
+  }
+  ctx.restore();
+}
+async function loadStructures(){
+  const data = await j('/api/geo/structures'); state.structures = data.structures; $('statStructures').textContent = data.structures.length;
+  $('structures').innerHTML = '<tr><th>Name</th><th>Type</th><th>Levels</th></tr>' + data.structures.map(s=>`<tr><td>${s.name}</td><td>${s.structure_type}</td><td>${s.levels}</td></tr>`).join('');
+  $('structureSelect').innerHTML = data.structures.map(s=>`<option value="${s.structure_id}">${s.name}</option>`).join('');
+}
+async function loadTracks(){
+  const data = await j('/api/geo/tracks?limit=60'); state.tracks = data.tracks; $('statTracks').textContent = data.tracks.length;
+  $('tracks').innerHTML = '<tr><th>Subject</th><th>Zone</th><th>Conf</th><th>Source</th></tr>' + data.tracks.map(t=>`<tr><td>${t.subject}</td><td>${t.zone}</td><td>${Number(t.confidence).toFixed(2)}</td><td>${t.source}</td></tr>`).join('');
+}
+async function loadHeatmap(){ const s = currentStructure(); if(!s) return; state.heatmap = await j('/api/geo/heatmap/'+s.structure_id+'?grid_size=8'); draw(); }
+async function loadBlueprints(){ const s = currentStructure(); if(!s) return; const data = await j('/api/geo/blueprints?structure_id='+s.structure_id); $('blueprints').innerHTML = '<tr><th>Name</th><th>Floor</th><th>Opacity</th></tr>' + data.blueprints.map(b=>`<tr><td>${b.name}</td><td>${b.floor ?? '-'}</td><td>${b.opacity}</td></tr>`).join(''); }
+async function loadCalibrations(){ const s = currentStructure(); if(!s) return; const data = await j('/api/geo/calibrations?structure_id='+s.structure_id); $('calibrations').innerHTML = '<tr><th>Name</th><th>Path Loss</th><th>Noise</th></tr>' + data.calibrations.map(c=>`<tr><td>${c.name}</td><td>${c.profile.path_loss}</td><td>${c.profile.noise_db}</td></tr>`).join(''); }
+async function loadIncidents(){ const data = await j('/api/incidents'); $('statIncidents').textContent = data.incidents.length; $('incidents').innerHTML = '<tr><th>Title</th><th>Severity</th><th>Status</th></tr>' + data.incidents.map(i=>`<tr><td>${i.title}</td><td>${i.severity}</td><td>${i.status}</td></tr>`).join(''); }
+async function loadReceipts(){ const verify = await j('/api/receipts/verify'); $('statReceipts').textContent = verify.ok ? 'YES' : 'NO'; const list = await j('/api/receipts?limit=8'); $('receipts').textContent = JSON.stringify({verify, receipts:list.receipts}, null, 2); }
+async function saveBlueprint(){ const s = currentStructure(); const body = {structure_id:s.structure_id, name:$('bpName').value||'Overlay', image_url:$('bpUrl').value||'https://example.local/overlay.png'}; const res = await j('/api/geo/blueprints',{method:'POST', headers:{'Content-Type':'application/json','X-ARC-Role':'analyst'}, body:JSON.stringify(body)}); setOutput(res); loadBlueprints(); loadReceipts(); }
+async function saveCalibration(){ const s = currentStructure(); const body = {structure_id:s.structure_id, name:$('calName').value||'Profile'}; const res = await j('/api/geo/calibrations',{method:'POST', headers:{'Content-Type':'application/json','X-ARC-Role':'analyst'}, body:JSON.stringify(body)}); setOutput(res); loadCalibrations(); loadReceipts(); }
+async function createIncident(){ const s = currentStructure(); const body = {title:$('incidentTitle').value||'Geo anomaly', severity:'medium', status:'open', structure_id:s.structure_id}; const res = await j('/api/incidents',{method:'POST', headers:{'Content-Type':'application/json','X-ARC-Role':'analyst'}, body:JSON.stringify(body)}); setOutput(res); loadIncidents(); loadReceipts(); }
+async function demoTrack(){ const s = currentStructure(); const res = await j('/api/geo/demo-track/'+s.structure_id,{method:'POST', headers:{'X-ARC-Role':'observer'}}); setOutput(res); await loadTracks(); await loadHeatmap(); await loadReceipts(); }
+async function exportEvidence(){ const subj = state.tracks[0]?.subject || 'Demo Device'; const data = await j('/api/evidence?subject='+encodeURIComponent(subj)); setOutput(data); }
+async function loadAll(){ await loadStructures(); await loadTracks(); await loadHeatmap(); await loadBlueprints(); await loadCalibrations(); await loadIncidents(); await loadReceipts(); draw(); }
+$('structureSelect').addEventListener('change', async ()=>{ await loadHeatmap(); await loadBlueprints(); await loadCalibrations(); draw(); });
+loadAll();
+</script>
+</body>
+</html>

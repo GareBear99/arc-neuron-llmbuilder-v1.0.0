@@ -1,0 +1,12 @@
+{
+  "archive_path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/archives/sfr_32d0430d1fdf.arcrar.zip",
+  "created_at": "2026-04-17T23:44:32.510983+00:00",
+  "ledger_path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/omnibinary/sfr_32d0430d1fdf.obin",
+  "manifest_path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/release_manifests/sfr_32d0430d1fdf.manifest.json",
+  "manifest_sha256": "3307359d434d71597e3699ebeb5e6af04a4b157e7cacdadd77c54875ba1adf75",
+  "release_run_id": "sfr_32d0430d1fdf",
+  "replay_priority": 63,
+  "retention_class": "warm",
+  "rollback_id": "sfri_9f182a9c783e",
+  "snapshot_path": ""
+}

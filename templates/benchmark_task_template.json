@@ -1,0 +1,16 @@
+{
+  "id": "bench_000001",
+  "capability": "planning",
+  "domain": "code",
+  "difficulty": "medium",
+  "prompt": "Put the benchmark prompt here",
+  "reference": {
+    "rubric": {
+      "step_quality": "Required expectations",
+      "tradeoff_quality": "Required expectations",
+      "blocker_awareness": "Required expectations"
+    }
+  },
+  "scoring": "rubric",
+  "tags": ["planning", "code"]
+}

@@ -1,0 +1,11 @@
+{"model_name": "heuristic_gate_v1", "adapter": "heuristic", "prompt_profile": "minimal_doctrine", "report": "reports/full_candidate_gate_report.json", "ok": false}
+{"model_name": "heuristic_gate_v1", "adapter": "heuristic", "prompt_profile": "minimal_doctrine", "report": "reports/full_candidate_gate_report.json", "ok": true}
+{"timestamp_utc": "2026-04-10T18:01:40.926093+00:00", "event": "bootstrap_experiment", "model_name": "unset", "backend": "unset", "notes": "Experiment bootstrap record created before full candidate gate."}
+{"model_name": "candidate_v1", "adapter": "heuristic", "prompt_profile": "minimal_doctrine", "report": "reports/full_candidate_gate_report.json", "ok": true}
+{"run_id": "gate_d0642667b597", "model_name": "darpa_patch_heuristic", "adapter": "heuristic", "prompt_profile": "minimal_doctrine", "report": "reports/full_candidate_gate_report.json", "ok": false}
+{"run_id": "gate_bdd853d38ea6", "model_name": "darpa_patch_heuristic", "adapter": "heuristic", "prompt_profile": "minimal_doctrine", "report": "reports/full_candidate_gate_report.json", "ok": true}
+{"run_id": "gate_52b75a3b3882", "model_name": "darpa_seed_scaffold", "adapter": "heuristic", "prompt_profile": "minimal_doctrine", "report": "reports/full_candidate_gate_report.json", "ok": true}
+{"run_id": "gate_b7746c243b2c", "model_name": "candidate_v1", "adapter": "heuristic", "prompt_profile": "minimal_doctrine", "report": "reports/full_candidate_gate_report.json", "ok": false}
+{"run_id": "gate_3c3f0c7d4d92", "model_name": "candidate_v1", "adapter": "heuristic", "prompt_profile": "minimal_doctrine", "report": "reports/full_candidate_gate_report.json", "ok": false}
+{"run_id": "gate_7bf0c41ca8a4", "model_name": "candidate_v1", "adapter": "heuristic", "prompt_profile": "minimal_doctrine", "report": "reports/full_candidate_gate_report.json", "ok": true}
+{"run_id": "gate_15121604d1ed", "model_name": "candidate_v1", "adapter": "heuristic", "prompt_profile": "minimal_doctrine", "report": "reports/full_candidate_gate_report.json", "ok": true}

@@ -1,0 +1,11 @@
+{
+  "phase": "status",
+  "root": "/mnt/data/work/unified/arc-unified-stack",
+  "report_dir": "/mnt/data/work/unified/arc-unified-stack/reports/master_operator/20260418T005012Z",
+  "artifacts": {
+    "tiny_gguf": "/mnt/data/work/unified/arc-unified-stack/artifacts/gguf/ARC-Neuron-Tiny-0.05M-v0.1-F32.gguf",
+    "small_gguf": "/mnt/data/work/unified/arc-unified-stack/artifacts/gguf/ARC-Neuron-Small-0.18M-v0.1-F32.gguf",
+    "small_tokenizer_prep": "/mnt/data/work/unified/arc-unified-stack/artifacts/tokenizer/arc_neuron_small_v0.2_tokenizer.json",
+    "truth_obin": "/mnt/data/work/unified/arc-unified-stack/artifacts/omnibinary_bridge/arc_language_truth_v1.obin"
+  }
+}

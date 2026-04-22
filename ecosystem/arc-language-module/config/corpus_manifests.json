@@ -1,0 +1,8 @@
+{
+  "manifests": [
+    {"corpus_name": "Glottolog", "corpus_kind": "genealogy", "coverage_scope": "world_languages", "languages": [], "source_name": "glottolog", "license_ref": "see upstream", "acquisition_status": "external_required", "notes": "Primary genealogical source."},
+    {"corpus_name": "ISO 639-3", "corpus_kind": "identifiers", "coverage_scope": "world_languages", "languages": [], "source_name": "iso639_3", "license_ref": "see upstream", "acquisition_status": "external_required", "notes": "Identifier normalization source."},
+    {"corpus_name": "CLDR", "corpus_kind": "scripts_locales", "coverage_scope": "software_locales", "languages": [], "source_name": "cldr", "license_ref": "see upstream", "acquisition_status": "external_required", "notes": "Locale and script mapping source."},
+    {"corpus_name": "Common Seed", "corpus_kind": "seeded_local", "coverage_scope": "bootstrap_languages", "languages": ["lang:eng", "lang:spa", "lang:rus", "lang:hin", "lang:chr", "lang:nav", "lang:crk"], "source_name": "common_seed", "license_ref": "local package", "acquisition_status": "installed", "notes": "Bootstrap package-internal corpus."}
+  ]
+}

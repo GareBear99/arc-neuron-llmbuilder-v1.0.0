@@ -1,0 +1,29 @@
+{
+  "n_events": 1000,
+  "flush_every": 50,
+  "append": {
+    "total_ms": 218.64,
+    "events_per_sec": 4574
+  },
+  "lookup_o1": {
+    "events_per_sec": 3650,
+    "p50_ms": 0.1052,
+    "p95_ms": 0.242,
+    "p99_ms": 0.3447
+  },
+  "scan": {
+    "total_ms": 4.9
+  },
+  "rebuild": {
+    "total_ms": 2.89,
+    "events": 1000
+  },
+  "storage": {
+    "file_bytes": 396906,
+    "bytes_per_event": 397
+  },
+  "fidelity": {
+    "sha256_stable": true,
+    "spot_check": true
+  }
+}

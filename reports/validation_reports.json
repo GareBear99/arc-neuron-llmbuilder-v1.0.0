@@ -1,0 +1,32 @@
+[
+  {
+    "cmd": "python3 scripts/validate_repo.py",
+    "returncode": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"jsonl_files_checked\": 14,\n  \"dataset_files\": 6,\n  \"benchmark_files\": 8,\n  \"dataset_total_records\": 120,\n  \"benchmark_total_tasks\": 80,\n  \"errors\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "cmd": "python3 scripts/build_dataset.py",
+    "returncode": 0,
+    "stdout": "{\n  \"dataset_counts\": {\n    \"data/calibrate/seed_examples.jsonl\": 20,\n    \"data/compress/seed_examples.jsonl\": 20,\n    \"data/critique/seed_examples.jsonl\": 20,\n    \"data/observe_infer/seed_examples.jsonl\": 20,\n    \"data/plan/seed_examples.jsonl\": 20,\n    \"data/repair/seed_examples.jsonl\": 20\n  },\n  \"dataset_total_records\": 120\n}\n",
+    "stderr": ""
+  },
+  {
+    "cmd": "python3 scripts/run_benchmarks.py",
+    "returncode": 0,
+    "stdout": "{\n  \"benchmark_task_counts\": {\n    \"calibration\": 10,\n    \"compression\": 10,\n    \"critique\": 10,\n    \"paraphrase_stability\": 10,\n    \"planning\": 10,\n    \"quantization_retention\": 10,\n    \"reasoning\": 10,\n    \"repair\": 10\n  },\n  \"benchmark_total_tasks\": 80\n}\n",
+    "stderr": ""
+  },
+  {
+    "cmd": "python3 scripts/expand_seed_targets.py",
+    "returncode": 0,
+    "stdout": "{\n  \"datasets\": {\n    \"data/calibrate/seed_examples.jsonl\": {\n      \"count\": 20,\n      \"target\": 20,\n      \"ready\": true\n    },\n    \"data/compress/seed_examples.jsonl\": {\n      \"count\": 20,\n      \"target\": 20,\n      \"ready\": true\n    },\n    \"data/critique/seed_examples.jsonl\": {\n      \"count\": 20,\n      \"target\": 20,\n      \"ready\": true\n    },\n    \"data/observe_infer/seed_examples.jsonl\": {\n      \"count\": 20,\n      \"target\": 20,\n      \"ready\": true\n    },\n    \"data/plan/seed_examples.jsonl\": {\n      \"count\": 20,\n      \"target\": 20,\n      \"ready\": true\n    },\n    \"data/repair/seed_examples.jsonl\": {\n      \"count\": 20,\n      \"target\": 20,\n      \"ready\": true\n    }\n  },\n  \"benchmarks\": {\n    \"benchmarks/calibration/seed_tasks.jsonl\": {\n      \"count\": 10,\n      \"target\": 10,\n      \"ready\": true\n    },\n    \"benchmarks/compression/seed_tasks.jsonl\": {\n      \"count\": 10,\n      \"target\": 10,\n      \"ready\": true\n    },\n    \"benchmarks/critique/seed_tasks.jsonl\": {\n      \"count\": 10,\n      \"target\": 10,\n      \"ready\": true\n    },\n    \"benchmarks/paraphrase_stability/seed_tasks.jsonl\": {\n      \"count\": 10,\n      \"target\": 10,\n      \"ready\": true\n    },\n    \"benchmarks/planning/seed_tasks.jsonl\": {\n      \"count\": 10,\n      \"target\": 10,\n      \"ready\": true\n    },\n    \"benchmarks/quantization_retention/seed_tasks.jsonl\": {\n      \"count\": 10,\n      \"target\": 10,\n      \"ready\": true\n    },\n    \"benchmarks/reasoning/seed_tasks.jsonl\": {\n      \"count\": 10,\n      \"target\": 10,\n      \"ready\": true\n    },\n    \"benchmarks/repair/seed_tasks.jsonl\": {\n      \"count\": 10,\n      \"target\": 10,\n      \"ready\": true\n    }\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "cmd": "python3 scripts/build_repo_capsule.py . --output examples/capsules/self_capsule.json",
+    "returncode": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"repo\": \"/mnt/data/cognition-core-starter-pack\",\n  \"tracked_files\": 39,\n  \"output\": \"examples/capsules/self_capsule.json\"\n}\n",
+    "stderr": ""
+  }
+]

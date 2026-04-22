@@ -1,0 +1,235 @@
+{
+  "profiles": [
+    {
+      "profile_id": "trprof_rus_cyrl_latn",
+      "language_id": "lang:rus",
+      "source_script": "Cyrl",
+      "target_script": "Latn",
+      "scheme_name": "basic_cyrillic_latin",
+      "coverage": "seeded",
+      "example_in": "привет",
+      "example_out": "privet",
+      "notes": "Broad seeded Cyrillic to Latin mapping. Follows approximate BGN/PCGN conventions for Russian. Soft/hard signs are dropped in output."
+    },
+    {
+      "profile_id": "trprof_chr_cher_latn",
+      "language_id": "lang:chr",
+      "source_script": "Cher",
+      "target_script": "Latn",
+      "scheme_name": "basic_cherokee_latin",
+      "coverage": "seeded",
+      "example_in": "ᎣᏏᏲ",
+      "example_out": "osiyo",
+      "notes": "Broad seeded Cherokee syllabary to Latin mapping. Based on standard syllabary chart equivalences."
+    },
+    {
+      "profile_id": "trprof_hin_deva_latn",
+      "language_id": "lang:hin",
+      "source_script": "Deva",
+      "target_script": "Latn",
+      "scheme_name": "broad_devanagari_latin_hint",
+      "coverage": "experimental",
+      "example_in": "धन्यवाद",
+      "example_out": "dhanyavaad",
+      "notes": "Broad hint transliteration only. Not IAST or ISO 15919. Aspirates marked with h digraphs. Retroflex not distinguished from dental."
+    },
+    {
+      "profile_id": "trprof_arb_arab_latn",
+      "language_id": "lang:arb",
+      "source_script": "Arab",
+      "target_script": "Latn",
+      "scheme_name": "broad_arabic_latin_hint",
+      "coverage": "experimental",
+      "example_in": "مرحبا",
+      "example_out": "marhaba",
+      "notes": "Broad hint transliteration only. Short vowels may be absent or approximated. Emphatic consonants not distinguished. Not ALA-LC."
+    },
+    {
+      "profile_id": "trprof_heb_hebr_latn",
+      "language_id": "lang:heb",
+      "source_script": "Hebr",
+      "target_script": "Latn",
+      "scheme_name": "broad_hebrew_latin_hint",
+      "coverage": "experimental",
+      "example_in": "שלום",
+      "example_out": "shalom",
+      "notes": "Broad hint transliteration only. Unpointed text may have ambiguous vowels. Not ALA-LC or Academy of Hebrew Language standard."
+    },
+    {
+      "profile_id": "trprof_jpn_hira_latn",
+      "language_id": "lang:jpn",
+      "source_script": "Hira",
+      "target_script": "Latn",
+      "scheme_name": "hepburn_hiragana_latin",
+      "coverage": "seeded",
+      "example_in": "こんにちは",
+      "example_out": "konnichiwa",
+      "notes": "Modified Hepburn romanization of Hiragana. Long vowels not marked. Double consonants shown as geminate. Standard for most English contexts."
+    },
+    {
+      "profile_id": "trprof_jpn_kana_latn",
+      "language_id": "lang:jpn",
+      "source_script": "Kana",
+      "target_script": "Latn",
+      "scheme_name": "hepburn_katakana_latin",
+      "coverage": "seeded",
+      "example_in": "アリガトウ",
+      "example_out": "arigatou",
+      "notes": "Modified Hepburn romanization of Katakana. Same conventions as Hiragana Hepburn. Long vowel marker (ー) rendered as vowel repetition."
+    },
+    {
+      "profile_id": "trprof_kor_hang_latn",
+      "language_id": "lang:kor",
+      "source_script": "Hang",
+      "target_script": "Latn",
+      "scheme_name": "revised_romanization_korean",
+      "coverage": "experimental",
+      "example_in": "안녕하세요",
+      "example_out": "annyeonghaseyo",
+      "notes": "Revised Romanization of Korean (South Korean official standard). Aspirated stops shown with h digraphs. Tense consonants shown as doubled. Assimilation rules partially applied."
+    },
+    {
+      "profile_id": "trprof_zho_hans_latn",
+      "language_id": "lang:cmn",
+      "source_script": "Hans",
+      "target_script": "Latn",
+      "scheme_name": "pinyin_mandarin_latin",
+      "coverage": "experimental",
+      "example_in": "你好",
+      "example_out": "nǐ hǎo",
+      "notes": "Pinyin romanization (PRC standard) of Mandarin Chinese. Tones marked with diacritics on vowels. Requires character-to-pinyin lookup; seeded examples only. Not a full character database."
+    },
+    {
+      "profile_id": "trprof_ell_grek_latn",
+      "language_id": "lang:ell",
+      "source_script": "Grek",
+      "target_script": "Latn",
+      "scheme_name": "broad_greek_latin_hint",
+      "coverage": "seeded",
+      "example_in": "γεια σου",
+      "example_out": "geia sou",
+      "notes": "Broad Modern Greek to Latin transliteration. Follows approximate ELOT 743 conventions. Ancient Greek not covered. Diacritics stripped in output."
+    },
+    {
+      "profile_id": "trprof_tha_thai_latn",
+      "language_id": "lang:tha",
+      "source_script": "Thai",
+      "target_script": "Latn",
+      "scheme_name": "paiboon_thai_latin",
+      "coverage": "experimental",
+      "example_in": "สวัสดี",
+      "example_out": "sawatdii",
+      "notes": "Approximate Paiboon romanization of Thai. Tones not fully captured. Vowel length marked by vowel repetition. Initial consonant class distinction not shown. Not Royal Institute standard."
+    },
+    {
+      "profile_id": "trprof_ukr_cyrl_latn",
+      "language_id": "lang:ukr",
+      "source_script": "Cyrl",
+      "target_script": "Latn",
+      "scheme_name": "bgn_pcgn_ukrainian",
+      "coverage": "seeded",
+      "example_in": "привіт",
+      "example_out": "pryvit",
+      "notes": "Broad BGN/PCGN-style Ukrainian Cyrillic to Latin. Distinct from Russian: Ukrainian /і/ → i, /и/ → y, /г/ → h (not g)."
+    },
+    {
+      "profile_id": "trprof_ben_beng_latn",
+      "language_id": "lang:ben",
+      "source_script": "Beng",
+      "target_script": "Latn",
+      "scheme_name": "broad_bangla_latin_hint",
+      "coverage": "experimental",
+      "example_in": "ধন্যবাদ",
+      "example_out": "dhonnobad",
+      "notes": "Broad Bengali (Bangla) to Latin transliteration hint. Not ISO 15919. Aspirates shown with h-digraph. Retroflex approximated."
+    },
+    {
+      "profile_id": "trprof_tam_taml_latn",
+      "language_id": "lang:tam",
+      "source_script": "Taml",
+      "target_script": "Latn",
+      "scheme_name": "broad_tamil_latin_hint",
+      "coverage": "experimental",
+      "example_in": "நன்றி",
+      "example_out": "nandri",
+      "notes": "Broad Tamil to Latin transliteration hint. Distinctive phonemes (ழ /ɻ/, ள /ɭ/, ற /r/) approximated. Not ISO 15919 or Madras University scheme."
+    },
+    {
+      "profile_id": "trprof_tel_telu_latn",
+      "language_id": "lang:tel",
+      "source_script": "Telu",
+      "target_script": "Latn",
+      "scheme_name": "broad_telugu_latin_hint",
+      "coverage": "experimental",
+      "example_in": "ధన్యవాదాలు",
+      "example_out": "dhanyavaadaalu",
+      "notes": "Broad Telugu to Latin transliteration hint. Retroflex consonants approximated. Not ISO 15919."
+    },
+    {
+      "profile_id": "trprof_mar_deva_latn",
+      "language_id": "lang:mar",
+      "source_script": "Deva",
+      "target_script": "Latn",
+      "scheme_name": "broad_devanagari_latin_hint_mar",
+      "coverage": "experimental",
+      "example_in": "धन्यवाद",
+      "example_out": "dhanyavaad",
+      "notes": "Broad Marathi Devanagari to Latin transliteration hint. Same scheme as Hindi but applied to Marathi orthography."
+    },
+    {
+      "profile_id": "trprof_pan_guru_latn",
+      "language_id": "lang:pan",
+      "source_script": "Guru",
+      "target_script": "Latn",
+      "scheme_name": "broad_gurmukhi_latin_hint",
+      "coverage": "experimental",
+      "example_in": "ਧੰਨਵਾਦ",
+      "example_out": "dhannavaad",
+      "notes": "Broad Punjabi Gurmukhi to Latin transliteration hint. Aspirates shown with h-digraph. Retroflex approximated."
+    },
+    {
+      "profile_id": "trprof_urd_arab_latn",
+      "language_id": "lang:urd",
+      "source_script": "Arab",
+      "target_script": "Latn",
+      "scheme_name": "broad_nastaliq_latin_hint",
+      "coverage": "experimental",
+      "example_in": "شکریہ",
+      "example_out": "shukriya",
+      "notes": "Broad Urdu (Nastaliq Arabic script) to Latin transliteration hint. Short vowels often absent in orthography; approximated here. Not ALA-LC."
+    },
+    {
+      "profile_id": "trprof_amh_ethi_latn",
+      "language_id": "lang:amh",
+      "source_script": "Ethi",
+      "target_script": "Latn",
+      "scheme_name": "broad_ethiopic_latin_hint",
+      "coverage": "experimental",
+      "example_in": "አሜሪካ",
+      "example_out": "amerIka",
+      "notes": "Broad Amharic Ethiopic (Ge'ez script) to Latin transliteration hint. Each Ethiopic character encodes consonant+vowel. Not ISO or UNGEGN standard."
+    },
+    {
+      "profile_id": "trprof_fas_arab_latn",
+      "language_id": "lang:fas",
+      "source_script": "Arab",
+      "target_script": "Latn",
+      "scheme_name": "broad_persian_latin_hint",
+      "coverage": "experimental",
+      "example_in": "سلام",
+      "example_out": "salaam",
+      "notes": "Broad Persian/Farsi Perso-Arabic to Latin transliteration hint. Persian uses additional letters beyond Arabic (پ/چ/ژ/گ). Not ALA-LC or UN standard. Short vowels approximated."
+    },
+    {
+      "profile_id": "trprof_yue_hant_latn",
+      "language_id": "lang:yue",
+      "source_script": "Hant",
+      "target_script": "Latn",
+      "scheme_name": "jyutping_cantonese_latin",
+      "coverage": "experimental",
+      "example_in": "你好",
+      "example_out": "nei5 hou2",
+      "notes": "Jyutping romanization of Cantonese (Traditional Chinese characters). Tones marked with numbers 1-6. Requires character-to-Jyutping lookup; seeded examples only. Not a full character database."
+    }
+  ]
+}

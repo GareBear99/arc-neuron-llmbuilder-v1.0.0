@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+; Template only. Review and adapt installer scope before use.
+[HKEY_CURRENT_USER\Software\Classes\.zip]
+@="ArcRAR.Zip"
+
+[HKEY_CURRENT_USER\Software\Classes\ArcRAR.Zip\shell\open\command]
+@="\"C:\\Program Files\\Arc-RAR\\arc-rar.exe\" gui \"%1\""

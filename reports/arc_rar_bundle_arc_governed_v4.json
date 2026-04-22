@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "bundle_id": "arc-rar-arc_governed_v4-e6f9d0df",
+  "candidate": "arc_governed_v4",
+  "bundle_path": "artifacts/archives/arc-rar-arc_governed_v4-e6f9d0df.arcrar.zip",
+  "sha256": "0d0e20f1b1d990446337ed1253b5d8eda17c42dbcc1bd65a2a675c39ccb9d9dd",
+  "file_count": 17,
+  "files_included": [
+    "lora_train_manifest.json",
+    "exemplar_train_manifest.json",
+    "promotion_decision.json",
+    "scored_outputs.json",
+    "quantization_retention_report.json",
+    "runtime_receipt_exemplar_20260414T233547Z.json",
+    "runtime_receipt_exemplar_20260421T061417Z.json",
+    "runtime_receipt_exemplar_20260420T060858Z.json",
+    "runtime_receipt_exemplar_20260420T012128Z.json",
+    "runtime_receipt_exemplar_20260419T043741Z.json",
+    "runtime_receipt_exemplar_20260419T043029Z.json",
+    "runtime_receipt_exemplar_20260421T061550Z.json",
+    "runtime_receipt_exemplar_20260419T205533Z.json",
+    "runtime_receipt_exemplar_20260419T090636Z.json",
+    "runtime_receipt_exemplar_20260421T060942Z.json",
+    "arc_native_arc_governed_v4.pt"
+  ],
+  "files_skipped": [],
+  "promoted": false,
+  "overall_weighted_score": 0.5625
+}

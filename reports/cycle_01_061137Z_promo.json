@@ -1,0 +1,79 @@
+{
+  "ok": true,
+  "candidate": {
+    "candidate_id": "cand_5d8986909b",
+    "run_id": "run_eb635690ebea",
+    "model": "cycle_01_061137Z",
+    "adapter": "exemplar",
+    "backend_identity": "exemplar:cycle_01_061137Z",
+    "prompt_profile": "minimal_doctrine",
+    "benchmark_version": "seed_tasks_v2",
+    "scorer_version": "v2-task-aware",
+    "reasoning": 0.3333,
+    "planning_quality": 1.0,
+    "planning": 1.0,
+    "critique_usefulness": 0.5,
+    "critique": 0.5,
+    "repair_success": 0.6667,
+    "compression_retention": 1.0,
+    "compression": 1.0,
+    "calibration_error": 0.15,
+    "paraphrase_stability": 0.8666,
+    "overall_weighted_score": 0.62,
+    "failure_rate": 0.0,
+    "latency_summary_ms": {
+      "avg": 3.09,
+      "max": 19.04
+    },
+    "artifacts": {
+      "scored_outputs": "/tmp/arc-unified-stack/results/cycle_01_061137Z_scored.json",
+      "promotion_report": "/tmp/arc-unified-stack/reports/cycle_01_061137Z_promo.json"
+    },
+    "created_at": "2026-04-21T06:12:00.682010+00:00",
+    "incumbent": false,
+    "gate_version": 2,
+    "decision": "archive_only"
+  },
+  "incumbent_before": {
+    "candidate_id": "cand_52ab80ca5f",
+    "run_id": "run_933731b5d9ba",
+    "model": "arc_governed_v2",
+    "adapter": "exemplar",
+    "backend_identity": "exemplar:arc_governed_v2",
+    "prompt_profile": "minimal_doctrine",
+    "benchmark_version": "seed_tasks_v2",
+    "scorer_version": "v2-task-aware",
+    "reasoning": 0.1667,
+    "planning_quality": 1.0,
+    "planning": 1.0,
+    "critique_usefulness": 0.5,
+    "critique": 0.5,
+    "repair_success": 0.6667,
+    "compression_retention": 1.0,
+    "compression": 1.0,
+    "calibration_error": 0.1667,
+    "paraphrase_stability": 0.8666,
+    "overall_weighted_score": 0.6247,
+    "failure_rate": 0.0,
+    "latency_summary_ms": {
+      "avg": 2.52,
+      "max": 25.86
+    },
+    "artifacts": {
+      "scored_outputs": "results/arc_governed_v2_scored_outputs.json",
+      "promotion_report": "reports/promotion_decision.json"
+    },
+    "created_at": "2026-04-19T21:02:00.680621+00:00",
+    "incumbent": false,
+    "gate_version": 2,
+    "decision": "promote"
+  },
+  "promoted": false,
+  "decision": "archive_only",
+  "decision_reason": "Score 0.6200 did not beat incumbent 0.6247.",
+  "hard_rejected": false,
+  "floor_violations": [],
+  "regression_violations": [],
+  "arc_rar_bundle": null,
+  "gate_version": 2
+}

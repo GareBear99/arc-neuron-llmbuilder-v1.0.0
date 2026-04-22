@@ -1,0 +1,27 @@
+[package]
+name = "obi-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+chrono.workspace = true
+obi-cache = { path = "../obi-cache" }
+obi-core = { path = "../obi-core" }
+obi-intake = { path = "../obi-intake" }
+obi-ir = { path = "../obi-ir" }
+obi-jit-cranelift = { path = "../obi-jit-cranelift" }
+obi-jit-llvm = { path = "../obi-jit-llvm" }
+obi-lane-dbt = { path = "../obi-lane-dbt" }
+obi-lane-managed = { path = "../obi-lane-managed" }
+obi-lane-native = { path = "../obi-lane-native" }
+obi-personality-linux = { path = "../obi-personality-linux" }
+obi-policy = { path = "../obi-policy" }
+obi-receipts = { path = "../obi-receipts" }
+
+obi-config = { path = "../obi-config" }

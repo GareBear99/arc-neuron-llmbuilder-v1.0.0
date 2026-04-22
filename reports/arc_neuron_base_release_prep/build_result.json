@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "contract": {
+    "prepared_at": "2026-04-17T22:34:20Z",
+    "model_name": "ARC-Neuron-Base",
+    "status": "external_checkpoint_required",
+    "dataset_path": "datasets/arc_neuron_base/arc_neuron_base_sft.jsonl",
+    "dataset_records": 136,
+    "gate_tasks_path": "benchmarks/arc_neuron_base/gate_tasks.jsonl",
+    "gate_tasks": 5,
+    "operator_entrypoint": "scripts/operator/promote_arc_neuron_base.sh",
+    "external_runtime_example": "configs/training/external_runtime.arc_neuron_base.example.yaml"
+  },
+  "ledger": {
+    "path": "artifacts/omnibinary/arc-neuron-base-release-prep-ledger.obin",
+    "sha256": "d013f497d70e3b9ee708cc225051225745f6b6e81aea24419f029097ebec33aa"
+  },
+  "archive": {
+    "path": "artifacts/archives/arc-neuron-base-release-prep.arcrar.zip",
+    "sha256": "f788303a9aea7492ac0ef0c5528c09307818e5d0273133f6e93ec3a06ca3b174"
+  }
+}

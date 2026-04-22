@@ -1,0 +1,8 @@
+version: 2
+status: expanded_starter_pack
+notes:
+  - Expanded starter datasets to 20 records per family.
+  - Expanded benchmark tasks to 10 tasks per family.
+  - Added local repo capsule generation that scans a real folder.
+  - Added quick-start and alpha-definition docs.
+  - Added dataset strategy documentation.

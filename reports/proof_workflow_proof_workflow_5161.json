@@ -1,0 +1,54 @@
+{
+  "workflow": "arc_proof_workflow_v1",
+  "started_at": "2026-04-20T06:06:01.376638+00:00",
+  "steps": {
+    "1_teach_term": {
+      "term": "floor model",
+      "definition": "frozen regression baseline that every candidate must beat to be promoted",
+      "term_id": "c65d24f7d634",
+      "approved": true,
+      "store_size": 9
+    },
+    "2_conversation": {
+      "receipt_id": "d4dd1d566737425db03be05a9c091446",
+      "chars": 1325,
+      "training_eligible": true,
+      "training_score": 0.3333,
+      "obin_events_before": 16,
+      "obin_events_after": 17,
+      "new_terms_absorbed": 0
+    },
+    "3_export": {
+      "pipeline_sft": {
+        "sft_path": "/tmp/arc-unified-stack/datasets/distillation_sft/proof_proof_workflow_5161.jsonl",
+        "sft_records": 8
+      },
+      "terminology_sft": {
+        "output": "/tmp/arc-unified-stack/datasets/distillation_sft/terminology_sft.jsonl",
+        "sft_records": 9
+      }
+    },
+    "4_training": {
+      "skipped": true
+    },
+    "5_benchmark": {
+      "skipped": true
+    },
+    "6_gate": {
+      "skipped": true
+    },
+    "7_explanation": {
+      "language_module_learned": false,
+      "omnibinary_recorded": true,
+      "training_data_generated": true
+    },
+    "8_obin_verify": {
+      "ok": true,
+      "event_count": 17,
+      "index_rebuilt": false,
+      "sha256": "16a2d79c955fd54433ed145ec116ee61e804c486949a60feccbc996e54554b55",
+      "path": "/tmp/arc-unified-stack/artifacts/omnibinary/arc_conversations.obin"
+    }
+  },
+  "completed_at": "2026-04-20T06:06:01.486362+00:00"
+}

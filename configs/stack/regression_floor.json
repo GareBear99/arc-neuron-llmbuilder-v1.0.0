@@ -1,0 +1,13 @@
+{
+  "locked_at": "2026-04-22T16:15:38.978090+00:00",
+  "note": "Locked from v6_conversation (0.7333) - conversation-derived promotion",
+  "scores": {
+    "repair": 0.4,
+    "calibration": 0.5,
+    "planning": 0.9,
+    "compression": 0.9,
+    "paraphrase_stability": 0.7799,
+    "overall_weighted_score": 0.66,
+    "failure_rate": 0.0
+  }
+}

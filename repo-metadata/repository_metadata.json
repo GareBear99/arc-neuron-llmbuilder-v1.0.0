@@ -1,0 +1,7 @@
+{
+  "name_suggestion": "cognition-core",
+  "description": "Production-hardened alpha cognition lab for building, benchmarking, shaping, and promoting GGUF-oriented local AI cognition candidates.",
+  "homepage_suggestion": "https://github.com/GareBear99/cognition-core",
+  "recommended_topics_file": "repo-metadata/repository_topics.txt",
+  "first_release_tag": "v0.3.0-alpha"
+}

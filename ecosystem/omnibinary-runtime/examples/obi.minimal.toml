@@ -1,0 +1,7 @@
+[cache]
+root = ".obi-cache"
+
+[policy]
+allow_native = true
+allow_managed = false
+allow_dbt = false

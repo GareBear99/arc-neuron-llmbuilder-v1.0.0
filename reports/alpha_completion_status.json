@@ -1,0 +1,6 @@
+{
+  "package_classification": "execution_first_alpha_cognition_lab",
+  "alpha_complete": true,
+  "frontier_complete": false,
+  "gguf_backend_wiring_present": true
+}

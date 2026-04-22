@@ -1,0 +1,61 @@
+{
+  "validation": {
+    "ok": true,
+    "jsonl_files_checked": 14,
+    "dataset_files": 6,
+    "benchmark_files": 8,
+    "dataset_total_records": 120,
+    "benchmark_total_tasks": 80,
+    "errors": []
+  },
+  "datasets": {
+    "dataset_counts": {
+      "data/calibrate/seed_examples.jsonl": 20,
+      "data/compress/seed_examples.jsonl": 20,
+      "data/critique/seed_examples.jsonl": 20,
+      "data/observe_infer/seed_examples.jsonl": 20,
+      "data/plan/seed_examples.jsonl": 20,
+      "data/repair/seed_examples.jsonl": 20
+    },
+    "dataset_total_records": 120
+  },
+  "benchmarks": {
+    "benchmark_task_counts": {
+      "calibration": 10,
+      "compression": 10,
+      "critique": 10,
+      "paraphrase_stability": 10,
+      "planning": 10,
+      "quantization_retention": 10,
+      "reasoning": 10,
+      "repair": 10
+    },
+    "benchmark_total_tasks": 80
+  },
+  "execution_run": {
+    "ok": true,
+    "adapter": "heuristic",
+    "prompt_profile": "minimal_doctrine",
+    "records": 80,
+    "output": "results/model_outputs.jsonl"
+  },
+  "scoring": {
+    "ok": true,
+    "output": "results/scored_outputs.json",
+    "overall_weighted_score": 0.4554
+  },
+  "promotion": {
+    "ok": true,
+    "promoted": "heuristic_minimal_doctrine",
+    "overall_weighted_score": 0.4554
+  },
+  "quantization_retention": {
+    "ok": true,
+    "output": "reports/quantization_retention_report.json",
+    "models_seen": 1
+  },
+  "screenshot_tool": {
+    "ok": true,
+    "output": "examples/attachments/sample_attachment_record.json"
+  }
+}

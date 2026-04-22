@@ -1,0 +1,133 @@
+{
+  "ok": true,
+  "created_at": "2026-04-16T02:39:35.002723+00:00",
+  "candidate": "arc_stack_bootstrap",
+  "base_model_ref": "qwen3_32b_lora",
+  "mode": "scaffold",
+  "root": "/mnt/data/work/arc-cognition-core-main/arc-cognition-core-main",
+  "env_template": "/mnt/data/work/arc-cognition-core-main/arc-cognition-core-main/reports/bootstrap_arc_stack/real_gguf_build.env.bootstrap",
+  "required_sources": {
+    "cleanroom": "/mnt/data/arc-lucifer-cleanroom-runtime-main (16).zip",
+    "arc_core": "/mnt/data/ARC-Core-main (18).zip",
+    "omnibinary": "/mnt/data/omnibinary-runtime-main (1).zip",
+    "arc_rar": "/mnt/data/Arc-RAR-main (3).zip",
+    "language_module": "/mnt/data/arc-language-module-main (4).zip"
+  },
+  "optional_sources": {
+    "turbo_os": {
+      "path": "/mnt/data/ARC-Turbo-OS-main (2).zip",
+      "exists": true
+    }
+  },
+  "steps": [
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/execution/run_training_readiness_gate.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"pass\",\n  \"missing\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/training/prepare_distillation_corpus.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"files\": [\n    {\n      \"path\": \"datasets/distillation_sft/seed_records.jsonl\",\n      \"records\": 50\n    },\n    {\n      \"path\": \"data/observe_infer/seed_examples.jsonl\",\n      \"records\": 20\n    },\n    {\n      \"path\": \"data/plan/seed_examples.jsonl\",\n      \"records\": 20\n    },\n    {\n      \"path\": \"data/critique/seed_examples.jsonl\",\n      \"records\": 20\n    },\n    {\n      \"path\": \"data/repair/seed_examples.jsonl\",\n      \"records\": 20\n    },\n    {\n      \"path\": \"data/compress/seed_examples.jsonl\",\n      \"records\": 20\n    },\n    {\n      \"path\": \"data/calibrate/seed_examples.jsonl\",\n      \"records\": 20\n    }\n  ],\n  \"total_records\": 170\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/build_supporting_repo_corpus.py",
+        "--source",
+        "/mnt/data/arc-lucifer-cleanroom-runtime-main (16).zip",
+        "--package",
+        "cleanroom",
+        "--limit",
+        "12"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"source_name\": \"cleanroom\",\n  \"source_path\": \"/mnt/data/arc-lucifer-cleanroom-runtime-main (16).zip\",\n  \"output_path\": \"datasets/runtime_mindshape/cleanroom_seed_records.jsonl\",\n  \"records_written\": 12,\n  \"doc_count\": 12,\n  \"created_at\": \"2026-04-16T02:39:18.203955+00:00\",\n  \"top_documents\": [\n    {\n      \"path\": \"arc-lucifer-cleanroom-runtime-main/README.md\",\n      \"summary\": \"ARC Lucifer Cleanroom Runtime | This repo is strongest when you want: | The honest strongest claim today is: | Plain-English use case | Instead of only producing text, the runtime can: | At-a-glance r\"\n    },\n    {\n      \"path\": \"arc-lucifer-cleanroom-runtime-main/docs/architecture.md\",\n      \"summary\": \"ARC Lucifer Cleanroom Runtime Architecture | System goal | Major subsystems | Control flow | Design priorities | Current boundary\"\n    },\n    {\n      \"path\": \"arc-lucifer-cleanroom-runtime-main/docs/doctrine.md\",\n      \"summary\": \"Doctrine | Core rules | v0.3 hardening additions\"\n    },\n    {\n      \"path\": \"arc-lucifer-cleanroom-runtime-main/docs/migration_plan.md\",\n      \"summary\": \"Migration Plan | v0.3 completed | next targets\"\n    },\n    {\n      \"path\": \"arc-lucifer-cleanroom-runtime-main/docs/proto_agi_integration.md\",\n      \"summary\": \"Proto-AGI Integration | In this package it contributes the idea of:\"\n    },\n    {\n      \"path\": \"arc-lucifer-cleanroom-runtime-main/docs/v1_4_audit_notes.md\",\n      \"summary\": \"v1.4 audit notes | Reviewed and corrected | Command surface added | Validation\"\n    },\n    {\n      \"path\": \"arc-lucifer-cleanroom-runtime-main/CHANGELOG.md\",\n      \"summary\": \"v2.17.0 | v2.15.0 | v2.11.2 | v2.10.5 | v2.10.4 | v2.10.3 | v2.10.2 | v2.9.1 | Changelog | v2.9.0 | v2.8.0 | v2.7.0 | v2.6.0 | v2.5.0 | v2.4.0 | v2.3.0 | v2.2.0 | v2.1.0 | v2.0.0 | v2.11.2 \\u2014 Full-Spec\"\n    },\n    {\n      \"path\": \"arc-lucifer-cleanroom-runtime-main/CONTRIBUTING.md\",\n      \"summary\": \"Contributing | Workflow | Local dev | python -m pip install -U pip | Pull requests\"\n    },\n    {\n      \"path\": \"arc-lucifer-cleanroom-runtime-main/LICENSE.md\",\n      \"summary\": \"No concise summary extracted.\"\n    },\n    {\n      \"path\": \"arc-lucifer-cleanroom-runtime-main/SECURITY.md\",\n      \"summary\": \"Security | Reporting | Scope | High-priority issues include:\"\n    }\n  ],\n  \"notes\": \"Curated markdown/doc extraction for cognition-core corpus shaping. Review before training.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/build_supporting_repo_corpus.py",
+        "--source",
+        "/mnt/data/ARC-Core-main (18).zip",
+        "--package",
+        "arc_core",
+        "--limit",
+        "12"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"source_name\": \"arc_core\",\n  \"source_path\": \"/mnt/data/ARC-Core-main (18).zip\",\n  \"output_path\": \"datasets/system_of_record/arc_core_seed_records.jsonl\",\n  \"records_written\": 12,\n  \"doc_count\": 12,\n  \"created_at\": \"2026-04-16T02:39:20.071058+00:00\",\n  \"top_documents\": [\n    {\n      \"path\": \"ARC-Core-main/ARC-Core_GitHub_split_bundle/ARC-Core-main 5/ARC_Console/AUDIT_REPORT_v2.md\",\n      \"summary\": \"ARC-Core DARPA Authenticity Upgrade Report v2 | Summary | Added system layers | Why this is more authentic | The build now expresses the shape expected from an ARC-like surveillance-analysis system: |\"\n    },\n    {\n      \"path\": \"ARC-Core-main/ARC-Core_GitHub_split_bundle/ARC-Core-main 5/ARC_Console/AUDIT_REPORT_v3_GEO.md\",\n      \"summary\": \"ARC-Core Audit Report v3 \\u2014 Geospatial Expansion | Added | Authenticity impact | Remaining gaps\"\n    },\n    {\n      \"path\": \"ARC-Core-main/ARC-Core_GitHub_split_bundle/ARC-Core-main 5/ARC_Console/AUDIT_REPORT_v4_SPATIAL_HARDENING.md\",\n      \"summary\": \"ARC-Core v4 Spatial Hardening Audit | Summary | Major upgrades in this pass | Why this matters | The previous build could estimate and store indoor-style tracks, but it still lacked several systems ne\"\n    },\n    {\n      \"path\": \"ARC-Core-main/ARC-Core_GitHub_split_bundle/ARC-Core-main 5/ARC_Console/AUDIT_REPORT_v5_DARPA.md\",\n      \"summary\": \"ARC-Core v5 DARPA-Style Audit | Executive verdict | Major findings from the line-by-line audit | 1) Version drift | 2) Weak write-path security posture | 3) Query bounds were under-constrained | 4) Se\"\n    },\n    {\n      \"path\": \"ARC-Core-main/ARC-Core_GitHub_split_bundle/ARC-Core-main 5/ARC_Console/AUDIT_REPORT_v6_COMPLETION.md\",\n      \"summary\": \"ARC-Core v6 Completion Audit | Summary | v6 closes the largest remaining gaps from the prior DARPA-style review by adding four missing system layers that materially improve authenticity and operator c\"\n    },\n    {\n      \"path\": \"ARC-Core-main/ARC_Console/AUDIT_REPORT_v2.md\",\n      \"summary\": \"ARC-Core DARPA Authenticity Upgrade Report v2 | Summary | Added system layers | Why this is more authentic | The build now expresses the shape expected from an ARC-like surveillance-analysis system: |\"\n    },\n    {\n      \"path\": \"ARC-Core-main/ARC_Console/AUDIT_REPORT_v3_GEO.md\",\n      \"summary\": \"ARC-Core Audit Report v3 \\u2014 Geospatial Expansion | Added | Authenticity impact | Remaining gaps\"\n    },\n    {\n      \"path\": \"ARC-Core-main/ARC_Console/AUDIT_REPORT_v4_SPATIAL_HARDENING.md\",\n      \"summary\": \"ARC-Core v4 Spatial Hardening Audit | Summary | Major upgrades in this pass | Why this matters | The previous build could estimate and store indoor-style tracks, but it still lacked several systems ne\"\n    },\n    {\n      \"path\": \"ARC-Core-main/ARC_Console/AUDIT_REPORT_v5_DARPA.md\",\n      \"summary\": \"ARC-Core v5 DARPA-Style Audit | Executive verdict | Major findings from the line-by-line audit | 1) Version drift | 2) Weak write-path security posture | 3) Query bounds were under-constrained | 4) Se\"\n    },\n    {\n      \"path\": \"ARC-Core-main/ARC_Console/AUDIT_REPORT_v6_COMPLETION.md\",\n      \"summary\": \"ARC-Core v6 Completion Audit | Summary | v6 closes the largest remaining gaps from the prior DARPA-style review by adding four missing system layers that materially improve authenticity and operator c\"\n    }\n  ],\n  \"notes\": \"Curated markdown/doc extraction for cognition-core corpus shaping. Review before training.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/build_supporting_repo_corpus.py",
+        "--source",
+        "/mnt/data/omnibinary-runtime-main (1).zip",
+        "--package",
+        "omnibinary",
+        "--limit",
+        "12"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"source_name\": \"omnibinary\",\n  \"source_path\": \"/mnt/data/omnibinary-runtime-main (1).zip\",\n  \"output_path\": \"datasets/execution_lane_reasoning/omnibinary_seed_records.jsonl\",\n  \"records_written\": 12,\n  \"doc_count\": 12,\n  \"created_at\": \"2026-04-16T02:39:21.795840+00:00\",\n  \"top_documents\": [\n    {\n      \"path\": \"omnibinary-runtime-main/docs/block-cache-contract.md\",\n      \"summary\": \"Block Cache Contract | Translated block caching is production-usable only when cache records include:\"\n    },\n    {\n      \"path\": \"omnibinary-runtime-main/docs/decoder-contract.md\",\n      \"summary\": \"Decoder Contract | A real decoder milestone is complete only when one guest ISA block is decoded into canonical operations with:\"\n    },\n    {\n      \"path\": \"omnibinary-runtime-main/docs/decoder-state-machine.md\",\n      \"summary\": \"Decoder State Machine | The first real decoder should move through these states:\"\n    },\n    {\n      \"path\": \"omnibinary-runtime-main/docs/translation-cache-phases.md\",\n      \"summary\": \"Translation Cache Phases | Phase A | Phase B | Phase C\"\n    },\n    {\n      \"path\": \"omnibinary-runtime-main/README.md\",\n      \"summary\": \"OmniBinary Runtime | It is designed to answer three practical questions for any target program: | Current status | What it does today | What it does not do yet | The missing center is still the true r\"\n    },\n    {\n      \"path\": \"omnibinary-runtime-main/docs/adr/0003-cache-integrity-before-speed.md\",\n      \"summary\": \"ADR 0003: Cache integrity before speed | Status | Decision | Rationale\"\n    },\n    {\n      \"path\": \"omnibinary-runtime-main/docs/adr/README.md\",\n      \"summary\": \"Architecture Decision Records\"\n    },\n    {\n      \"path\": \"omnibinary-runtime-main/docs/architecture.md\",\n      \"summary\": \"Architecture | Core flow | Current implemented path | Next-step lanes | Repo-state note\"\n    },\n    {\n      \"path\": \"omnibinary-runtime-main/docs/cache-format.md\",\n      \"summary\": \"Cache Format | Current cache layout:\"\n    },\n    {\n      \"path\": \"omnibinary-runtime-main/docs/cache-hygiene.md\",\n      \"summary\": \"Cache Hygiene\"\n    }\n  ],\n  \"notes\": \"Curated markdown/doc extraction for cognition-core corpus shaping. Review before training.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/build_supporting_repo_corpus.py",
+        "--source",
+        "/mnt/data/Arc-RAR-main (3).zip",
+        "--package",
+        "arc_rar",
+        "--limit",
+        "12"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"source_name\": \"arc_rar\",\n  \"source_path\": \"/mnt/data/Arc-RAR-main (3).zip\",\n  \"output_path\": \"datasets/receipt_archive/arc_rar_seed_records.jsonl\",\n  \"records_written\": 12,\n  \"doc_count\": 12,\n  \"created_at\": \"2026-04-16T02:39:23.562807+00:00\",\n  \"top_documents\": [\n    {\n      \"path\": \"Arc-RAR-main/README.md\",\n      \"summary\": \"Arc-RAR | Current truth | This repo is strongest today as: | What works now | Example flows | Archive plane | GUI control plane | arc-rar gui daemon-once | arc-rar gui watch --json | Batch the GUI bri\"\n    },\n    {\n      \"path\": \"Arc-RAR-main/apps/linux/arc-rar-gtk/README.md\",\n      \"summary\": \"Arc-RAR Linux shell target | First native milestones:\"\n    },\n    {\n      \"path\": \"Arc-RAR-main/apps/macos/ArcRAR/README.md\",\n      \"summary\": \"Arc-RAR macOS shell target | First native milestones:\"\n    },\n    {\n      \"path\": \"Arc-RAR-main/apps/windows/ArcRAR.WinUI/README-IMPLEMENTATION.md\",\n      \"summary\": \"WinUI implementation notes | Minimum production UI milestones:\"\n    },\n    {\n      \"path\": \"Arc-RAR-main/apps/windows/ArcRAR.WinUI/README.md\",\n      \"summary\": \"Arc-RAR Windows shell target | First native milestones:\"\n    },\n    {\n      \"path\": \"Arc-RAR-main/docs/architecture.md\",\n      \"summary\": \"Architecture | Arc-RAR is split into five layers: | Core principle | Every GUI action must map to: | Validation spine\"\n    },\n    {\n      \"path\": \"Arc-RAR-main/docs/comprehensive-production-audit.md\",\n      \"summary\": \"Arc-RAR Comprehensive Production Audit | Executive verdict | File-by-file status | Root | Common crate | Core crate | IPC crate | Automation crate | CLI crate | Native apps | Packaging | Scripts | Pro\"\n    },\n    {\n      \"path\": \"Arc-RAR-main/docs/implemented-vs-planned.md\",\n      \"summary\": \"Implemented vs Planned | Implemented | Partial | Planned / not yet complete | Newly tightened in this pass | Native bridge progress\"\n    },\n    {\n      \"path\": \"Arc-RAR-main/docs/symlinks-and-shell-integration.md\",\n      \"summary\": \"Symlinks, Launchers, and Shell Integration | Stable binary path doctrine | Preferred install pattern: | Unix-like example | User-local example | Windows example | File associations | macOS | Windows |\"\n    },\n    {\n      \"path\": \"Arc-RAR-main/packaging/linux/README.md\",\n      \"summary\": \"linux packaging | This folder is still a template area, but it should own:\"\n    }\n  ],\n  \"notes\": \"Curated markdown/doc extraction for cognition-core corpus shaping. Review before training.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/build_supporting_repo_corpus.py",
+        "--source",
+        "/mnt/data/arc-language-module-main (4).zip",
+        "--package",
+        "language_module",
+        "--limit",
+        "12"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"source_name\": \"language_module\",\n  \"source_path\": \"/mnt/data/arc-language-module-main (4).zip\",\n  \"output_path\": \"datasets/language_reasoning/language_module_seed_records.jsonl\",\n  \"records_written\": 12,\n  \"doc_count\": 12,\n  \"created_at\": \"2026-04-16T02:39:25.346611+00:00\",\n  \"top_documents\": [\n    {\n      \"path\": \"arc-language-module-main/docs/PROVIDER_RUNTIME_AUDIT.md\",\n      \"summary\": \"Provider Runtime Audit \\u2014 Current State (v0.24) | Three sources of runtime truth | Diagnostics | Current health of all providers | Health of a specific provider | Translation readiness for a specific p\"\n    },\n    {\n      \"path\": \"arc-language-module-main/README.md\",\n      \"summary\": \"ARC Language Module | At-a-glance feature fit | Quick read of the table | What this repo is, in plain English | If you want a one-line summary: | What it can do today | 1) Store structured language kn\"\n    },\n    {\n      \"path\": \"arc-language-module-main/docs/ARCHITECTURE.md\",\n      \"summary\": \"ARC Language Module \\u2014 Architecture (v0.24.0) | Core separation of concerns | Current state (v0.24.0) | Layer map | Arbitration | Provider model | Data flow: corpus ingestion | import_glottolog_csv / i\"\n    },\n    {\n      \"path\": \"arc-language-module-main/docs/ARC_CORE_REUSE_AUDIT.md\",\n      \"summary\": \"ARC Core Reuse Audit \\u2014 v0.24 | Fully implemented (package-owned, no external dep) | Seeded/partial (package-owned, limited coverage) | Boundary stubs (external runtime required) | ISO runtime code map\"\n    },\n    {\n      \"path\": \"arc-language-module-main/docs/GOVERNANCE_WORKFLOW.md\",\n      \"summary\": \"Governance Workflow | Review targets | Decisions | Capability maturity | Each language can also track implementation maturity by capability: | Typical capability names: | Examples | Review a pending l\"\n    },\n    {\n      \"path\": \"arc-language-module-main/docs/INGESTION_PLAN.md\",\n      \"summary\": \"Ingestion Plan \\u2014 Current State (v0.24) | Ingestion doctrine | Supported file formats | dry_run mode | Dedup reporting | Import order (recommended) | Real corpus acquisition (external gap \\u2014 honest) | U\"\n    },\n    {\n      \"path\": \"arc-language-module-main/docs/POLICY_AND_EVIDENCE.md\",\n      \"summary\": \"Policy + Evidence Layer | v18 adds three operational hardening pieces: | Default policies | Evidence bundle | The evidence exporter can include:\"\n    },\n    {\n      \"path\": \"arc-language-module-main/docs/RUNTIME_ORCHESTRATION.md\",\n      \"summary\": \"Runtime Orchestration | Why it exists | Runtime translation flow | Runtime speech flow | Current providers\"\n    },\n    {\n      \"path\": \"arc-language-module-main/FINAL_PRODUCTION_COMPLETION_REPORT_v026.md\",\n      \"summary\": \"ARC Language Module \\u2014 Final Production Completion Report v0.26.0 | Summary | Completed in v0.26.0 | 1) Version truth made authoritative | 2) Release integrity surface added | The release snapshot veri\"\n    },\n    {\n      \"path\": \"arc-language-module-main/FINAL_PRODUCTION_READINESS_REPORT_v027.md\",\n      \"summary\": \"ARC Language Module \\u2014 Final Production Readiness Report v0.27.0 | What was completed in this pass | 1) Seed-ingest maintainability hardening | 2) Release/build verification hardening | 3) Version / re\"\n    }\n  ],\n  \"notes\": \"Curated markdown/doc extraction for cognition-core corpus shaping. Review before training.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python3",
+        "scripts/training/run_candidate_artifact_chain.py",
+        "--candidate",
+        "arc_stack_bootstrap",
+        "--base-model",
+        "qwen3_32b_lora",
+        "--mode",
+        "scaffold"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"mode\": \"scaffold\",\n  \"steps\": [\n    {\n      \"cmd\": [\n        \"/opt/pyvenv/bin/python3\",\n        \"scripts/training/train_lora_candidate.py\",\n        \"--candidate\",\n        \"arc_stack_bootstrap\",\n        \"--base-model\",\n        \"qwen3_32b_lora\",\n        \"--mode\",\n        \"scaffold\"\n      ],\n      \"returncode\": 0,\n      \"stdout\": \"{\\n  \\\"ok\\\": true,\\n  \\\"manifest\\\": \\\"/mnt/data/work/arc-cognition-core-main/arc-cognition-core-main/exports/candidates/arc_stack_bootstrap/lora_train/artifact_manifest.json\\\",\\n  \\\"candidate\\\": \\\"arc_stack_bootstrap\\\",\\n  \\\"status\\\": \\\"scaffold_ready\\\"\\n}\\n\",\n      \"stderr\": \"\"\n    },\n    {\n      \"cmd\": [\n        \"/opt/pyvenv/bin/python3\",\n        \"scripts/training/train_preference_candidate.py\",\n        \"--candidate\",\n        \"arc_stack_bootstrap\",\n        \"--mode\",\n        \"scaffold\"\n      ],\n      \"returncode\": 0,\n      \"stdout\": \"{\\n  \\\"ok\\\": true,\\n  \\\"manifest\\\": \\\"/mnt/data/work/arc-cognition-core-main/arc-cognition-core-main/exports/candidates/arc_stack_bootstrap/preference_train/artifact_manifest.json\\\",\\n  \\\"candidate\\\": \\\"arc_stack_bootstrap\\\",\\n  \\\"status\\\": \\\"scaffold_ready\\\"\\n}\\n\",\n      \"stderr\": \"\"\n    },\n    {\n      \"cmd\": [\n        \"/opt/pyvenv/bin/python3\",\n        \"scripts/training/merge_adapters_stub.py\",\n        \"--candidate\",\n        \"arc_stack_bootstrap\",\n        \"--base-model\",\n        \"qwen3_32b_lora\",\n        \"--mode\",\n        \"scaffold\"\n      ],\n      \"returncode\": 0,\n      \"stdout\": \"{\\n  \\\"ok\\\": true,\\n  \\\"manifest\\\": \\\"/mnt/data/work/arc-cognition-core-main/arc-cognition-core-main/exports/candidates/arc_stack_bootstrap/merge/artifact_manifest.json\\\",\\n  \\\"candidate\\\": \\\"arc_stack_bootstrap\\\",\\n  \\\"status\\\": \\\"scaffold_ready\\\"\\n}\\n\",\n      \"stderr\": \"\"\n    },\n    {\n      \"cmd\": [\n        \"/opt/pyvenv/bin/python3\",\n        \"scripts/training/export_gguf_candidate.py\",\n        \"--candidate\",\n        \"arc_stack_bootstrap\",\n        \"--mode\",\n        \"scaffold\"\n      ],\n      \"returncode\": 0,\n      \"stdout\": \"{\\n  \\\"ok\\\": true,\\n  \\\"manifest\\\": \\\"/mnt/data/work/arc-cognition-core-main/arc-cognition-core-main/exports/candidates/arc_stack_bootstrap/gguf_export/artifact_manifest.json\\\",\\n  \\\"candidate\\\": \\\"arc_stack_bootstrap\\\",\\n  \\\"variants\\\": [\\n    \\\"f16\\\",\\n    \\\"q8_0\\\",\\n    \\\"q6_k\\\",\\n    \\\"q5_k_m\\\"\\n  ],\\n  \\\"status\\\": \\\"scaffold_ready\\\"\\n}\\n\",\n      \"stderr\": \"\"\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  ],
+  "next_action": "Provide a real pretrained or merged model directory plus llama.cpp conversion tooling, then copy the generated env template to configs/production/real_gguf_build.env and run scripts/production/build_real_gguf_handoff.sh"
+}

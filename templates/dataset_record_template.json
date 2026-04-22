@@ -1,0 +1,15 @@
+{
+  "id": "capability_000001",
+  "capability": "plan",
+  "domain": "code",
+  "difficulty": "medium",
+  "input": {
+    "task": "Describe the task here",
+    "context": "Optional supporting context"
+  },
+  "target": {
+    "analysis": "Preferred target behavior",
+    "confidence": 0.70
+  },
+  "tags": ["code", "planning"]
+}

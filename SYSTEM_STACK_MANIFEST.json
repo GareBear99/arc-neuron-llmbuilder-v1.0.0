@@ -1,0 +1,37 @@
+{
+  "package": "arc-unified-stack",
+  "version": "v0.1-unified",
+  "created_at": "2026-04-18T00:44:43.595979+00:00",
+  "components": {
+    "cognition_core": "integrated control center and model path",
+    "arc_language_module": "canonical lexical truth spine",
+    "omnibinary_runtime": "binary learning/state mirror substrate",
+    "arc_rar": "archive and rollback substrate",
+    "arc_core": "authority/event/case spine",
+    "cleanroom_runtime": "governed execution and replay spine"
+  },
+  "contracts": {
+    "language_module": "canonical truth",
+    "omnibinary": "deterministic binary mirror and ledger",
+    "arc_rar": "archive bundle and rollback storage",
+    "ancf": "canonical model artifact",
+    "gguf": "deployment/export artifact"
+  },
+  "operator_flows": [
+    "scripts/operator/run_omnibinary_bidirectional_roundtrip.sh",
+    "scripts/lab/arc_neuron_small_smoke.sh"
+  ],
+  "master_operator": {
+    "entrypoint": "scripts/master/run_arc_master_control.sh",
+    "doc": "docs/MASTER_OPERATOR_CONTROL.md",
+    "phases": [
+      "status",
+      "truth-latch",
+      "tiny-floor",
+      "small-build",
+      "small-v2-prep",
+      "base-prep",
+      "full-native-cycle"
+    ]
+  }
+}

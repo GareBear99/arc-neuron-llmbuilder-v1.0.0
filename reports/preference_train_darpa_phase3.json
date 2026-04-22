@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "manifest": "exports/candidates/darpa_phase3/preference_train/artifact_manifest.json",
+  "artifact_id": "preference_train_c421486b6881",
+  "stage": "preference_train",
+  "candidate": "darpa_phase3",
+  "created_at": "2026-04-14T21:28:10.039379+00:00",
+  "status": "scaffold_ready",
+  "config": "/mnt/data/cogphase3/cognition-core-github-launch-ready-alpha (2)/configs/training/preference_dpo.yaml",
+  "execution_mode": "scaffold",
+  "notes": "Preference stage remains scaffold by default, but now supports an external trainer command with deterministic manifests.",
+  "paths": {
+    "dataset": "/mnt/data/cogphase3/cognition-core-github-launch-ready-alpha (2)/datasets/distillation_preference/seed_pairs.jsonl",
+    "expected_adapter_dir": "/mnt/data/cogphase3/cognition-core-github-launch-ready-alpha (2)/exports/candidates/darpa_phase3/preference_train/adapter"
+  },
+  "metrics": {
+    "dataset_records": 45
+  }
+}

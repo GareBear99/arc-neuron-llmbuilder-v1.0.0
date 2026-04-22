@@ -1,0 +1,8 @@
+cache_dir = "~/.cache/omnibinary"
+receipt_limit = 50
+strict_policy = true
+allow_native_direct = true
+allow_native_attach = true
+allow_foreign_dbt = false
+allow_managed_portable = false
+emit_receipts = true

@@ -1,0 +1,11 @@
+{
+  "prepared_at": "2026-04-17T22:34:20Z",
+  "model_name": "ARC-Neuron-Base",
+  "status": "external_checkpoint_required",
+  "dataset_path": "datasets/arc_neuron_base/arc_neuron_base_sft.jsonl",
+  "dataset_records": 136,
+  "gate_tasks_path": "benchmarks/arc_neuron_base/gate_tasks.jsonl",
+  "gate_tasks": 5,
+  "operator_entrypoint": "scripts/operator/promote_arc_neuron_base.sh",
+  "external_runtime_example": "configs/training/external_runtime.arc_neuron_base.example.yaml"
+}

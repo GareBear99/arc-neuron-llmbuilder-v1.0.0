@@ -1,0 +1,62 @@
+{
+  "run_at": "2026-04-22T15:51:22.824788+00:00",
+  "config": {
+    "cycles": 3,
+    "tier": "tiny",
+    "steps": 30
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "candidate": "cycle_01_155103Z",
+      "ok": true,
+      "val_ppl": 37.3203,
+      "final_loss": 3.643512,
+      "score": 0.619,
+      "failure_count": 0,
+      "decision": "archive_only",
+      "promoted": false,
+      "floor_violations": [],
+      "regression_violations": []
+    },
+    {
+      "cycle": 2,
+      "candidate": "cycle_02_155110Z",
+      "ok": true,
+      "val_ppl": 37.3203,
+      "final_loss": 3.643512,
+      "score": 0.619,
+      "failure_count": 0,
+      "decision": "archive_only",
+      "promoted": false,
+      "floor_violations": [],
+      "regression_violations": []
+    },
+    {
+      "cycle": 3,
+      "candidate": "cycle_03_155116Z",
+      "ok": true,
+      "val_ppl": 37.3203,
+      "final_loss": 3.643512,
+      "score": 0.619,
+      "failure_count": 0,
+      "decision": "archive_only",
+      "promoted": false,
+      "floor_violations": [],
+      "regression_violations": []
+    }
+  ],
+  "summary": {
+    "total_cycles": 3,
+    "completed": 3,
+    "promoted": 0,
+    "archive_only": 3,
+    "rejected": 0,
+    "floor_breaches": 0,
+    "regressions": 0,
+    "score_min": 0.619,
+    "score_max": 0.619,
+    "score_mean": 0.619,
+    "loop_stable": true
+  }
+}

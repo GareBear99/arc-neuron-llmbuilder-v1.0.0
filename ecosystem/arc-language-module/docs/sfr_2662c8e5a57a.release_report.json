@@ -1,0 +1,30 @@
+{
+  "archive_path": "/mnt/data/work_lang2/arc-language-module-main/artifacts/archives/sfr_2662c8e5a57a.arcrar.zip",
+  "created_at": "2026-04-17T23:30:37.463012+00:00",
+  "ledger_path": "/mnt/data/work_lang2/arc-language-module-main/artifacts/omnibinary/sfr_2662c8e5a57a.obin",
+  "manifest_path": "/mnt/data/work_lang2/arc-language-module-main/artifacts/release_manifests/sfr_2662c8e5a57a.manifest.json",
+  "mode": "recurring_operator_pipeline",
+  "release_run_id": "sfr_2662c8e5a57a",
+  "signature_path": "/mnt/data/work_lang2/arc-language-module-main/artifacts/release_manifests/sfr_2662c8e5a57a.manifest.sig.json",
+  "summary": {
+    "arbitration_summary": {
+      "below_threshold": 220,
+      "canonical_already_present": 0,
+      "group_count": 223,
+      "source_weights": {
+        "cldr": 0.85,
+        "common_seed": 0.6,
+        "common_seed_local": 0.7,
+        "glottolog": 1.0,
+        "iso639_3": 0.9,
+        "user_custom": 0.5,
+        "user_submission": 0.45
+      },
+      "winner_count": 3
+    },
+    "gap_scan_languages": 0,
+    "import_sources": 3,
+    "promoted_count": 3,
+    "skipped_count": 220
+  }
+}

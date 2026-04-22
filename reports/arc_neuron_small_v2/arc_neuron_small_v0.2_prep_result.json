@@ -1,0 +1,8 @@
+{
+  "status": "ok",
+  "tokenizer_path": "artifacts/tokenizer/arc_neuron_small_v0.2_tokenizer.json",
+  "tokenizer_manifest": "reports/arc_neuron_small_v2/tokenizer_growth_manifest.json",
+  "ancf_path": "artifacts/ancf/ARC-Neuron-Small-Prep-v0.2.ancf",
+  "ledger_path": "artifacts/omnibinary/arc-neuron-small-v0.2-prep-ledger.obin",
+  "archive_path": "artifacts/archives/arc-neuron-small-v0.2-prep.arcrar.zip"
+}

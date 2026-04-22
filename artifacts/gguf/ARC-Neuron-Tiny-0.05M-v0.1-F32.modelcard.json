@@ -1,0 +1,22 @@
+{
+  "family": "ARC-Neuron",
+  "tier": "Tiny",
+  "version": "0.1",
+  "artifact": "artifacts/gguf/ARC-Neuron-Tiny-0.05M-v0.1-F32.gguf",
+  "legacy_artifact": "artifacts/gguf/ARC-Tiny-Demo-0.05M-v1.0-F32.gguf",
+  "architecture": "arc_tiny",
+  "parameter_estimate": "0.05M",
+  "format": "GGUF",
+  "precision": "F32",
+  "status": "working local baseline",
+  "claims_boundary": [
+    "not a flagship model",
+    "not llama.cpp compatible for this toy architecture",
+    "for local proof and regression only"
+  ],
+  "commands": {
+    "validate": "python3 scripts/lab/validate_arc_tiny_gguf.py",
+    "run": "python3 scripts/lab/run_arc_tiny_gguf.py --tokens 16",
+    "smoke": "scripts/lab/arc_neuron_tiny_smoke.sh"
+  }
+}

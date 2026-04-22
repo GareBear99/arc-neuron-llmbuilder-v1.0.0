@@ -1,0 +1,27 @@
+{
+  "artifact_id": "lora_train_8627953cd401",
+  "stage": "lora_train",
+  "candidate": "cycle_01_061137Z",
+  "created_at": "2026-04-21T06:11:58.813167+00:00",
+  "status": "completed",
+  "execution_mode": "arc_native",
+  "tier": "small",
+  "param_count": 174656,
+  "notes": "ARC-native small training completed. Real weights produced; no external trainer required.",
+  "training": {
+    "steps": 150,
+    "batch_size": 8,
+    "lr": 0.002,
+    "seed": 1337,
+    "corpus_bytes": 586024,
+    "initial_loss": 5.546804,
+    "final_loss": 2.903807,
+    "val_ppl": 18.4057
+  },
+  "paths": {
+    "pt_checkpoint": "exports/candidates/cycle_01_061137Z/lora_train/checkpoint/arc_native_cycle_01_061137Z.pt",
+    "gguf": "exports/candidates/cycle_01_061137Z/lora_train/checkpoint/arc_native_cycle_01_061137Z.gguf",
+    "exemplar": "exports/candidates/cycle_01_061137Z/exemplar_train/exemplar_model.json"
+  },
+  "sample": "ARC cognitiontphmrtlorhstHedyn ructurtevik\n\"  h.*farareres SA"
+}

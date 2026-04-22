@@ -1,0 +1,38 @@
+{
+  "family": "ARC-Neuron",
+  "registry_version": 1,
+  "members": [
+    {
+      "name": "ARC-Neuron Tiny",
+      "id": "arc-neuron-tiny",
+      "state": "tiny_regression_floor",
+      "artifacts": {
+        "gguf": "artifacts/gguf/ARC-Neuron-Tiny-Integrated-0.07M-v0.2-F32.gguf",
+        "ancf": "artifacts/ancf/ARC-Neuron-Tiny-Integrated-0.07M-v0.2.ancf",
+        "model_card": "artifacts/gguf/ARC-Neuron-Tiny-Integrated-0.07M-v0.2.modelcard.json"
+      }
+    },
+    {
+      "name": "ARC-Neuron Base",
+      "id": "arc-neuron-base",
+      "state": "base_release_contract_ready",
+      "artifacts": {
+        "sft_corpus": "datasets/arc_neuron_base/arc_neuron_base_sft.jsonl",
+        "gate_tasks": "benchmarks/arc_neuron_base/gate_tasks.jsonl",
+        "release_contract": "reports/arc_neuron_base_release_prep/release_contract.json"
+      }
+    }
+  ],
+  "models": [
+    {
+      "name": "ARC-Neuron Small",
+      "version": "v0.1",
+      "role": "first native-growth milestone after Tiny",
+      "artifacts": {
+        "gguf": "artifacts/gguf/ARC-Neuron-Small-0.18M-v0.1-F32.gguf",
+        "ancf": "artifacts/ancf/ARC-Neuron-Small-0.18M-v0.1.ancf"
+      },
+      "corpus_manifest": "reports/arc_neuron_small/corpus_manifest.json"
+    }
+  ]
+}

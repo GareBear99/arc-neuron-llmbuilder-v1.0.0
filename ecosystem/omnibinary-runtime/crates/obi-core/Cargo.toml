@@ -1,0 +1,9 @@
+[package]
+name = "obi-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono.workspace = true
+obi-receipts = { path = "../obi-receipts" }

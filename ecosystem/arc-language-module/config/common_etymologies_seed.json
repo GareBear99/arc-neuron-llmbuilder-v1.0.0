@@ -1,0 +1,965 @@
+{
+  "lexemes": [
+    {
+      "lexeme_id": "lex:eng:hello",
+      "language_id": "lang:eng",
+      "lemma": "hello",
+      "gloss": "greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:spa:hola",
+      "language_id": "lang:spa",
+      "lemma": "hola",
+      "gloss": "hello",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:fra:bonjour",
+      "language_id": "lang:fra",
+      "lemma": "bonjour",
+      "gloss": "good day",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:eng:thanks",
+      "language_id": "lang:eng",
+      "lemma": "thanks",
+      "gloss": "gratitude",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:spa:gracias",
+      "language_id": "lang:spa",
+      "lemma": "gracias",
+      "gloss": "thanks",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:ita:ciao",
+      "language_id": "lang:ita",
+      "lemma": "ciao",
+      "gloss": "hello/bye",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:vec:s-ciao",
+      "language_id": "lang:vec",
+      "lemma": "s-ciào",
+      "gloss": "Venetian: (I am your) slave — historical greeting. Source of Italian ciao.",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:deu:hallo",
+      "language_id": "lang:deu",
+      "lemma": "hallo",
+      "gloss": "greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:por:olá",
+      "language_id": "lang:por",
+      "lemma": "olá",
+      "gloss": "greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:nld:hallo",
+      "language_id": "lang:nld",
+      "lemma": "hallo",
+      "gloss": "greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:rus:привет",
+      "language_id": "lang:rus",
+      "lemma": "привет",
+      "gloss": "greeting (informal)",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:ukr:привіт",
+      "language_id": "lang:ukr",
+      "lemma": "привіт",
+      "gloss": "greeting (informal)",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:pol:cześć",
+      "language_id": "lang:pol",
+      "lemma": "cześć",
+      "gloss": "greeting (informal)",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:arb:مرحبا",
+      "language_id": "lang:arb",
+      "lemma": "مرحبا",
+      "gloss": "welcome, greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:heb:שלום",
+      "language_id": "lang:heb",
+      "lemma": "שלום",
+      "gloss": "peace, greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:hin:नमस_त",
+      "language_id": "lang:hin",
+      "lemma": "नमस्ते",
+      "gloss": "respectful greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:mar:नमस_क_र",
+      "language_id": "lang:mar",
+      "lemma": "नमस्कार",
+      "gloss": "respectful greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:ben:হ_য_ল",
+      "language_id": "lang:ben",
+      "lemma": "হ্যালো",
+      "gloss": "greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:urd:سلام",
+      "language_id": "lang:urd",
+      "lemma": "سلام",
+      "gloss": "peace, greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:pan:ਸਤ_ਸ_ਰ__ਅਕ_ਲ",
+      "language_id": "lang:pan",
+      "lemma": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ",
+      "gloss": "Sikh greeting: God is timeless",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:tam:வணக_கம",
+      "language_id": "lang:tam",
+      "lemma": "வணக்கம்",
+      "gloss": "respectful greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:tel:నమస_క_ర",
+      "language_id": "lang:tel",
+      "lemma": "నమస్కారం",
+      "gloss": "respectful greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:tur:merhaba",
+      "language_id": "lang:tur",
+      "lemma": "merhaba",
+      "gloss": "greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:fas:سلام",
+      "language_id": "lang:fas",
+      "lemma": "سلام",
+      "gloss": "peace, greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:cmn:你好",
+      "language_id": "lang:cmn",
+      "lemma": "你好",
+      "gloss": "you good — greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:yue:你好",
+      "language_id": "lang:yue",
+      "lemma": "你好",
+      "gloss": "you good — greeting (Cantonese)",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:jpn:こんにちは",
+      "language_id": "lang:jpn",
+      "lemma": "こんにちは",
+      "gloss": "good afternoon — greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:kor:안녕하세요",
+      "language_id": "lang:kor",
+      "lemma": "안녕하세요",
+      "gloss": "peace, greeting (formal)",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:vie:xin_chào",
+      "language_id": "lang:vie",
+      "lemma": "xin chào",
+      "gloss": "respectful greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:ind:halo",
+      "language_id": "lang:ind",
+      "lemma": "halo",
+      "gloss": "greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:msa:halo",
+      "language_id": "lang:msa",
+      "lemma": "halo",
+      "gloss": "greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:tha:สว_สด",
+      "language_id": "lang:tha",
+      "lemma": "สวัสดี",
+      "gloss": "greeting with well-wishing",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:swa:habari",
+      "language_id": "lang:swa",
+      "lemma": "habari",
+      "gloss": "news, how are you",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:amh:ሰላም",
+      "language_id": "lang:amh",
+      "lemma": "ሰላም",
+      "gloss": "peace, greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:nav:yá_át_ééh",
+      "language_id": "lang:nav",
+      "lemma": "yá'át'ééh",
+      "gloss": "it is good — greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:chr:ᎣᏏᏲ",
+      "language_id": "lang:chr",
+      "lemma": "ᎣᏏᏲ",
+      "gloss": "greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:crk:tânisi",
+      "language_id": "lang:crk",
+      "lemma": "tânisi",
+      "gloss": "how are you — greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:ell:γεια_σου",
+      "language_id": "lang:ell",
+      "lemma": "γεια σου",
+      "gloss": "health to you — greeting",
+      "canonical_meaning_key": "hello"
+    },
+    {
+      "lexeme_id": "lex:eng:thank_you",
+      "language_id": "lang:eng",
+      "lemma": "thank you",
+      "gloss": "expression of gratitude",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:fra:merci",
+      "language_id": "lang:fra",
+      "lemma": "merci",
+      "gloss": "mercy, thanks",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:deu:danke",
+      "language_id": "lang:deu",
+      "lemma": "danke",
+      "gloss": "thanks",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:por:obrigado",
+      "language_id": "lang:por",
+      "lemma": "obrigado",
+      "gloss": "obliged, thanks",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:ita:grazie",
+      "language_id": "lang:ita",
+      "lemma": "grazie",
+      "gloss": "graces, thanks",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:nld:dank_je",
+      "language_id": "lang:nld",
+      "lemma": "dank je",
+      "gloss": "thank you",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:rus:спасибо",
+      "language_id": "lang:rus",
+      "lemma": "спасибо",
+      "gloss": "save God — thanks",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:ukr:дякую",
+      "language_id": "lang:ukr",
+      "lemma": "дякую",
+      "gloss": "I thank",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:pol:dziękuję",
+      "language_id": "lang:pol",
+      "lemma": "dziękuję",
+      "gloss": "I thank",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:arb:شكرا",
+      "language_id": "lang:arb",
+      "lemma": "شكرا",
+      "gloss": "thanks",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:heb:תודה",
+      "language_id": "lang:heb",
+      "lemma": "תודה",
+      "gloss": "thanks",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:hin:धन_यव_द",
+      "language_id": "lang:hin",
+      "lemma": "धन्यवाद",
+      "gloss": "blessings, thanks",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:tam:நன_ற",
+      "language_id": "lang:tam",
+      "lemma": "நன்றி",
+      "gloss": "goodness",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:jpn:ありがとう",
+      "language_id": "lang:jpn",
+      "lemma": "ありがとう",
+      "gloss": "has generosity",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:kor:감사합니다",
+      "language_id": "lang:kor",
+      "lemma": "감사합니다",
+      "gloss": "I am grateful (formal)",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:cmn:谢谢",
+      "language_id": "lang:cmn",
+      "lemma": "谢谢",
+      "gloss": "thanks thanks",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:ell:ευχαριστώ",
+      "language_id": "lang:ell",
+      "lemma": "ευχαριστώ",
+      "gloss": "I am grateful",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:eng:goodbye",
+      "language_id": "lang:eng",
+      "lemma": "goodbye",
+      "gloss": "God be with you",
+      "canonical_meaning_key": "goodbye"
+    },
+    {
+      "lexeme_id": "lex:spa:adiós",
+      "language_id": "lang:spa",
+      "lemma": "adiós",
+      "gloss": "to God",
+      "canonical_meaning_key": "goodbye"
+    },
+    {
+      "lexeme_id": "lex:fra:au_revoir",
+      "language_id": "lang:fra",
+      "lemma": "au revoir",
+      "gloss": "until the seeing again",
+      "canonical_meaning_key": "goodbye"
+    },
+    {
+      "lexeme_id": "lex:deu:auf_Wiederse",
+      "language_id": "lang:deu",
+      "lemma": "auf Wiedersehen",
+      "gloss": "until the seeing again",
+      "canonical_meaning_key": "goodbye"
+    },
+    {
+      "lexeme_id": "lex:por:tchau",
+      "language_id": "lang:por",
+      "lemma": "tchau",
+      "gloss": "ciao (borrowed)",
+      "canonical_meaning_key": "goodbye"
+    },
+    {
+      "lexeme_id": "lex:ita:arrivederci",
+      "language_id": "lang:ita",
+      "lemma": "arrivederci",
+      "gloss": "until we see each other",
+      "canonical_meaning_key": "goodbye"
+    },
+    {
+      "lexeme_id": "lex:rus:до_свидания",
+      "language_id": "lang:rus",
+      "lemma": "до свидания",
+      "gloss": "until the meeting",
+      "canonical_meaning_key": "goodbye"
+    },
+    {
+      "lexeme_id": "lex:arb:مع_السلامة",
+      "language_id": "lang:arb",
+      "lemma": "مع السلامة",
+      "gloss": "go with safety",
+      "canonical_meaning_key": "goodbye"
+    },
+    {
+      "lexeme_id": "lex:jpn:さようなら",
+      "language_id": "lang:jpn",
+      "lemma": "さようなら",
+      "gloss": "if that is how it must be",
+      "canonical_meaning_key": "goodbye"
+    },
+    {
+      "lexeme_id": "lex:cmn:再见",
+      "language_id": "lang:cmn",
+      "lemma": "再见",
+      "gloss": "see again",
+      "canonical_meaning_key": "goodbye"
+    },
+    {
+      "lexeme_id": "lex:ell:αντίο",
+      "language_id": "lang:ell",
+      "lemma": "αντίο",
+      "gloss": "farewell",
+      "canonical_meaning_key": "goodbye"
+    },
+    {
+      "lexeme_id": "lex:eng:yes",
+      "language_id": "lang:eng",
+      "lemma": "yes",
+      "gloss": "affirmation",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:spa:sí",
+      "language_id": "lang:spa",
+      "lemma": "sí",
+      "gloss": "yes",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:fra:oui",
+      "language_id": "lang:fra",
+      "lemma": "oui",
+      "gloss": "yes (from Latin hoc ille)",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:deu:ja",
+      "language_id": "lang:deu",
+      "lemma": "ja",
+      "gloss": "yes",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:rus:да",
+      "language_id": "lang:rus",
+      "lemma": "да",
+      "gloss": "yes",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:jpn:はい",
+      "language_id": "lang:jpn",
+      "lemma": "はい",
+      "gloss": "yes (hai)",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:cmn:是",
+      "language_id": "lang:cmn",
+      "lemma": "是",
+      "gloss": "is, yes",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:ell:ναι",
+      "language_id": "lang:ell",
+      "lemma": "ναι",
+      "gloss": "yes",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:eng:no",
+      "language_id": "lang:eng",
+      "lemma": "no",
+      "gloss": "negation",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:spa:no",
+      "language_id": "lang:spa",
+      "lemma": "no",
+      "gloss": "no",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:fra:non",
+      "language_id": "lang:fra",
+      "lemma": "non",
+      "gloss": "no",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:deu:nein",
+      "language_id": "lang:deu",
+      "lemma": "nein",
+      "gloss": "no",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:rus:нет",
+      "language_id": "lang:rus",
+      "lemma": "нет",
+      "gloss": "no",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:jpn:いいえ",
+      "language_id": "lang:jpn",
+      "lemma": "いいえ",
+      "gloss": "no (iie)",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:cmn:不",
+      "language_id": "lang:cmn",
+      "lemma": "不",
+      "gloss": "not, no",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:ell:όχι",
+      "language_id": "lang:ell",
+      "lemma": "όχι",
+      "gloss": "no",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:nld:dank",
+      "language_id": "lang:nld",
+      "lemma": "dank je",
+      "gloss": "thank you",
+      "canonical_meaning_key": "thank_you"
+    },
+    {
+      "lexeme_id": "lex:nld:ja",
+      "language_id": "lang:nld",
+      "lemma": "ja",
+      "gloss": "yes",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:nld:nee",
+      "language_id": "lang:nld",
+      "lemma": "nee",
+      "gloss": "no",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:ukr:так",
+      "language_id": "lang:ukr",
+      "lemma": "так",
+      "gloss": "yes",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:ukr:ні",
+      "language_id": "lang:ukr",
+      "lemma": "ні",
+      "gloss": "no",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:ita:sì",
+      "language_id": "lang:ita",
+      "lemma": "sì",
+      "gloss": "yes",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:ita:no",
+      "language_id": "lang:ita",
+      "lemma": "no",
+      "gloss": "no",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:por:sim",
+      "language_id": "lang:por",
+      "lemma": "sim",
+      "gloss": "yes",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:por:não",
+      "language_id": "lang:por",
+      "lemma": "não",
+      "gloss": "no",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:swa:ndiyo",
+      "language_id": "lang:swa",
+      "lemma": "ndiyo",
+      "gloss": "yes",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:swa:hapana",
+      "language_id": "lang:swa",
+      "lemma": "hapana",
+      "gloss": "no",
+      "canonical_meaning_key": "no"
+    },
+    {
+      "lexeme_id": "lex:yue:拜拜",
+      "language_id": "lang:yue",
+      "lemma": "拜拜",
+      "gloss": "goodbye (informal)",
+      "canonical_meaning_key": "goodbye"
+    },
+    {
+      "lexeme_id": "lex:yue:係",
+      "language_id": "lang:yue",
+      "lemma": "係",
+      "gloss": "yes (Cantonese)",
+      "canonical_meaning_key": "yes"
+    },
+    {
+      "lexeme_id": "lex:yue:唔係",
+      "language_id": "lang:yue",
+      "lemma": "唔係",
+      "gloss": "no (Cantonese)",
+      "canonical_meaning_key": "no"
+    }
+  ],
+  "edges": [
+    {
+      "child_lexeme_id": "lex:ita:ciao",
+      "parent_lexeme_id": "lex:vec:s-ciao",
+      "relation": "descends_from",
+      "confidence": 0.78,
+      "source_ref": "seed:italian_ciao_venetian"
+    },
+    {
+      "child_lexeme_id": "lex:rus:нет",
+      "parent_lexeme_id": "lex:ukr:ні",
+      "relation": "cognate",
+      "confidence": 0.92,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Proto-Slavic negation cognates"
+    },
+    {
+      "child_lexeme_id": "lex:rus:нет",
+      "parent_lexeme_id": "lex:pol:nie",
+      "relation": "cognate",
+      "confidence": 0.88,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Proto-Slavic negation cognates"
+    },
+    {
+      "child_lexeme_id": "lex:spa:gracias",
+      "parent_lexeme_id": "lex:ita:grazie",
+      "relation": "cognate",
+      "confidence": 0.95,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Latin gratia → Romance cognates"
+    },
+    {
+      "child_lexeme_id": "lex:arb:سلام",
+      "parent_lexeme_id": "lex:urd:سلام",
+      "relation": "cognate",
+      "confidence": 0.98,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Arabic salaam borrowed into Urdu"
+    },
+    {
+      "child_lexeme_id": "lex:arb:مرحبا",
+      "parent_lexeme_id": "lex:fas:سلام",
+      "relation": "cognate",
+      "confidence": 0.72,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Semitic greeting roots"
+    },
+    {
+      "child_lexeme_id": "lex:por:tchau",
+      "parent_lexeme_id": "lex:ita:ciao",
+      "relation": "borrowing",
+      "confidence": 0.95,
+      "source_ref": "seed:etymology:borrowing",
+      "notes": "Portuguese borrowed Italian ciao"
+    },
+    {
+      "child_lexeme_id": "lex:jpn:ありがとう",
+      "parent_lexeme_id": "lex:por:obrigado",
+      "relation": "false_friend",
+      "confidence": 0.3,
+      "source_ref": "seed:etymology:false_friend",
+      "notes": "Disputed: folk etymology only; linguistically unrelated"
+    },
+    {
+      "child_lexeme_id": "lex:yue:你好",
+      "parent_lexeme_id": "lex:cmn:你好",
+      "relation": "cognate",
+      "confidence": 0.99,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Same characters; Mandarin and Cantonese share written form"
+    },
+    {
+      "child_lexeme_id": "lex:deu:hallo",
+      "parent_lexeme_id": "lex:nld:hallo",
+      "relation": "cognate",
+      "confidence": 0.98,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Direct Germanic cognates: both from Low German hallo"
+    },
+    {
+      "child_lexeme_id": "lex:eng:hello",
+      "parent_lexeme_id": "lex:deu:hallo",
+      "relation": "cognate",
+      "confidence": 0.85,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "English hello likely from Low German hallo (19th c. telephone use)"
+    },
+    {
+      "child_lexeme_id": "lex:eng:hello",
+      "parent_lexeme_id": "lex:nld:hallo",
+      "relation": "cognate",
+      "confidence": 0.82,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Same Germanic root as Dutch hallo"
+    },
+    {
+      "child_lexeme_id": "lex:rus:привет",
+      "parent_lexeme_id": "lex:ukr:привіт",
+      "relation": "cognate",
+      "confidence": 0.97,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Direct Slavic cognates: both from Proto-Slavic *pri-vět"
+    },
+    {
+      "child_lexeme_id": "lex:arb:مرحبا",
+      "parent_lexeme_id": "lex:heb:שלום",
+      "relation": "cognate",
+      "confidence": 0.6,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Both Semitic greetings, different roots: marhaba vs shalom (peace)"
+    },
+    {
+      "child_lexeme_id": "lex:amh:ሰላም",
+      "parent_lexeme_id": "lex:arb:مرحبا",
+      "relation": "borrowing",
+      "confidence": 0.75,
+      "source_ref": "seed:etymology:borrowing",
+      "notes": "Amharic sälam borrowed from Arabic salaam (peace)"
+    },
+    {
+      "child_lexeme_id": "lex:ita:grazie",
+      "parent_lexeme_id": "lex:fra:merci",
+      "relation": "false_friend",
+      "confidence": 0.15,
+      "source_ref": "seed:etymology:false_friend",
+      "notes": "Both mean thanks but from different Latin roots: gratia vs mercedem"
+    },
+    {
+      "child_lexeme_id": "lex:spa:gracias",
+      "parent_lexeme_id": "lex:por:obrigado",
+      "relation": "false_friend",
+      "confidence": 0.1,
+      "source_ref": "seed:etymology:false_friend",
+      "notes": "Different Romance routes to gratitude: gratia vs obligatus"
+    },
+    {
+      "child_lexeme_id": "lex:rus:спасибо",
+      "parent_lexeme_id": "lex:ukr:дякую",
+      "relation": "false_friend",
+      "confidence": 0.05,
+      "source_ref": "seed:etymology:false_friend",
+      "notes": "Different Slavic routes: spasibo (God save) vs dyakuyu (I thank)"
+    },
+    {
+      "child_lexeme_id": "lex:fra:oui",
+      "parent_lexeme_id": "lex:spa:sí",
+      "relation": "false_friend",
+      "confidence": 0.1,
+      "source_ref": "seed:etymology:false_friend",
+      "notes": "Different Romance yes: oui from hoc ille, sí from sic"
+    },
+    {
+      "child_lexeme_id": "lex:fra:non",
+      "parent_lexeme_id": "lex:spa:no",
+      "relation": "cognate",
+      "confidence": 0.95,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Romance no cognates from Latin non"
+    },
+    {
+      "child_lexeme_id": "lex:ita:arrivederci",
+      "parent_lexeme_id": "lex:fra:au_revoir",
+      "relation": "false_friend",
+      "confidence": 0.3,
+      "source_ref": "seed:etymology:false_friend",
+      "notes": "Both mean \"until we see again\" but not etymologically related"
+    },
+    {
+      "child_lexeme_id": "lex:deu:auf_Wiederse",
+      "parent_lexeme_id": "lex:fra:au_revoir",
+      "relation": "false_friend",
+      "confidence": 0.2,
+      "source_ref": "seed:etymology:false_friend",
+      "notes": "Same concept (until meeting again) from different Germanic/Romance roots"
+    },
+    {
+      "child_lexeme_id": "lex:spa:adiós",
+      "parent_lexeme_id": "lex:ita:arrivederci",
+      "relation": "false_friend",
+      "confidence": 0.05,
+      "source_ref": "seed:etymology:false_friend",
+      "notes": "Spanish: to God; Italian: until we see again — very different"
+    },
+    {
+      "child_lexeme_id": "lex:nld:dank",
+      "parent_lexeme_id": "lex:deu:danke",
+      "relation": "cognate",
+      "confidence": 0.99,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Near-identical Germanic: Dutch dank je, German Danke"
+    },
+    {
+      "child_lexeme_id": "lex:nld:ja",
+      "parent_lexeme_id": "lex:deu:ja",
+      "relation": "cognate",
+      "confidence": 0.99,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Identical Germanic yes particles"
+    },
+    {
+      "child_lexeme_id": "lex:nld:nee",
+      "parent_lexeme_id": "lex:deu:nein",
+      "relation": "cognate",
+      "confidence": 0.9,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Germanic no cognates"
+    },
+    {
+      "child_lexeme_id": "lex:ukr:так",
+      "parent_lexeme_id": "lex:rus:да",
+      "relation": "false_friend",
+      "confidence": 0.3,
+      "source_ref": "seed:etymology:false_friend",
+      "notes": "Both East Slavic yes but different forms"
+    },
+    {
+      "child_lexeme_id": "lex:ukr:ні",
+      "parent_lexeme_id": "lex:rus:нет",
+      "relation": "cognate",
+      "confidence": 0.92,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Slavic no cognates from Proto-Slavic"
+    },
+    {
+      "child_lexeme_id": "lex:ita:sì",
+      "parent_lexeme_id": "lex:spa:sí",
+      "relation": "cognate",
+      "confidence": 0.99,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Identical Romance yes from Latin sic"
+    },
+    {
+      "child_lexeme_id": "lex:ita:sì",
+      "parent_lexeme_id": "lex:por:sim",
+      "relation": "cognate",
+      "confidence": 0.9,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Romance yes cognates from Latin sic"
+    },
+    {
+      "child_lexeme_id": "lex:ita:no",
+      "parent_lexeme_id": "lex:spa:no",
+      "relation": "cognate",
+      "confidence": 0.99,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Identical Romance no from Latin non"
+    },
+    {
+      "child_lexeme_id": "lex:por:não",
+      "parent_lexeme_id": "lex:spa:no",
+      "relation": "cognate",
+      "confidence": 0.95,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Romance no cognates from Latin non"
+    },
+    {
+      "child_lexeme_id": "lex:por:não",
+      "parent_lexeme_id": "lex:fra:non",
+      "relation": "cognate",
+      "confidence": 0.92,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Romance no cognates from Latin non"
+    },
+    {
+      "child_lexeme_id": "lex:yue:拜拜",
+      "parent_lexeme_id": "lex:eng:goodbye",
+      "relation": "borrowing",
+      "confidence": 0.95,
+      "source_ref": "seed:etymology:borrowing",
+      "notes": "Cantonese baibai borrowed from English bye-bye"
+    },
+    {
+      "child_lexeme_id": "lex:yue:係",
+      "parent_lexeme_id": "lex:cmn:是",
+      "relation": "cognate",
+      "confidence": 0.85,
+      "source_ref": "seed:etymology:cognate",
+      "notes": "Cantonese hai and Mandarin shì both from Classical Chinese 是"
+    },
+    {
+      "child_lexeme_id": "lex:fra:au_revoir",
+      "parent_lexeme_id": "lex:deu:auf_Wiederse",
+      "relation": "false_friend",
+      "confidence": 0.2,
+      "source_ref": "seed:etymology:false_friend",
+      "notes": "Same concept (until meeting again) from French/German roots"
+    }
+  ]
+}

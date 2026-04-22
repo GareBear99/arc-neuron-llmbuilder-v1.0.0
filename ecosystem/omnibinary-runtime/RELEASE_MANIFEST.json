@@ -1,0 +1,25 @@
+{
+  "name": "omnibinary-runtime",
+  "version": "2.2.0",
+  "package_state": "production-track handoff",
+  "core_runtime_status": "not yet complete",
+  "validated_in_this_environment": false,
+  "package": "omnibinary-runtime-v2.0",
+  "highlights": [
+    "Professionalized README with clear product framing and command entrypoints",
+    "Expanded roadmap with phased execution milestones and exit criteria",
+    "Added product-positioning and use-case docs",
+    "Added GitHub issue templates and issue config",
+    "Tightened package messaging around current value vs future runtime claims"
+  ],
+  "added_in_v1_5": [
+    "readiness-report command",
+    "lane-matrix command",
+    "recursive fixture manifest",
+    "readiness and packaging boundary docs"
+  ],
+  "notes": [
+    "Added preflight and truth-ledger reporting."
+  ],
+  "package_name": "omnibinary-runtime-v2.2"
+}

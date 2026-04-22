@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Arc-RAR
+Exec=arc-rar gui
+Icon=arcrar
+MimeType=application/zip;application/x-7z-compressed;application/vnd.rar;application/x-tar;application/gzip;
+Categories=Utility;Archiving;
+Terminal=false

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_001",
+  "model_name": "candidate_name",
+  "adapter": "openai_compatible",
+  "backend": "llamacpp_server",
+  "prompt_profile": "minimal_doctrine",
+  "outputs_path": "results/model_outputs.jsonl",
+  "scored_path": "results/scored_outputs.json",
+  "promotion_report": "reports/promotion_decision.json",
+  "quantization_report": "reports/quantization_retention_report.json",
+  "notes": ""
+}

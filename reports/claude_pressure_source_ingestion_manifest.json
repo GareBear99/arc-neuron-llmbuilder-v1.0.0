@@ -1,0 +1,51 @@
+{
+  "source_name": "claude_pressure",
+  "source_path": "/mnt/data/claude-code-source-archive-gary-doman.zip",
+  "output_path": "datasets/workflow_pressure/claude_pressure_seed_records.jsonl",
+  "records_written": 10,
+  "doc_count": 10,
+  "created_at": "2026-04-14T21:21:40.128904+00:00",
+  "top_documents": [
+    {
+      "path": "claude-code-source-archive-gary-doman/RELEASE_SURFACE_AUDIT.md",
+      "summary": "Release Surface Audit | Updated surfaces | Remaining caution"
+    },
+    {
+      "path": "claude-code-source-archive-gary-doman/README.md",
+      "summary": "Gary Doman\u2019s Claude Code Source Archive | What this repository is | It is designed for people searching for: | Why this repo is useful | Maintainer | Table of Contents | What is Claude Code? | Reposit"
+    },
+    {
+      "path": "claude-code-source-archive-gary-doman/mcp-server/README.md",
+      "summary": "Gary Doman Claude Code Source Explorer MCP | What It Does | Transports | Tools | Resources | Prompts | Setup | Run Locally (STDIO) | or with custom source path: | Run Locally (HTTP) | Streamable HTTP "
+    },
+    {
+      "path": "claude-code-source-archive-gary-doman/docs/architecture.md",
+      "summary": "Architecture | High-Level Overview | Core Pipeline | 1. Entrypoint (`src/main.tsx`) | 2. Initialization (`src/entrypoints/`) | 3. Query Engine (`src/QueryEngine.ts`, ~46K lines) | 4. Tool System (`src"
+    },
+    {
+      "path": "claude-code-source-archive-gary-doman/prompts/02-runtime-shims.md",
+      "summary": "Prompt 02: Runtime Shims for `bun:bundle` Feature Flags & `MACRO` Globals | Context | 1. `bun:bundle` feature flags | 2. `MACRO` global object | Task | Part A: Create `bun:bundle` runtime module | ABL"
+    },
+    {
+      "path": "claude-code-source-archive-gary-doman/prompts/11-mcp-integration.md",
+      "summary": "Prompt 11: MCP Client/Server Integration | Context | Key Files | Task | Part A: Understand MCP client architecture | Part B: Understand MCP config format | Example config you might find: | Part C: Ver"
+    },
+    {
+      "path": "claude-code-source-archive-gary-doman/agent.md",
+      "summary": "name: repository-agent | Agent | Purpose | Core Rules | Workflow | Code Style | Validation | Notes"
+    },
+    {
+      "path": "claude-code-source-archive-gary-doman/CODE_OF_CONDUCT.md",
+      "summary": "Code of Conduct | Our standard | Examples of positive behavior: | Examples of unacceptable behavior: | Enforcement | Reporting"
+    },
+    {
+      "path": "claude-code-source-archive-gary-doman/CHANGELOG.md",
+      "summary": "Changelog | Unreleased | 0.1.0-gd1"
+    },
+    {
+      "path": "claude-code-source-archive-gary-doman/RELEASE_CHECKLIST.md",
+      "summary": "Release Checklist | GitHub repository settings | Public-facing files | Package / MCP metadata | Workflows | Content audit"
+    }
+  ],
+  "notes": "Curated markdown/doc extraction for cognition-core corpus shaping. Review before training."
+}

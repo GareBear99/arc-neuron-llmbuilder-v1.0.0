@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "record_count": 240,
+  "source_counts": {
+    "arc-language-module-replay-compaction.zip": 40,
+    "arc-cognition-core-arc-neuron-nextgen-contract-pack.zip": 40,
+    "ARC-Core-main (18).zip": 40,
+    "arc-lucifer-cleanroom-runtime-main (16).zip": 40,
+    "omnibinary-runtime-main (1).zip": 40,
+    "Arc-RAR-main (3).zip": 40
+  },
+  "missing_uploads": [],
+  "sft_path": "datasets/arc_neuron_small/arc_neuron_small_sft.jsonl",
+  "next_token_path": "datasets/arc_neuron_small/arc_neuron_small_next_token.txt",
+  "corpus_sha256": "bb3512adf9d53f73e916359b520d3b48dd642827756108f25e58b5faed2640cd",
+  "bytes": 508029
+}

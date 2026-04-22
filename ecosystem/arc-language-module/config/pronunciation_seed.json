@@ -1,0 +1,399 @@
+{
+  "profiles": [
+    {
+      "language_id": "lang:eng",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin",
+      "ipa_hint": "General American / broad hint only",
+      "examples": {
+        "hello": "hə-LOH",
+        "thanks": "THANGKS",
+        "world": "WURLD"
+      },
+      "notes": "Broad phonetic hint, not strict IPA. Significant dialect variation (GA vs RP)."
+    },
+    {
+      "language_id": "lang:spa",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin",
+      "ipa_hint": "Broad Spanish / IPA-ish hint",
+      "examples": {
+        "hola": "OH-la",
+        "gracias": "GRAH-syahs",
+        "español": "es-pah-NYOL"
+      },
+      "notes": "Seeded broad pronunciation guidance. Castilian vs Latin American variation not modeled."
+    },
+    {
+      "language_id": "lang:fra",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin",
+      "ipa_hint": "Broad French / phonetic hint",
+      "examples": {
+        "bonjour": "bohn-ZHOOR",
+        "merci": "mair-SEE",
+        "oui": "WEE"
+      },
+      "notes": "Broad French pronunciation guidance. Nasal vowels not fully captured in this scheme."
+    },
+    {
+      "language_id": "lang:deu",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin",
+      "ipa_hint": "Broad German / phonetic hint",
+      "examples": {
+        "hallo": "HA-loh",
+        "danke": "DAHN-keh",
+        "bitte": "BIT-teh"
+      },
+      "notes": "Standard German (Hochdeutsch) broad pronunciation hints. Umlauts approximated."
+    },
+    {
+      "language_id": "lang:por",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin",
+      "ipa_hint": "Broad Portuguese / phonetic hint",
+      "examples": {
+        "obrigado": "oh-bree-GAH-doo",
+        "olá": "oh-LAH",
+        "sim": "SIM"
+      },
+      "notes": "Broad Portuguese pronunciation. European vs Brazilian variation not modeled."
+    },
+    {
+      "language_id": "lang:ita",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin",
+      "ipa_hint": "Broad Italian / phonetic hint",
+      "examples": {
+        "ciao": "CHOW",
+        "grazie": "GRAHT-syeh",
+        "prego": "PREH-goh"
+      },
+      "notes": "Broad Italian pronunciation hints. Double consonants not fully marked."
+    },
+    {
+      "language_id": "lang:rus",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "cyrl_to_latn_seed",
+      "ipa_hint": "Broad Russian / IPA-ish hint",
+      "examples": {
+        "привет": "pree-VYET",
+        "спасибо": "spa-SEE-ba",
+        "да": "DA"
+      },
+      "notes": "Uses seeded Cyrillic transliteration plus stress-style hints. Vowel reduction not shown."
+    },
+    {
+      "language_id": "lang:ukr",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "cyrl_to_latn_seed",
+      "ipa_hint": "Broad Ukrainian / phonetic hint",
+      "examples": {
+        "привіт": "pree-VEET",
+        "дякую": "DYA-koo-yoo"
+      },
+      "notes": "Broad Ukrainian Cyrillic-to-Latin phonetic hints. Distinct from Russian: /i/ vs /ɪ/, /ɦ/ vs /x/."
+    },
+    {
+      "language_id": "lang:pol",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin",
+      "ipa_hint": "Broad Polish / phonetic hint",
+      "examples": {
+        "dziękuję": "djen-KOO-yeh",
+        "cześć": "CHESHCH"
+      },
+      "notes": "Broad Polish pronunciation hints. Nasal vowels and consonant clusters approximated."
+    },
+    {
+      "language_id": "lang:hin",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "deva_to_latn_seed",
+      "ipa_hint": "Broad Hindi / IPA-ish hint",
+      "examples": {
+        "धन्यवाद": "dhun-yuh-VAAD",
+        "नमस्ते": "nuh-MUS-teh"
+      },
+      "notes": "Seeded Devanagari pronunciation guidance. Aspirates shown with h-digraph."
+    },
+    {
+      "language_id": "lang:ben",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "beng_to_latn_seed",
+      "ipa_hint": "Broad Bengali / phonetic hint",
+      "examples": {
+        "ধন্যবাদ": "dhon-no-BAAD",
+        "হ্যালো": "HYA-lo"
+      },
+      "notes": "Broad Bengali phonetic hints. Script is Bangla (Beng). Retroflex distinction approximated."
+    },
+    {
+      "language_id": "lang:mar",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "deva_to_latn_seed",
+      "ipa_hint": "Broad Marathi / phonetic hint",
+      "examples": {
+        "धन्यवाद": "dhun-yuh-VAAD",
+        "नमस्कार": "nuh-mus-KAAR"
+      },
+      "notes": "Broad Marathi Devanagari pronunciation hints. Similar to Hindi but distinct phonology."
+    },
+    {
+      "language_id": "lang:tam",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "taml_to_latn_seed",
+      "ipa_hint": "Broad Tamil / phonetic hint",
+      "examples": {
+        "நன்றி": "NUN-dri",
+        "வணக்கம்": "vuh-NAK-kum"
+      },
+      "notes": "Broad Tamil phonetic hints. Distinctive retroflex and lateral phonemes approximated."
+    },
+    {
+      "language_id": "lang:tel",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "telu_to_latn_seed",
+      "ipa_hint": "Broad Telugu / phonetic hint",
+      "examples": {
+        "ధన్యవాదాలు": "dun-yuh-VAA-daa-lu",
+        "నమస్కారం": "nuh-mus-KAA-rum"
+      },
+      "notes": "Broad Telugu phonetic hints. Retroflex consonants approximated in Latin output."
+    },
+    {
+      "language_id": "lang:arb",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "arab_to_latn_seed",
+      "ipa_hint": "Broad Arabic / IPA-ish hint",
+      "examples": {
+        "شكرا": "SHUK-ran",
+        "مرحبا": "mar-HA-ba",
+        "نعم": "NA-am"
+      },
+      "notes": "Seeded MSA Arabic pronunciation guidance. Pharyngeal /ʕ/ and /ħ/ approximated."
+    },
+    {
+      "language_id": "lang:heb",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "hebr_to_latn_seed",
+      "ipa_hint": "Broad Hebrew / IPA-ish hint",
+      "examples": {
+        "תודה": "to-DAH",
+        "שלום": "sha-LOM"
+      },
+      "notes": "Seeded Hebrew pronunciation guidance. Modern Israeli pronunciation assumed."
+    },
+    {
+      "language_id": "lang:jpn",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "hepburn_romanization",
+      "ipa_hint": "Broad Japanese / Hepburn romanization hint",
+      "examples": {
+        "こんにちは": "kon-ni-CHI-wa",
+        "ありがとう": "a-ri-ga-TO"
+      },
+      "notes": "Modified Hepburn romanization used as pronunciation hint. Mora-timed; long vowels not marked."
+    },
+    {
+      "language_id": "lang:kor",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "revised_romanization",
+      "ipa_hint": "Broad Korean / Revised Romanization hint",
+      "examples": {
+        "안녕하세요": "an-nyeong-ha-SE-yo",
+        "감사합니다": "gam-sa-ham-ni-DA"
+      },
+      "notes": "Revised Romanization of Korean used as pronunciation hint. Tense stops not distinguished."
+    },
+    {
+      "language_id": "lang:cmn",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "pinyin",
+      "ipa_hint": "Mandarin Pinyin / tonal pronunciation hint",
+      "examples": {
+        "你好": "nǐ hǎo",
+        "谢谢": "xiè xie",
+        "再见": "zài jiàn"
+      },
+      "notes": "Pinyin romanization used as pronunciation hint. Tones marked with diacritics. Tone 5 (neutral) not always shown."
+    },
+    {
+      "language_id": "lang:vie",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin_tonal",
+      "ipa_hint": "Broad Vietnamese / tonal Quốc ngữ hint",
+      "examples": {
+        "xin chào": "sin CHOW",
+        "cảm ơn": "kam UN"
+      },
+      "notes": "Vietnamese uses Latin script with diacritics. Six tones not fully captured in this simplified hint."
+    },
+    {
+      "language_id": "lang:ind",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin",
+      "ipa_hint": "Broad Indonesian / phonetic hint",
+      "examples": {
+        "terima kasih": "teh-REE-ma KA-see",
+        "selamat": "seh-LA-mat"
+      },
+      "notes": "Indonesian uses Latin script; pronunciation is relatively phonemic. Broad hints sufficient."
+    },
+    {
+      "language_id": "lang:chr",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "cher_to_latn_seed",
+      "ipa_hint": "Broad Cherokee / syllabary romanization hint",
+      "examples": {
+        "ᎣᏏᏲ": "o-si-yo",
+        "ᎤᎵᎮᎵᏍᏗ": "u-li-he-li-s-di"
+      },
+      "notes": "Seeded Cherokee syllabary pronunciation guidance. Each syllabary character maps to a CV syllable."
+    },
+    {
+      "language_id": "lang:amh",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "ethi_to_latn_seed",
+      "ipa_hint": "Broad Amharic / Ge'ez syllabary hint",
+      "examples": {
+        "ሰላም": "se-LAM",
+        "አሜሪካ": "a-ME-ri-ka"
+      },
+      "notes": "Broad Amharic phonetic hints. Each Ethiopic character is a consonant+vowel syllable."
+    },
+    {
+      "language_id": "lang:crk",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "cree_sro",
+      "ipa_hint": "Broad Plains Cree / Standard Roman Orthography hint",
+      "examples": {
+        "tânisi": "TAA-ni-si",
+        "ᑖᓂᓯ": "TAA-ni-si"
+      },
+      "notes": "Broad Plains Cree pronunciation hints using Standard Roman Orthography (SRO). Long vowels marked with macrons. Very minimal hint — consult Cree language resources."
+    },
+    {
+      "language_id": "lang:fas",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "arab_to_latn_seed",
+      "ipa_hint": "Broad Persian/Farsi phonetic hint",
+      "examples": {
+        "سلام": "sa-LAAM",
+        "ممنون": "mam-NOON"
+      },
+      "notes": "Broad Persian pronunciation hints. Written in Perso-Arabic script. Word-final stress typical."
+    },
+    {
+      "language_id": "lang:msa",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin",
+      "ipa_hint": "Broad Malay / phonetic hint",
+      "examples": {
+        "terima kasih": "teh-REE-ma KA-see",
+        "selamat": "seh-LA-mat"
+      },
+      "notes": "Broad Malay pronunciation hints. Closely related to Indonesian."
+    },
+    {
+      "language_id": "lang:nav",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "navajo_official",
+      "ipa_hint": "Broad Navajo / phonetic hint",
+      "examples": {
+        "yá'át'ééh": "yaa-aht-EEH",
+        "ahéhee'": "a-HEH-hee"
+      },
+      "notes": "Broad Navajo pronunciation hints. Tonal language; ejective and glottal consonants. Official Navajo orthography used."
+    },
+    {
+      "language_id": "lang:nld",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin",
+      "ipa_hint": "Broad Dutch / phonetic hint",
+      "examples": {
+        "hallo": "HA-lo",
+        "dankjewel": "DANK-yuh-vel"
+      },
+      "notes": "Broad Dutch pronunciation hints. G/Ch as velar fricative approximated."
+    },
+    {
+      "language_id": "lang:pan",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "guru_to_latn_seed",
+      "ipa_hint": "Broad Punjabi / tonal phonetic hint",
+      "examples": {
+        "ਸਤ ਸ੍ਰੀ ਅਕਾਲ": "sat sri a-KAAL",
+        "ਧੰਨਵਾਦ": "dhun-VAD"
+      },
+      "notes": "Broad Punjabi pronunciation hints. Three tones; Gurmukhi script. Tone not fully marked here."
+    },
+    {
+      "language_id": "lang:swa",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin",
+      "ipa_hint": "Broad Swahili / phonetic hint",
+      "examples": {
+        "asante": "a-SAN-teh",
+        "karibu": "ka-REE-boo"
+      },
+      "notes": "Broad Swahili pronunciation. Bantu language; penultimate stress. Latin script."
+    },
+    {
+      "language_id": "lang:tha",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "paiboon_thai_latin",
+      "ipa_hint": "Broad Thai / tonal phonetic hint",
+      "examples": {
+        "สวัสดี": "sa-WAT-dee",
+        "ขอบคุณ": "KORP-koon"
+      },
+      "notes": "Broad Thai pronunciation hints (Paiboon-style). Five tones; not all marked here."
+    },
+    {
+      "language_id": "lang:tur",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "native_latin",
+      "ipa_hint": "Broad Turkish / phonetic hint",
+      "examples": {
+        "merhaba": "mair-HA-ba",
+        "teşekkürler": "teh-shek-kur-LAIR"
+      },
+      "notes": "Broad Turkish pronunciation. Vowel harmony fundamental feature. Latin script."
+    },
+    {
+      "language_id": "lang:urd",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "arab_to_latn_seed",
+      "ipa_hint": "Broad Urdu / phonetic hint",
+      "examples": {
+        "شکریہ": "shuk-REE-ya",
+        "سلام": "sa-LAAM"
+      },
+      "notes": "Broad Urdu pronunciation hints. Nastaliq script; aspirates and retroflexes phonemic."
+    },
+    {
+      "language_id": "lang:yue",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "jyutping_cantonese",
+      "ipa_hint": "Broad Cantonese / Jyutping romanisation hint",
+      "examples": {
+        "你好": "nei5 hou2",
+        "唔該": "m4 goi1"
+      },
+      "notes": "Broad Cantonese pronunciation hints using Jyutping romanization. Six tones marked with numbers (1-6). Stop finals preserved."
+    },
+    {
+      "language_id": "lang:ell",
+      "profile_kind": "native_pronunciation",
+      "romanization_scheme": "elot_743_approx",
+      "ipa_hint": "Broad Modern Greek / phonetic hint",
+      "examples": {
+        "γεια σου": "YA-soo",
+        "ευχαριστώ": "ef-ha-ri-STO",
+        "καλημέρα": "ka-li-ME-ra"
+      },
+      "notes": "Broad Modern Greek pronunciation hints. ELOT 743 romanization used as basis. Ancient Greek not modeled."
+    }
+  ]
+}

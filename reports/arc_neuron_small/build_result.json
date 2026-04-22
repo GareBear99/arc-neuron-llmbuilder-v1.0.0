@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "corpus": {
+    "status": "ok",
+    "record_count": 240,
+    "source_counts": {
+      "arc-language-module-replay-compaction.zip": 40,
+      "arc-cognition-core-arc-neuron-nextgen-contract-pack.zip": 40,
+      "ARC-Core-main (18).zip": 40,
+      "arc-lucifer-cleanroom-runtime-main (16).zip": 40,
+      "omnibinary-runtime-main (1).zip": 40,
+      "Arc-RAR-main (3).zip": 40
+    },
+    "missing_uploads": [],
+    "sft_path": "datasets/arc_neuron_small/arc_neuron_small_sft.jsonl",
+    "next_token_path": "datasets/arc_neuron_small/arc_neuron_small_next_token.txt",
+    "corpus_sha256": "bb3512adf9d53f73e916359b520d3b48dd642827756108f25e58b5faed2640cd",
+    "bytes": 508029
+  },
+  "training": {
+    "status": "ok",
+    "steps": 140,
+    "seed": 1337,
+    "final_loss": 2.6953988075256348,
+    "initial_loss": 5.520273685455322,
+    "sample": "ARC-Neuron language spinealintid T_arthef oaponitibomacagygectpts pt ad-",
+    "gguf_path": "artifacts/gguf/ARC-Neuron-Small-0.18M-v0.1-F32.gguf",
+    "pt_path": "artifacts/gguf/arc-neuron-small.pt",
+    "ancf_path": "artifacts/ancf/ARC-Neuron-Small-0.18M-v0.1.ancf",
+    "ledger_path": "artifacts/omnibinary/arc-neuron-small-learning-ledger.obin",
+    "archive_path": "artifacts/archives/arc-neuron-small-release.arcrar.zip",
+    "parameter_count": 174656
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "ARC-Neuron Tiny Integrated",
+  "family": "ARC-Neuron",
+  "tier": "Tiny Integrated",
+  "artifact": "ARC-Neuron-Tiny-Integrated-0.07M-v0.2-F32.gguf",
+  "purpose": "Integrated end-to-end demo with Omnibinary learning ledger and Arc-RAR rollback/archive bundle.",
+  "limits": [
+    "Tiny research-scale model only",
+    "Not a frontier pretrained checkpoint",
+    "Demonstrates full local artifact and archive path rather than final flagship capability"
+  ],
+  "spine": [
+    "ARC Core",
+    "Cleanroom Runtime",
+    "Omnibinary",
+    "Arc-RAR",
+    "ARC Language Module"
+  ]
+}

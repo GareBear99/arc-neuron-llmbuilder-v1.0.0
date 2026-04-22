@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "manifest": "exports/candidates/darpa_seed/gguf_export/artifact_manifest.json",
+  "artifact_id": "gguf_export_847adc060b45",
+  "stage": "gguf_export",
+  "candidate": "darpa_seed",
+  "created_at": "2026-04-14T21:21:48.179926+00:00",
+  "status": "scaffold_ready",
+  "notes": "Real GGUF conversion still needs the selected exporter/runtime, but the artifact contract is now explicit and versionable.",
+  "paths": {
+    "merge_manifest": "exports/candidates/darpa_seed/merge/artifact_manifest.json",
+    "expected_variants": [
+      "exports/candidates/darpa_seed/gguf_export/darpa_seed.f16.gguf",
+      "exports/candidates/darpa_seed/gguf_export/darpa_seed.q8_0.gguf",
+      "exports/candidates/darpa_seed/gguf_export/darpa_seed.q6_k.gguf",
+      "exports/candidates/darpa_seed/gguf_export/darpa_seed.q5_k_m.gguf"
+    ]
+  },
+  "source_manifest": {
+    "merge_present": true,
+    "variants": [
+      "f16",
+      "q8_0",
+      "q6_k",
+      "q5_k_m"
+    ]
+  }
+}

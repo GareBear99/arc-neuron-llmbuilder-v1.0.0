@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+  <mime-type type="application/vnd.rar"><comment>RAR archive</comment><glob pattern="*.rar"/></mime-type>
+  <mime-type type="application/x-7z-compressed"><comment>7-Zip archive</comment><glob pattern="*.7z"/></mime-type>
+  <mime-type type="application/zip"><comment>ZIP archive</comment><glob pattern="*.zip"/></mime-type>
+</mime-info>

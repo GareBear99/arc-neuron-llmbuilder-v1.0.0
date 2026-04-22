@@ -1,0 +1,15 @@
+{
+  "artifact_id": "exemplar_train_f19cdee9cb7e",
+  "stage": "exemplar_train",
+  "candidate": "cycle_03_155116Z",
+  "created_at": "2026-04-22T15:51:20.758009+00:00",
+  "status": "completed",
+  "execution_mode": "arc_native_sidecar",
+  "notes": "Exemplar artifact built from SFT corpus for benchmark harness.",
+  "paths": {
+    "artifact": "exports/candidates/cycle_03_155116Z/exemplar_train/exemplar_model.json"
+  },
+  "metrics": {
+    "record_count": 623
+  }
+}

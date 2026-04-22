@@ -1,0 +1,4 @@
+name=aarch64-smoke
+arch=aarch64
+format=elf
+purpose=first-real-decoder target

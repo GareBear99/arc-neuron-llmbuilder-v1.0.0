@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arc-language-module"
+version = "0.27.0"
+description = "Governed multilingual language/script/lineage/translation substrate with auditable runtime routing"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = [
+  "linguistics", "language", "multilingual", "nlp", "translation",
+  "transliteration", "phonology", "lineage", "etymology", "governance",
+  "low-resource", "indigenous-languages", "sqlite",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Text Processing :: Linguistic",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+dependencies = [
+  "pydantic>=2.6",
+  "fastapi>=0.110"
+]
+
+[project.optional-dependencies]
+# Optional local NMT backend — not required for core package operation
+argos = ["argostranslate>=1.9"]
+# API server dependencies
+server = ["uvicorn>=0.28"]
+# Development / test
+dev = ["pytest>=8.0", "pytest-cov>=4.0"]
+
+[project.scripts]
+arc-lang = "arc_lang.cli.main:main"
+
+[project.urls]
+"Bug Tracker" = "https://github.com/arc-system/arc-language-module/issues"
+Documentation = "https://github.com/arc-system/arc-language-module/docs"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

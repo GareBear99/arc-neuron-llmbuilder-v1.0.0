@@ -1,0 +1,837 @@
+# heuristic_ci
+
+## Summary
+- Adapter: heuristic
+- Prompt profile: minimal_doctrine
+
+## Intended role
+Candidate cognition model evaluated inside the cognition lab package.
+
+## Current metrics snapshot
+```json
+{
+  "models": [
+    {
+      "candidate_id": "cand_92c9767149",
+      "run_id": "run_3a8f88a710ca",
+      "model": "arc_governed_v1",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:arc_governed_v1",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.1667,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.4667,
+      "critique": 0.4667,
+      "repair_success": 0.6667,
+      "compression_retention": 0.8167,
+      "compression": 0.8167,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.85,
+      "overall_weighted_score": 0.6122,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 2.61,
+        "max": 18.26
+      },
+      "artifacts": {
+        "scored_outputs": "results/arc_governed_v1_scored_outputs.json",
+        "promotion_report": "reports/promotion_decision.json"
+      },
+      "created_at": "2026-04-19T09:03:24.036730+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "promote"
+    },
+    {
+      "candidate_id": "cand_52ab80ca5f",
+      "run_id": "run_933731b5d9ba",
+      "model": "arc_governed_v2",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:arc_governed_v2",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.1667,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.5,
+      "critique": 0.5,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.6247,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 2.52,
+        "max": 25.86
+      },
+      "artifacts": {
+        "scored_outputs": "results/arc_governed_v2_scored_outputs.json",
+        "promotion_report": "reports/promotion_decision.json"
+      },
+      "created_at": "2026-04-19T21:02:00.680621+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "promote"
+    },
+    {
+      "candidate_id": "cand_e0844d6d03",
+      "run_id": "run_bfdd8a4fc922",
+      "model": "arc_governed_v3",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:arc_governed_v3",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.1667,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.5,
+      "critique": 0.5,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.6128,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 2.88,
+        "max": 8.71
+      },
+      "artifacts": {
+        "scored_outputs": "results/arc_governed_v3_scored_outputs.json",
+        "promotion_report": "reports/promotion_decision.json"
+      },
+      "created_at": "2026-04-20T01:24:03.312796+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_00a99fabc7",
+      "run_id": "run_dd18e3e231eb",
+      "model": "demo_20260420T193950Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:demo_20260420T193950Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.3333,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.5,
+      "critique": 0.5,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.15,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.62,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 4.11,
+        "max": 64.14
+      },
+      "artifacts": {
+        "scored_outputs": "/tmp/arc-unified-stack/results/demo_20260420T193950Z_scored.json",
+        "promotion_report": "/tmp/arc-unified-stack/reports/demo_promo_20260420T193950Z.json"
+      },
+      "created_at": "2026-04-20T19:40:01.916668+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_5d8986909b",
+      "run_id": "run_eb635690ebea",
+      "model": "cycle_01_061137Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:cycle_01_061137Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.3333,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.5,
+      "critique": 0.5,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.15,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.62,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 3.09,
+        "max": 19.04
+      },
+      "artifacts": {
+        "scored_outputs": "/tmp/arc-unified-stack/results/cycle_01_061137Z_scored.json",
+        "promotion_report": "/tmp/arc-unified-stack/reports/cycle_01_061137Z_promo.json"
+      },
+      "created_at": "2026-04-21T06:12:00.682010+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_cec3e9bea7",
+      "run_id": "run_ccb628e3aa2a",
+      "model": "cycle_02_061200Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:cycle_02_061200Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.3333,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.5,
+      "critique": 0.5,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.15,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.62,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 3.58,
+        "max": 24.62
+      },
+      "artifacts": {
+        "scored_outputs": "/tmp/arc-unified-stack/results/cycle_02_061200Z_scored.json",
+        "promotion_report": "/tmp/arc-unified-stack/reports/cycle_02_061200Z_promo.json"
+      },
+      "created_at": "2026-04-21T06:12:24.949014+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_11ed0f84c8",
+      "run_id": "run_a56581868fe2",
+      "model": "cycle_03_061224Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:cycle_03_061224Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.3333,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.5,
+      "critique": 0.5,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.15,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.62,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 2.99,
+        "max": 26.31
+      },
+      "artifacts": {
+        "scored_outputs": "/tmp/arc-unified-stack/results/cycle_03_061224Z_scored.json",
+        "promotion_report": "/tmp/arc-unified-stack/reports/cycle_03_061224Z_promo.json"
+      },
+      "created_at": "2026-04-21T06:12:50.483889+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_48dabb35e4",
+      "run_id": "run_f755edef4a18",
+      "model": "demo_20260421T061257Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:demo_20260421T061257Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.3333,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.5,
+      "critique": 0.5,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.15,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.62,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 3.11,
+        "max": 21.52
+      },
+      "artifacts": {
+        "scored_outputs": "/tmp/arc-unified-stack/results/demo_20260421T061257Z_scored.json",
+        "promotion_report": "/tmp/arc-unified-stack/reports/demo_promo_20260421T061257Z.json"
+      },
+      "created_at": "2026-04-21T06:13:10.145765+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_af28c7b2b4",
+      "run_id": "run_b61bf622be7e",
+      "model": "demo_20260422T155048Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:demo_20260422T155048Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.3333,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.5,
+      "critique": 0.5,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.15,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.619,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.23,
+        "max": 14.23
+      },
+      "artifacts": {
+        "scored_outputs": "/private/tmp/arc-unified-stack/arc-unified-stack-final/results/demo_20260422T155048Z_scored.json",
+        "promotion_report": "/private/tmp/arc-unified-stack/arc-unified-stack-final/reports/demo_promo_20260422T155048Z.json"
+      },
+      "created_at": "2026-04-22T15:50:56.144919+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_f26fc1a186",
+      "run_id": "run_828a8878a194",
+      "model": "cycle_01_155103Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:cycle_01_155103Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.3333,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.5,
+      "critique": 0.5,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.15,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.619,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.44,
+        "max": 13.7
+      },
+      "artifacts": {
+        "scored_outputs": "/private/tmp/arc-unified-stack/arc-unified-stack-final/results/cycle_01_155103Z_scored.json",
+        "promotion_report": "/private/tmp/arc-unified-stack/arc-unified-stack-final/reports/cycle_01_155103Z_promo.json"
+      },
+      "created_at": "2026-04-22T15:51:10.329635+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_e34bf1948f",
+      "run_id": "run_972eacc0e55f",
+      "model": "cycle_02_155110Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:cycle_02_155110Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.3333,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.5,
+      "critique": 0.5,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.15,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.619,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.31,
+        "max": 13.83
+      },
+      "artifacts": {
+        "scored_outputs": "/private/tmp/arc-unified-stack/arc-unified-stack-final/results/cycle_02_155110Z_scored.json",
+        "promotion_report": "/private/tmp/arc-unified-stack/arc-unified-stack-final/reports/cycle_02_155110Z_promo.json"
+      },
+      "created_at": "2026-04-22T15:51:16.405850+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_478004813e",
+      "run_id": "run_f844d48a0877",
+      "model": "cycle_03_155116Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:cycle_03_155116Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.3333,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.5,
+      "critique": 0.5,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.15,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.619,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.13,
+        "max": 12.87
+      },
+      "artifacts": {
+        "scored_outputs": "/private/tmp/arc-unified-stack/arc-unified-stack-final/results/cycle_03_155116Z_scored.json",
+        "promotion_report": "/private/tmp/arc-unified-stack/arc-unified-stack-final/reports/cycle_03_155116Z_promo.json"
+      },
+      "created_at": "2026-04-22T15:51:22.804571+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_24214e15e5",
+      "run_id": "run_50c7deb8eaec",
+      "model": "arc_governed_v4",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:arc_governed_v4",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 1.0,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.75,
+      "critique": 0.75,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.7128,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.4,
+        "max": 15.35
+      },
+      "artifacts": {
+        "scored_outputs": "results/arc_governed_v4_scored_outputs.json",
+        "promotion_report": "reports/promotion_decision.json"
+      },
+      "created_at": "2026-04-22T16:01:31.115978+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "promote"
+    },
+    {
+      "candidate_id": "cand_f883dd92b0",
+      "run_id": "run_d2ae8047c126",
+      "model": "arc_governed_v5",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:arc_governed_v5",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 1.0,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.75,
+      "critique": 0.75,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.7169,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.62,
+        "max": 14.5
+      },
+      "artifacts": {
+        "scored_outputs": "results/arc_governed_v5_scored_outputs.json",
+        "promotion_report": "reports/promotion_decision.json"
+      },
+      "created_at": "2026-04-22T16:03:38.664364+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "promote"
+    },
+    {
+      "candidate_id": "cand_c70f0dd6ca",
+      "run_id": "run_65a57d3f2a1f",
+      "model": "arc_governed_v6",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:arc_governed_v6",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 1.0,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.75,
+      "critique": 0.75,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.7169,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.55,
+        "max": 13.85
+      },
+      "artifacts": {
+        "scored_outputs": "results/arc_governed_v6_scored.json",
+        "promotion_report": "reports/promotion_decision.json"
+      },
+      "created_at": "2026-04-22T16:04:09.827313+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_beaa4d0d32",
+      "run_id": "run_cbb9e9288ac9",
+      "model": "arc_governed_v7_regressed",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:arc_governed_v7_regressed",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 0.3333,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.5,
+      "critique": 0.5,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.15,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.619,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.24,
+        "max": 13.8
+      },
+      "artifacts": {
+        "scored_outputs": "results/arc_governed_v7_scored.json",
+        "promotion_report": "reports/promotion_decision.json"
+      },
+      "created_at": "2026-04-22T16:04:39.985992+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_daf93bfbbb",
+      "run_id": "run_2cc15d08a527",
+      "model": "demo_20260422T160615Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:demo_20260422T160615Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 1.0,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.75,
+      "critique": 0.75,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.7169,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.68,
+        "max": 14.63
+      },
+      "artifacts": {
+        "scored_outputs": "/private/tmp/arc-unified-stack/arc-unified-stack-final/results/demo_20260422T160615Z_scored.json",
+        "promotion_report": "/private/tmp/arc-unified-stack/arc-unified-stack-final/reports/demo_promo_20260422T160615Z.json"
+      },
+      "created_at": "2026-04-22T16:06:21.764248+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_6c588f2422",
+      "run_id": "run_6de943e82a85",
+      "model": "cycle_01_160925Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:cycle_01_160925Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 1.0,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.75,
+      "critique": 0.75,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.7169,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.72,
+        "max": 14.23
+      },
+      "artifacts": {
+        "scored_outputs": "/private/tmp/arc-unified-stack/arc-unified-stack-final/results/cycle_01_160925Z_scored.json",
+        "promotion_report": "/private/tmp/arc-unified-stack/arc-unified-stack-final/reports/cycle_01_160925Z_promo.json"
+      },
+      "created_at": "2026-04-22T16:09:33.133911+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_a89f219313",
+      "run_id": "run_773667f3dfc2",
+      "model": "cycle_02_160933Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:cycle_02_160933Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 1.0,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.75,
+      "critique": 0.75,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.7169,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.61,
+        "max": 14.84
+      },
+      "artifacts": {
+        "scored_outputs": "/private/tmp/arc-unified-stack/arc-unified-stack-final/results/cycle_02_160933Z_scored.json",
+        "promotion_report": "/private/tmp/arc-unified-stack/arc-unified-stack-final/reports/cycle_02_160933Z_promo.json"
+      },
+      "created_at": "2026-04-22T16:09:39.411023+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_29f67fb323",
+      "run_id": "run_b22b815391a5",
+      "model": "cycle_03_160939Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:cycle_03_160939Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 1.0,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.75,
+      "critique": 0.75,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.7169,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.76,
+        "max": 14.3
+      },
+      "artifacts": {
+        "scored_outputs": "/private/tmp/arc-unified-stack/arc-unified-stack-final/results/cycle_03_160939Z_scored.json",
+        "promotion_report": "/private/tmp/arc-unified-stack/arc-unified-stack-final/reports/cycle_03_160939Z_promo.json"
+      },
+      "created_at": "2026-04-22T16:09:45.737545+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_c20900e394",
+      "run_id": "run_ef46b15a68de",
+      "model": "cycle_04_160945Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:cycle_04_160945Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 1.0,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.75,
+      "critique": 0.75,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.7169,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.54,
+        "max": 14.17
+      },
+      "artifacts": {
+        "scored_outputs": "/private/tmp/arc-unified-stack/arc-unified-stack-final/results/cycle_04_160945Z_scored.json",
+        "promotion_report": "/private/tmp/arc-unified-stack/arc-unified-stack-final/reports/cycle_04_160945Z_promo.json"
+      },
+      "created_at": "2026-04-22T16:09:53.141027+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_66ef5c2c6e",
+      "run_id": "run_9690152fb134",
+      "model": "cycle_05_160953Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:cycle_05_160953Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 1.0,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.75,
+      "critique": 0.75,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.7169,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 6.73,
+        "max": 14.41
+      },
+      "artifacts": {
+        "scored_outputs": "/private/tmp/arc-unified-stack/arc-unified-stack-final/results/cycle_05_160953Z_scored.json",
+        "promotion_report": "/private/tmp/arc-unified-stack/arc-unified-stack-final/reports/cycle_05_160953Z_promo.json"
+      },
+      "created_at": "2026-04-22T16:10:00.840295+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    },
+    {
+      "candidate_id": "cand_ada638c74e",
+      "run_id": "run_60aa72ae75cf",
+      "model": "arc_governed_v6_conversation",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:arc_governed_v6_conversation",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 1.0,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.75,
+      "critique": 0.75,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8666,
+      "overall_weighted_score": 0.7333,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 7.62,
+        "max": 18.26
+      },
+      "artifacts": {
+        "scored_outputs": "results/arc_governed_v6_conversation_scored.json",
+        "promotion_report": "reports/promotion_decision.json"
+      },
+      "created_at": "2026-04-22T16:15:17.512546+00:00",
+      "incumbent": true,
+      "gate_version": 2,
+      "decision": "promote"
+    },
+    {
+      "candidate_id": "cand_cfa6c6aba1",
+      "run_id": "run_e34c91a2fa0e",
+      "model": "demo_20260422T161637Z",
+      "adapter": "exemplar",
+      "backend_identity": "exemplar:demo_20260422T161637Z",
+      "prompt_profile": "minimal_doctrine",
+      "benchmark_version": "seed_tasks_v2",
+      "scorer_version": "v2-task-aware",
+      "reasoning": 1.0,
+      "planning_quality": 1.0,
+      "planning": 1.0,
+      "critique_usefulness": 0.75,
+      "critique": 0.75,
+      "repair_success": 0.6667,
+      "compression_retention": 1.0,
+      "compression": 1.0,
+      "calibration_error": 0.1667,
+      "paraphrase_stability": 0.8833,
+      "overall_weighted_score": 0.7333,
+      "failure_rate": 0.0,
+      "latency_summary_ms": {
+        "avg": 7.87,
+        "max": 17.54
+      },
+      "artifacts": {
+        "scored_outputs": "/private/tmp/arc-unified-stack/arc-unified-stack-final/results/demo_20260422T161637Z_scored.json",
+        "promotion_report": "/private/tmp/arc-unified-stack/arc-unified-stack-final/reports/demo_promo_20260422T161637Z.json"
+      },
+      "created_at": "2026-04-22T16:16:43.543373+00:00",
+      "incumbent": false,
+      "gate_version": 2,
+      "decision": "archive_only"
+    }
+  ]
+}
+```
+
+## Known limitations
+- Alpha lab scaffold
+- Not a trained frontier checkpoint by default
+- Benchmark scoring is starter-grade unless replaced with richer evaluators

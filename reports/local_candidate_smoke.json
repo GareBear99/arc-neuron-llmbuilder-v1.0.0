@@ -1,0 +1,38 @@
+{
+  "validation": {
+    "cmd": [
+      "/opt/pyvenv/bin/python",
+      "scripts/validate_repo.py"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"jsonl_files_checked\": 16,\n  \"yaml_files_checked\": 21,\n  \"json_files_checked\": 23,\n  \"dataset_files\": 6,\n  \"benchmark_files\": 8,\n  \"dataset_total_records\": 120,\n  \"benchmark_total_tasks\": 80,\n  \"errors\": []\n}\n",
+    "stderr": ""
+  },
+  "dataset_count": {
+    "cmd": [
+      "/opt/pyvenv/bin/python",
+      "scripts/build_dataset.py"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"dataset_counts\": {\n    \"data/calibrate/seed_examples.jsonl\": 20,\n    \"data/compress/seed_examples.jsonl\": 20,\n    \"data/critique/seed_examples.jsonl\": 20,\n    \"data/observe_infer/seed_examples.jsonl\": 20,\n    \"data/plan/seed_examples.jsonl\": 20,\n    \"data/repair/seed_examples.jsonl\": 20\n  },\n  \"dataset_total_records\": 120\n}\n",
+    "stderr": ""
+  },
+  "benchmark_count": {
+    "cmd": [
+      "/opt/pyvenv/bin/python",
+      "scripts/run_benchmarks.py"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"benchmark_task_counts\": {\n    \"calibration\": 10,\n    \"compression\": 10,\n    \"critique\": 10,\n    \"paraphrase_stability\": 10,\n    \"planning\": 10,\n    \"quantization_retention\": 10,\n    \"reasoning\": 10,\n    \"repair\": 10\n  },\n  \"benchmark_total_tasks\": 80\n}\n",
+    "stderr": ""
+  },
+  "readiness_report": {
+    "cmd": [
+      "/opt/pyvenv/bin/python",
+      "scripts/execution/generate_readiness_report.py"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"repo_exists\": true,\n  \"has_env_example\": true,\n  \"has_changelog\": true,\n  \"has_handoff_doc\": true,\n  \"has_incident_doc\": true,\n  \"has_readiness_matrix\": true,\n  \"has_docker_compose\": true\n}\n",
+    "stderr": ""
+  }
+}

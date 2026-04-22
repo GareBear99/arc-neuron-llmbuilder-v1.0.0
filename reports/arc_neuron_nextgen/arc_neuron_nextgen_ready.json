@@ -1,0 +1,5 @@
+{
+  "ok": true,
+  "release_manifest": "reports/arc_neuron_nextgen/arc_neuron_release_manifest.json",
+  "next_action": "Provide stronger external checkpoint and execute ARC-Neuron Base promotion path."
+}

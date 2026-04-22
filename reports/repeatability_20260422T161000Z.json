@@ -1,0 +1,88 @@
+{
+  "run_at": "2026-04-22T16:10:00.859446+00:00",
+  "config": {
+    "cycles": 5,
+    "tier": "tiny",
+    "steps": 30
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "candidate": "cycle_01_160925Z",
+      "ok": true,
+      "val_ppl": 35.3576,
+      "final_loss": 3.703273,
+      "score": 0.7169,
+      "failure_count": 0,
+      "decision": "archive_only",
+      "promoted": false,
+      "floor_violations": [],
+      "regression_violations": []
+    },
+    {
+      "cycle": 2,
+      "candidate": "cycle_02_160933Z",
+      "ok": true,
+      "val_ppl": 35.3576,
+      "final_loss": 3.703273,
+      "score": 0.7169,
+      "failure_count": 0,
+      "decision": "archive_only",
+      "promoted": false,
+      "floor_violations": [],
+      "regression_violations": []
+    },
+    {
+      "cycle": 3,
+      "candidate": "cycle_03_160939Z",
+      "ok": true,
+      "val_ppl": 35.3576,
+      "final_loss": 3.703273,
+      "score": 0.7169,
+      "failure_count": 0,
+      "decision": "archive_only",
+      "promoted": false,
+      "floor_violations": [],
+      "regression_violations": []
+    },
+    {
+      "cycle": 4,
+      "candidate": "cycle_04_160945Z",
+      "ok": true,
+      "val_ppl": 35.3576,
+      "final_loss": 3.703273,
+      "score": 0.7169,
+      "failure_count": 0,
+      "decision": "archive_only",
+      "promoted": false,
+      "floor_violations": [],
+      "regression_violations": []
+    },
+    {
+      "cycle": 5,
+      "candidate": "cycle_05_160953Z",
+      "ok": true,
+      "val_ppl": 35.3576,
+      "final_loss": 3.703273,
+      "score": 0.7169,
+      "failure_count": 0,
+      "decision": "archive_only",
+      "promoted": false,
+      "floor_violations": [],
+      "regression_violations": []
+    }
+  ],
+  "summary": {
+    "total_cycles": 5,
+    "completed": 5,
+    "promoted": 0,
+    "archive_only": 5,
+    "rejected": 0,
+    "floor_breaches": 0,
+    "regressions": 0,
+    "score_min": 0.7169,
+    "score_max": 0.7169,
+    "score_mean": 0.7169,
+    "loop_stable": true
+  }
+}

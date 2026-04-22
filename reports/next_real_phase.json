@@ -1,0 +1,14 @@
+{
+  "phase": "real_candidate_execution",
+  "status": "ready_for_backend",
+  "next_steps": [
+    "wire a real local model endpoint",
+    "run day 0 baseline through full candidate gate",
+    "prepare merged distillation corpus",
+    "run SFT/LoRA shaping",
+    "run preference shaping",
+    "export GGUF variants",
+    "compare full precision vs quantized retention",
+    "promote only the passing candidate"
+  ]
+}

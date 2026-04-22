@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "results": {
+    "iso": {
+      "ok": true,
+      "scan_id": "sfs_996ab7eb3d76",
+      "import_run_id": "sfir_11dfdb538c21",
+      "source_name": "iso639_fixture",
+      "source_kind": "iso639_csv",
+      "records_seen": 6,
+      "candidates_staged": 0,
+      "conflict_count": 0,
+      "conflicts": []
+    },
+    "glottolog": {
+      "ok": true,
+      "scan_id": "sfs_3aa3e15050b0",
+      "import_run_id": "sfir_3de9d4c2e7c5",
+      "source_name": "glottolog_fixture",
+      "source_kind": "glottolog_csv",
+      "records_seen": 6,
+      "candidates_staged": 6,
+      "conflict_count": 0,
+      "conflicts": []
+    },
+    "cldr": {
+      "ok": true,
+      "scan_id": "sfs_257e36dee843",
+      "import_run_id": "sfir_4d7d51ab397c",
+      "source_name": "cldr_fixture",
+      "source_kind": "cldr_json",
+      "records_seen": 4,
+      "candidates_staged": 0,
+      "conflict_count": 0,
+      "conflicts": []
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"name":"repo_capsule_builder","description":"Build a repo state capsule for a local folder.","entrypoint":"scripts/mcp/repo_capsule_tool.py"}

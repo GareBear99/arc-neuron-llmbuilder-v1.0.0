@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "manifest": "exports/candidates/darpa_functional/exemplar_train/artifact_manifest.json",
+  "artifact_id": "exemplar_train_d28e8cfd7365",
+  "stage": "exemplar_train",
+  "candidate": "darpa_functional",
+  "created_at": "2026-04-14T21:35:57.462023+00:00",
+  "status": "completed",
+  "execution_mode": "native",
+  "notes": "Built a functioning exemplar retrieval model artifact from curated repo datasets.",
+  "paths": {
+    "artifact": "/mnt/data/cc_phase3/cognition-core-github-launch-ready-alpha (2)/exports/candidates/darpa_functional/exemplar_train/exemplar_model.json"
+  },
+  "metrics": {
+    "record_count": 102
+  }
+}

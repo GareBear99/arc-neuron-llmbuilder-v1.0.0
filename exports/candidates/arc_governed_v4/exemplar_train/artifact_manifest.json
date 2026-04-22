@@ -1,0 +1,15 @@
+{
+  "artifact_id": "exemplar_train_45cd0786837c",
+  "stage": "exemplar_train",
+  "candidate": "arc_governed_v4",
+  "created_at": "2026-04-22T16:01:10.402796+00:00",
+  "status": "completed",
+  "execution_mode": "arc_native_sidecar",
+  "notes": "Exemplar artifact built from SFT corpus for benchmark harness.",
+  "paths": {
+    "artifact": "exports/candidates/arc_governed_v4/exemplar_train/exemplar_model.json"
+  },
+  "metrics": {
+    "record_count": 640
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "architecture": "arc_tiny",
+  "name": "ARC Tiny Demo",
+  "tensor_count": 17,
+  "alignment": 32,
+  "sample_tensors": [
+    "token_emb.weight",
+    "pos_emb.weight",
+    "blocks.0.ln1.weight",
+    "blocks.0.ln1.bias",
+    "blocks.0.attn.qkv.weight",
+    "blocks.0.attn.qkv.bias",
+    "blocks.0.attn.proj.weight",
+    "blocks.0.attn.proj.bias"
+  ]
+}

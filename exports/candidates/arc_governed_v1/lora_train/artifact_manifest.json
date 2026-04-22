@@ -1,0 +1,27 @@
+{
+  "artifact_id": "lora_train_8926982a632b",
+  "stage": "lora_train",
+  "candidate": "arc_governed_v1",
+  "created_at": "2026-04-19T04:39:48.322856+00:00",
+  "status": "completed",
+  "execution_mode": "arc_native",
+  "tier": "small",
+  "param_count": 174656,
+  "notes": "ARC-native small training completed. Real weights produced; no external trainer required.",
+  "training": {
+    "steps": 300,
+    "batch_size": 8,
+    "lr": 0.002,
+    "seed": 1337,
+    "corpus_bytes": 559406,
+    "initial_loss": 5.549904,
+    "final_loss": 2.839822,
+    "val_ppl": 15.7243
+  },
+  "paths": {
+    "pt_checkpoint": "exports/candidates/arc_governed_v1/lora_train/checkpoint/arc_native_arc_governed_v1.pt",
+    "gguf": "exports/candidates/arc_governed_v1/lora_train/checkpoint/arc_native_arc_governed_v1.gguf",
+    "exemplar": "exports/candidates/arc_governed_v1/exemplar_train/exemplar_model.json"
+  },
+  "sample": "ARC cognitionty b Prerite -cthy pt t de)\n[TLrantine/py\n   ec"
+}

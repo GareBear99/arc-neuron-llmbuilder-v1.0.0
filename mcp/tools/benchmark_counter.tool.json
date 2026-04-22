@@ -1,0 +1,1 @@
+{"name":"benchmark_counter","description":"Count benchmark tasks.","entrypoint":"scripts/mcp/benchmark_counter_tool.py"}

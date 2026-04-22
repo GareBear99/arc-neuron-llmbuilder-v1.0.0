@@ -1,0 +1,1 @@
+{"name":"repo_validator","description":"Validate the cognition-core repo package.","entrypoint":"scripts/mcp/repo_validator_tool.py"}

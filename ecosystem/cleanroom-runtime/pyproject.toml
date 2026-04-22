@@ -1,0 +1,124 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arc-lucifer-cleanroom-runtime"
+version = "2.17.0"
+description = "Deterministic local-first AI operator runtime with receipts, replay, rollback, ranked memory, full-spectrum perception adapters (video/speech/audio-events/OCR/depth/desktop), and FixNet repair intelligence."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Gary Doman"}]
+license = "MIT"
+dependencies = []
+keywords = [
+  "ai-runtime", "local-ai", "agent-runtime", "llamafile", "gguf",
+  "deterministic-systems", "self-improvement", "persistent-memory",
+  "rollback", "replay", "cli", "clean-room", "vision-runtime",
+  "robotics-runtime", "multimodal-runtime", "whisper", "ffmpeg",
+  "audio-classification", "ocr", "depth-sensor", "bluetooth-bridge", "ble-runtime",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+lucifer = "lucifer_runtime.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+]
+
+bluetooth = [
+  "bleak>=0.22",
+]
+
+# ── Vision (cameras, video streams, desktop, OCR) ──────────────────────────
+vision = [
+  "numpy>=1.26",
+  "Pillow>=10",
+  "opencv-python>=4.10",
+  "ffmpeg-python>=0.2",
+  "mss>=9.0",              # cross-platform screen capture (DesktopCaptureAdapter)
+  "easyocr>=1.7",          # primary OCR backend (falls back to pytesseract if absent)
+]
+
+# ── Audio (speech transcription + environmental sound events) ───────────────
+audio = [
+  "numpy>=1.26",
+  "openai-whisper>=20231117",   # speech-to-text (WhisperSpeechAdapter)
+  "ffmpeg-python>=0.2",         # audio decode pipeline for Whisper
+  "librosa>=0.10",              # spectral features for AudioEventAdapter
+  "soundfile>=0.12",            # file loading fallback for librosa
+]
+
+# ── Robotics (depth sensing, embodied spatial awareness) ────────────────────
+robotics = [
+  "numpy>=1.26",
+  # pyrealsense2 is platform-specific and not on PyPI for all targets.
+  # Install manually: pip install pyrealsense2
+  # DepthSensorAdapter degrades gracefully to array-based mode without it.
+]
+
+# ── Embodiment (action adapters for robot bodies) ───────────────────────────
+embodiment = [
+  "numpy>=1.26",
+]
+
+# ── Full perception stack ───────────────────────────────────────────────────
+full = [
+  "numpy>=1.26",
+  "Pillow>=10",
+  "opencv-python>=4.10",
+  "ffmpeg-python>=0.2",
+  "mss>=9.0",
+  "easyocr>=1.7",
+  "openai-whisper>=20231117",
+  "librosa>=0.10",
+  "soundfile>=0.12",
+]
+
+# ── Faster Whisper alternative (optional swap for WhisperSpeechAdapter) ──────
+audio-fast = [
+  "numpy>=1.26",
+  "faster-whisper>=1.0",        # CTranslate2-based, 4x faster than openai-whisper
+  "ffmpeg-python>=0.2",
+  "librosa>=0.10",
+  "soundfile>=0.12",
+]
+
+
+# ── Voice (PersonaPlex full-duplex speech-to-speech) ─────────────────────────
+voice = [
+  "numpy>=1.26",
+  "websockets>=12.0",          # WebSocket client for PersonaPlex WSS connection
+  "sounddevice>=0.4",          # real-time audio playback (optional, degrades gracefully)
+  "opuslib>=0.3",              # Opus codec decode for AI audio frames
+  # PersonaPlex server itself is installed separately from the NVIDIA/personaplex repo:
+  #   pip install moshi/.   (from the personaplex repo root)
+  #   export HF_TOKEN=<token>
+  #   SSL_DIR=$(mktemp -d); python -m moshi.server --ssl "$SSL_DIR"
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[project.urls]
+Homepage = "https://github.com/GareBear99/arc-lucifer-cleanroom-runtime"
+Documentation = "https://github.com/GareBear99/arc-lucifer-cleanroom-runtime/tree/main/docs"
+Issues = "https://github.com/GareBear99/arc-lucifer-cleanroom-runtime/issues"

@@ -1,0 +1,1610 @@
+{
+  "phrases": [
+    {
+      "canonical_key": "hello",
+      "variants": [
+        {
+          "language_id": "lang:eng",
+          "text": "hello"
+        },
+        {
+          "language_id": "lang:spa",
+          "text": "hola"
+        },
+        {
+          "language_id": "lang:fra",
+          "text": "bonjour"
+        },
+        {
+          "language_id": "lang:deu",
+          "text": "hallo"
+        },
+        {
+          "language_id": "lang:por",
+          "text": "olá"
+        },
+        {
+          "language_id": "lang:ita",
+          "text": "ciao"
+        },
+        {
+          "language_id": "lang:rus",
+          "text": "привет"
+        },
+        {
+          "language_id": "lang:ukr",
+          "text": "привіт"
+        },
+        {
+          "language_id": "lang:arb",
+          "text": "مرحبا"
+        },
+        {
+          "language_id": "lang:heb",
+          "text": "שלום"
+        },
+        {
+          "language_id": "lang:hin",
+          "text": "नमस्ते"
+        },
+        {
+          "language_id": "lang:ben",
+          "text": "হ্যালো"
+        },
+        {
+          "language_id": "lang:urd",
+          "text": "سلام"
+        },
+        {
+          "language_id": "lang:pan",
+          "text": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ"
+        },
+        {
+          "language_id": "lang:tam",
+          "text": "வணக்கம்"
+        },
+        {
+          "language_id": "lang:tel",
+          "text": "నమస్కారం"
+        },
+        {
+          "language_id": "lang:tur",
+          "text": "merhaba"
+        },
+        {
+          "language_id": "lang:fas",
+          "text": "سلام"
+        },
+        {
+          "language_id": "lang:cmn",
+          "text": "你好"
+        },
+        {
+          "language_id": "lang:yue",
+          "text": "你好"
+        },
+        {
+          "language_id": "lang:jpn",
+          "text": "こんにちは"
+        },
+        {
+          "language_id": "lang:kor",
+          "text": "안녕하세요"
+        },
+        {
+          "language_id": "lang:vie",
+          "text": "xin chào"
+        },
+        {
+          "language_id": "lang:ind",
+          "text": "halo"
+        },
+        {
+          "language_id": "lang:msa",
+          "text": "halo"
+        },
+        {
+          "language_id": "lang:tha",
+          "text": "สวัสดี"
+        },
+        {
+          "language_id": "lang:swa",
+          "text": "habari"
+        },
+        {
+          "language_id": "lang:amh",
+          "text": "ሰላም"
+        },
+        {
+          "language_id": "lang:chr",
+          "text": "ᎣᏏᏲ"
+        },
+        {
+          "language_id": "lang:crk",
+          "text": "tânisi"
+        },
+        {
+          "language_id": "lang:nav",
+          "text": "yá'át'ééh"
+        },
+        {
+          "language_id": "lang:mar",
+          "text": "नमस्कार"
+        },
+        {
+          "language_id": "lang:nld",
+          "text": "hallo"
+        },
+        {
+          "language_id": "lang:pol",
+          "text": "cześć"
+        },
+        {
+          "language_id": "lang:ell",
+          "text": "γεια σου"
+        }
+      ],
+      "register": "general"
+    },
+    {
+      "canonical_key": "thank_you",
+      "variants": [
+        {
+          "language_id": "lang:eng",
+          "text": "thank you"
+        },
+        {
+          "language_id": "lang:spa",
+          "text": "gracias"
+        },
+        {
+          "language_id": "lang:fra",
+          "text": "merci"
+        },
+        {
+          "language_id": "lang:deu",
+          "text": "danke"
+        },
+        {
+          "language_id": "lang:por",
+          "text": "obrigado"
+        },
+        {
+          "language_id": "lang:ita",
+          "text": "grazie"
+        },
+        {
+          "language_id": "lang:rus",
+          "text": "спасибо"
+        },
+        {
+          "language_id": "lang:ukr",
+          "text": "дякую"
+        },
+        {
+          "language_id": "lang:arb",
+          "text": "شكرا"
+        },
+        {
+          "language_id": "lang:heb",
+          "text": "תודה"
+        },
+        {
+          "language_id": "lang:hin",
+          "text": "धन्यवाद"
+        },
+        {
+          "language_id": "lang:ben",
+          "text": "ধন্যবাদ"
+        },
+        {
+          "language_id": "lang:urd",
+          "text": "شکریہ"
+        },
+        {
+          "language_id": "lang:pan",
+          "text": "ਧੰਨਵਾਦ"
+        },
+        {
+          "language_id": "lang:tam",
+          "text": "நன்றி"
+        },
+        {
+          "language_id": "lang:tel",
+          "text": "ధన్యవాదాలు"
+        },
+        {
+          "language_id": "lang:tur",
+          "text": "teşekkürler"
+        },
+        {
+          "language_id": "lang:fas",
+          "text": "ممنون"
+        },
+        {
+          "language_id": "lang:cmn",
+          "text": "谢谢"
+        },
+        {
+          "language_id": "lang:yue",
+          "text": "多謝"
+        },
+        {
+          "language_id": "lang:jpn",
+          "text": "ありがとう"
+        },
+        {
+          "language_id": "lang:kor",
+          "text": "감사합니다"
+        },
+        {
+          "language_id": "lang:vie",
+          "text": "cảm ơn"
+        },
+        {
+          "language_id": "lang:ind",
+          "text": "terima kasih"
+        },
+        {
+          "language_id": "lang:msa",
+          "text": "terima kasih"
+        },
+        {
+          "language_id": "lang:tha",
+          "text": "ขอบคุณ"
+        },
+        {
+          "language_id": "lang:swa",
+          "text": "asante"
+        },
+        {
+          "language_id": "lang:amh",
+          "text": "አመሰግናለሁ"
+        },
+        {
+          "language_id": "lang:mar",
+          "text": "धन्यवाद"
+        },
+        {
+          "language_id": "lang:nld",
+          "text": "dank je"
+        },
+        {
+          "language_id": "lang:pol",
+          "text": "dziękuję"
+        },
+        {
+          "language_id": "lang:chr",
+          "text": "ᎤᎵᎮᎵᏍᏗ"
+        },
+        {
+          "language_id": "lang:crk",
+          "text": "ê-hê"
+        },
+        {
+          "language_id": "lang:nav",
+          "text": "ahéhee'"
+        },
+        {
+          "language_id": "lang:ell",
+          "text": "ευχαριστώ"
+        }
+      ],
+      "register": "general"
+    },
+    {
+      "canonical_key": "what_is_this",
+      "variants": [
+        {
+          "language_id": "lang:eng",
+          "text": "what is this"
+        },
+        {
+          "language_id": "lang:spa",
+          "text": "qué es esto"
+        },
+        {
+          "language_id": "lang:fra",
+          "text": "qu'est-ce que c'est"
+        },
+        {
+          "language_id": "lang:deu",
+          "text": "was ist das"
+        },
+        {
+          "language_id": "lang:por",
+          "text": "o que é isto"
+        },
+        {
+          "language_id": "lang:ita",
+          "text": "che cos'è questo"
+        },
+        {
+          "language_id": "lang:rus",
+          "text": "что это"
+        },
+        {
+          "language_id": "lang:arb",
+          "text": "ما هذا"
+        },
+        {
+          "language_id": "lang:hin",
+          "text": "यह क्या है"
+        },
+        {
+          "language_id": "lang:cmn",
+          "text": "这是什么"
+        },
+        {
+          "language_id": "lang:jpn",
+          "text": "これは何ですか"
+        },
+        {
+          "language_id": "lang:kor",
+          "text": "이것은 무엇입니까"
+        },
+        {
+          "language_id": "lang:ukr",
+          "text": "що це таке"
+        },
+        {
+          "language_id": "lang:heb",
+          "text": "מה זה"
+        },
+        {
+          "language_id": "lang:ben",
+          "text": "এটা কি"
+        },
+        {
+          "language_id": "lang:urd",
+          "text": "یہ کیا ہے"
+        },
+        {
+          "language_id": "lang:pan",
+          "text": "ਇਹ ਕੀ ਹੈ"
+        },
+        {
+          "language_id": "lang:tam",
+          "text": "இது என்ன"
+        },
+        {
+          "language_id": "lang:tel",
+          "text": "ఇది ఏమిటి"
+        },
+        {
+          "language_id": "lang:tur",
+          "text": "bu nedir"
+        },
+        {
+          "language_id": "lang:fas",
+          "text": "این چیست"
+        },
+        {
+          "language_id": "lang:vie",
+          "text": "cái này là gì"
+        },
+        {
+          "language_id": "lang:ind",
+          "text": "apa ini"
+        },
+        {
+          "language_id": "lang:msa",
+          "text": "apa ini"
+        },
+        {
+          "language_id": "lang:tha",
+          "text": "นี่คืออะไร"
+        },
+        {
+          "language_id": "lang:swa",
+          "text": "hii ni nini"
+        },
+        {
+          "language_id": "lang:amh",
+          "text": "ይህ ምንድን ነው"
+        },
+        {
+          "language_id": "lang:mar",
+          "text": "हे काय आहे"
+        },
+        {
+          "language_id": "lang:nld",
+          "text": "wat is dit"
+        },
+        {
+          "language_id": "lang:pol",
+          "text": "co to jest"
+        },
+        {
+          "language_id": "lang:yue",
+          "text": "呢個係咩"
+        },
+        {
+          "language_id": "lang:chr",
+          "text": "ᎣᏏᏲ ᎯᎠ"
+        },
+        {
+          "language_id": "lang:crk",
+          "text": "kîkway ôma"
+        },
+        {
+          "language_id": "lang:nav",
+          "text": "díí haʼátʼí"
+        },
+        {
+          "language_id": "lang:ell",
+          "text": "τι είναι αυτό"
+        }
+      ],
+      "register": "general"
+    },
+    {
+      "canonical_key": "goodbye",
+      "variants": [
+        {
+          "language_id": "lang:eng",
+          "text": "goodbye"
+        },
+        {
+          "language_id": "lang:spa",
+          "text": "adiós"
+        },
+        {
+          "language_id": "lang:fra",
+          "text": "au revoir"
+        },
+        {
+          "language_id": "lang:deu",
+          "text": "auf Wiedersehen"
+        },
+        {
+          "language_id": "lang:por",
+          "text": "tchau"
+        },
+        {
+          "language_id": "lang:ita",
+          "text": "arrivederci"
+        },
+        {
+          "language_id": "lang:nld",
+          "text": "dag"
+        },
+        {
+          "language_id": "lang:rus",
+          "text": "до свидания"
+        },
+        {
+          "language_id": "lang:ukr",
+          "text": "до побачення"
+        },
+        {
+          "language_id": "lang:pol",
+          "text": "do widzenia"
+        },
+        {
+          "language_id": "lang:arb",
+          "text": "مع السلامة"
+        },
+        {
+          "language_id": "lang:heb",
+          "text": "שלום"
+        },
+        {
+          "language_id": "lang:hin",
+          "text": "अलविदा"
+        },
+        {
+          "language_id": "lang:mar",
+          "text": "निरोप"
+        },
+        {
+          "language_id": "lang:ben",
+          "text": "বিদায়"
+        },
+        {
+          "language_id": "lang:urd",
+          "text": "خدا حافظ"
+        },
+        {
+          "language_id": "lang:pan",
+          "text": "ਅਲਵਿਦਾ"
+        },
+        {
+          "language_id": "lang:tam",
+          "text": "விடைபெறுகிறேன்"
+        },
+        {
+          "language_id": "lang:tel",
+          "text": "వీడ్కోలు"
+        },
+        {
+          "language_id": "lang:tur",
+          "text": "güle güle"
+        },
+        {
+          "language_id": "lang:fas",
+          "text": "خداحافظ"
+        },
+        {
+          "language_id": "lang:cmn",
+          "text": "再见"
+        },
+        {
+          "language_id": "lang:yue",
+          "text": "拜拜"
+        },
+        {
+          "language_id": "lang:jpn",
+          "text": "さようなら"
+        },
+        {
+          "language_id": "lang:kor",
+          "text": "안녕히 계세요"
+        },
+        {
+          "language_id": "lang:vie",
+          "text": "tạm biệt"
+        },
+        {
+          "language_id": "lang:ind",
+          "text": "sampai jumpa"
+        },
+        {
+          "language_id": "lang:msa",
+          "text": "selamat tinggal"
+        },
+        {
+          "language_id": "lang:tha",
+          "text": "ลาก่อน"
+        },
+        {
+          "language_id": "lang:swa",
+          "text": "kwaheri"
+        },
+        {
+          "language_id": "lang:amh",
+          "text": "ቻው"
+        },
+        {
+          "language_id": "lang:nav",
+          "text": "hágoónee'"
+        },
+        {
+          "language_id": "lang:chr",
+          "text": "ᏙᎯᏧ"
+        },
+        {
+          "language_id": "lang:crk",
+          "text": "êkosi"
+        },
+        {
+          "language_id": "lang:ell",
+          "text": "αντίο"
+        }
+      ],
+      "register": "general"
+    },
+    {
+      "canonical_key": "yes",
+      "variants": [
+        {
+          "language_id": "lang:eng",
+          "text": "yes"
+        },
+        {
+          "language_id": "lang:spa",
+          "text": "sí"
+        },
+        {
+          "language_id": "lang:fra",
+          "text": "oui"
+        },
+        {
+          "language_id": "lang:deu",
+          "text": "ja"
+        },
+        {
+          "language_id": "lang:por",
+          "text": "sim"
+        },
+        {
+          "language_id": "lang:ita",
+          "text": "sì"
+        },
+        {
+          "language_id": "lang:nld",
+          "text": "ja"
+        },
+        {
+          "language_id": "lang:rus",
+          "text": "да"
+        },
+        {
+          "language_id": "lang:ukr",
+          "text": "так"
+        },
+        {
+          "language_id": "lang:pol",
+          "text": "tak"
+        },
+        {
+          "language_id": "lang:arb",
+          "text": "نعم"
+        },
+        {
+          "language_id": "lang:heb",
+          "text": "כן"
+        },
+        {
+          "language_id": "lang:hin",
+          "text": "हाँ"
+        },
+        {
+          "language_id": "lang:mar",
+          "text": "हो"
+        },
+        {
+          "language_id": "lang:ben",
+          "text": "হ্যাঁ"
+        },
+        {
+          "language_id": "lang:urd",
+          "text": "ہاں"
+        },
+        {
+          "language_id": "lang:pan",
+          "text": "ਹਾਂ"
+        },
+        {
+          "language_id": "lang:tam",
+          "text": "ஆம்"
+        },
+        {
+          "language_id": "lang:tel",
+          "text": "అవును"
+        },
+        {
+          "language_id": "lang:tur",
+          "text": "evet"
+        },
+        {
+          "language_id": "lang:fas",
+          "text": "بله"
+        },
+        {
+          "language_id": "lang:cmn",
+          "text": "是"
+        },
+        {
+          "language_id": "lang:yue",
+          "text": "係"
+        },
+        {
+          "language_id": "lang:jpn",
+          "text": "はい"
+        },
+        {
+          "language_id": "lang:kor",
+          "text": "네"
+        },
+        {
+          "language_id": "lang:vie",
+          "text": "vâng"
+        },
+        {
+          "language_id": "lang:ind",
+          "text": "ya"
+        },
+        {
+          "language_id": "lang:msa",
+          "text": "ya"
+        },
+        {
+          "language_id": "lang:tha",
+          "text": "ใช่"
+        },
+        {
+          "language_id": "lang:swa",
+          "text": "ndiyo"
+        },
+        {
+          "language_id": "lang:amh",
+          "text": "አዎ"
+        },
+        {
+          "language_id": "lang:nav",
+          "text": "aoo'"
+        },
+        {
+          "language_id": "lang:chr",
+          "text": "ᎥᏝ"
+        },
+        {
+          "language_id": "lang:crk",
+          "text": "ê-hê"
+        },
+        {
+          "language_id": "lang:ell",
+          "text": "ναι"
+        }
+      ],
+      "register": "general"
+    },
+    {
+      "canonical_key": "no",
+      "variants": [
+        {
+          "language_id": "lang:eng",
+          "text": "no"
+        },
+        {
+          "language_id": "lang:spa",
+          "text": "no"
+        },
+        {
+          "language_id": "lang:fra",
+          "text": "non"
+        },
+        {
+          "language_id": "lang:deu",
+          "text": "nein"
+        },
+        {
+          "language_id": "lang:por",
+          "text": "não"
+        },
+        {
+          "language_id": "lang:ita",
+          "text": "no"
+        },
+        {
+          "language_id": "lang:nld",
+          "text": "nee"
+        },
+        {
+          "language_id": "lang:rus",
+          "text": "нет"
+        },
+        {
+          "language_id": "lang:ukr",
+          "text": "ні"
+        },
+        {
+          "language_id": "lang:pol",
+          "text": "nie"
+        },
+        {
+          "language_id": "lang:arb",
+          "text": "لا"
+        },
+        {
+          "language_id": "lang:heb",
+          "text": "לא"
+        },
+        {
+          "language_id": "lang:hin",
+          "text": "नहीं"
+        },
+        {
+          "language_id": "lang:mar",
+          "text": "नाही"
+        },
+        {
+          "language_id": "lang:ben",
+          "text": "না"
+        },
+        {
+          "language_id": "lang:urd",
+          "text": "نہیں"
+        },
+        {
+          "language_id": "lang:pan",
+          "text": "ਨਹੀਂ"
+        },
+        {
+          "language_id": "lang:tam",
+          "text": "இல்லை"
+        },
+        {
+          "language_id": "lang:tel",
+          "text": "కాదు"
+        },
+        {
+          "language_id": "lang:tur",
+          "text": "hayır"
+        },
+        {
+          "language_id": "lang:fas",
+          "text": "نه"
+        },
+        {
+          "language_id": "lang:cmn",
+          "text": "不"
+        },
+        {
+          "language_id": "lang:yue",
+          "text": "唔係"
+        },
+        {
+          "language_id": "lang:jpn",
+          "text": "いいえ"
+        },
+        {
+          "language_id": "lang:kor",
+          "text": "아니요"
+        },
+        {
+          "language_id": "lang:vie",
+          "text": "không"
+        },
+        {
+          "language_id": "lang:ind",
+          "text": "tidak"
+        },
+        {
+          "language_id": "lang:msa",
+          "text": "tidak"
+        },
+        {
+          "language_id": "lang:tha",
+          "text": "ไม่"
+        },
+        {
+          "language_id": "lang:swa",
+          "text": "hapana"
+        },
+        {
+          "language_id": "lang:amh",
+          "text": "አይ"
+        },
+        {
+          "language_id": "lang:nav",
+          "text": "dooda"
+        },
+        {
+          "language_id": "lang:chr",
+          "text": "ᎥᏝ"
+        },
+        {
+          "language_id": "lang:crk",
+          "text": "namôya"
+        },
+        {
+          "language_id": "lang:ell",
+          "text": "όχι"
+        }
+      ],
+      "register": "general"
+    },
+    {
+      "canonical_key": "please",
+      "variants": [
+        {
+          "language_id": "lang:eng",
+          "text": "please"
+        },
+        {
+          "language_id": "lang:spa",
+          "text": "por favor"
+        },
+        {
+          "language_id": "lang:fra",
+          "text": "s'il vous plaît"
+        },
+        {
+          "language_id": "lang:deu",
+          "text": "bitte"
+        },
+        {
+          "language_id": "lang:por",
+          "text": "por favor"
+        },
+        {
+          "language_id": "lang:ita",
+          "text": "per favore"
+        },
+        {
+          "language_id": "lang:nld",
+          "text": "alsjeblieft"
+        },
+        {
+          "language_id": "lang:rus",
+          "text": "пожалуйста"
+        },
+        {
+          "language_id": "lang:ukr",
+          "text": "будь ласка"
+        },
+        {
+          "language_id": "lang:pol",
+          "text": "proszę"
+        },
+        {
+          "language_id": "lang:arb",
+          "text": "من فضلك"
+        },
+        {
+          "language_id": "lang:heb",
+          "text": "בבקשה"
+        },
+        {
+          "language_id": "lang:hin",
+          "text": "कृपया"
+        },
+        {
+          "language_id": "lang:mar",
+          "text": "कृपया"
+        },
+        {
+          "language_id": "lang:ben",
+          "text": "দয়া করে"
+        },
+        {
+          "language_id": "lang:urd",
+          "text": "براہ کرم"
+        },
+        {
+          "language_id": "lang:pan",
+          "text": "ਕਿਰਪਾ ਕਰਕੇ"
+        },
+        {
+          "language_id": "lang:tam",
+          "text": "தயவுசெய்து"
+        },
+        {
+          "language_id": "lang:tel",
+          "text": "దయచేసి"
+        },
+        {
+          "language_id": "lang:tur",
+          "text": "lütfen"
+        },
+        {
+          "language_id": "lang:fas",
+          "text": "لطفاً"
+        },
+        {
+          "language_id": "lang:cmn",
+          "text": "请"
+        },
+        {
+          "language_id": "lang:yue",
+          "text": "唔該"
+        },
+        {
+          "language_id": "lang:jpn",
+          "text": "お願いします"
+        },
+        {
+          "language_id": "lang:kor",
+          "text": "제발"
+        },
+        {
+          "language_id": "lang:vie",
+          "text": "xin hãy"
+        },
+        {
+          "language_id": "lang:ind",
+          "text": "tolong"
+        },
+        {
+          "language_id": "lang:msa",
+          "text": "tolong"
+        },
+        {
+          "language_id": "lang:tha",
+          "text": "กรุณา"
+        },
+        {
+          "language_id": "lang:swa",
+          "text": "tafadhali"
+        },
+        {
+          "language_id": "lang:amh",
+          "text": "እባክዎ"
+        },
+        {
+          "language_id": "lang:nav",
+          "text": "t'áá shǫǫdi"
+        },
+        {
+          "language_id": "lang:chr",
+          "text": "ᎠᎵᏍᏉᏗ"
+        },
+        {
+          "language_id": "lang:crk",
+          "text": "sôhkêyihtam"
+        },
+        {
+          "language_id": "lang:ell",
+          "text": "παρακαλώ"
+        }
+      ],
+      "register": "general"
+    },
+    {
+      "canonical_key": "sorry",
+      "variants": [
+        {
+          "language_id": "lang:eng",
+          "text": "sorry"
+        },
+        {
+          "language_id": "lang:spa",
+          "text": "lo siento"
+        },
+        {
+          "language_id": "lang:fra",
+          "text": "désolé"
+        },
+        {
+          "language_id": "lang:deu",
+          "text": "Entschuldigung"
+        },
+        {
+          "language_id": "lang:por",
+          "text": "desculpe"
+        },
+        {
+          "language_id": "lang:ita",
+          "text": "mi dispiace"
+        },
+        {
+          "language_id": "lang:nld",
+          "text": "sorry"
+        },
+        {
+          "language_id": "lang:rus",
+          "text": "извините"
+        },
+        {
+          "language_id": "lang:ukr",
+          "text": "вибачте"
+        },
+        {
+          "language_id": "lang:pol",
+          "text": "przepraszam"
+        },
+        {
+          "language_id": "lang:arb",
+          "text": "آسف"
+        },
+        {
+          "language_id": "lang:heb",
+          "text": "סליחה"
+        },
+        {
+          "language_id": "lang:hin",
+          "text": "माफ करें"
+        },
+        {
+          "language_id": "lang:mar",
+          "text": "माफ करा"
+        },
+        {
+          "language_id": "lang:ben",
+          "text": "দুঃখিত"
+        },
+        {
+          "language_id": "lang:urd",
+          "text": "معاف کریں"
+        },
+        {
+          "language_id": "lang:pan",
+          "text": "ਮਾਫ਼ ਕਰਨਾ"
+        },
+        {
+          "language_id": "lang:tam",
+          "text": "மன்னிக்கவும்"
+        },
+        {
+          "language_id": "lang:tel",
+          "text": "క్షమించండి"
+        },
+        {
+          "language_id": "lang:tur",
+          "text": "özür dilerim"
+        },
+        {
+          "language_id": "lang:fas",
+          "text": "ببخشید"
+        },
+        {
+          "language_id": "lang:cmn",
+          "text": "对不起"
+        },
+        {
+          "language_id": "lang:yue",
+          "text": "對唔住"
+        },
+        {
+          "language_id": "lang:jpn",
+          "text": "すみません"
+        },
+        {
+          "language_id": "lang:kor",
+          "text": "죄송합니다"
+        },
+        {
+          "language_id": "lang:vie",
+          "text": "xin lỗi"
+        },
+        {
+          "language_id": "lang:ind",
+          "text": "maaf"
+        },
+        {
+          "language_id": "lang:msa",
+          "text": "maaf"
+        },
+        {
+          "language_id": "lang:tha",
+          "text": "ขอโทษ"
+        },
+        {
+          "language_id": "lang:swa",
+          "text": "samahani"
+        },
+        {
+          "language_id": "lang:amh",
+          "text": "ይቅርታ"
+        },
+        {
+          "language_id": "lang:nav",
+          "text": "aoo' shił hózhó"
+        },
+        {
+          "language_id": "lang:chr",
+          "text": "ᎤᏛᏅᏗ"
+        },
+        {
+          "language_id": "lang:crk",
+          "text": "ninêstôtên"
+        },
+        {
+          "language_id": "lang:ell",
+          "text": "συγνώμη"
+        }
+      ],
+      "register": "general"
+    },
+    {
+      "canonical_key": "good_morning",
+      "variants": [
+        {
+          "language_id": "lang:eng",
+          "text": "good morning"
+        },
+        {
+          "language_id": "lang:spa",
+          "text": "buenos días"
+        },
+        {
+          "language_id": "lang:fra",
+          "text": "bonjour"
+        },
+        {
+          "language_id": "lang:deu",
+          "text": "guten Morgen"
+        },
+        {
+          "language_id": "lang:por",
+          "text": "bom dia"
+        },
+        {
+          "language_id": "lang:ita",
+          "text": "buongiorno"
+        },
+        {
+          "language_id": "lang:nld",
+          "text": "goedemorgen"
+        },
+        {
+          "language_id": "lang:rus",
+          "text": "доброе утро"
+        },
+        {
+          "language_id": "lang:ukr",
+          "text": "добрий ранок"
+        },
+        {
+          "language_id": "lang:pol",
+          "text": "dzień dobry"
+        },
+        {
+          "language_id": "lang:arb",
+          "text": "صباح الخير"
+        },
+        {
+          "language_id": "lang:heb",
+          "text": "בוקר טוב"
+        },
+        {
+          "language_id": "lang:hin",
+          "text": "सुप्रभात"
+        },
+        {
+          "language_id": "lang:mar",
+          "text": "सुप्रभात"
+        },
+        {
+          "language_id": "lang:ben",
+          "text": "সুপ্রভাত"
+        },
+        {
+          "language_id": "lang:urd",
+          "text": "صبح بخیر"
+        },
+        {
+          "language_id": "lang:pan",
+          "text": "ਸ਼ੁਭ ਸਵੇਰ"
+        },
+        {
+          "language_id": "lang:tam",
+          "text": "காலை வணக்கம்"
+        },
+        {
+          "language_id": "lang:tel",
+          "text": "శుభోదయం"
+        },
+        {
+          "language_id": "lang:tur",
+          "text": "günaydın"
+        },
+        {
+          "language_id": "lang:fas",
+          "text": "صبح بخیر"
+        },
+        {
+          "language_id": "lang:cmn",
+          "text": "早上好"
+        },
+        {
+          "language_id": "lang:yue",
+          "text": "早晨"
+        },
+        {
+          "language_id": "lang:jpn",
+          "text": "おはようございます"
+        },
+        {
+          "language_id": "lang:kor",
+          "text": "좋은 아침이에요"
+        },
+        {
+          "language_id": "lang:vie",
+          "text": "chào buổi sáng"
+        },
+        {
+          "language_id": "lang:ind",
+          "text": "selamat pagi"
+        },
+        {
+          "language_id": "lang:msa",
+          "text": "selamat pagi"
+        },
+        {
+          "language_id": "lang:tha",
+          "text": "อรุณสวัสดิ์"
+        },
+        {
+          "language_id": "lang:swa",
+          "text": "habari za asubuhi"
+        },
+        {
+          "language_id": "lang:amh",
+          "text": "እንደምን አደሩ"
+        },
+        {
+          "language_id": "lang:nav",
+          "text": "yá'át'ééh abíní"
+        },
+        {
+          "language_id": "lang:chr",
+          "text": "ᎣᏍᏓ ᏌᏊ"
+        },
+        {
+          "language_id": "lang:crk",
+          "text": "wâpan mîna"
+        },
+        {
+          "language_id": "lang:ell",
+          "text": "καλημέρα"
+        }
+      ],
+      "register": "general"
+    },
+    {
+      "canonical_key": "how_are_you",
+      "variants": [
+        {
+          "language_id": "lang:eng",
+          "text": "how are you"
+        },
+        {
+          "language_id": "lang:spa",
+          "text": "¿cómo estás?"
+        },
+        {
+          "language_id": "lang:fra",
+          "text": "comment allez-vous"
+        },
+        {
+          "language_id": "lang:deu",
+          "text": "wie geht es Ihnen"
+        },
+        {
+          "language_id": "lang:por",
+          "text": "como vai você"
+        },
+        {
+          "language_id": "lang:ita",
+          "text": "come stai"
+        },
+        {
+          "language_id": "lang:nld",
+          "text": "hoe gaat het"
+        },
+        {
+          "language_id": "lang:rus",
+          "text": "как дела"
+        },
+        {
+          "language_id": "lang:ukr",
+          "text": "як справи"
+        },
+        {
+          "language_id": "lang:pol",
+          "text": "jak się masz"
+        },
+        {
+          "language_id": "lang:arb",
+          "text": "كيف حالك"
+        },
+        {
+          "language_id": "lang:heb",
+          "text": "מה שלומך"
+        },
+        {
+          "language_id": "lang:hin",
+          "text": "आप कैसे हैं"
+        },
+        {
+          "language_id": "lang:mar",
+          "text": "तुम्ही कसे आहात"
+        },
+        {
+          "language_id": "lang:ben",
+          "text": "আপনি কেমন আছেন"
+        },
+        {
+          "language_id": "lang:urd",
+          "text": "آپ کیسے ہیں"
+        },
+        {
+          "language_id": "lang:pan",
+          "text": "ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ"
+        },
+        {
+          "language_id": "lang:tam",
+          "text": "நீங்கள் எப்படி இருக்கிறீர்கள்"
+        },
+        {
+          "language_id": "lang:tel",
+          "text": "మీరు ఎలా ఉన్నారు"
+        },
+        {
+          "language_id": "lang:tur",
+          "text": "nasılsınız"
+        },
+        {
+          "language_id": "lang:fas",
+          "text": "حالتان چطور است"
+        },
+        {
+          "language_id": "lang:cmn",
+          "text": "你好吗"
+        },
+        {
+          "language_id": "lang:yue",
+          "text": "你好嗎"
+        },
+        {
+          "language_id": "lang:jpn",
+          "text": "お元気ですか"
+        },
+        {
+          "language_id": "lang:kor",
+          "text": "어떻게 지내세요"
+        },
+        {
+          "language_id": "lang:vie",
+          "text": "bạn có khỏe không"
+        },
+        {
+          "language_id": "lang:ind",
+          "text": "apa kabar"
+        },
+        {
+          "language_id": "lang:msa",
+          "text": "apa khabar"
+        },
+        {
+          "language_id": "lang:tha",
+          "text": "คุณเป็นอย่างไรบ้าง"
+        },
+        {
+          "language_id": "lang:swa",
+          "text": "habari yako"
+        },
+        {
+          "language_id": "lang:amh",
+          "text": "ደህና ነህ"
+        },
+        {
+          "language_id": "lang:nav",
+          "text": "hát naat'áah"
+        },
+        {
+          "language_id": "lang:chr",
+          "text": "ᏣᏖᎳᏍᏔᏂ"
+        },
+        {
+          "language_id": "lang:crk",
+          "text": "tânisi kâ-isi-ayâyan"
+        },
+        {
+          "language_id": "lang:ell",
+          "text": "πώς είσαι"
+        }
+      ],
+      "register": "general"
+    },
+    {
+      "canonical_key": "please_formal",
+      "variants": [
+        {
+          "language_id": "lang:eng",
+          "text": "please"
+        },
+        {
+          "language_id": "lang:spa",
+          "text": "por favor"
+        },
+        {
+          "language_id": "lang:fra",
+          "text": "je vous prie"
+        },
+        {
+          "language_id": "lang:deu",
+          "text": "bitte sehr"
+        },
+        {
+          "language_id": "lang:por",
+          "text": "por favor"
+        },
+        {
+          "language_id": "lang:ita",
+          "text": "per favore"
+        },
+        {
+          "language_id": "lang:nld",
+          "text": "alsjeblieft"
+        },
+        {
+          "language_id": "lang:rus",
+          "text": "пожалуйста"
+        },
+        {
+          "language_id": "lang:ukr",
+          "text": "будь ласка"
+        },
+        {
+          "language_id": "lang:pol",
+          "text": "proszę"
+        },
+        {
+          "language_id": "lang:arb",
+          "text": "أرجو منك"
+        },
+        {
+          "language_id": "lang:heb",
+          "text": "בבקשה"
+        },
+        {
+          "language_id": "lang:hin",
+          "text": "कृपया करके"
+        },
+        {
+          "language_id": "lang:mar",
+          "text": "कृपया"
+        },
+        {
+          "language_id": "lang:ben",
+          "text": "দয়া করে"
+        },
+        {
+          "language_id": "lang:urd",
+          "text": "براہ کرم"
+        },
+        {
+          "language_id": "lang:pan",
+          "text": "ਕਿਰਪਾ ਕਰਕੇ"
+        },
+        {
+          "language_id": "lang:tam",
+          "text": "தயவுசெய்து"
+        },
+        {
+          "language_id": "lang:tel",
+          "text": "దయచేసి"
+        },
+        {
+          "language_id": "lang:tur",
+          "text": "lütfen"
+        },
+        {
+          "language_id": "lang:fas",
+          "text": "لطفاً"
+        },
+        {
+          "language_id": "lang:cmn",
+          "text": "请"
+        },
+        {
+          "language_id": "lang:yue",
+          "text": "唔該"
+        },
+        {
+          "language_id": "lang:jpn",
+          "text": "よろしくお願いいたします"
+        },
+        {
+          "language_id": "lang:kor",
+          "text": "부탁드립니다"
+        },
+        {
+          "language_id": "lang:vie",
+          "text": "xin hãy"
+        },
+        {
+          "language_id": "lang:ind",
+          "text": "tolong"
+        },
+        {
+          "language_id": "lang:msa",
+          "text": "tolong"
+        },
+        {
+          "language_id": "lang:tha",
+          "text": "กรุณา"
+        },
+        {
+          "language_id": "lang:swa",
+          "text": "tafadhali"
+        },
+        {
+          "language_id": "lang:amh",
+          "text": "እባክዎ"
+        },
+        {
+          "language_id": "lang:nav",
+          "text": "t'áá shǫǫdi"
+        },
+        {
+          "language_id": "lang:chr",
+          "text": "ᎠᎵᏍᏉᏗ"
+        },
+        {
+          "language_id": "lang:crk",
+          "text": "sôhkêyihtam"
+        },
+        {
+          "language_id": "lang:ell",
+          "text": "παρακαλώ"
+        }
+      ],
+      "register": "formal"
+    }
+  ]
+}

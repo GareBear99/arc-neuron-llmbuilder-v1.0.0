@@ -1,0 +1,17 @@
+{
+  "_comment": "Example language submission for Mohawk (Kanien'kéha). Copy this template and fill in your language's data.",
+  "language_id": "lang:moh",
+  "iso639_3": "moh",
+  "name": "Mohawk",
+  "family": "Iroquoian",
+  "branch": "Northern Iroquoian",
+  "parent_language_id": null,
+  "aliases": ["Kanien'kéha", "Kanien'kehá:ka", "Mohawk language"],
+  "common_words": ["ó:nen", "niá:wen", "sewatahonhsi", "skén:nen", "kwah"],
+  "scripts": ["Latn"],
+  "source_name": "user_submission",
+  "source_ref": "https://www.ethnologue.com/language/moh",
+  "confidence": 0.85,
+  "notes": "Iroquoian language of the Haudenosaunee Confederacy. Polysynthetic morphology. Endangered; active revitalization programs in Akwesasne, Kahnawake, and Kahnawake communities.",
+  "status": "submitted"
+}

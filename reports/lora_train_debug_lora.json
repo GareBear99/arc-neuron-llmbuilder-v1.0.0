@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "arc_native": true,
+  "candidate": "debug_lora",
+  "tier": "small",
+  "pt": "exports/candidates/debug_lora/lora_train/checkpoint/arc_native_debug_lora.pt",
+  "gguf": "exports/candidates/debug_lora/lora_train/checkpoint/arc_native_debug_lora.gguf",
+  "val_ppl": 145.3094,
+  "final_loss": 4.977392,
+  "manifest": "exports/candidates/debug_lora/lora_train/artifact_manifest.json"
+}

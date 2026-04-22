@@ -1,0 +1,6 @@
+{
+  "flow": [
+    "input -> proposal -> policy_decision -> receipt"
+  ],
+  "note": "Replace with a real trace viewer in later milestones."
+}

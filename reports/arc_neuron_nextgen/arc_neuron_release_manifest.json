@@ -1,0 +1,51 @@
+{
+  "family": "ARC-Neuron",
+  "state": "tiny_regression_floor_with_base_release_contract",
+  "canonical_artifact": "ANCF",
+  "deploy_artifact": "GGUF",
+  "stronger_external_checkpoint_required": true,
+  "artifacts": {
+    "gguf": {
+      "path": "artifacts/gguf/ARC-Neuron-Tiny-Integrated-0.07M-v0.2-F32.gguf",
+      "exists": true,
+      "bytes": 348640,
+      "sha256": "1f5323d4cf9170452c78857e87f603d07aae646582a710bae525d6d32d9236b8"
+    },
+    "ancf": {
+      "path": "artifacts/ancf/ARC-Neuron-Tiny-Integrated-0.07M-v0.2.ancf",
+      "exists": true,
+      "bytes": 350090,
+      "sha256": "eb4160916ca62482bd5ec91dd0eaf7d17d7dad571f5e22de5c05f46f9bc3a605"
+    },
+    "model_card": {
+      "path": "artifacts/gguf/ARC-Neuron-Tiny-Integrated-0.07M-v0.2.modelcard.json",
+      "exists": true,
+      "bytes": 586,
+      "sha256": "b7652617519c06843f133d1d735bc51784576a1109301ded5ed5f66566c5fabd"
+    },
+    "omnibinary_ledger": {
+      "path": "artifacts/omnibinary/arc-neuron-learning-ledger.obin",
+      "exists": true,
+      "bytes": 875,
+      "sha256": "f7ab83019b0786bcb3d6730639f87494335adb52c2cdc8a085b9094b438dbf9c"
+    },
+    "arc_rar_bundle": {
+      "path": "artifacts/archives/arc-neuron-integrated-demo.arcrar.zip",
+      "exists": true,
+      "bytes": 641964,
+      "sha256": "7bf885e4a4cd5c3ef837d0b65fd69afecb3bc083b714f416dad397464787a660"
+    },
+    "base_prep_ledger": {
+      "path": "artifacts/omnibinary/arc-neuron-base-prep-ledger.obin",
+      "exists": true,
+      "bytes": 962,
+      "sha256": "7972c902634418bfe24aea1f3016e619ab5da69a74c97acd1626f9d8b8c793f8"
+    },
+    "base_release_ledger": {
+      "path": "artifacts/omnibinary/arc-neuron-base-release-prep-ledger.obin",
+      "exists": true,
+      "bytes": 593,
+      "sha256": "d013f497d70e3b9ee708cc225051225745f6b6e81aea24419f029097ebec33aa"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "artifact_id": "merge_15a535016ed4",
+  "stage": "merge",
+  "candidate": "darpa_seed",
+  "created_at": "2026-04-14T21:21:46.526548+00:00",
+  "status": "scaffold_ready",
+  "base_model": "meta-llama-placeholder",
+  "notes": "Real merge still pending, but the repo now records exactly which upstream stage artifacts would feed the merge.",
+  "paths": {
+    "lora_manifest": "exports/candidates/darpa_seed/lora_train/artifact_manifest.json",
+    "preference_manifest": "exports/candidates/darpa_seed/preference_train/artifact_manifest.json",
+    "expected_merged_checkpoint": "/mnt/data/ccore_latest/cognition-core-github-launch-ready-alpha (2)/exports/candidates/darpa_seed/merge/merged-checkpoint"
+  },
+  "source_manifest": {
+    "lora_present": true,
+    "preference_present": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "source_name": "omnibinary",
+  "source_path": "/mnt/data/omnibinary-runtime-main (1).zip",
+  "output_path": "datasets/execution_lane_reasoning/omnibinary_seed_records.jsonl",
+  "records_written": 12,
+  "doc_count": 12,
+  "created_at": "2026-04-16T02:39:21.795840+00:00",
+  "top_documents": [
+    {
+      "path": "omnibinary-runtime-main/docs/block-cache-contract.md",
+      "summary": "Block Cache Contract | Translated block caching is production-usable only when cache records include:"
+    },
+    {
+      "path": "omnibinary-runtime-main/docs/decoder-contract.md",
+      "summary": "Decoder Contract | A real decoder milestone is complete only when one guest ISA block is decoded into canonical operations with:"
+    },
+    {
+      "path": "omnibinary-runtime-main/docs/decoder-state-machine.md",
+      "summary": "Decoder State Machine | The first real decoder should move through these states:"
+    },
+    {
+      "path": "omnibinary-runtime-main/docs/translation-cache-phases.md",
+      "summary": "Translation Cache Phases | Phase A | Phase B | Phase C"
+    },
+    {
+      "path": "omnibinary-runtime-main/README.md",
+      "summary": "OmniBinary Runtime | It is designed to answer three practical questions for any target program: | Current status | What it does today | What it does not do yet | The missing center is still the true r"
+    },
+    {
+      "path": "omnibinary-runtime-main/docs/adr/0003-cache-integrity-before-speed.md",
+      "summary": "ADR 0003: Cache integrity before speed | Status | Decision | Rationale"
+    },
+    {
+      "path": "omnibinary-runtime-main/docs/adr/README.md",
+      "summary": "Architecture Decision Records"
+    },
+    {
+      "path": "omnibinary-runtime-main/docs/architecture.md",
+      "summary": "Architecture | Core flow | Current implemented path | Next-step lanes | Repo-state note"
+    },
+    {
+      "path": "omnibinary-runtime-main/docs/cache-format.md",
+      "summary": "Cache Format | Current cache layout:"
+    },
+    {
+      "path": "omnibinary-runtime-main/docs/cache-hygiene.md",
+      "summary": "Cache Hygiene"
+    }
+  ],
+  "notes": "Curated markdown/doc extraction for cognition-core corpus shaping. Review before training."
+}

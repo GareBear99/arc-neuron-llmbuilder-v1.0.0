@@ -1,0 +1,38 @@
+{
+  "format": "omnibinary-language-bridge-v1",
+  "binary_path": "/mnt/data/work/unified/arc-unified-stack/artifacts/omnibinary_bridge/arc_language_truth_v1.obin",
+  "restore_db_path": "/mnt/data/work/unified/arc-unified-stack/artifacts/omnibinary_bridge/arc_language_truth_v1.restored.db",
+  "verified_payload_sha256": "67cd23eefc853b05047bf764a8c4cf0c2375bd0a9e9d724e835afa48f12dacc0",
+  "table_counts_expected": {
+    "language_aliases": 84,
+    "language_capabilities": 245,
+    "language_variants": 104,
+    "languages": 35,
+    "phonology_profiles": 35,
+    "phrase_translations": 385,
+    "pronunciation_profiles": 35,
+    "scripts": 15,
+    "self_fill_release_artifacts": 5,
+    "self_fill_release_runs": 1,
+    "self_fill_rollback_index": 1,
+    "source_weights": 7,
+    "transliteration_profiles": 21
+  },
+  "table_counts_restored": {
+    "language_aliases": 84,
+    "language_capabilities": 245,
+    "language_variants": 104,
+    "languages": 35,
+    "phonology_profiles": 35,
+    "phrase_translations": 385,
+    "pronunciation_profiles": 35,
+    "scripts": 15,
+    "self_fill_release_artifacts": 5,
+    "self_fill_release_runs": 1,
+    "self_fill_rollback_index": 1,
+    "source_weights": 7,
+    "transliteration_profiles": 21
+  },
+  "restored_at": "2026-04-18T00:44:46.964479+00:00",
+  "roundtrip_ok": true
+}

@@ -1,0 +1,6 @@
+{
+  "kind": "screenshot_attachment",
+  "image_path": "<external_capture>",
+  "status": "registered",
+  "note": "Use integrations/ai-screenshot-attachment for upstream capture plumbing."
+}

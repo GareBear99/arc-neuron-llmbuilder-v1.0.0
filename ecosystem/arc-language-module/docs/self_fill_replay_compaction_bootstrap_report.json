@@ -1,0 +1,73 @@
+{
+  "compact": {
+    "compact_bundle_path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/compact_archives/sfrc_10eb3070f64a.sfr_c7ebb33397f3.compact.arcrar.zip",
+    "compact_sha256": "6521f2ca4b78349f8c9d15618b11a6b65fda4e5f06e6d15270e224655598a790",
+    "compaction_id": "sfrc_10eb3070f64a",
+    "ok": true
+  },
+  "replay": {
+    "created_at": "2026-04-17T23:45:23.040435+00:00",
+    "ok": true,
+    "release_run_id": "sfr_c7ebb33397f3",
+    "replay_manifest_path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/replay_manifests/sfrr_15824adfe3b8.replay_manifest.json",
+    "replay_priority": 63,
+    "replay_run_id": "sfrr_15824adfe3b8",
+    "retention_class": "warm",
+    "rollback_id": "sfri_7a3644c5b93b",
+    "summary": {
+      "manifest_sha256": "2c1bbb1c3f0f87626b85af5e99b0adaf070c23becb44513bff28ddd242e9b180",
+      "promoted_count": 3,
+      "signature_type": "sha256-integrity-only",
+      "skipped_count": 220
+    },
+    "verification": {
+      "archive_path": {
+        "exists": true,
+        "path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/archives/sfr_c7ebb33397f3.arcrar.zip",
+        "sha256": "720e821552febb1cf3aeda7b34d637593e96cd5398b7886c50a23e365fbe44d3"
+      },
+      "ledger_path": {
+        "exists": true,
+        "path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/omnibinary/sfr_c7ebb33397f3.obin",
+        "sha256": "c07d6c5d765d1b0407da0d2b1360733c511deb58a18d3f7a7ba6f2a46b7c6c82"
+      },
+      "manifest_path": {
+        "exists": true,
+        "path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/release_manifests/sfr_c7ebb33397f3.manifest.json",
+        "sha256": "80b12b8e33a45b86d38ed9da1945b82f9ae64827952b8dbe5ba7409baf10a51c"
+      },
+      "snapshot_path": {
+        "exists": true,
+        "path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/snapshots/sfr_c7ebb33397f3.arc_language.snapshot.db",
+        "sha256": "352a9bb23c329c5a9bf235baf56917358b5b64b03f1a11d261fadae9c3cdb721"
+      }
+    }
+  },
+  "scheduled": {
+    "ok": true,
+    "release": {
+      "archive_path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/archives/sfr_c7ebb33397f3.arcrar.zip",
+      "ledger_path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/omnibinary/sfr_c7ebb33397f3.obin",
+      "manifest_path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/release_manifests/sfr_c7ebb33397f3.manifest.json",
+      "ok": true,
+      "release_run_id": "sfr_c7ebb33397f3",
+      "signature_path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/release_manifests/sfr_c7ebb33397f3.manifest.sig.json",
+      "snapshot_path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/snapshots/sfr_c7ebb33397f3.arc_language.snapshot.db",
+      "summary": {
+        "manifest_sha256": "2c1bbb1c3f0f87626b85af5e99b0adaf070c23becb44513bff28ddd242e9b180",
+        "promoted_count": 3,
+        "signature_type": "sha256-integrity-only",
+        "skipped_count": 220
+      }
+    },
+    "retention": {
+      "ok": true,
+      "policy_name": "daily_warm_window",
+      "release_run_id": "sfr_c7ebb33397f3",
+      "replay_priority": 63,
+      "retention_class": "warm",
+      "rollback_index_path": "/mnt/data/work_lang3/arc-language-module-main/artifacts/rollback_index/sfr_c7ebb33397f3.rollback_index.json"
+    },
+    "schedule_kind": "daily"
+  }
+}

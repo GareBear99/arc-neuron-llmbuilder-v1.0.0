@@ -1,0 +1,914 @@
+{
+  "variants": [
+    {
+      "language_id": "lang:eng",
+      "variant_name": "General American",
+      "variant_type": "dialect",
+      "region_hint": "US",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Standard North American English accent and vocabulary."
+    },
+    {
+      "language_id": "lang:eng",
+      "variant_name": "British English",
+      "variant_type": "dialect",
+      "region_hint": "GB",
+      "mutual_intelligibility": 0.98,
+      "status": "reviewed",
+      "notes": "Standard British English (RP and associated vocabulary)."
+    },
+    {
+      "language_id": "lang:eng",
+      "variant_name": "Australian English",
+      "variant_type": "dialect",
+      "region_hint": "AU",
+      "mutual_intelligibility": 0.97,
+      "status": "documented",
+      "notes": "Australian English accent and slang."
+    },
+    {
+      "language_id": "lang:eng",
+      "variant_name": "Old English",
+      "variant_type": "historical_stage",
+      "region_hint": "GB",
+      "mutual_intelligibility": 0.05,
+      "status": "documented",
+      "notes": "Anglo-Saxon. Mutually unintelligible with Modern English without study."
+    },
+    {
+      "language_id": "lang:eng",
+      "variant_name": "Middle English",
+      "variant_type": "historical_stage",
+      "region_hint": "GB",
+      "mutual_intelligibility": 0.25,
+      "status": "documented",
+      "notes": "Chaucer's English. Partially intelligible to trained Modern English speakers."
+    },
+    {
+      "language_id": "lang:eng",
+      "variant_name": "Formal written",
+      "variant_type": "register",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Academic, legal, official written register."
+    },
+    {
+      "language_id": "lang:eng",
+      "variant_name": "Informal spoken",
+      "variant_type": "register",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Casual spoken register including contractions and colloquialisms."
+    },
+    {
+      "language_id": "lang:spa",
+      "variant_name": "Castilian Spanish",
+      "variant_type": "dialect",
+      "region_hint": "ES",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Standard Iberian Spanish. Distinctive /θ/ for c/z."
+    },
+    {
+      "language_id": "lang:spa",
+      "variant_name": "Latin American Spanish",
+      "variant_type": "dialect",
+      "region_hint": "LATAM",
+      "mutual_intelligibility": 0.95,
+      "status": "reviewed",
+      "notes": "Covers most Latin American varieties. Seseo (no /θ/ distinction)."
+    },
+    {
+      "language_id": "lang:spa",
+      "variant_name": "Rioplatense Spanish",
+      "variant_type": "dialect",
+      "region_hint": "AR",
+      "mutual_intelligibility": 0.9,
+      "status": "documented",
+      "notes": "Argentina/Uruguay. Voseo and distinctive intonation."
+    },
+    {
+      "language_id": "lang:fra",
+      "variant_name": "Metropolitan French",
+      "variant_type": "dialect",
+      "region_hint": "FR",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Standard Parisian French."
+    },
+    {
+      "language_id": "lang:fra",
+      "variant_name": "Quebec French",
+      "variant_type": "dialect",
+      "region_hint": "CA-QC",
+      "mutual_intelligibility": 0.85,
+      "status": "reviewed",
+      "notes": "Canadian French. Distinct phonology and vocabulary; partial intelligibility with Metropolitan."
+    },
+    {
+      "language_id": "lang:fra",
+      "variant_name": "African French",
+      "variant_type": "dialect",
+      "region_hint": "AF",
+      "mutual_intelligibility": 0.92,
+      "status": "documented",
+      "notes": "Varieties spoken across sub-Saharan Africa. Phonological and lexical differences."
+    },
+    {
+      "language_id": "lang:arb",
+      "variant_name": "Modern Standard Arabic",
+      "variant_type": "orthography",
+      "region_hint": "MENA",
+      "script_id": "Arab",
+      "mutual_intelligibility": 0.7,
+      "status": "reviewed",
+      "notes": "MSA (al-fusha): the formal written standard. Not a native spoken variety; learned through education."
+    },
+    {
+      "language_id": "lang:arb",
+      "variant_name": "Egyptian Arabic",
+      "variant_type": "dialect",
+      "region_hint": "EG",
+      "mutual_intelligibility": 0.75,
+      "status": "reviewed",
+      "notes": "Most widely understood Arabic dialect due to media. Significant differences from MSA and other dialects."
+    },
+    {
+      "language_id": "lang:arb",
+      "variant_name": "Levantine Arabic",
+      "variant_type": "dialect",
+      "region_hint": "SY-LB-JO-PS",
+      "mutual_intelligibility": 0.7,
+      "status": "documented",
+      "notes": "Syrian/Lebanese/Jordanian/Palestinian Arabic. Cluster of related dialects."
+    },
+    {
+      "language_id": "lang:arb",
+      "variant_name": "Gulf Arabic",
+      "variant_type": "dialect",
+      "region_hint": "Gulf",
+      "mutual_intelligibility": 0.65,
+      "status": "documented",
+      "notes": "Arabian Peninsula varieties. More conservative phonology than Egyptian/Levantine."
+    },
+    {
+      "language_id": "lang:cmn",
+      "variant_name": "Putonghua",
+      "variant_type": "dialect",
+      "region_hint": "CN",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Standard Mandarin (PRC official standard). Based on Beijing pronunciation."
+    },
+    {
+      "language_id": "lang:cmn",
+      "variant_name": "Guoyu",
+      "variant_type": "dialect",
+      "region_hint": "TW",
+      "mutual_intelligibility": 0.98,
+      "status": "reviewed",
+      "notes": "Taiwan Standard Mandarin. Minor pronunciation and vocabulary differences from Putonghua."
+    },
+    {
+      "language_id": "lang:cmn",
+      "variant_name": "Classical Chinese",
+      "variant_type": "historical_stage",
+      "mutual_intelligibility": 0.1,
+      "status": "documented",
+      "notes": "Literary Chinese (wenyan). Used in classical texts; requires dedicated study to read."
+    },
+    {
+      "language_id": "lang:jpn",
+      "variant_name": "Standard Japanese",
+      "variant_type": "dialect",
+      "region_hint": "JP",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Hyojungo: Tokyo-based standard used in media and education."
+    },
+    {
+      "language_id": "lang:jpn",
+      "variant_name": "Kansai-ben",
+      "variant_type": "dialect",
+      "region_hint": "JP-Osaka-Kyoto",
+      "mutual_intelligibility": 0.92,
+      "status": "documented",
+      "notes": "Osaka/Kyoto regional dialect. Distinct pitch accent and vocabulary."
+    },
+    {
+      "language_id": "lang:jpn",
+      "variant_name": "Old Japanese",
+      "variant_type": "historical_stage",
+      "region_hint": "JP",
+      "mutual_intelligibility": 0.15,
+      "status": "documented",
+      "notes": "Classical Japanese (kobun). 8th century. Requires dedicated study."
+    },
+    {
+      "language_id": "lang:jpn",
+      "variant_name": "Formal keigo",
+      "variant_type": "register",
+      "mutual_intelligibility": 0.95,
+      "status": "reviewed",
+      "notes": "Honorific register (keigo). Grammatically distinct from plain speech; used in business and formal contexts."
+    },
+    {
+      "language_id": "lang:por",
+      "variant_name": "European Portuguese",
+      "variant_type": "dialect",
+      "region_hint": "PT",
+      "mutual_intelligibility": 0.88,
+      "status": "reviewed",
+      "notes": "Portugal standard. Reduced unstressed vowels; distinct from Brazilian."
+    },
+    {
+      "language_id": "lang:por",
+      "variant_name": "Brazilian Portuguese",
+      "variant_type": "dialect",
+      "region_hint": "BR",
+      "mutual_intelligibility": 0.88,
+      "status": "reviewed",
+      "notes": "Brazilian standard (padrão). More open vowels; different vocabulary."
+    },
+    {
+      "language_id": "lang:deu",
+      "variant_name": "Hochdeutsch",
+      "variant_type": "dialect",
+      "region_hint": "DE",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Standard High German. Reference norm for education and media."
+    },
+    {
+      "language_id": "lang:deu",
+      "variant_name": "Swiss German",
+      "variant_type": "dialect",
+      "region_hint": "CH",
+      "mutual_intelligibility": 0.5,
+      "status": "documented",
+      "notes": "Alemannic German dialects of Switzerland. Largely unintelligible to Standard German speakers without exposure."
+    },
+    {
+      "language_id": "lang:deu",
+      "variant_name": "Austrian German",
+      "variant_type": "dialect",
+      "region_hint": "AT",
+      "mutual_intelligibility": 0.95,
+      "status": "documented",
+      "notes": "Austrian standard German. Vocabulary and some phonological differences."
+    },
+    {
+      "language_id": "lang:rus",
+      "variant_name": "Standard Russian",
+      "variant_type": "dialect",
+      "region_hint": "RU",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Moscow-based standard. Used in education and media."
+    },
+    {
+      "language_id": "lang:rus",
+      "variant_name": "Church Slavonic",
+      "variant_type": "historical_stage",
+      "mutual_intelligibility": 0.2,
+      "status": "documented",
+      "notes": "Liturgical language of Orthodox Christianity. Related but not mutually intelligible."
+    },
+    {
+      "language_id": "lang:hin",
+      "variant_name": "Standard Hindi",
+      "variant_type": "dialect",
+      "region_hint": "IN",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Khari Boli-based standard. Used in Bollywood and media."
+    },
+    {
+      "language_id": "lang:hin",
+      "variant_name": "Hindustani",
+      "variant_type": "dialect",
+      "region_hint": "IN-PK",
+      "mutual_intelligibility": 0.95,
+      "status": "documented",
+      "notes": "Shared colloquial base of Hindi and Urdu. Mutually intelligible in spoken form."
+    },
+    {
+      "language_id": "lang:nav",
+      "variant_name": "Eastern Navajo",
+      "variant_type": "dialect",
+      "region_hint": "US-NM",
+      "mutual_intelligibility": 0.95,
+      "status": "documented",
+      "notes": "Eastern dialect cluster. Basis of the standard orthography."
+    },
+    {
+      "language_id": "lang:nav",
+      "variant_name": "Western Navajo",
+      "variant_type": "dialect",
+      "region_hint": "US-AZ",
+      "mutual_intelligibility": 0.92,
+      "status": "documented",
+      "notes": "Western/Arizona dialect cluster. Some phonological differences."
+    },
+    {
+      "language_id": "lang:chr",
+      "variant_name": "Cherokee Syllabics",
+      "variant_type": "orthography",
+      "script_id": "Cher",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Syllabary orthography invented by Sequoyah (~1820). Primary literary/official orthography."
+    },
+    {
+      "language_id": "lang:chr",
+      "variant_name": "Cherokee Romanized",
+      "variant_type": "orthography",
+      "script_id": "Latn",
+      "mutual_intelligibility": 1.0,
+      "status": "documented",
+      "notes": "Latin-based romanization. Used in linguistic and educational materials alongside syllabics."
+    },
+    {
+      "language_id": "lang:ita",
+      "variant_name": "Standard Italian",
+      "variant_type": "dialect",
+      "region_hint": "IT",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Florentine-based standard taught in schools and used in media."
+    },
+    {
+      "language_id": "lang:ita",
+      "variant_name": "Sicilian",
+      "variant_type": "dialect",
+      "region_hint": "IT-SI",
+      "mutual_intelligibility": 0.65,
+      "status": "documented",
+      "notes": "Regional dialect with significant Arabic substrate; partially intelligible with Standard Italian."
+    },
+    {
+      "language_id": "lang:ita",
+      "variant_name": "Formal written",
+      "variant_type": "register",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Formal written register used in legal, academic, and official contexts."
+    },
+    {
+      "language_id": "lang:nld",
+      "variant_name": "Standard Dutch",
+      "variant_type": "dialect",
+      "region_hint": "NL",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "AN (Algemeen Nederlands) — the standard taught in schools and used in media."
+    },
+    {
+      "language_id": "lang:nld",
+      "variant_name": "Flemish",
+      "variant_type": "dialect",
+      "region_hint": "BE",
+      "mutual_intelligibility": 0.9,
+      "status": "documented",
+      "notes": "Belgian Dutch. Phonological and lexical differences from Netherlands Dutch."
+    },
+    {
+      "language_id": "lang:nld",
+      "variant_name": "Middle Dutch",
+      "variant_type": "historical_stage",
+      "mutual_intelligibility": 0.2,
+      "status": "documented",
+      "notes": "Medieval Dutch (900–1500 CE). Requires dedicated study from Standard Dutch."
+    },
+    {
+      "language_id": "lang:pol",
+      "variant_name": "Standard Polish",
+      "variant_type": "dialect",
+      "region_hint": "PL",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Warsaw-based standard used in education and media."
+    },
+    {
+      "language_id": "lang:pol",
+      "variant_name": "Silesian",
+      "variant_type": "dialect",
+      "region_hint": "PL-SL",
+      "mutual_intelligibility": 0.7,
+      "status": "documented",
+      "notes": "Disputed whether dialect or separate language. High lexical difference from Standard Polish."
+    },
+    {
+      "language_id": "lang:pol",
+      "variant_name": "Old Polish",
+      "variant_type": "historical_stage",
+      "mutual_intelligibility": 0.15,
+      "status": "documented",
+      "notes": "Medieval Polish (before 1500 CE). Requires dedicated study."
+    },
+    {
+      "language_id": "lang:kor",
+      "variant_name": "Seoul Standard",
+      "variant_type": "dialect",
+      "region_hint": "KR",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Seoul-based standard used in South Korean media and education."
+    },
+    {
+      "language_id": "lang:kor",
+      "variant_name": "Pyongyang Standard",
+      "variant_type": "dialect",
+      "region_hint": "KP",
+      "mutual_intelligibility": 0.9,
+      "status": "documented",
+      "notes": "North Korean standard. Lexical divergence due to different vocabulary policies since 1945."
+    },
+    {
+      "language_id": "lang:kor",
+      "variant_name": "Jeju",
+      "variant_type": "dialect",
+      "region_hint": "KR-JJ",
+      "mutual_intelligibility": 0.3,
+      "status": "documented",
+      "notes": "UNESCO-classified endangered language. Often considered separate; very limited intelligibility with Seoul Korean."
+    },
+    {
+      "language_id": "lang:kor",
+      "variant_name": "Formal jondaemal",
+      "variant_type": "register",
+      "mutual_intelligibility": 0.95,
+      "status": "reviewed",
+      "notes": "Formal speech level (jondaemal). Grammatically distinct; used with strangers and superiors."
+    },
+    {
+      "language_id": "lang:tur",
+      "variant_name": "Istanbul Turkish",
+      "variant_type": "dialect",
+      "region_hint": "TR",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Prestige dialect forming the basis of Standard Turkish."
+    },
+    {
+      "language_id": "lang:tur",
+      "variant_name": "Old Ottoman Turkish",
+      "variant_type": "historical_stage",
+      "mutual_intelligibility": 0.1,
+      "status": "documented",
+      "notes": "Ottoman written language (Arabic script). Requires dedicated study; very different vocabulary."
+    },
+    {
+      "language_id": "lang:tur",
+      "variant_name": "Formal written",
+      "variant_type": "register",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Formal register used in official documents and academia."
+    },
+    {
+      "language_id": "lang:heb",
+      "variant_name": "Modern Israeli Hebrew",
+      "variant_type": "dialect",
+      "region_hint": "IL",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Standard modern Hebrew (Ivrit). Based on literary Hebrew revived in 19th–20th century."
+    },
+    {
+      "language_id": "lang:heb",
+      "variant_name": "Biblical Hebrew",
+      "variant_type": "historical_stage",
+      "mutual_intelligibility": 0.25,
+      "status": "documented",
+      "notes": "Classical Biblical Hebrew. Partial intelligibility with Modern Hebrew; significant vocabulary and grammar differences."
+    },
+    {
+      "language_id": "lang:heb",
+      "variant_name": "Formal written",
+      "variant_type": "register",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Formal register — legal, religious, academic contexts."
+    },
+    {
+      "language_id": "lang:fas",
+      "variant_name": "Iranian Persian",
+      "variant_type": "dialect",
+      "region_hint": "IR",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Standard Farsi spoken in Iran. Official standard."
+    },
+    {
+      "language_id": "lang:fas",
+      "variant_name": "Dari",
+      "variant_type": "dialect",
+      "region_hint": "AF",
+      "mutual_intelligibility": 0.88,
+      "status": "documented",
+      "notes": "Afghan Persian. Phonological and lexical differences; mutually intelligible with Iranian Persian."
+    },
+    {
+      "language_id": "lang:fas",
+      "variant_name": "Tajik",
+      "variant_type": "dialect",
+      "region_hint": "TJ",
+      "mutual_intelligibility": 0.8,
+      "status": "documented",
+      "notes": "Tajikistani Persian written in Cyrillic. High mutual intelligibility in spoken form."
+    },
+    {
+      "language_id": "lang:fas",
+      "variant_name": "Classical Persian",
+      "variant_type": "historical_stage",
+      "mutual_intelligibility": 0.4,
+      "status": "documented",
+      "notes": "Classical literary Persian (Rumi, Hafez). Significant vocabulary overlap with Modern Persian."
+    },
+    {
+      "language_id": "lang:ben",
+      "variant_name": "Standard Bengali (Kolkata)",
+      "variant_type": "dialect",
+      "region_hint": "IN-WB",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "West Bengal standard. Prestige dialect."
+    },
+    {
+      "language_id": "lang:ben",
+      "variant_name": "Bangladeshi Bengali",
+      "variant_type": "dialect",
+      "region_hint": "BD",
+      "mutual_intelligibility": 0.88,
+      "status": "documented",
+      "notes": "Dhaka-based standard. Lexical and phonological differences from Kolkata Bengali."
+    },
+    {
+      "language_id": "lang:ben",
+      "variant_name": "Formal written",
+      "variant_type": "register",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Sadhubhasha — formal written register. Distinct from colloquial Chalit."
+    },
+    {
+      "language_id": "lang:mar",
+      "variant_name": "Standard Marathi",
+      "variant_type": "dialect",
+      "region_hint": "IN-MH",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Pune-based Marathi standard used in media and education."
+    },
+    {
+      "language_id": "lang:mar",
+      "variant_name": "Varhadi",
+      "variant_type": "dialect",
+      "region_hint": "IN-MH-VD",
+      "mutual_intelligibility": 0.75,
+      "status": "documented",
+      "notes": "Vidarbha region dialect. Distinct vocabulary and intonation."
+    },
+    {
+      "language_id": "lang:urd",
+      "variant_name": "Standard Urdu",
+      "variant_type": "dialect",
+      "region_hint": "PK",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Karachi/Lahore-based standard. Official language of Pakistan."
+    },
+    {
+      "language_id": "lang:urd",
+      "variant_name": "Dakhini Urdu",
+      "variant_type": "dialect",
+      "region_hint": "IN",
+      "mutual_intelligibility": 0.75,
+      "status": "documented",
+      "notes": "South Indian Urdu variety. Significant phonological differences."
+    },
+    {
+      "language_id": "lang:urd",
+      "variant_name": "Formal written",
+      "variant_type": "register",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "High literary Urdu register with extensive Persian/Arabic vocabulary."
+    },
+    {
+      "language_id": "lang:pan",
+      "variant_name": "Eastern Punjabi (Gurmukhi)",
+      "variant_type": "orthography",
+      "region_hint": "IN-PB",
+      "script_id": "Guru",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Indian Punjabi written in Gurmukhi script. Official in Punjab, India."
+    },
+    {
+      "language_id": "lang:pan",
+      "variant_name": "Western Punjabi (Shahmukhi)",
+      "variant_type": "orthography",
+      "region_hint": "PK",
+      "script_id": "Arab",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Pakistani Punjabi written in Perso-Arabic (Shahmukhi) script. Same spoken language."
+    },
+    {
+      "language_id": "lang:pan",
+      "variant_name": "Majhi",
+      "variant_type": "dialect",
+      "region_hint": "IN-PB",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Prestige dialect of Punjabi, basis for the standard written form."
+    },
+    {
+      "language_id": "lang:tam",
+      "variant_name": "Standard Spoken Tamil",
+      "variant_type": "register",
+      "mutual_intelligibility": 0.85,
+      "status": "reviewed",
+      "notes": "Colloquial spoken register. Differs significantly from formal written Tamil."
+    },
+    {
+      "language_id": "lang:tam",
+      "variant_name": "Classical Tamil",
+      "variant_type": "historical_stage",
+      "mutual_intelligibility": 0.3,
+      "status": "documented",
+      "notes": "Sangam-era Tamil (300 BCE–300 CE). One of the oldest living classical languages; requires dedicated study."
+    },
+    {
+      "language_id": "lang:tam",
+      "variant_name": "Sri Lankan Tamil",
+      "variant_type": "dialect",
+      "region_hint": "LK",
+      "mutual_intelligibility": 0.85,
+      "status": "documented",
+      "notes": "Sri Lankan variety. Phonological and lexical divergence from Standard Indian Tamil."
+    },
+    {
+      "language_id": "lang:tel",
+      "variant_name": "Standard Telugu",
+      "variant_type": "dialect",
+      "region_hint": "IN-AP",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Hyderabad-based standard used in media and education."
+    },
+    {
+      "language_id": "lang:tel",
+      "variant_name": "Classical Telugu",
+      "variant_type": "historical_stage",
+      "mutual_intelligibility": 0.3,
+      "status": "documented",
+      "notes": "Classical literary Telugu. Requires dedicated study."
+    },
+    {
+      "language_id": "lang:tel",
+      "variant_name": "Formal written",
+      "variant_type": "register",
+      "mutual_intelligibility": 0.8,
+      "status": "reviewed",
+      "notes": "Formal granthika register. Distinct from colloquial vyavaharika."
+    },
+    {
+      "language_id": "lang:tha",
+      "variant_name": "Central Thai (Bangkok)",
+      "variant_type": "dialect",
+      "region_hint": "TH",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Bangkok-based standard. Used in education and media nationwide."
+    },
+    {
+      "language_id": "lang:tha",
+      "variant_name": "Northern Thai (Kham Mueang)",
+      "variant_type": "dialect",
+      "region_hint": "TH-N",
+      "mutual_intelligibility": 0.65,
+      "status": "documented",
+      "notes": "Lanna Thai. Distinct tonal system and vocabulary; partially intelligible with Central Thai."
+    },
+    {
+      "language_id": "lang:tha",
+      "variant_name": "Formal royal register",
+      "variant_type": "register",
+      "mutual_intelligibility": 0.8,
+      "status": "documented",
+      "notes": "Ratchasap — formal register used when addressing royalty. Distinct vocabulary."
+    },
+    {
+      "language_id": "lang:msa",
+      "variant_name": "Standard Malay (Bahasa Malaysia)",
+      "variant_type": "dialect",
+      "region_hint": "MY",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Malaysian standard. Minor differences from Indonesian despite high mutual intelligibility."
+    },
+    {
+      "language_id": "lang:msa",
+      "variant_name": "Brunei Malay",
+      "variant_type": "dialect",
+      "region_hint": "BN",
+      "mutual_intelligibility": 0.92,
+      "status": "documented",
+      "notes": "Brunei variety. Phonological differences and Brunei-specific vocabulary."
+    },
+    {
+      "language_id": "lang:msa",
+      "variant_name": "Classical Malay",
+      "variant_type": "historical_stage",
+      "mutual_intelligibility": 0.35,
+      "status": "documented",
+      "notes": "Court Malay of pre-colonial Malay kingdoms. Significant literary corpus."
+    },
+    {
+      "language_id": "lang:vie",
+      "variant_name": "Northern Vietnamese (Hanoi)",
+      "variant_type": "dialect",
+      "region_hint": "VN-N",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Hanoi-based standard. Basis for the official written language."
+    },
+    {
+      "language_id": "lang:vie",
+      "variant_name": "Southern Vietnamese (Ho Chi Minh)",
+      "variant_type": "dialect",
+      "region_hint": "VN-S",
+      "mutual_intelligibility": 0.88,
+      "status": "documented",
+      "notes": "Saigon variety. Tonal and lexical differences; some consonant mergers."
+    },
+    {
+      "language_id": "lang:vie",
+      "variant_name": "Formal written",
+      "variant_type": "register",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Official formal register used in government and education."
+    },
+    {
+      "language_id": "lang:ind",
+      "variant_name": "Standard Indonesian",
+      "variant_type": "dialect",
+      "region_hint": "ID",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Bahasa Indonesia — the standardized national language. Closely related to Malaysian."
+    },
+    {
+      "language_id": "lang:ind",
+      "variant_name": "Colloquial Jakarta Indonesian",
+      "variant_type": "register",
+      "mutual_intelligibility": 0.88,
+      "status": "documented",
+      "notes": "Informal Betawi-influenced spoken register of Jakarta. Significant differences from formal Bahasa."
+    },
+    {
+      "language_id": "lang:ind",
+      "variant_name": "Formal written",
+      "variant_type": "register",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Official formal register used in government documents and media."
+    },
+    {
+      "language_id": "lang:swa",
+      "variant_name": "Standard Swahili (Kiswahili Sanifu)",
+      "variant_type": "dialect",
+      "region_hint": "TZ-KE",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Tanzanian-based standard (Unguja dialect). Used across East Africa as lingua franca."
+    },
+    {
+      "language_id": "lang:swa",
+      "variant_name": "Kenya Swahili",
+      "variant_type": "dialect",
+      "region_hint": "KE",
+      "mutual_intelligibility": 0.9,
+      "status": "documented",
+      "notes": "Nairobi variety. Some lexical differences from Tanzanian standard."
+    },
+    {
+      "language_id": "lang:swa",
+      "variant_name": "Formal written",
+      "variant_type": "register",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Formal register used in government, education, and news media."
+    },
+    {
+      "language_id": "lang:amh",
+      "variant_name": "Standard Amharic",
+      "variant_type": "dialect",
+      "region_hint": "ET",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Addis Ababa-based standard. Official language of Ethiopia."
+    },
+    {
+      "language_id": "lang:amh",
+      "variant_name": "Formal written",
+      "variant_type": "register",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Formal register used in government, media, and religious contexts."
+    },
+    {
+      "language_id": "lang:ukr",
+      "variant_name": "Standard Ukrainian",
+      "variant_type": "dialect",
+      "region_hint": "UA",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Kyiv-Poltava dialect-based standard. Official language of Ukraine."
+    },
+    {
+      "language_id": "lang:ukr",
+      "variant_name": "Western Ukrainian",
+      "variant_type": "dialect",
+      "region_hint": "UA-W",
+      "mutual_intelligibility": 0.88,
+      "status": "documented",
+      "notes": "Galician-Volhynian varieties. More Polish-influenced vocabulary."
+    },
+    {
+      "language_id": "lang:ukr",
+      "variant_name": "Old Church Slavonic (Ukrainian)",
+      "variant_type": "historical_stage",
+      "mutual_intelligibility": 0.15,
+      "status": "documented",
+      "notes": "Liturgical register derived from Old Church Slavonic. Used in Ukrainian Orthodox tradition."
+    },
+    {
+      "language_id": "lang:yue",
+      "variant_name": "Hong Kong Cantonese",
+      "variant_type": "dialect",
+      "region_hint": "HK",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Standard Cantonese based on Guangzhou variety. Used in Hong Kong media and education."
+    },
+    {
+      "language_id": "lang:yue",
+      "variant_name": "Guangzhou Cantonese",
+      "variant_type": "dialect",
+      "region_hint": "CN-GD",
+      "mutual_intelligibility": 0.97,
+      "status": "reviewed",
+      "notes": "Guangdong variety. Minor differences from Hong Kong standard."
+    },
+    {
+      "language_id": "lang:crk",
+      "variant_name": "Plains Cree (Syllabics)",
+      "variant_type": "orthography",
+      "script_id": "Cans",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Cree syllabics orthography. Traditional writing system widely used in Canada."
+    },
+    {
+      "language_id": "lang:crk",
+      "variant_name": "Plains Cree (SRO)",
+      "variant_type": "orthography",
+      "script_id": "Latn",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Standard Roman Orthography. Latin-script standard developed for linguistic documentation."
+    },
+    {
+      "language_id": "lang:ell",
+      "variant_name": "Standard Modern Greek",
+      "variant_type": "dialect",
+      "region_hint": "GR",
+      "mutual_intelligibility": 1.0,
+      "status": "reviewed",
+      "notes": "Demotic Greek — the standard since 1976. Based on southern dialects."
+    },
+    {
+      "language_id": "lang:ell",
+      "variant_name": "Cypriot Greek",
+      "variant_type": "dialect",
+      "region_hint": "CY",
+      "mutual_intelligibility": 0.78,
+      "status": "documented",
+      "notes": "Cypriot variety. Preserves Medieval Greek features; partially intelligible with Standard Modern Greek."
+    },
+    {
+      "language_id": "lang:ell",
+      "variant_name": "Ancient Greek",
+      "variant_type": "historical_stage",
+      "mutual_intelligibility": 0.15,
+      "status": "documented",
+      "notes": "Classical Attic Greek. Requires dedicated study from Modern Greek speakers."
+    }
+  ]
+}

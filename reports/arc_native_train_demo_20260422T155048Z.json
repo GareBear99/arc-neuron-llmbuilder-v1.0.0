@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "candidate": "demo_20260422T155048Z",
+  "tier": "tiny",
+  "param_count": 120576,
+  "manifest": "exports/candidates/demo_20260422T155048Z/lora_train/artifact_manifest.json",
+  "artifact_id": "lora_train_5c6d9d7f0ee6",
+  "stage": "lora_train",
+  "created_at": "2026-04-22T15:50:53.924553+00:00",
+  "status": "completed",
+  "execution_mode": "arc_native",
+  "notes": "ARC-native tiny training completed. Real weights produced; no external trainer required.",
+  "training": {
+    "steps": 20,
+    "batch_size": 4,
+    "lr": 0.002,
+    "seed": 1337,
+    "corpus_bytes": 600000,
+    "initial_loss": 5.547921,
+    "final_loss": 3.972363,
+    "val_ppl": 53.0929
+  },
+  "paths": {
+    "pt_checkpoint": "exports/candidates/demo_20260422T155048Z/lora_train/checkpoint/arc_native_demo_20260422T155048Z.pt",
+    "gguf": "exports/candidates/demo_20260422T155048Z/lora_train/checkpoint/arc_native_demo_20260422T155048Z.gguf",
+    "exemplar": "exports/candidates/demo_20260422T155048Z/exemplar_train/exemplar_model.json"
+  },
+  "sample": "ARC cognitionueU#w\nB  nrMsc idlsuypoccn*v\u0017dr\u0007irtecKOr"
+}

@@ -1,0 +1,79 @@
+{
+  "ok": true,
+  "candidate": {
+    "candidate_id": "cand_cfa6c6aba1",
+    "run_id": "run_e34c91a2fa0e",
+    "model": "demo_20260422T161637Z",
+    "adapter": "exemplar",
+    "backend_identity": "exemplar:demo_20260422T161637Z",
+    "prompt_profile": "minimal_doctrine",
+    "benchmark_version": "seed_tasks_v2",
+    "scorer_version": "v2-task-aware",
+    "reasoning": 1.0,
+    "planning_quality": 1.0,
+    "planning": 1.0,
+    "critique_usefulness": 0.75,
+    "critique": 0.75,
+    "repair_success": 0.6667,
+    "compression_retention": 1.0,
+    "compression": 1.0,
+    "calibration_error": 0.1667,
+    "paraphrase_stability": 0.8833,
+    "overall_weighted_score": 0.7333,
+    "failure_rate": 0.0,
+    "latency_summary_ms": {
+      "avg": 7.87,
+      "max": 17.54
+    },
+    "artifacts": {
+      "scored_outputs": "/private/tmp/arc-unified-stack/arc-unified-stack-final/results/demo_20260422T161637Z_scored.json",
+      "promotion_report": "/private/tmp/arc-unified-stack/arc-unified-stack-final/reports/demo_promo_20260422T161637Z.json"
+    },
+    "created_at": "2026-04-22T16:16:43.543373+00:00",
+    "incumbent": false,
+    "gate_version": 2,
+    "decision": "archive_only"
+  },
+  "incumbent_before": {
+    "candidate_id": "cand_ada638c74e",
+    "run_id": "run_60aa72ae75cf",
+    "model": "arc_governed_v6_conversation",
+    "adapter": "exemplar",
+    "backend_identity": "exemplar:arc_governed_v6_conversation",
+    "prompt_profile": "minimal_doctrine",
+    "benchmark_version": "seed_tasks_v2",
+    "scorer_version": "v2-task-aware",
+    "reasoning": 1.0,
+    "planning_quality": 1.0,
+    "planning": 1.0,
+    "critique_usefulness": 0.75,
+    "critique": 0.75,
+    "repair_success": 0.6667,
+    "compression_retention": 1.0,
+    "compression": 1.0,
+    "calibration_error": 0.1667,
+    "paraphrase_stability": 0.8666,
+    "overall_weighted_score": 0.7333,
+    "failure_rate": 0.0,
+    "latency_summary_ms": {
+      "avg": 7.62,
+      "max": 18.26
+    },
+    "artifacts": {
+      "scored_outputs": "results/arc_governed_v6_conversation_scored.json",
+      "promotion_report": "reports/promotion_decision.json"
+    },
+    "created_at": "2026-04-22T16:15:17.512546+00:00",
+    "incumbent": true,
+    "gate_version": 2,
+    "decision": "promote"
+  },
+  "promoted": false,
+  "decision": "archive_only",
+  "decision_reason": "Score 0.7333 did not beat incumbent 0.7333.",
+  "hard_rejected": false,
+  "floor_violations": [],
+  "regression_violations": [],
+  "arc_rar_bundle": null,
+  "gate_version": 2
+}

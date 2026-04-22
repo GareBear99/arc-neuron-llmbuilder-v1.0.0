@@ -1,0 +1,8 @@
+{
+  "manifests": [
+    {"provider_name": "local_seed", "backend_kind": "translation", "execution_mode": "local", "supported_pairs": ["seeded_phrase_pairs"], "dependencies": [], "health_policy": {"offline_blocks": false}, "notes": "Built-in seeded phrase backend."},
+    {"provider_name": "argos_local", "backend_kind": "translation", "execution_mode": "optional_local", "supported_pairs": ["installed_argos_pairs"], "dependencies": ["argostranslate"], "health_policy": {"offline_blocks": true}, "notes": "Optional local Argos backend."},
+    {"provider_name": "nllb_bridge", "backend_kind": "translation", "execution_mode": "external_bridge", "supported_pairs": ["bridge_configured_pairs"], "dependencies": ["bridge_runtime"], "health_policy": {"offline_blocks": true}, "notes": "Boundary stub until live bridge exists."},
+    {"provider_name": "personaplex", "backend_kind": "speech", "execution_mode": "optional_external", "supported_pairs": ["provider_supported_languages"], "dependencies": ["personaplex_runtime"], "health_policy": {"offline_blocks": true}, "notes": "Optional downstream speech provider."}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "manifest": "exports/candidates/tmpcand/exemplar_train/artifact_manifest.json",
+  "artifact_id": "exemplar_train_9a9cc22e2b7e",
+  "stage": "exemplar_train",
+  "candidate": "tmpcand",
+  "created_at": "2026-04-14T21:34:51.911478+00:00",
+  "status": "completed",
+  "execution_mode": "native",
+  "notes": "Built a functioning exemplar retrieval model artifact from curated repo datasets.",
+  "paths": {
+    "artifact": "/mnt/data/cc_phase3/cognition-core-github-launch-ready-alpha (2)/exports/candidates/tmpcand/exemplar_train/exemplar_model.json"
+  },
+  "metrics": {
+    "record_count": 102
+  }
+}

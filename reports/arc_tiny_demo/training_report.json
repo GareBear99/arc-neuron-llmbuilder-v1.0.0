@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "seed": 1337,
+  "steps": 80,
+  "batch_size": 8,
+  "repo_root": "/mnt/data/work/base/arc-cognition-core-main/arc-cognition-core-main",
+  "corpus_bytes": 220000,
+  "final_loss": 3.261526584625244,
+  "initial_loss": 5.498661518096924,
+  "sample": "ARC cognition corenoIlodsmooe\"arh\n  \", \". uotl-e-",
+  "gguf_path": "artifacts/gguf/ARC-Tiny-Demo-0.05M-v1.0-F32.gguf",
+  "pt_path": "artifacts/gguf/arc-tiny-demo.pt",
+  "json_path": "artifacts/gguf/arc-tiny-demo.json",
+  "parameter_count": 23008
+}

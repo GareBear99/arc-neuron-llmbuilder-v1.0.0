@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "source_name": "glottolog",
+      "kind": "genealogy",
+      "license_note": "User must validate current Glottolog licensing and data package version before production ingestion.",
+      "expected_fields": [
+        "language_id",
+        "name",
+        "family",
+        "branch",
+        "parent_language_id",
+        "lineage_confidence",
+        "source_ref"
+      ]
+    },
+    {
+      "source_name": "iso639_3",
+      "kind": "identifiers",
+      "license_note": "Use as identifier normalization, not genealogy truth.",
+      "expected_fields": [
+        "language_id",
+        "iso639_3",
+        "name",
+        "aliases"
+      ]
+    },
+    {
+      "source_name": "cldr",
+      "kind": "scripts_locales",
+      "license_note": "Use for script and locale mappings, not historical lineage.",
+      "expected_fields": [
+        "language_id",
+        "scripts",
+        "aliases",
+        "source_ref"
+      ]
+    }
+  ]
+}

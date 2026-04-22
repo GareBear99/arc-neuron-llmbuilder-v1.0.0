@@ -1,0 +1,5 @@
+{
+  "distillation_sft": 50,
+  "distillation_preference": 45,
+  "distillation_eval": 45
+}

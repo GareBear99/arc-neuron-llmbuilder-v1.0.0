@@ -1,0 +1,25 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/arc-rar-common",
+  "crates/arc-rar-core",
+  "crates/arc-rar-cli",
+  "crates/arc-rar-ipc",
+  "crates/arc-rar-automation",
+  "crates/arc-rar-ffi"
+]
+
+[workspace.package]
+version = "0.3.0"
+edition = "2021"
+license = "MIT"
+authors = ["Arc-RAR handoff"]
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+clap = { version = "4", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+which = "6"

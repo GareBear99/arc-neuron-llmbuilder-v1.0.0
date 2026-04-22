@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cognition-core-starter-pack"
+version = "0.3.0"
+description = "Execution-first alpha cognition lab scaffold for GGUF-oriented model evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Gary Doman" }]
+dependencies = [
+  "PyYAML>=6.0",
+  "jsonschema>=4.0",
+  "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+cognition-lab = "cognition_lab:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

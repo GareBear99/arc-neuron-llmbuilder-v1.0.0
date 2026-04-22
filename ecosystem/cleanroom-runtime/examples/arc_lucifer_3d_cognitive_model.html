@@ -1,0 +1,317 @@
+
+<h2 class="sr-only">ARC Lucifer Runtime — 3D cognitive architecture visualization showing the full AGI loop as an animated orbital model</h2>
+<style>
+#lv{position:relative;height:600px;border-radius:var(--border-radius-lg);overflow:hidden;cursor:grab}
+#lv:active{cursor:grabbing}
+#lc{display:block;width:100%;height:100%}
+#lh{position:absolute;inset:0;pointer-events:none;font-family:var(--font-mono)}
+.lp{position:absolute}
+.lt{font-size:18px;font-weight:500;letter-spacing:5px;color:#D4A030;line-height:1}
+.ls{font-size:9px;letter-spacing:3px;color:rgba(130,170,255,.6);margin-top:5px}
+.lr{font-size:10px;color:rgba(150,190,255,.6);line-height:1.9}
+.lk{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;vertical-align:middle}
+.tp{display:inline-block;padding:3px 8px;border-radius:3px;font-size:9px;letter-spacing:1.5px;margin:2px;background:rgba(255,255,255,.04);color:rgba(140,180,255,.35);border:0.5px solid rgba(60,100,200,.2);transition:all .4s}
+.tp.on{background:rgba(212,160,48,.18);color:#D4A835;border-color:rgba(212,160,48,.4)}
+#ltip{position:absolute;background:rgba(2,6,16,.92);border:0.5px solid rgba(80,140,255,.35);border-radius:6px;padding:8px 12px;display:none;z-index:9}
+#ltip .tn{font-size:11px;color:#D4A835;font-weight:500;letter-spacing:1px}
+#ltip .td{font-size:10px;color:rgba(150,190,255,.7);margin-top:3px}
+#ltip .tr{font-size:9px;color:rgba(80,140,255,.5);margin-top:2px}
+</style>
+
+<div id="lv">
+  <canvas id="lc"></canvas>
+  <div id="lh">
+    <div class="lp" style="top:18px;left:18px">
+      <div class="lt">ARC LUCIFER</div>
+      <div class="ls">COGNITIVE SUBSTRATE v2.11.1</div>
+      <div class="lr" style="margin-top:10px"><span class="lk" style="background:#4CAF50;box-shadow:0 0 4px #4CAF50"></span>RUNTIME ACTIVE</div>
+      <div class="lr" id="lke">KERNEL EVENTS: —</div>
+      <div class="lr" id="lgs" style="margin-top:2px;color:rgba(64,232,128,.5)"></div>
+    </div>
+    <div class="lp" style="top:18px;right:18px;text-align:right">
+      <div class="ls" style="margin-bottom:7px">COGNITION TIER</div>
+      <div><span class="tp on" id="lt0">PRIMARY</span><span class="tp" id="lt1">SECONDARY</span><span class="tp" id="lt2">LOCAL</span><span class="tp" id="lt3">ECHO</span></div>
+      <div class="lr" style="margin-top:6px" id="ltn">Full capability — all systems nominal</div>
+    </div>
+    <div class="lp" style="bottom:18px;left:18px">
+      <div class="ls" style="margin-bottom:6px">SUBSYSTEMS [drag to rotate]</div>
+      <div id="lleg"></div>
+    </div>
+    <div class="lp" style="bottom:18px;right:18px;text-align:right;max-width:220px">
+      <div class="ls" style="margin-bottom:6px">LIVE EVENT LOG</div>
+      <div id="lev"></div>
+    </div>
+  </div>
+  <div id="ltip"><div class="tn" id="ltn2"></div><div class="td" id="ltd"></div><div class="tr" id="ltr"></div></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+const vis=document.getElementById('lv'),canvas=document.getElementById('lc');
+const W=Math.max(vis.parentElement?vis.parentElement.clientWidth:680,400),H=600;
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true});
+renderer.setSize(W,H);renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+const scene=new THREE.Scene();
+scene.background=new THREE.Color(0x030810);
+const cam=new THREE.PerspectiveCamera(52,W/H,.1,300);
+cam.position.set(0,8,42);cam.lookAt(0,0,0);
+
+scene.add(new THREE.AmbientLight(0x0A1828,2));
+const sun=new THREE.PointLight(0xD4A020,3.5,100);scene.add(sun);
+const fill=new THREE.PointLight(0x1A3880,2,120);fill.position.set(-35,20,-25);scene.add(fill);
+const fill2=new THREE.PointLight(0x102040,1.5,80);fill2.position.set(30,-15,10);scene.add(fill2);
+
+// Stars
+const sv=[];for(let i=0;i<2500;i++){const t=Math.random()*Math.PI*2,p=Math.acos(2*Math.random()-1),r=70+Math.random()*50;sv.push(r*Math.sin(p)*Math.cos(t),r*Math.sin(p)*Math.sin(t),r*Math.cos(p));}
+const sGeo=new THREE.BufferGeometry();sGeo.setAttribute('position',new THREE.Float32BufferAttribute(sv,3));
+scene.add(new THREE.Points(sGeo,new THREE.PointsMaterial({color:0x6888BB,size:.14,sizeAttenuation:true,transparent:true,opacity:.7})));
+
+// Core
+const coreGeo=new THREE.SphereGeometry(3.8,64,64);
+const coreMat=new THREE.MeshPhongMaterial({color:0xC08010,emissive:0x7A4E08,specular:0xFFE080,shininess:140});
+const core=new THREE.Mesh(coreGeo,coreMat);scene.add(core);
+const icGeo=new THREE.IcosahedronGeometry(3.4,3);
+core.add(new THREE.Mesh(icGeo,new THREE.MeshBasicMaterial({color:0xFFCC44,wireframe:true,transparent:true,opacity:.07})));
+const ocGeo=new THREE.IcosahedronGeometry(4.2,2);
+core.add(new THREE.Mesh(ocGeo,new THREE.MeshBasicMaterial({color:0xFFAA22,wireframe:true,transparent:true,opacity:.04})));
+
+// Shell
+scene.add(new THREE.Mesh(new THREE.SphereGeometry(27,28,28),new THREE.MeshBasicMaterial({color:0x1A3870,wireframe:true,transparent:true,opacity:.022})));
+
+// Orbital ring tori
+[9,14.5,20.5].forEach(r=>{
+  const t=new THREE.Mesh(new THREE.TorusGeometry(r,.055,8,120),new THREE.MeshBasicMaterial({color:0x0A2050,transparent:true,opacity:.3}));
+  t.rotation.x=Math.PI/2;scene.add(t);
+});
+
+// Nodes
+const ND=[
+  {name:'KernelEngine',color:0xE8A020,desc:'Event log & receipt chain',ring:0,isNew:false,role:'Audit authority'},
+  {name:'WorldModel',color:0x20B8CC,desc:'Live state projection',ring:0,isNew:false,role:'Fact store'},
+  {name:'GoalEngine',color:0x4CAF50,desc:'Goal compilation & priority',ring:0,isNew:false,role:'Intent layer'},
+  {name:'CriticService',color:0xE84090,desc:'Reasoning quality evaluator',ring:0,isNew:true,role:'Gap 1: closed ★'},
+  {name:'PerceptionLoop',color:0x40D0E8,desc:'6-modality sensing',ring:1,isNew:false,role:'Sensory front-end'},
+  {name:'StreamSession',color:0x4090E8,desc:'Live injection & redirect',ring:1,isNew:false,role:'WarpAI interface'},
+  {name:'FixNet',color:0xE87040,desc:'Repair intelligence & novelty',ring:1,isNew:false,role:'Pattern memory'},
+  {name:'CurriculumTrainer',color:0xA040E8,desc:'LoRA fine-tuning pipeline',ring:1,isNew:true,role:'Gap 3: closed ★'},
+  {name:'MemorySubsystem',color:0xE8B040,desc:'Hot/warm/archive tiers',ring:2,isNew:false,role:'Episodic store'},
+  {name:'SelfImprove',color:0xE84040,desc:'Bounded self-modification',ring:2,isNew:false,role:'Sandbox & promote'},
+  {name:'GoalSynthesizer',color:0x40E880,desc:'Emergent goal generation',ring:2,isNew:true,role:'Gap 2: closed ★'},
+  {name:'PersonaPlex',color:0x4880E8,desc:'Full-duplex voice module',ring:2,isNew:false,role:'NVIDIA Moshi'},
+];
+
+const rRad=[9,14.5,20.5],rSpd=[.008,.005,.003];
+const rGrp=[new THREE.Group(),new THREE.Group(),new THREE.Group()];
+rGrp.forEach(g=>scene.add(g));
+const nmesh=[],nwp=ND.map(()=>new THREE.Vector3());
+
+ND.forEach((nd,i)=>{
+  const ri=nd.ring,r=rRad[ri];
+  const radius=nd.isNew?1.15:.85;
+  const geo=new THREE.SphereGeometry(radius,20,20);
+  const mat=new THREE.MeshPhongMaterial({color:nd.color,emissive:new THREE.Color(nd.color).multiplyScalar(.4),shininess:90});
+  const m=new THREE.Mesh(geo,mat);
+  const baseAngle=(Math.PI*2/4)*i; // 4 nodes per ring
+  const localAngle=baseAngle;
+  m.position.set(r*Math.cos(localAngle),0,r*Math.sin(localAngle));
+  m.userData=nd;
+  rGrp[ri].add(m);
+  nmesh.push(m);
+  // Glow ring for new nodes
+  if(nd.isNew){
+    const rg=new THREE.Mesh(new THREE.TorusGeometry(radius+.35,.08,8,32),new THREE.MeshBasicMaterial({color:nd.color,transparent:true,opacity:.5}));
+    m.add(rg);
+  }
+});
+
+// Neural web
+const edges=[];
+// Core→node
+ND.forEach((_,i)=>edges.push([-1,i]));
+// Ring adjacent
+[0,1,2].forEach(ri=>{
+  const rn=ND.reduce((a,n,i)=>n.ring===ri?[...a,i]:a,[]);
+  for(let j=0;j<rn.length;j++)edges.push([rn[j],rn[(j+1)%rn.length]]);
+});
+// Cross-ring (meaningful connections)
+edges.push([0,4],[1,5],[2,8],[3,7],[6,9],[4,10],[5,10],[7,3],[8,2],[11,5]);
+
+const wpos=new Float32Array(edges.length*6);
+const wgeo=new THREE.BufferGeometry();
+wgeo.setAttribute('position',new THREE.BufferAttribute(wpos,3));
+const wmat=new THREE.LineBasicMaterial({color:0x1A4888,transparent:true,opacity:.35});
+scene.add(new THREE.LineSegments(wgeo,wmat));
+
+// Bright highlight edges (for new nodes)
+const hEdges=edges.filter((_,i)=>i<12&&ND[edges[i][1]]&&ND[edges[i][1]].isNew);
+const hpos=new Float32Array(hEdges.length*6);
+const hgeo=new THREE.BufferGeometry();
+hgeo.setAttribute('position',new THREE.BufferAttribute(hpos,3));
+scene.add(new THREE.LineSegments(hgeo,new THREE.LineBasicMaterial({color:0x4088FF,transparent:true,opacity:.6})));
+
+// Particles
+const PC=80,ppos=new Float32Array(PC*3),pgeo=new THREE.BufferGeometry();
+pgeo.setAttribute('position',new THREE.BufferAttribute(ppos,3));
+const pmesh=new THREE.Points(pgeo,new THREE.PointsMaterial({color:0x80B8FF,size:.28,sizeAttenuation:true,transparent:true,opacity:.85}));
+scene.add(pmesh);
+const ps=Array.from({length:PC},(_,i)=>({e:i%edges.length,t:Math.random(),sp:.004+Math.random()*.009}));
+
+// Mouse
+let drag=false,px=0,py=0,yaw=0,pitch=0;
+canvas.addEventListener('mousedown',e=>{drag=true;px=e.clientX;py=e.clientY;});
+window.addEventListener('mouseup',()=>drag=false);
+const ray=new THREE.Raycaster();
+canvas.addEventListener('mousemove',e=>{
+  if(drag){yaw+=(e.clientX-px)*.004;pitch+=(e.clientY-py)*.002;px=e.clientX;py=e.clientY;}
+  const rect=canvas.getBoundingClientRect();
+  const mx=((e.clientX-rect.left)/rect.width)*2-1,my=-((e.clientY-rect.top)/rect.height)*2+1;
+  ray.setFromCamera({x:mx,y:my},cam);
+  const hits=ray.intersectObjects(nmesh);
+  const tip=document.getElementById('ltip');
+  if(hits.length){
+    const nd=hits[0].object.userData;
+    document.getElementById('ltn2').textContent=nd.name;
+    document.getElementById('ltd').textContent=nd.desc;
+    document.getElementById('ltr').textContent=nd.role;
+    tip.style.display='block';
+    const vr=vis.getBoundingClientRect();
+    let tx=e.clientX-vr.left+14,ty=e.clientY-vr.top-50;
+    if(tx+180>W)tx=e.clientX-vr.left-180;
+    tip.style.left=tx+'px';tip.style.top=ty+'px';
+  }else{tip.style.display='none';}
+});
+canvas.addEventListener('mouseleave',()=>document.getElementById('ltip').style.display='none');
+
+// HUD legend
+const leg=document.getElementById('lleg');
+ND.slice(0,6).forEach(nd=>{
+  const hex='#'+nd.color.toString(16).padStart(6,'0');
+  const d=document.createElement('div');d.className='lr';
+  d.innerHTML=`<span class="lk" style="background:${hex}"></span>${nd.name}${nd.isNew?' ★':''}`;
+  leg.appendChild(d);
+});
+
+const evts=[
+  'KernelEngine: 3,241 events recorded',
+  'GoalSynthesizer: alarm_audio → goal injected',
+  'CriticService: score=0.87 APPROVED',
+  'CurriculumTrainer: 27 examples → training ready',
+  'PerceptionLoop: motion score=14.2 flagged',
+  'StreamSession[s3]: operator injection merged',
+  'FixNet: novel signature indexed (novelty=true)',
+  'WorldModel: cognition_is_degraded→false',
+  'CognitionCore: PRIMARY tier recovered',
+  'MemorySubsystem: 3 items retired to archive',
+  'SelfImprove: candidate 0.93 — promoting',
+  'PersonaPlex: NATM1 persona updated',
+  'GoalSynthesizer: cognition_tier_degraded fired',
+  'CriticService: side_effect_risk=0.72 REVIEW',
+];
+let ei=0;const evLog=document.getElementById('lev');
+function addEvt(){
+  const d=document.createElement('div');d.className='lr';d.textContent=evts[ei%evts.length];
+  d.style.opacity='0';d.style.transition='opacity .4s';evLog.prepend(d);
+  setTimeout(()=>d.style.opacity='1',10);
+  while(evLog.children.length>5)evLog.removeChild(evLog.lastChild);
+  ei++;
+  document.getElementById('lke').textContent='KERNEL EVENTS: '+(3241+ei*53).toLocaleString();
+}
+setInterval(addEvt,1800);addEvt();
+
+// Goal synthesizer HUD
+const gsMsgs=['GoalSynthesizer: 11 rules active','GoalSynthesizer: 0 emergent goals','GoalSynthesizer: monitoring...'];
+let gsi=0;
+setInterval(()=>{document.getElementById('lgs').textContent=gsMsgs[gsi++%gsMsgs.length];},3500);
+
+// Tier animation
+const tierSeq=[
+  {a:0,n:'Full capability — all systems nominal'},
+  {a:1,n:'Degraded — secondary tier active'},
+  {a:1,n:'Recovery probe running...'},
+  {a:0,n:'Primary tier restored'},
+];
+let ti=0;const tEls=[0,1,2,3].map(i=>document.getElementById('lt'+i));
+function updTier(){
+  const s=tierSeq[ti%tierSeq.length];
+  tEls.forEach((el,i)=>el.classList.toggle('on',i===s.a));
+  document.getElementById('ltn').textContent=s.n;ti++;
+}
+setInterval(updTier,5000);
+
+// Animation
+let frame=0;const cVec=new THREE.Vector3(0,0,0);
+function anim(){
+  requestAnimationFrame(anim);frame++;
+  const pulse=.5+.5*Math.sin(frame*.025);
+  
+  // Core
+  core.rotation.y+=.0035;core.rotation.x+=.001;
+  coreMat.emissiveIntensity=.55+.45*pulse;
+  sun.intensity=2.8+pulse*.9;
+  
+  // Rings
+  rGrp.forEach((g,i)=>{g.rotation.y+=rSpd[i];});
+  
+  // New-node ring pulse
+  nmesh.forEach(m=>{
+    if(m.userData.isNew&&m.children.length){
+      const rg=m.children[0];
+      rg.material.opacity=.3+.4*Math.sin(frame*.07+m.position.x);
+      const s=1+.08*Math.sin(frame*.06);
+      rg.scale.set(s,s,s);
+    }
+  });
+  
+  // Camera
+  if(!drag){yaw+=.0007;}
+  pitch=Math.max(-.4,Math.min(.4,pitch));
+  const cr=42;
+  cam.position.x=cr*Math.sin(yaw)*Math.cos(pitch);
+  cam.position.z=cr*Math.cos(yaw)*Math.cos(pitch);
+  cam.position.y=8+cr*Math.sin(pitch);
+  cam.lookAt(0,0,0);
+  
+  // Update world positions
+  scene.updateMatrixWorld();
+  nmesh.forEach((m,i)=>m.getWorldPosition(nwp[i]));
+  
+  // Update neural web
+  let vi=0;
+  edges.forEach(([a,b])=>{
+    const pa=a===-1?cVec:nwp[a],pb=nwp[b];
+    wpos[vi++]=pa.x;wpos[vi++]=pa.y;wpos[vi++]=pa.z;
+    wpos[vi++]=pb.x;wpos[vi++]=pb.y;wpos[vi++]=pb.z;
+  });
+  wgeo.attributes.position.needsUpdate=true;
+  
+  // Highlight edges
+  let hi=0;
+  hEdges.forEach(([a,b])=>{
+    const pa=a===-1?cVec:nwp[a],pb=nwp[b];
+    hpos[hi++]=pa.x;hpos[hi++]=pa.y;hpos[hi++]=pa.z;
+    hpos[hi++]=pb.x;hpos[hi++]=pb.y;hpos[hi++]=pb.z;
+  });
+  hgeo.attributes.position.needsUpdate=true;
+  
+  // Particles
+  ps.forEach((p,i)=>{
+    p.t+=p.sp;if(p.t>1){p.t=0;p.e=Math.floor(Math.random()*edges.length);}
+    const [a,b]=edges[p.e];
+    const pa=a===-1?cVec:nwp[a],pb=nwp[b],t=p.t;
+    ppos[i*3]=pa.x+(pb.x-pa.x)*t;
+    ppos[i*3+1]=pa.y+(pb.y-pa.y)*t;
+    ppos[i*3+2]=pa.z+(pb.z-pa.z)*t;
+  });
+  pgeo.attributes.position.needsUpdate=true;
+  
+  renderer.render(scene,cam);
+}
+anim();
+
+window.addEventListener('resize',()=>{
+  const W2=vis.parentElement?vis.parentElement.clientWidth:680;
+  cam.aspect=W2/H;cam.updateProjectionMatrix();renderer.setSize(W2,H);
+});
+})();
+</script>

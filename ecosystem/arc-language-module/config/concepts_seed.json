@@ -1,0 +1,314 @@
+{
+  "concepts": [
+    {
+      "concept_id": "concept_greeting_hello",
+      "canonical_label": "hello / greeting",
+      "domain": "social",
+      "description": "A word or phrase used when meeting or acknowledging someone. Universal across all human languages.",
+      "confidence": 0.95
+    },
+    {
+      "concept_id": "concept_farewell_goodbye",
+      "canonical_label": "goodbye / farewell",
+      "domain": "social",
+      "description": "A word or phrase used when parting from someone.",
+      "confidence": 0.95
+    },
+    {
+      "concept_id": "concept_gratitude_thanks",
+      "canonical_label": "thank you / gratitude",
+      "domain": "social",
+      "description": "Expression of gratitude or appreciation.",
+      "confidence": 0.95
+    },
+    {
+      "concept_id": "concept_affirmation_yes",
+      "canonical_label": "yes / affirmation",
+      "domain": "discourse",
+      "description": "Affirmative response. Universal discourse particle.",
+      "confidence": 0.95
+    },
+    {
+      "concept_id": "concept_negation_no",
+      "canonical_label": "no / negation",
+      "domain": "discourse",
+      "description": "Negative response. Universal discourse particle.",
+      "confidence": 0.95
+    },
+    {
+      "concept_id": "concept_request_please",
+      "canonical_label": "please / polite request",
+      "domain": "social",
+      "description": "Politeness marker used in requests.",
+      "confidence": 0.9
+    },
+    {
+      "concept_id": "concept_apology_sorry",
+      "canonical_label": "sorry / apology",
+      "domain": "social",
+      "description": "Expression of apology or remorse.",
+      "confidence": 0.9
+    },
+    {
+      "concept_id": "concept_interrogative_what",
+      "canonical_label": "what / interrogative",
+      "domain": "grammar",
+      "description": "Basic interrogative pronoun for things.",
+      "confidence": 0.9
+    },
+    {
+      "concept_id": "concept_interrogative_where",
+      "canonical_label": "where / locative interrogative",
+      "domain": "grammar",
+      "description": "Interrogative for location.",
+      "confidence": 0.9
+    },
+    {
+      "concept_id": "concept_interrogative_when",
+      "canonical_label": "when / temporal interrogative",
+      "domain": "grammar",
+      "description": "Interrogative for time.",
+      "confidence": 0.9
+    },
+    {
+      "concept_id": "concept_interrogative_who",
+      "canonical_label": "who / personal interrogative",
+      "domain": "grammar",
+      "description": "Interrogative for persons.",
+      "confidence": 0.9
+    },
+    {
+      "concept_id": "concept_conjunction_and",
+      "canonical_label": "and / additive conjunction",
+      "domain": "grammar",
+      "description": "Additive coordinating conjunction.",
+      "confidence": 0.9
+    },
+    {
+      "concept_id": "concept_number_one",
+      "canonical_label": "one / cardinal 1",
+      "domain": "numerals",
+      "description": "The cardinal number 1.",
+      "confidence": 0.98
+    },
+    {
+      "concept_id": "concept_number_two",
+      "canonical_label": "two / cardinal 2",
+      "domain": "numerals",
+      "description": "The cardinal number 2.",
+      "confidence": 0.98
+    },
+    {
+      "concept_id": "concept_water",
+      "canonical_label": "water",
+      "domain": "basic_vocabulary",
+      "description": "Liquid water. A universal basic vocabulary item (Swadesh list).",
+      "confidence": 0.95
+    },
+    {
+      "concept_id": "concept_fire",
+      "canonical_label": "fire",
+      "domain": "basic_vocabulary",
+      "description": "Fire / flame. Swadesh list item.",
+      "confidence": 0.95
+    },
+    {
+      "concept_id": "concept_sun",
+      "canonical_label": "sun",
+      "domain": "basic_vocabulary",
+      "description": "The sun. Swadesh list item.",
+      "confidence": 0.95
+    },
+    {
+      "concept_id": "concept_moon",
+      "canonical_label": "moon",
+      "domain": "basic_vocabulary",
+      "description": "The moon. Swadesh list item.",
+      "confidence": 0.95
+    },
+    {
+      "concept_id": "concept_person_human",
+      "canonical_label": "person / human",
+      "domain": "basic_vocabulary",
+      "description": "A human being.",
+      "confidence": 0.95
+    },
+    {
+      "concept_id": "concept_name_proper",
+      "canonical_label": "name / proper noun referent",
+      "domain": "grammar",
+      "description": "The concept of a personal or proper name.",
+      "confidence": 0.88
+    },
+    {
+      "concept_id": "concept_language_speech",
+      "canonical_label": "language / speech",
+      "domain": "metalinguistic",
+      "description": "The concept of a language or system of communication itself. Meta-linguistic.",
+      "confidence": 0.9
+    },
+    {
+      "concept_id": "concept_translation",
+      "canonical_label": "translation / interpret",
+      "domain": "metalinguistic",
+      "description": "The act of expressing meaning from one language in another.",
+      "confidence": 0.88
+    },
+    {
+      "concept_id": "concept_writing_text",
+      "canonical_label": "writing / text",
+      "domain": "metalinguistic",
+      "description": "Written representation of language.",
+      "confidence": 0.88
+    },
+    {
+      "concept_id": "concept_time_day",
+      "canonical_label": "day / daytime",
+      "domain": "time",
+      "description": "A single day or the daytime period.",
+      "confidence": 0.93
+    },
+    {
+      "concept_id": "concept_time_night",
+      "canonical_label": "night",
+      "domain": "time",
+      "description": "The night period.",
+      "confidence": 0.93
+    },
+    {
+      "concept_id": "concept_time_morning",
+      "canonical_label": "morning / good morning",
+      "domain": "time",
+      "description": "The morning period; also used in greetings.",
+      "confidence": 0.92
+    },
+    {
+      "concept_id": "concept_time_evening",
+      "canonical_label": "evening / good evening",
+      "domain": "time",
+      "description": "The evening period.",
+      "confidence": 0.92
+    },
+    {
+      "concept_id": "concept_numeral_system",
+      "canonical_label": "number / numeral",
+      "domain": "numerals",
+      "description": "The abstract concept of a number or numeral.",
+      "confidence": 0.88
+    },
+    {
+      "concept_id": "concept_color_red",
+      "canonical_label": "red / color red",
+      "domain": "colors",
+      "description": "The color red.",
+      "confidence": 0.92
+    },
+    {
+      "concept_id": "concept_color_blue",
+      "canonical_label": "blue / color blue",
+      "domain": "colors",
+      "description": "The color blue.",
+      "confidence": 0.92
+    }
+  ],
+  "phrase_links": [
+    {
+      "concept_id": "concept_greeting_hello",
+      "canonical_keys": [
+        "hello",
+        "how_are_you",
+        "good_morning"
+      ]
+    },
+    {
+      "concept_id": "concept_farewell_goodbye",
+      "canonical_keys": [
+        "goodbye"
+      ]
+    },
+    {
+      "concept_id": "concept_gratitude_thanks",
+      "canonical_keys": [
+        "thank_you"
+      ]
+    },
+    {
+      "concept_id": "concept_interrogative_what",
+      "canonical_keys": [
+        "what_is_this"
+      ]
+    },
+    {
+      "concept_id": "concept_affirmation_yes",
+      "canonical_keys": [
+        "yes"
+      ]
+    },
+    {
+      "concept_id": "concept_negation_no",
+      "canonical_keys": [
+        "no"
+      ]
+    },
+    {
+      "concept_id": "concept_request_please",
+      "canonical_keys": [
+        "please"
+      ]
+    },
+    {
+      "concept_id": "concept_apology_sorry",
+      "canonical_keys": [
+        "sorry"
+      ]
+    },
+    {
+      "concept_id": "concept_time_morning",
+      "canonical_keys": [
+        "good_morning"
+      ]
+    }
+  ],
+  "language_links": [
+    {
+      "concept_id": "concept_language_speech",
+      "language_ids": [
+        "lang:eng",
+        "lang:spa",
+        "lang:fra",
+        "lang:deu",
+        "lang:por",
+        "lang:ita",
+        "lang:nld",
+        "lang:rus",
+        "lang:ukr",
+        "lang:pol",
+        "lang:arb",
+        "lang:heb",
+        "lang:hin",
+        "lang:mar",
+        "lang:ben",
+        "lang:urd",
+        "lang:pan",
+        "lang:tam",
+        "lang:tel",
+        "lang:tur",
+        "lang:fas",
+        "lang:cmn",
+        "lang:yue",
+        "lang:jpn",
+        "lang:kor",
+        "lang:vie",
+        "lang:ind",
+        "lang:msa",
+        "lang:tha",
+        "lang:swa",
+        "lang:amh",
+        "lang:nav",
+        "lang:chr",
+        "lang:crk",
+        "lang:ell"
+      ]
+    }
+  ]
+}

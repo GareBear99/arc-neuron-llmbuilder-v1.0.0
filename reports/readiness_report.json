@@ -1,0 +1,9 @@
+{
+  "repo_exists": true,
+  "has_env_example": true,
+  "has_changelog": true,
+  "has_handoff_doc": true,
+  "has_incident_doc": true,
+  "has_readiness_matrix": true,
+  "has_docker_compose": true
+}

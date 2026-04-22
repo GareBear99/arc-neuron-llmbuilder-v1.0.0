@@ -1,0 +1,1105 @@
+{
+  "scripts": [
+    {
+      "script_id": "Latn",
+      "name": "Latin",
+      "unicode_ranges": [
+        [
+          65,
+          90
+        ],
+        [
+          97,
+          122
+        ],
+        [
+          192,
+          591
+        ],
+        [
+          7680,
+          7935
+        ]
+      ]
+    },
+    {
+      "script_id": "Cyrl",
+      "name": "Cyrillic",
+      "unicode_ranges": [
+        [
+          1024,
+          1279
+        ]
+      ]
+    },
+    {
+      "script_id": "Arab",
+      "name": "Arabic",
+      "unicode_ranges": [
+        [
+          1536,
+          1791
+        ],
+        [
+          1872,
+          1919
+        ],
+        [
+          64336,
+          65023
+        ]
+      ]
+    },
+    {
+      "script_id": "Deva",
+      "name": "Devanagari",
+      "unicode_ranges": [
+        [
+          2304,
+          2431
+        ]
+      ]
+    },
+    {
+      "script_id": "Beng",
+      "name": "Bengali",
+      "unicode_ranges": [
+        [
+          2432,
+          2559
+        ]
+      ]
+    },
+    {
+      "script_id": "Guru",
+      "name": "Gurmukhi",
+      "unicode_ranges": [
+        [
+          2560,
+          2687
+        ]
+      ]
+    },
+    {
+      "script_id": "Taml",
+      "name": "Tamil",
+      "unicode_ranges": [
+        [
+          2944,
+          3071
+        ]
+      ]
+    },
+    {
+      "script_id": "Telu",
+      "name": "Telugu",
+      "unicode_ranges": [
+        [
+          3072,
+          3199
+        ]
+      ]
+    },
+    {
+      "script_id": "Hans",
+      "name": "Han (Simplified/general)",
+      "unicode_ranges": [
+        [
+          19968,
+          40959
+        ]
+      ]
+    },
+    {
+      "script_id": "Hant",
+      "name": "Han (Traditional/general)",
+      "unicode_ranges": [
+        [
+          19968,
+          40959
+        ]
+      ]
+    },
+    {
+      "script_id": "Jpan",
+      "name": "Japanese mixed script",
+      "unicode_ranges": [
+        [
+          12352,
+          12447
+        ],
+        [
+          12448,
+          12543
+        ],
+        [
+          19968,
+          40959
+        ]
+      ]
+    },
+    {
+      "script_id": "Kore",
+      "name": "Korean Hangul",
+      "unicode_ranges": [
+        [
+          44032,
+          55215
+        ],
+        [
+          12593,
+          12686
+        ]
+      ]
+    },
+    {
+      "script_id": "Cher",
+      "name": "Cherokee",
+      "unicode_ranges": [
+        [
+          5024,
+          5119
+        ],
+        [
+          43888,
+          43967
+        ]
+      ]
+    },
+    {
+      "script_id": "Thai",
+      "name": "Thai",
+      "unicode_ranges": [
+        [
+          3584,
+          3711
+        ]
+      ]
+    },
+    {
+      "script_id": "Hebr",
+      "name": "Hebrew",
+      "unicode_ranges": [
+        [
+          1424,
+          1535
+        ]
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language_id": "lang:eng",
+      "iso639_3": "eng",
+      "name": "English",
+      "family": "Indo-European",
+      "branch": "Germanic",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "English",
+        "English language"
+      ],
+      "common_words": [
+        "the",
+        "and",
+        "is",
+        "are",
+        "you",
+        "hello",
+        "what",
+        "where",
+        "why"
+      ]
+    },
+    {
+      "language_id": "lang:spa",
+      "iso639_3": "spa",
+      "name": "Spanish",
+      "family": "Indo-European",
+      "branch": "Romance",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Español",
+        "Castilian",
+        "Spanish"
+      ],
+      "common_words": [
+        "el",
+        "la",
+        "de",
+        "que",
+        "hola",
+        "como",
+        "estás",
+        "gracias"
+      ]
+    },
+    {
+      "language_id": "lang:fra",
+      "iso639_3": "fra",
+      "name": "French",
+      "family": "Indo-European",
+      "branch": "Romance",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Français",
+        "French"
+      ],
+      "common_words": [
+        "le",
+        "la",
+        "de",
+        "bonjour",
+        "merci",
+        "oui",
+        "non",
+        "comment",
+        "je",
+        "est"
+      ]
+    },
+    {
+      "language_id": "lang:deu",
+      "iso639_3": "deu",
+      "name": "German",
+      "family": "Indo-European",
+      "branch": "Germanic",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Deutsch",
+        "German"
+      ],
+      "common_words": [
+        "und",
+        "der",
+        "die",
+        "hallo",
+        "danke",
+        "ja",
+        "nein",
+        "wie",
+        "ich",
+        "ist"
+      ]
+    },
+    {
+      "language_id": "lang:por",
+      "iso639_3": "por",
+      "name": "Portuguese",
+      "family": "Indo-European",
+      "branch": "Romance",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Português",
+        "Portuguese"
+      ],
+      "common_words": [
+        "de",
+        "que",
+        "olá",
+        "obrigado",
+        "sim",
+        "não",
+        "como",
+        "este",
+        "para",
+        "eu"
+      ]
+    },
+    {
+      "language_id": "lang:ita",
+      "iso639_3": "ita",
+      "name": "Italian",
+      "family": "Indo-European",
+      "branch": "Romance",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Italiano",
+        "Italian"
+      ],
+      "common_words": [
+        "ciao",
+        "grazie",
+        "che",
+        "cosa",
+        "è",
+        "questo",
+        "come",
+        "sì",
+        "no",
+        "buongiorno"
+      ]
+    },
+    {
+      "language_id": "lang:nld",
+      "iso639_3": "nld",
+      "name": "Dutch",
+      "family": "Indo-European",
+      "branch": "Germanic",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Nederlands",
+        "Dutch"
+      ],
+      "common_words": [
+        "en",
+        "de",
+        "hallo",
+        "dank",
+        "je",
+        "wat",
+        "is",
+        "dit",
+        "ja",
+        "nee"
+      ]
+    },
+    {
+      "language_id": "lang:rus",
+      "iso639_3": "rus",
+      "name": "Russian",
+      "family": "Indo-European",
+      "branch": "Slavic",
+      "scripts": [
+        "Cyrl"
+      ],
+      "aliases": [
+        "Русский",
+        "Russian"
+      ],
+      "common_words": [
+        "и",
+        "в",
+        "не",
+        "я",
+        "это",
+        "что",
+        "да",
+        "нет",
+        "как",
+        "привет"
+      ]
+    },
+    {
+      "language_id": "lang:ukr",
+      "iso639_3": "ukr",
+      "name": "Ukrainian",
+      "family": "Indo-European",
+      "branch": "Slavic",
+      "scripts": [
+        "Cyrl"
+      ],
+      "aliases": [
+        "Українська",
+        "Ukrainian"
+      ],
+      "common_words": [
+        "і",
+        "в",
+        "не",
+        "я",
+        "це",
+        "що",
+        "так",
+        "ні",
+        "як",
+        "привіт"
+      ]
+    },
+    {
+      "language_id": "lang:pol",
+      "iso639_3": "pol",
+      "name": "Polish",
+      "family": "Indo-European",
+      "branch": "Slavic",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Polski",
+        "Polish"
+      ],
+      "common_words": [
+        "i",
+        "dzień",
+        "dziękuję",
+        "co",
+        "jest",
+        "tak",
+        "nie",
+        "jak",
+        "się",
+        "proszę"
+      ]
+    },
+    {
+      "language_id": "lang:arb",
+      "iso639_3": "arb",
+      "name": "Arabic (Modern Standard)",
+      "family": "Afro-Asiatic",
+      "branch": "Semitic",
+      "scripts": [
+        "Arab"
+      ],
+      "aliases": [
+        "العربية",
+        "Arabic",
+        "MSA"
+      ],
+      "common_words": [
+        "مرحبا",
+        "شكرا",
+        "من",
+        "ما",
+        "هذا",
+        "نعم",
+        "لا",
+        "كيف",
+        "هل",
+        "في"
+      ]
+    },
+    {
+      "language_id": "lang:heb",
+      "iso639_3": "heb",
+      "name": "Hebrew",
+      "family": "Afro-Asiatic",
+      "branch": "Semitic",
+      "scripts": [
+        "Hebr"
+      ],
+      "aliases": [
+        "עברית",
+        "Hebrew"
+      ],
+      "common_words": [
+        "שלום",
+        "תודה",
+        "מה",
+        "זה",
+        "כן",
+        "לא",
+        "איך",
+        "אני",
+        "אתה",
+        "יש"
+      ]
+    },
+    {
+      "language_id": "lang:hin",
+      "iso639_3": "hin",
+      "name": "Hindi",
+      "family": "Indo-European",
+      "branch": "Indo-Aryan",
+      "scripts": [
+        "Deva"
+      ],
+      "aliases": [
+        "हिन्दी",
+        "Hindi"
+      ],
+      "common_words": [
+        "नमस्ते",
+        "धन्यवाद",
+        "और",
+        "यह",
+        "क्या",
+        "हाँ",
+        "नहीं",
+        "कैसे",
+        "मैं",
+        "है"
+      ]
+    },
+    {
+      "language_id": "lang:mar",
+      "iso639_3": "mar",
+      "name": "Marathi",
+      "family": "Indo-European",
+      "branch": "Indo-Aryan",
+      "scripts": [
+        "Deva"
+      ],
+      "aliases": [
+        "मराठी",
+        "Marathi"
+      ],
+      "common_words": [
+        "धन्यवाद",
+        "नमस्कार",
+        "आणि",
+        "हे",
+        "काय",
+        "हो",
+        "नाही",
+        "कसे",
+        "मी",
+        "आहे"
+      ]
+    },
+    {
+      "language_id": "lang:ben",
+      "iso639_3": "ben",
+      "name": "Bengali",
+      "family": "Indo-European",
+      "branch": "Indo-Aryan",
+      "scripts": [
+        "Beng"
+      ],
+      "aliases": [
+        "বাংলা",
+        "Bangla",
+        "Bengali"
+      ],
+      "common_words": [
+        "ধন্যবাদ",
+        "এবং",
+        "কি",
+        "হ্যাঁ",
+        "না",
+        "কেমন",
+        "আমি",
+        "এটা",
+        "আছে",
+        "হ্যালো"
+      ]
+    },
+    {
+      "language_id": "lang:urd",
+      "iso639_3": "urd",
+      "name": "Urdu",
+      "family": "Indo-European",
+      "branch": "Indo-Aryan",
+      "scripts": [
+        "Arab"
+      ],
+      "aliases": [
+        "اردو",
+        "Urdu"
+      ],
+      "common_words": [
+        "شکریہ",
+        "اور",
+        "کیا",
+        "ہاں",
+        "نہیں",
+        "کیسے",
+        "میں",
+        "یہ",
+        "ہے",
+        "السلام"
+      ]
+    },
+    {
+      "language_id": "lang:pan",
+      "iso639_3": "pan",
+      "name": "Punjabi",
+      "family": "Indo-European",
+      "branch": "Indo-Aryan",
+      "scripts": [
+        "Guru",
+        "Arab"
+      ],
+      "aliases": [
+        "ਪੰਜਾਬੀ",
+        "Punjabi"
+      ],
+      "common_words": [
+        "ਧੰਨਵਾਦ",
+        "ਕੀ",
+        "ਇਹ",
+        "ਹਾਂ",
+        "ਨਹੀਂ",
+        "ਕਿਵੇਂ",
+        "ਮੈਂ",
+        "ਹੈ",
+        "ਅਤੇ",
+        "ਤੁਸੀਂ"
+      ]
+    },
+    {
+      "language_id": "lang:tam",
+      "iso639_3": "tam",
+      "name": "Tamil",
+      "family": "Dravidian",
+      "branch": "Southern Dravidian",
+      "scripts": [
+        "Taml"
+      ],
+      "aliases": [
+        "தமிழ்",
+        "Tamil"
+      ],
+      "common_words": [
+        "நன்றி",
+        "இது",
+        "என்ன",
+        "ஆம்",
+        "இல்லை",
+        "நான்",
+        "இருக்கிறேன்",
+        "வணக்கம்",
+        "எப்படி",
+        "மிகவும்"
+      ]
+    },
+    {
+      "language_id": "lang:tel",
+      "iso639_3": "tel",
+      "name": "Telugu",
+      "family": "Dravidian",
+      "branch": "South-Central Dravidian",
+      "scripts": [
+        "Telu"
+      ],
+      "aliases": [
+        "తెలుగు",
+        "Telugu"
+      ],
+      "common_words": [
+        "ధన్యవాదాలు",
+        "ఇది",
+        "ఏమిటి",
+        "అవును",
+        "కాదు",
+        "నేను",
+        "ఎలా",
+        "నమస్కారం",
+        "ఉన్నాను",
+        "మీరు"
+      ]
+    },
+    {
+      "language_id": "lang:tur",
+      "iso639_3": "tur",
+      "name": "Turkish",
+      "family": "Turkic",
+      "branch": "Oghuz",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Türkçe",
+        "Turkish"
+      ],
+      "common_words": [
+        "merhaba",
+        "teşekkürler",
+        "ve",
+        "bu",
+        "evet",
+        "hayır",
+        "nasıl",
+        "ben",
+        "var",
+        "ne"
+      ]
+    },
+    {
+      "language_id": "lang:fas",
+      "iso639_3": "fas",
+      "name": "Persian",
+      "family": "Indo-European",
+      "branch": "Iranian",
+      "scripts": [
+        "Arab"
+      ],
+      "aliases": [
+        "فارسی",
+        "Persian",
+        "Farsi"
+      ],
+      "common_words": [
+        "سلام",
+        "ممنون",
+        "و",
+        "این",
+        "بله",
+        "نه",
+        "چطور",
+        "من",
+        "هست",
+        "چه"
+      ]
+    },
+    {
+      "language_id": "lang:cmn",
+      "iso639_3": "cmn",
+      "name": "Mandarin Chinese",
+      "family": "Sino-Tibetan",
+      "branch": "Sinitic",
+      "scripts": [
+        "Hans",
+        "Hant"
+      ],
+      "aliases": [
+        "中文",
+        "汉语",
+        "Mandarin",
+        "Chinese"
+      ],
+      "common_words": [
+        "你好",
+        "谢谢",
+        "什么",
+        "是",
+        "不",
+        "怎么",
+        "我",
+        "这",
+        "有",
+        "吗"
+      ]
+    },
+    {
+      "language_id": "lang:yue",
+      "iso639_3": "yue",
+      "name": "Cantonese",
+      "family": "Sino-Tibetan",
+      "branch": "Sinitic",
+      "scripts": [
+        "Hant"
+      ],
+      "aliases": [
+        "廣東話",
+        "粤语",
+        "Cantonese"
+      ],
+      "common_words": [
+        "你好",
+        "多謝",
+        "咩",
+        "係",
+        "唔係",
+        "點",
+        "我",
+        "呢",
+        "有",
+        "啩"
+      ]
+    },
+    {
+      "language_id": "lang:jpn",
+      "iso639_3": "jpn",
+      "name": "Japanese",
+      "family": "Japonic",
+      "branch": "Japanese",
+      "scripts": [
+        "Jpan"
+      ],
+      "aliases": [
+        "日本語",
+        "Japanese"
+      ],
+      "common_words": [
+        "こんにちは",
+        "ありがとう",
+        "これ",
+        "何",
+        "はい",
+        "いいえ",
+        "どう",
+        "私",
+        "です",
+        "が"
+      ]
+    },
+    {
+      "language_id": "lang:kor",
+      "iso639_3": "kor",
+      "name": "Korean",
+      "family": "Koreanic",
+      "branch": "Korean",
+      "scripts": [
+        "Kore"
+      ],
+      "aliases": [
+        "한국어",
+        "조선말",
+        "Korean"
+      ],
+      "common_words": [
+        "안녕하세요",
+        "감사합니다",
+        "이것",
+        "네",
+        "아니요",
+        "어떻게",
+        "저",
+        "이",
+        "있어요",
+        "뭐"
+      ]
+    },
+    {
+      "language_id": "lang:vie",
+      "iso639_3": "vie",
+      "name": "Vietnamese",
+      "family": "Austroasiatic",
+      "branch": "Vietic",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Tiếng Việt",
+        "Vietnamese"
+      ],
+      "common_words": [
+        "xin",
+        "chào",
+        "cảm",
+        "ơn",
+        "vâng",
+        "không",
+        "gì",
+        "tôi",
+        "này",
+        "có"
+      ]
+    },
+    {
+      "language_id": "lang:ind",
+      "iso639_3": "ind",
+      "name": "Indonesian",
+      "family": "Austronesian",
+      "branch": "Malayo-Polynesian",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Bahasa Indonesia",
+        "Indonesian"
+      ],
+      "common_words": [
+        "halo",
+        "terima",
+        "kasih",
+        "apa",
+        "ini",
+        "ya",
+        "tidak",
+        "bagaimana",
+        "saya",
+        "ada"
+      ]
+    },
+    {
+      "language_id": "lang:msa",
+      "iso639_3": "msa",
+      "name": "Malay",
+      "family": "Austronesian",
+      "branch": "Malayo-Polynesian",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Bahasa Melayu",
+        "Malay"
+      ],
+      "common_words": [
+        "halo",
+        "terima",
+        "kasih",
+        "apa",
+        "ini",
+        "ya",
+        "tidak",
+        "bagaimana",
+        "saya",
+        "ada"
+      ]
+    },
+    {
+      "language_id": "lang:tha",
+      "iso639_3": "tha",
+      "name": "Thai",
+      "family": "Kra-Dai",
+      "branch": "Tai",
+      "scripts": [
+        "Thai"
+      ],
+      "aliases": [
+        "ไทย",
+        "Thai"
+      ],
+      "common_words": [
+        "สวัสดี",
+        "ขอบคุณ",
+        "อะไร",
+        "ใช่",
+        "ไม่",
+        "อย่างไร",
+        "ฉัน",
+        "นี่",
+        "มี",
+        "ดี"
+      ]
+    },
+    {
+      "language_id": "lang:swa",
+      "iso639_3": "swa",
+      "name": "Swahili",
+      "family": "Niger-Congo",
+      "branch": "Bantu",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Kiswahili",
+        "Swahili"
+      ],
+      "common_words": [
+        "habari",
+        "asante",
+        "na",
+        "nini",
+        "ndiyo",
+        "hapana",
+        "vipi",
+        "mimi",
+        "hii",
+        "ni"
+      ]
+    },
+    {
+      "language_id": "lang:amh",
+      "iso639_3": "amh",
+      "name": "Amharic",
+      "family": "Afro-Asiatic",
+      "branch": "Semitic",
+      "scripts": [
+        "Ethi"
+      ],
+      "aliases": [
+        "አማርኛ",
+        "Amharic"
+      ],
+      "common_words": [
+        "ሰላም",
+        "አመሰግናለሁ",
+        "እና",
+        "ምን",
+        "አዎ",
+        "አይ",
+        "እንዴት",
+        "እኔ",
+        "ይህ",
+        "ነው"
+      ]
+    },
+    {
+      "language_id": "lang:nav",
+      "iso639_3": "nav",
+      "name": "Navajo",
+      "family": "Na-Dene",
+      "branch": "Athabaskan",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "Diné Bizaad",
+        "Navajo"
+      ],
+      "common_words": [
+        "yá'át'ééh",
+        "ahéhee'",
+        "hágoónee'",
+        "nizhóní",
+        "díí",
+        "shił",
+        "łah",
+        "t'áá"
+      ]
+    },
+    {
+      "language_id": "lang:chr",
+      "iso639_3": "chr",
+      "name": "Cherokee",
+      "family": "Iroquoian",
+      "branch": "Southern Iroquoian",
+      "scripts": [
+        "Cher",
+        "Latn"
+      ],
+      "aliases": [
+        "ᏣᎳᎩ",
+        "Cherokee"
+      ],
+      "common_words": [
+        "ᎣᏏᏲ",
+        "ᏩᏙᏉ",
+        "ᎤᎲᏁ",
+        "ᎣᎦ",
+        "ᎫᎴ",
+        "ᏂᎬᎾ",
+        "ᎤᎦ",
+        "ᎠᏁᎬᎢ"
+      ]
+    },
+    {
+      "language_id": "lang:crk",
+      "iso639_3": "crk",
+      "name": "Plains Cree",
+      "family": "Algic",
+      "branch": "Algonquian",
+      "scripts": [
+        "Latn"
+      ],
+      "aliases": [
+        "nēhiyawēwin",
+        "Plains Cree"
+      ],
+      "common_words": [
+        "tânisi",
+        "ê-hê",
+        "môla",
+        "êkosi",
+        "mâka",
+        "wîcihitowin",
+        "iskwêw",
+        "nâpêw"
+      ]
+    },
+    {
+      "language_id": "lang:ell",
+      "iso639_3": "ell",
+      "name": "Greek",
+      "family": "Indo-European",
+      "branch": "Hellenic",
+      "scripts": [
+        "Grek"
+      ],
+      "aliases": [
+        "Modern Greek",
+        "Ελληνικά",
+        "Neoellinika"
+      ],
+      "common_words": [
+        "γεια",
+        "ευχαριστώ",
+        "ναι",
+        "όχι",
+        "καλημέρα",
+        "παρακαλώ",
+        "αντίο",
+        "τι"
+      ],
+      "source_name": "common_seed",
+      "lineage_confidence": 0.9
+    }
+  ]
+}

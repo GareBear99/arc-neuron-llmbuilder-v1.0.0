@@ -1,0 +1,71 @@
+{
+  "ok": true,
+  "run_id": "gate_15121604d1ed",
+  "model_name": "candidate_v1",
+  "adapter": "heuristic",
+  "prompt_profile": "minimal_doctrine",
+  "steps": [
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "scripts/validate_repo.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"jsonl_files_checked\": 28,\n  \"yaml_files_checked\": 33,\n  \"json_files_checked\": 81,\n  \"dataset_files\": 6,\n  \"benchmark_files\": 8,\n  \"dataset_total_records\": 120,\n  \"benchmark_total_tasks\": 80,\n  \"errors\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "scripts/execution/check_local_backend.py",
+        "--adapter",
+        "heuristic"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"adapter\": \"heuristic\",\n  \"identity\": {\n    \"adapter\": \"heuristic\",\n    \"mode\": \"synthetic-baseline\",\n    \"promotable\": false\n  },\n  \"health\": {\n    \"ok\": true,\n    \"adapter\": \"heuristic\",\n    \"mode\": \"synthetic-baseline\",\n    \"note\": \"Heuristic adapter is for smoke tests only and should not be treated as a live backend.\"\n  },\n  \"smoke\": {\n    \"ok\": true,\n    \"text\": \"Doctrine active.\\nConfidence: bounded by available evidence.\",\n    \"error\": null,\n    \"latency_ms\": null,\n    \"finish_reason\": null\n  },\n  \"require_live_backend\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "scripts/execution/run_model_benchmarks.py",
+        "--adapter",
+        "heuristic",
+        "--prompt-profile",
+        "minimal_doctrine"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"adapter\": \"heuristic\",\n  \"prompt_profile\": \"minimal_doctrine\",\n  \"records\": 80,\n  \"failures\": 0,\n  \"run_id\": \"run_94520d6a0138\",\n  \"output\": \"results/model_outputs.jsonl\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "scripts/execution/score_benchmark_outputs.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"output\": \"results/scored_outputs.json\",\n  \"overall_weighted_score\": 0.5625,\n  \"failure_count\": 0\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "scripts/execution/promote_candidate.py",
+        "--model-name",
+        "candidate_v1"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"promoted\": false,\n  \"report\": \"reports/promotion_decision.json\",\n  \"overall_weighted_score\": 0.5625\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/pyvenv/bin/python",
+        "scripts/execution/run_quantization_retention.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"output\": \"reports/quantization_retention_report.json\",\n  \"mode\": \"scoreboard_fallback\"\n}\n",
+      "stderr": ""
+    }
+  ]
+}

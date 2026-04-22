@@ -1,0 +1,476 @@
+{
+  "repo_id": "/mnt/data/cognition-core-starter-pack",
+  "name": "cognition-core-starter-pack",
+  "default_branch": "unknown",
+  "purpose_summary": "Cognition Core",
+  "entry_points": [
+    "README.md",
+    "specs/cognition_doctrine_v1.md",
+    "specs/cognition_contract_v1.yaml",
+    "specs/promotion_gates_v1.yaml",
+    "specs/benchmark_schema_v1.yaml",
+    "specs/repo_state_capsule_schema_v1.json",
+    "configs/model_registry.yaml",
+    "configs/training_stage1.yaml",
+    "configs/training_stage2.yaml",
+    "configs/training_stage3.yaml"
+  ],
+  "module_map": [
+    {
+      "module": "README.md",
+      "summary": "Top-level module or file group 'README.md' containing 1 tracked files.",
+      "files": [
+        "README.md"
+      ]
+    },
+    {
+      "module": "configs",
+      "summary": "Top-level module or file group 'configs' containing 7 tracked files.",
+      "files": [
+        "configs/model_registry.yaml",
+        "configs/training_stage1.yaml",
+        "configs/training_stage2.yaml",
+        "configs/training_stage3.yaml",
+        "configs/training_stage4.yaml",
+        "configs/export_matrix.yaml",
+        "configs/dataset_policy_matrix.yaml"
+      ]
+    },
+    {
+      "module": "data_manifest",
+      "summary": "Top-level module or file group 'data_manifest' containing 1 tracked files.",
+      "files": [
+        "data_manifest/manifest.yaml"
+      ]
+    },
+    {
+      "module": "datasets",
+      "summary": "Top-level module or file group 'datasets' containing 6 tracked files.",
+      "files": [
+        "datasets/base_text/README.md",
+        "datasets/code_core/README.md",
+        "datasets/engineering_tasks/README.md",
+        "datasets/review_and_diffs/README.md",
+        "datasets/domain_packs/README.md",
+        "datasets/repo_capsules/README.md"
+      ]
+    },
+    {
+      "module": "docs",
+      "summary": "Top-level module or file group 'docs' containing 4 tracked files.",
+      "files": [
+        "docs/ROADMAP_NEXT_STEPS.md",
+        "docs/MODEL_LADDER.md",
+        "docs/ALPHA_DEFINITION.md",
+        "docs/DATASET_STRATEGY.md"
+      ]
+    },
+    {
+      "module": "evals",
+      "summary": "Top-level module or file group 'evals' containing 4 tracked files.",
+      "files": [
+        "evals/verified/README.md",
+        "evals/live/README.md",
+        "evals/paraphrase/README.md",
+        "evals/quantization_retention/README.md"
+      ]
+    },
+    {
+      "module": "results",
+      "summary": "Top-level module or file group 'results' containing 1 tracked files.",
+      "files": [
+        "results/scoreboard.json"
+      ]
+    },
+    {
+      "module": "scripts",
+      "summary": "Top-level module or file group 'scripts' containing 8 tracked files.",
+      "files": [
+        "scripts/build_dataset.py",
+        "scripts/run_benchmarks.py",
+        "scripts/compare_checkpoints.py",
+        "scripts/score_quantization.py",
+        "scripts/export_gguf.sh",
+        "scripts/validate_repo.py",
+        "scripts/build_repo_capsule.py",
+        "scripts/expand_seed_targets.py"
+      ]
+    },
+    {
+      "module": "specs",
+      "summary": "Top-level module or file group 'specs' containing 5 tracked files.",
+      "files": [
+        "specs/cognition_doctrine_v1.md",
+        "specs/cognition_contract_v1.yaml",
+        "specs/promotion_gates_v1.yaml",
+        "specs/benchmark_schema_v1.yaml",
+        "specs/repo_state_capsule_schema_v1.json"
+      ]
+    },
+    {
+      "module": "templates",
+      "summary": "Top-level module or file group 'templates' containing 2 tracked files.",
+      "files": [
+        "templates/dataset_record_template.json",
+        "templates/benchmark_task_template.json"
+      ]
+    }
+  ],
+  "symbol_index": [
+    {
+      "symbol": "count_jsonl_records",
+      "kind": "function",
+      "file": "scripts/build_dataset.py",
+      "references": []
+    },
+    {
+      "symbol": "main",
+      "kind": "function",
+      "file": "scripts/build_dataset.py",
+      "references": []
+    },
+    {
+      "symbol": "load_tasks",
+      "kind": "function",
+      "file": "scripts/run_benchmarks.py",
+      "references": []
+    },
+    {
+      "symbol": "main",
+      "kind": "function",
+      "file": "scripts/run_benchmarks.py",
+      "references": []
+    },
+    {
+      "symbol": "main",
+      "kind": "function",
+      "file": "scripts/compare_checkpoints.py",
+      "references": []
+    },
+    {
+      "symbol": "main",
+      "kind": "function",
+      "file": "scripts/score_quantization.py",
+      "references": []
+    },
+    {
+      "symbol": "validate_jsonl",
+      "kind": "function",
+      "file": "scripts/validate_repo.py",
+      "references": []
+    },
+    {
+      "symbol": "main",
+      "kind": "function",
+      "file": "scripts/validate_repo.py",
+      "references": []
+    },
+    {
+      "symbol": "iter_files",
+      "kind": "function",
+      "file": "scripts/build_repo_capsule.py",
+      "references": []
+    },
+    {
+      "symbol": "read_text_safe",
+      "kind": "function",
+      "file": "scripts/build_repo_capsule.py",
+      "references": []
+    },
+    {
+      "symbol": "summarize_purpose",
+      "kind": "function",
+      "file": "scripts/build_repo_capsule.py",
+      "references": []
+    },
+    {
+      "symbol": "build_module_map",
+      "kind": "function",
+      "file": "scripts/build_repo_capsule.py",
+      "references": []
+    },
+    {
+      "symbol": "build_symbol_index",
+      "kind": "function",
+      "file": "scripts/build_repo_capsule.py",
+      "references": []
+    },
+    {
+      "symbol": "build_dependency_graph",
+      "kind": "function",
+      "file": "scripts/build_repo_capsule.py",
+      "references": []
+    },
+    {
+      "symbol": "build_test_map",
+      "kind": "function",
+      "file": "scripts/build_repo_capsule.py",
+      "references": []
+    },
+    {
+      "symbol": "build_hot_zones",
+      "kind": "function",
+      "file": "scripts/build_repo_capsule.py",
+      "references": []
+    },
+    {
+      "symbol": "build_unknowns",
+      "kind": "function",
+      "file": "scripts/build_repo_capsule.py",
+      "references": []
+    },
+    {
+      "symbol": "main",
+      "kind": "function",
+      "file": "scripts/build_repo_capsule.py",
+      "references": []
+    },
+    {
+      "symbol": "count_jsonl",
+      "kind": "function",
+      "file": "scripts/expand_seed_targets.py",
+      "references": []
+    },
+    {
+      "symbol": "main",
+      "kind": "function",
+      "file": "scripts/expand_seed_targets.py",
+      "references": []
+    }
+  ],
+  "dependency_graph": [
+    {
+      "source": "scripts/build_dataset.py",
+      "target": "__future__",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/build_dataset.py",
+      "target": "pathlib",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/build_dataset.py",
+      "target": "json",
+      "relation": "imports"
+    },
+    {
+      "source": "scripts/run_benchmarks.py",
+      "target": "__future__",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/run_benchmarks.py",
+      "target": "pathlib",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/run_benchmarks.py",
+      "target": "json",
+      "relation": "imports"
+    },
+    {
+      "source": "scripts/compare_checkpoints.py",
+      "target": "__future__",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/compare_checkpoints.py",
+      "target": "json",
+      "relation": "imports"
+    },
+    {
+      "source": "scripts/compare_checkpoints.py",
+      "target": "pathlib",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/score_quantization.py",
+      "target": "__future__",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/score_quantization.py",
+      "target": "json",
+      "relation": "imports"
+    },
+    {
+      "source": "scripts/score_quantization.py",
+      "target": "pathlib",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/validate_repo.py",
+      "target": "__future__",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/validate_repo.py",
+      "target": "json",
+      "relation": "imports"
+    },
+    {
+      "source": "scripts/validate_repo.py",
+      "target": "pathlib",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/build_repo_capsule.py",
+      "target": "__future__",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/build_repo_capsule.py",
+      "target": "argparse",
+      "relation": "imports"
+    },
+    {
+      "source": "scripts/build_repo_capsule.py",
+      "target": "json",
+      "relation": "imports"
+    },
+    {
+      "source": "scripts/build_repo_capsule.py",
+      "target": "collections",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/build_repo_capsule.py",
+      "target": "pathlib",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/build_repo_capsule.py",
+      "target": "typing",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/expand_seed_targets.py",
+      "target": "__future__",
+      "relation": "imports_from"
+    },
+    {
+      "source": "scripts/expand_seed_targets.py",
+      "target": "json",
+      "relation": "imports"
+    },
+    {
+      "source": "scripts/expand_seed_targets.py",
+      "target": "pathlib",
+      "relation": "imports_from"
+    }
+  ],
+  "test_map": [],
+  "hot_zones": [
+    {
+      "surface": "README.md",
+      "reason": "entry doc",
+      "risk_level": "low"
+    },
+    {
+      "surface": "specs/cognition_doctrine_v1.md",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "specs/cognition_contract_v1.yaml",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "specs/promotion_gates_v1.yaml",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "specs/benchmark_schema_v1.yaml",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "specs/repo_state_capsule_schema_v1.json",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "configs/model_registry.yaml",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "configs/training_stage1.yaml",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "configs/training_stage2.yaml",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "configs/training_stage3.yaml",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "configs/training_stage4.yaml",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "configs/export_matrix.yaml",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "configs/dataset_policy_matrix.yaml",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "scripts/build_dataset.py",
+      "reason": "tracked source surface",
+      "risk_level": "medium"
+    },
+    {
+      "surface": "scripts/run_benchmarks.py",
+      "reason": "tracked source surface",
+      "risk_level": "medium"
+    },
+    {
+      "surface": "scripts/compare_checkpoints.py",
+      "reason": "tracked source surface",
+      "risk_level": "medium"
+    },
+    {
+      "surface": "scripts/score_quantization.py",
+      "reason": "tracked source surface",
+      "risk_level": "medium"
+    },
+    {
+      "surface": "scripts/export_gguf.sh",
+      "reason": "tracked source surface",
+      "risk_level": "low"
+    },
+    {
+      "surface": "scripts/validate_repo.py",
+      "reason": "tracked source surface",
+      "risk_level": "medium"
+    },
+    {
+      "surface": "scripts/build_repo_capsule.py",
+      "reason": "tracked source surface",
+      "risk_level": "medium"
+    },
+    {
+      "surface": "repo-wide",
+      "reason": "Most common tracked file type is .md",
+      "risk_level": "info"
+    }
+  ],
+  "recent_changes": [],
+  "unknowns": [
+    "No obvious test files detected.",
+    "Commit-history ingestion is not implemented in this local capsule builder."
+  ]
+}

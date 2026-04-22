@@ -1,0 +1,707 @@
+{
+  "ok": true,
+  "scan": {
+    "ok": true,
+    "scan_id": "sfs_5f848b19250a",
+    "summary": {
+      "language_count": 35,
+      "candidate_count": 214,
+      "surface_counts": {
+        "capability": 210,
+        "transliteration_profile": 4
+      }
+    },
+    "language_summaries": [
+      {
+        "language_id": "lang:amh",
+        "name": "Amharic",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:arb",
+        "name": "Arabic (Modern Standard)",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:ben",
+        "name": "Bengali",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:chr",
+        "name": "Cherokee",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:cmn",
+        "name": "Mandarin Chinese",
+        "missing_count": 7,
+        "missing_by_surface": {
+          "transliteration_profile": 1,
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:crk",
+        "name": "Plains Cree",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:deu",
+        "name": "German",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:ell",
+        "name": "Greek",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:eng",
+        "name": "English",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:fas",
+        "name": "Persian",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:fra",
+        "name": "French",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:heb",
+        "name": "Hebrew",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:hin",
+        "name": "Hindi",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:ind",
+        "name": "Indonesian",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:ita",
+        "name": "Italian",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:jpn",
+        "name": "Japanese",
+        "missing_count": 7,
+        "missing_by_surface": {
+          "transliteration_profile": 1,
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:kor",
+        "name": "Korean",
+        "missing_count": 7,
+        "missing_by_surface": {
+          "transliteration_profile": 1,
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:mar",
+        "name": "Marathi",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:msa",
+        "name": "Malay",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:nav",
+        "name": "Navajo",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:nld",
+        "name": "Dutch",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:pan",
+        "name": "Punjabi",
+        "missing_count": 7,
+        "missing_by_surface": {
+          "transliteration_profile": 1,
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:pol",
+        "name": "Polish",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:por",
+        "name": "Portuguese",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:rus",
+        "name": "Russian",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:spa",
+        "name": "Spanish",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:swa",
+        "name": "Swahili",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:tam",
+        "name": "Tamil",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:tel",
+        "name": "Telugu",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:tha",
+        "name": "Thai",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:tur",
+        "name": "Turkish",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:ukr",
+        "name": "Ukrainian",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:urd",
+        "name": "Urdu",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:vie",
+        "name": "Vietnamese",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      },
+      {
+        "language_id": "lang:yue",
+        "name": "Cantonese",
+        "missing_count": 6,
+        "missing_by_surface": {
+          "capability": 6
+        }
+      }
+    ]
+  },
+  "sample_candidates": {
+    "ok": true,
+    "count": 20,
+    "results": [
+      {
+        "candidate_id": "sfc_5a19b9c784ac",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:yue",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for runtime_speech",
+        "confidence": 0.6,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.288188+00:00",
+        "updated_at": "2026-04-17T23:09:55.288188+00:00",
+        "payload": {
+          "capability_name": "runtime_speech",
+          "confidence": 0.6,
+          "maturity": "none",
+          "notes": "runtime capability intentionally left none until provider/runtime registration",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_76244995b6d2",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:yue",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for runtime_translation",
+        "confidence": 0.6,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.288125+00:00",
+        "updated_at": "2026-04-17T23:09:55.288125+00:00",
+        "payload": {
+          "capability_name": "runtime_translation",
+          "confidence": 0.6,
+          "maturity": "none",
+          "notes": "runtime capability intentionally left none until provider/runtime registration",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_0862089961f8",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:yue",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for transliteration_to_latn",
+        "confidence": 0.72,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.288062+00:00",
+        "updated_at": "2026-04-17T23:09:55.288062+00:00",
+        "payload": {
+          "capability_name": "transliteration_to_latn",
+          "confidence": 0.72,
+          "maturity": "seeded",
+          "notes": "autofill candidate",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_f703490b4779",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:yue",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for phonology_hint",
+        "confidence": 0.72,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.287996+00:00",
+        "updated_at": "2026-04-17T23:09:55.287996+00:00",
+        "payload": {
+          "capability_name": "phonology_hint",
+          "confidence": 0.72,
+          "maturity": "seeded",
+          "notes": "autofill candidate",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_deb5bdce9d71",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:yue",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for pronunciation_hint",
+        "confidence": 0.72,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.287927+00:00",
+        "updated_at": "2026-04-17T23:09:55.287927+00:00",
+        "payload": {
+          "capability_name": "pronunciation_hint",
+          "confidence": 0.72,
+          "maturity": "seeded",
+          "notes": "autofill candidate",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_53fda72b7f9b",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:yue",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for translation_seeded_phrases",
+        "confidence": 0.72,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.287850+00:00",
+        "updated_at": "2026-04-17T23:09:55.287850+00:00",
+        "payload": {
+          "capability_name": "translation_seeded_phrases",
+          "confidence": 0.72,
+          "maturity": "seeded",
+          "notes": "phrase_count=11",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_97a4eedc6d87",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:vie",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for runtime_speech",
+        "confidence": 0.6,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.287652+00:00",
+        "updated_at": "2026-04-17T23:09:55.287652+00:00",
+        "payload": {
+          "capability_name": "runtime_speech",
+          "confidence": 0.6,
+          "maturity": "none",
+          "notes": "runtime capability intentionally left none until provider/runtime registration",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_4321a318454e",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:vie",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for runtime_translation",
+        "confidence": 0.6,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.287582+00:00",
+        "updated_at": "2026-04-17T23:09:55.287582+00:00",
+        "payload": {
+          "capability_name": "runtime_translation",
+          "confidence": 0.6,
+          "maturity": "none",
+          "notes": "runtime capability intentionally left none until provider/runtime registration",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_56d2c54c521b",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:vie",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for transliteration_to_latn",
+        "confidence": 0.72,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.287519+00:00",
+        "updated_at": "2026-04-17T23:09:55.287519+00:00",
+        "payload": {
+          "capability_name": "transliteration_to_latn",
+          "confidence": 0.72,
+          "maturity": "reviewed",
+          "notes": "autofill candidate",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_a01887f4a15a",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:vie",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for phonology_hint",
+        "confidence": 0.72,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.287450+00:00",
+        "updated_at": "2026-04-17T23:09:55.287450+00:00",
+        "payload": {
+          "capability_name": "phonology_hint",
+          "confidence": 0.72,
+          "maturity": "seeded",
+          "notes": "autofill candidate",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_11594be823e4",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:vie",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for pronunciation_hint",
+        "confidence": 0.72,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.287359+00:00",
+        "updated_at": "2026-04-17T23:09:55.287359+00:00",
+        "payload": {
+          "capability_name": "pronunciation_hint",
+          "confidence": 0.72,
+          "maturity": "seeded",
+          "notes": "autofill candidate",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_30d35d89c046",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:vie",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for translation_seeded_phrases",
+        "confidence": 0.72,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.287279+00:00",
+        "updated_at": "2026-04-17T23:09:55.287279+00:00",
+        "payload": {
+          "capability_name": "translation_seeded_phrases",
+          "confidence": 0.72,
+          "maturity": "seeded",
+          "notes": "phrase_count=11",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_cff9edd27d13",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:urd",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for runtime_speech",
+        "confidence": 0.6,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.287090+00:00",
+        "updated_at": "2026-04-17T23:09:55.287090+00:00",
+        "payload": {
+          "capability_name": "runtime_speech",
+          "confidence": 0.6,
+          "maturity": "none",
+          "notes": "runtime capability intentionally left none until provider/runtime registration",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_10f5765f35bf",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:urd",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for runtime_translation",
+        "confidence": 0.6,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.287025+00:00",
+        "updated_at": "2026-04-17T23:09:55.287025+00:00",
+        "payload": {
+          "capability_name": "runtime_translation",
+          "confidence": 0.6,
+          "maturity": "none",
+          "notes": "runtime capability intentionally left none until provider/runtime registration",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_067be7214a8c",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:urd",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for transliteration_to_latn",
+        "confidence": 0.72,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.286961+00:00",
+        "updated_at": "2026-04-17T23:09:55.286961+00:00",
+        "payload": {
+          "capability_name": "transliteration_to_latn",
+          "confidence": 0.72,
+          "maturity": "seeded",
+          "notes": "autofill candidate",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_a8359e6650ab",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:urd",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for phonology_hint",
+        "confidence": 0.72,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.286883+00:00",
+        "updated_at": "2026-04-17T23:09:55.286883+00:00",
+        "payload": {
+          "capability_name": "phonology_hint",
+          "confidence": 0.72,
+          "maturity": "seeded",
+          "notes": "autofill candidate",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_bfd4ef0da904",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:urd",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for pronunciation_hint",
+        "confidence": 0.72,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.286802+00:00",
+        "updated_at": "2026-04-17T23:09:55.286802+00:00",
+        "payload": {
+          "capability_name": "pronunciation_hint",
+          "confidence": 0.72,
+          "maturity": "seeded",
+          "notes": "autofill candidate",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_cb16053cb603",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:urd",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for translation_seeded_phrases",
+        "confidence": 0.72,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.286728+00:00",
+        "updated_at": "2026-04-17T23:09:55.286728+00:00",
+        "payload": {
+          "capability_name": "translation_seeded_phrases",
+          "confidence": 0.72,
+          "maturity": "seeded",
+          "notes": "phrase_count=11",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_8080c3871c7e",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:ukr",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for runtime_speech",
+        "confidence": 0.6,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.286558+00:00",
+        "updated_at": "2026-04-17T23:09:55.286558+00:00",
+        "payload": {
+          "capability_name": "runtime_speech",
+          "confidence": 0.6,
+          "maturity": "none",
+          "notes": "runtime capability intentionally left none until provider/runtime registration",
+          "provider": "local"
+        }
+      },
+      {
+        "candidate_id": "sfc_75d6a2ab7c1e",
+        "scan_id": "sfs_5f848b19250a",
+        "language_id": "lang:ukr",
+        "surface_type": "capability",
+        "rationale": "language is missing canonical capability row for runtime_translation",
+        "confidence": 0.6,
+        "source_name": "autofill_gap_scan",
+        "source_ref": null,
+        "status": "staged",
+        "created_at": "2026-04-17T23:09:55.286472+00:00",
+        "updated_at": "2026-04-17T23:09:55.286472+00:00",
+        "payload": {
+          "capability_name": "runtime_translation",
+          "confidence": 0.6,
+          "maturity": "none",
+          "notes": "runtime capability intentionally left none until provider/runtime registration",
+          "provider": "local"
+        }
+      }
+    ]
+  }
+}

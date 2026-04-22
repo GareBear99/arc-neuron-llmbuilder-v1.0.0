@@ -1,0 +1,160 @@
+# specs/promotion_gate_v2.yaml
+# DARPA-level promotion gate for ARC-Neuron candidate model builds.
+# A candidate MUST pass every gate below before it may be promoted.
+# Any gate failure → status: rejected or archive_only.
+#
+# This file is the law.  No manual override without updating this file
+# and documenting a rationale in the promotion report.
+
+version: 2
+effective_date: "2026-04-18"
+authority: "ARC Cognition Core — DARPA Gate Committee"
+
+# ────────────────────────────────────────────────────────────────────────────
+# COMPARISON CLASS DEFINITIONS
+# Compare candidates only within their own class.
+# ────────────────────────────────────────────────────────────────────────────
+comparison_classes:
+  T:  { label: "Tiny",   min_params: 0,          max_params: 500_000_000 }
+  S:  { label: "Small",  min_params: 500_000_000, max_params: 2_000_000_000 }
+  M:  { label: "Medium", min_params: 2_000_000_000, max_params: 8_000_000_000 }
+  L:  { label: "Large",  min_params: 8_000_000_000, max_params: 20_000_000_000 }
+  XL: { label: "XLarge", min_params: 20_000_000_000, max_params: null }
+
+# ────────────────────────────────────────────────────────────────────────────
+# LANE WEIGHTS  (must sum to 1.0)
+# ────────────────────────────────────────────────────────────────────────────
+lane_weights:
+  public_capability:   0.30
+  private_operator:    0.35
+  runtime_efficiency:  0.15
+  governance_integrity: 0.20
+
+# ────────────────────────────────────────────────────────────────────────────
+# PROMOTION THRESHOLDS
+# ────────────────────────────────────────────────────────────────────────────
+promotion:
+  # Candidate must beat incumbent's weighted score by at least this margin.
+  # First candidate (no incumbent) is auto-accepted if all hard gates pass.
+  min_weighted_score_improvement: 0.0   # any improvement is acceptable
+  incumbent_beat_required: true         # must be strictly better
+
+  # Per-capability regression allowances (vs incumbent).
+  # Exceeding these causes automatic rejection regardless of overall score.
+  max_regression_per_capability:
+    repair_success:     0.04   # repair quality is safety-critical
+    calibration_error:  0.03   # don't become more overconfident
+    reasoning:          0.05
+    planning:           0.05
+    critique:           0.06
+    compression:        0.06
+    paraphrase_stability: 0.06
+
+  # Failure rate: fraction of benchmark tasks where response.ok == False.
+  max_failure_rate_regression: 0.0   # failure rate must not increase
+
+  # Quantization retention: Q5 or Q4 must stay within this ratio of fp16.
+  min_quantization_retention_ratio: 0.95
+
+  # Governance gates — ALL must be True.
+  required_governance_checks:
+    - rebuild_reproducible         # same seed/data/config → same artifact SHA
+    - rollback_restore_passes      # prior build can be restored from archive
+    - archive_restore_passes       # arc-rar bundle can be extracted and verified
+    - source_truth_linked          # artifact_manifest links back to source commit
+    - receipt_chain_complete       # all intermediate receipts are present
+    - store_verify_passes          # OmnibinaryStore.verify() returns ok=True
+
+# ────────────────────────────────────────────────────────────────────────────
+# HARD REJECTION CONDITIONS
+# If ANY of these are true, the candidate is IMMEDIATELY REJECTED.
+# ────────────────────────────────────────────────────────────────────────────
+hard_reject_conditions:
+  - condition: "repair_success < 0.30"
+    reason: "Repair capability below minimum usable threshold"
+  - condition: "failure_rate > 0.25"
+    reason: "More than 25% of benchmark tasks failed — model is unreliable"
+  - condition: "quantization_retention_ratio < 0.90"
+    reason: "Quantized export degrades below acceptable floor"
+  - condition: "source_truth_linked == false"
+    reason: "Artifact cannot be traced to a source commit — provenance broken"
+  - condition: "receipt_chain_complete == false"
+    reason: "Incomplete receipt chain — not replayable"
+  - condition: "store_verify_passes == false"
+    reason: "OmnibinaryStore integrity check failed — archive is corrupt"
+
+# ────────────────────────────────────────────────────────────────────────────
+# DECISION STATES
+# ────────────────────────────────────────────────────────────────────────────
+decision_states:
+  promote:
+    description: "Candidate beats incumbent on all required gates"
+    action: "Update scoreboard, emit incumbent=True, export Arc-RAR bundle"
+
+  archive_only:
+    description: >
+      Candidate has interesting behavior but does not cleanly win.
+      Preserve for future analysis and training data extraction.
+    action: "Add to scoreboard as non-incumbent, store in archive"
+
+  reject:
+    description: >
+      Candidate fails a hard-reject condition or causes regressions
+      exceeding the allowed thresholds.
+    action: "Do not add to scoreboard, log failure reason, do not deploy"
+
+# ────────────────────────────────────────────────────────────────────────────
+# REGRESSION FLOOR MODEL
+# A frozen reference build that every candidate must also beat.
+# Reset by hand when the stack reaches a new capability tier.
+# ────────────────────────────────────────────────────────────────────────────
+regression_floor:
+  description: >
+    The frozen floor model.  Every candidate must beat this model on
+    core operator tasks regardless of how it compares to the direct incumbent.
+  floor_model_id: "arc-neuron-tiny-v0.1-exemplar"   # update as stack matures
+  floor_capabilities:
+    - repair
+    - calibration
+    - planning
+
+# ────────────────────────────────────────────────────────────────────────────
+# BENCHMARK SUITE VERSIONS
+# Gate runs must specify which pack version was used for reproducibility.
+# ────────────────────────────────────────────────────────────────────────────
+required_benchmark_packs:
+  - id: "public_capability_pack"
+    version: "v1"
+    min_tasks: 80
+  - id: "operator_private_pack"
+    version: "v1"
+    min_tasks: 20
+  - id: "runtime_efficiency_pack"
+    version: "v1"
+    quantization_variants: ["q8_0", "q6_k", "q5_k_m", "q4_k_m"]
+  - id: "governance_pack"
+    version: "v1"
+
+# ────────────────────────────────────────────────────────────────────────────
+# PROMOTION RECORD SCHEMA
+# Every promotion decision must produce a record with these fields.
+# ────────────────────────────────────────────────────────────────────────────
+promotion_record_schema:
+  required_fields:
+    - build_id
+    - compared_to               # incumbent build_id or "none"
+    - weighted_score_candidate
+    - weighted_score_incumbent
+    - per_capability_deltas     # dict of capability → delta
+    - failure_rate_candidate
+    - failure_rate_incumbent
+    - quantization_retention_ratio
+    - governance_checks_passed  # list of check names
+    - governance_checks_failed  # list of check names
+    - hard_reject_triggered     # bool
+    - decision                  # promote | archive_only | reject
+    - decision_reason           # human-readable string
+    - benchmark_pack_version
+    - receipt_ids               # list of receipts covering the run
+    - arc_rar_bundle_path       # path to the archived bundle
+    - created_at                # ISO timestamp

@@ -1,0 +1,1 @@
+{"op":"create","payload":{"output":"./out.zip","format":"zip","inputs":["./folder"]}}

@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "manifest": "exports/candidates/darpa_seed/preference_train/artifact_manifest.json",
+  "artifact_id": "preference_train_225de3da90ca",
+  "stage": "preference_train",
+  "candidate": "darpa_seed",
+  "created_at": "2026-04-14T21:21:44.966524+00:00",
+  "status": "scaffold_ready",
+  "config": "/mnt/data/ccore_latest/cognition-core-github-launch-ready-alpha (2)/configs/training/preference_dpo.yaml",
+  "notes": "Preference stage is still a scaffold, but now writes artifact manifests and dataset counts for reproducible promotion lineage.",
+  "paths": {
+    "dataset": "/mnt/data/ccore_latest/cognition-core-github-launch-ready-alpha (2)/datasets/distillation_preference/seed_pairs.jsonl",
+    "expected_adapter_dir": "/mnt/data/ccore_latest/cognition-core-github-launch-ready-alpha (2)/exports/candidates/darpa_seed/preference_train/adapter"
+  },
+  "metrics": {
+    "dataset_records": 45
+  }
+}

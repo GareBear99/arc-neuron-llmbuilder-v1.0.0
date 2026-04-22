@@ -1,0 +1,177 @@
+# specs/benchmark_schema_v2.yaml
+# Build card and benchmark schema for all ARC-Neuron model releases.
+# Every promoted candidate must ship a machine-readable record in this format.
+
+version: 2
+effective_date: "2026-04-18"
+
+# ────────────────────────────────────────────────────────────────────────────
+# BUILD CARD — required fields for every promoted artifact
+# ────────────────────────────────────────────────────────────────────────────
+build_card_schema:
+  required:
+    - build_id               # e.g. "arc-neuron-small-v0.3.0"
+    - family                 # e.g. "ARC-Neuron"
+    - tier                   # tiny | small | base | large
+    - architecture:
+        type:               # dense | moe
+        parameters_total:   # int
+        parameters_active:  # int (same as total for dense)
+    - tokenizer:
+        version:            # e.g. "tok-v4"
+        vocab_size:         # int
+    - training:
+        corpus_id:          # e.g. "corpus-2026-04-wave3"
+        tuning_stage:       # pretrain | sft | instruct | dpo | native
+        context_window:     # int
+        steps:              # int (actual training steps)
+        final_loss:         # float
+        val_ppl:            # float (validation perplexity)
+    - artifacts:
+        source_truth_id:    # commit SHA or truth-spine ID
+        model_checkpoint_id: # e.g. "ckpt-0042"
+        gguf_exports:       # list of quantization variants available
+    - runtime:
+        engine:             # e.g. "arc_native" | "llama.cpp"
+        engine_version:     # pinned version
+        chat_template:      # e.g. "arc-instruct-v2"
+    - lineage:
+        parent_build:       # prior build_id or "none"
+        eval_pack_version:  # benchmark pack version used
+        benchmark_date:     # ISO date
+    - decision:
+        status:             # candidate | promote | archive_only | reject
+
+# ────────────────────────────────────────────────────────────────────────────
+# BENCHMARK LANES — four lanes, scored separately
+# ────────────────────────────────────────────────────────────────────────────
+lanes:
+
+  public_capability:
+    weight: 0.30
+    description: "Standard capability tasks comparable across models"
+    capabilities:
+      - reasoning
+      - planning
+      - critique
+      - repair
+      - compression
+      - calibration
+      - paraphrase_stability
+      - quantization_retention
+    required_fields_per_task:
+      - task_id
+      - capability
+      - domain
+      - difficulty       # easy | medium | hard
+      - prompt
+      - reference        # rubric or expected structure
+      - scoring          # rubric | retention | pairwise
+      - tags
+
+  private_operator:
+    weight: 0.35
+    description: "Tasks specific to your actual use cases — most important lane"
+    example_tasks:
+      - architecture_review
+      - code_patch_planning
+      - structured_json_generation
+      - rollback_explanation
+      - archive_summarization
+      - directive_following
+      - constraint_preservation
+    scoring: "rubric + human spot-check"
+
+  runtime_efficiency:
+    weight: 0.15
+    description: "Measure the actual deployment reality"
+    metrics:
+      - model_load_time_s
+      - ram_use_gb
+      - tokens_per_second
+      - first_token_latency_ms
+      - score_at_q8_0
+      - score_at_q6_k
+      - score_at_q5_k_m
+      - score_at_q4_k_m
+      - degradation_vs_fp16   # fraction retained vs full-precision baseline
+
+  governance_integrity:
+    weight: 0.20
+    description: "Prove the lab, not just the model"
+    checks:
+      - rebuild_reproducible:
+          description: "Same seed/config/data → same artifact SHA within tolerance"
+      - rollback_restore_passes:
+          description: "Prior build restores cleanly from Arc-RAR archive"
+      - archive_restore_passes:
+          description: "Current build bundle extracts and validates"
+      - source_truth_linked:
+          description: "artifact_manifest.source_truth_id traceable to commit"
+      - receipt_chain_complete:
+          description: "All intermediate receipts present and verifiable"
+      - store_verify_passes:
+          description: "OmnibinaryStore.verify() returns ok=True"
+      - conversation_pipeline_receipts:
+          description: "Training data was generated through canonical pipeline"
+
+# ────────────────────────────────────────────────────────────────────────────
+# SCORING MODES
+# ────────────────────────────────────────────────────────────────────────────
+scoring_modes:
+  rubric:
+    description: "Keyword-presence rubric per capability bucket"
+    implementation: "scorers/rubric.py:score_record()"
+
+  retention:
+    description: "Check whether goal/constraints/blockers/next-action survive compression"
+    fields_checked:
+      - goal_preserved
+      - constraints_preserved
+      - blockers_preserved
+      - next_action_preserved
+
+  pairwise:
+    description: "Compare two responses; pick preferred"
+    requires: "human label or judge model"
+
+# ────────────────────────────────────────────────────────────────────────────
+# QUANTIZATION LADDER
+# Test in this order; stop if hard-reject threshold is crossed.
+# ────────────────────────────────────────────────────────────────────────────
+quantization_ladder:
+  - variant: "fp16_or_fp32"
+    is_baseline: true
+  - variant: "q8_0"
+    max_acceptable_degradation: 0.02
+  - variant: "q6_k"
+    max_acceptable_degradation: 0.04
+  - variant: "q5_k_m"
+    max_acceptable_degradation: 0.05   # hard-reject floor for promotion
+  - variant: "q4_k_m"
+    max_acceptable_degradation: 0.10   # acceptable for constrained hardware
+
+# ────────────────────────────────────────────────────────────────────────────
+# WEIGHTED SCORE FORMULA
+# ────────────────────────────────────────────────────────────────────────────
+weighted_score:
+  formula: >
+    final = (public_capability * 0.30)
+           + (private_operator  * 0.35)
+           + (runtime_efficiency * 0.15)
+           + (governance_integrity * 0.20)
+  range: [0.0, 100.0]
+  passing_threshold: 40.0   # absolute floor; below this → reject regardless
+
+# ────────────────────────────────────────────────────────────────────────────
+# BENCHMARK RUN ARTIFACT STRUCTURE
+# ────────────────────────────────────────────────────────────────────────────
+run_artifact_structure: |
+  benchmarks/runs/<build_id>/
+    build_card.yaml
+    public_results.json
+    operator_results.json
+    runtime_results.json
+    governance_results.json
+    promotion_record.yaml
+    arc_rar_bundle.arcrar.zip   ← Arc-RAR archive of the whole run

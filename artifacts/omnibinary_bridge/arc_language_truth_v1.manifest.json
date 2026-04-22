@@ -1,0 +1,53 @@
+{
+  "format": "omnibinary-language-bridge-v1",
+  "magic": "OBINLANG1\u0000",
+  "created_at": "2026-04-18T00:44:45.269920+00:00",
+  "db_source": "/mnt/data/work/unified/arc-unified-stack/ecosystem/arc-language-module/data/arc_language.db",
+  "table_counts": {
+    "languages": 35,
+    "language_aliases": 84,
+    "language_variants": 104,
+    "phrase_translations": 385,
+    "pronunciation_profiles": 35,
+    "phonology_profiles": 35,
+    "transliteration_profiles": 21,
+    "language_capabilities": 245,
+    "scripts": 15,
+    "source_weights": 7,
+    "self_fill_release_runs": 1,
+    "self_fill_release_artifacts": 5,
+    "self_fill_rollback_index": 1
+  },
+  "table_hashes": {
+    "languages": "0eb5485877705a468044de2d8a6f7b4bb24ec3fd850e9bc9df2065783a76231d",
+    "language_aliases": "86778c5c129177b90ce11b3ff413fe79559bbe24e7464abe462f8ea4837ba740",
+    "language_variants": "3d474700cdc2c18011d42d5eddb4c8d11f1133e2bb0c9552a11a1e7169a17def",
+    "phrase_translations": "d89ce606a4afc86fbb10288676befc4bef3b668a13195b3174ba2b1edf6ebd1a",
+    "pronunciation_profiles": "5d646be3399aca9958a92745d5f58d05958b71b116ef611fa9b3540d51d87894",
+    "phonology_profiles": "7b894eaf3c278cba9af1db340e5b3998491b1bb030d7b796caeb807fe29d8489",
+    "transliteration_profiles": "c01acc055ff4fdb689fd05e98437682f8c8253a29cf455afc1d37cb0896fd1f0",
+    "language_capabilities": "e1995accce8fff221e89c037fcdec7b75ac222ed1b9c44e360076e9dda3e859f",
+    "scripts": "e7a264f2950d8f8fbcf6ec76cdb5ec4096f5d4115b9e7285297ce9a518ed080a",
+    "source_weights": "940e6ace2b15eff2ee2945cbd48c45d197f289197bbb2b114c50827cf7223fb0",
+    "self_fill_release_runs": "40198e59dc87cff5d91e02095e345a6b26b6c4a08bb98e7d7d9c38a97741ccc7",
+    "self_fill_release_artifacts": "a1bbfbcab708917987a9c4cc483c9358fc20e1e4d1fd2e855e5ae7fa6deede48",
+    "self_fill_rollback_index": "af412801f0a02628b431fa91d7f436ae47d7ebc30232d32ec3d5381aa91c76f8"
+  },
+  "payload_sha256": "67cd23eefc853b05047bf764a8c4cf0c2375bd0a9e9d724e835afa48f12dacc0",
+  "payload_size": 39084,
+  "schemas": {
+    "languages": "CREATE TABLE languages (\n    language_id TEXT PRIMARY KEY,\n    iso639_3 TEXT,\n    name TEXT NOT NULL,\n    family TEXT,\n    branch TEXT,\n    parent_language_id TEXT,\n    family_node_id TEXT,\n    branch_node_id TEXT,\n    parent_node_id TEXT,\n    aliases_json TEXT NOT NULL,\n    common_words_json TEXT NOT NULL,\n    created_at TEXT NOT NULL,\n    updated_at TEXT NOT NULL\n)",
+    "language_aliases": "CREATE TABLE language_aliases (\n    alias_id TEXT PRIMARY KEY,\n    language_id TEXT NOT NULL,\n    alias TEXT NOT NULL,\n    normalized_form TEXT,\n    alias_type TEXT NOT NULL,\n    script_id TEXT,\n    region_hint TEXT,\n    source_name TEXT NOT NULL,\n    source_ref TEXT,\n    confidence REAL NOT NULL,\n    notes TEXT NOT NULL DEFAULT '',\n    created_at TEXT NOT NULL,\n    updated_at TEXT NOT NULL\n)",
+    "language_variants": "CREATE TABLE language_variants (\n    variant_id TEXT PRIMARY KEY,\n    language_id TEXT NOT NULL,\n    variant_name TEXT NOT NULL,\n    variant_type TEXT NOT NULL,\n    region_hint TEXT,\n    script_id TEXT,\n    status TEXT NOT NULL DEFAULT 'documented',\n    mutual_intelligibility REAL,\n    notes TEXT NOT NULL DEFAULT '',\n    created_at TEXT NOT NULL,\n    updated_at TEXT NOT NULL\n)",
+    "phrase_translations": "CREATE TABLE phrase_translations (\n    phrase_id TEXT PRIMARY KEY,\n    canonical_key TEXT NOT NULL,\n    language_id TEXT NOT NULL,\n    text_value TEXT NOT NULL,\n    register TEXT NOT NULL DEFAULT 'general',\n    created_at TEXT NOT NULL\n)",
+    "pronunciation_profiles": "CREATE TABLE pronunciation_profiles (\n    profile_id TEXT PRIMARY KEY,\n    language_id TEXT NOT NULL,\n    profile_kind TEXT NOT NULL,\n    romanization_scheme TEXT,\n    ipa_hint TEXT,\n    examples_json TEXT NOT NULL,\n    notes TEXT NOT NULL,\n    created_at TEXT NOT NULL,\n    updated_at TEXT NOT NULL\n)",
+    "phonology_profiles": "CREATE TABLE phonology_profiles (\n    profile_id TEXT PRIMARY KEY,\n    language_id TEXT NOT NULL,\n    notation_system TEXT NOT NULL,\n    broad_ipa TEXT,\n    stress_policy TEXT,\n    syllable_template TEXT,\n    examples_json TEXT NOT NULL DEFAULT '{}',\n    notes TEXT NOT NULL DEFAULT '',\n    created_at TEXT NOT NULL,\n    updated_at TEXT NOT NULL\n)",
+    "transliteration_profiles": "CREATE TABLE transliteration_profiles (\n    profile_id TEXT PRIMARY KEY,\n    language_id TEXT NOT NULL,\n    source_script TEXT NOT NULL,\n    target_script TEXT NOT NULL,\n    scheme_name TEXT NOT NULL,\n    coverage TEXT NOT NULL,\n    example_in TEXT,\n    example_out TEXT,\n    notes TEXT NOT NULL,\n    created_at TEXT NOT NULL,\n    updated_at TEXT NOT NULL\n)",
+    "language_capabilities": "CREATE TABLE language_capabilities (\n    capability_id TEXT PRIMARY KEY,\n    language_id TEXT NOT NULL,\n    capability_name TEXT NOT NULL,\n    maturity TEXT NOT NULL,\n    confidence REAL NOT NULL,\n    provider TEXT NOT NULL,\n    notes TEXT NOT NULL,\n    updated_at TEXT NOT NULL\n)",
+    "scripts": "CREATE TABLE scripts (\n    script_id TEXT PRIMARY KEY,\n    name TEXT NOT NULL,\n    unicode_ranges_json TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)",
+    "source_weights": "CREATE TABLE source_weights (\n    source_name TEXT PRIMARY KEY,\n    authority_weight REAL NOT NULL,\n    notes TEXT NOT NULL DEFAULT '',\n    created_at TEXT NOT NULL,\n    updated_at TEXT NOT NULL\n)",
+    "self_fill_release_runs": "CREATE TABLE self_fill_release_runs (\n    release_run_id TEXT PRIMARY KEY,\n    mode TEXT NOT NULL,\n    manifest_path TEXT,\n    signature_path TEXT,\n    ledger_path TEXT,\n    archive_path TEXT,\n    summary_json TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)",
+    "self_fill_release_artifacts": "CREATE TABLE self_fill_release_artifacts (\n    artifact_id TEXT PRIMARY KEY,\n    release_run_id TEXT NOT NULL,\n    artifact_kind TEXT NOT NULL,\n    file_path TEXT NOT NULL,\n    sha256 TEXT NOT NULL,\n    bytes_size INTEGER NOT NULL,\n    created_at TEXT NOT NULL,\n    FOREIGN KEY (release_run_id) REFERENCES self_fill_release_runs(release_run_id)\n)",
+    "self_fill_rollback_index": "CREATE TABLE self_fill_rollback_index (\n  rollback_id TEXT PRIMARY KEY,\n  release_run_id TEXT UNIQUE NOT NULL,\n  retention_class TEXT NOT NULL,\n  replay_priority INTEGER NOT NULL,\n  manifest_path TEXT NOT NULL,\n  archive_path TEXT NOT NULL,\n  ledger_path TEXT NOT NULL,\n  manifest_sha256 TEXT NOT NULL,\n  index_path TEXT NOT NULL,\n  created_at TEXT NOT NULL,\n  FOREIGN KEY(release_run_id) REFERENCES self_fill_release_runs(release_run_id)\n)"
+  }
+}

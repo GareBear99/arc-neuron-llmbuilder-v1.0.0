@@ -1,0 +1,24 @@
+{
+  "n_events": 1000,
+  "measurements": {
+    "append_events_per_second": 4457.8,
+    "lookup_latency_microseconds": 350.44,
+    "scan_events_per_second": 247082.0,
+    "verify_seconds": 0.0028,
+    "index_rebuild_seconds": 0.0012,
+    "restore_fidelity": 1.0
+  },
+  "storage_efficiency": {
+    "100_events_bytes_per_event": 362.96,
+    "1000_events_bytes_per_event": 364.8
+  },
+  "grades": {
+    "append_rate": "PASS",
+    "lookup_latency": "PASS",
+    "scan_rate": "PASS",
+    "verify_speed": "PASS",
+    "rebuild_speed": "PASS",
+    "fidelity": "PASS"
+  },
+  "overall": "PASS"
+}

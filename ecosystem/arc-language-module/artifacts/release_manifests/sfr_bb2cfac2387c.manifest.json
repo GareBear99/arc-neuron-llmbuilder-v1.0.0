@@ -1,0 +1,58 @@
+{
+  "created_at": "2026-04-17T23:38:33.834418+00:00",
+  "manifest_sha256": "fa097274cb045bacb62e6089119bc6c4d72f2dcf27d85f712259b92906ae3130",
+  "mode": "scheduled_daily_pipeline",
+  "pipeline": {
+    "arbitration_run_id": "sfar_a3a3e0c00f3b",
+    "gap_scan_run_ids": [],
+    "import_run_ids": [
+      "sfir_048446b81f7a",
+      "sfir_51cd7541501e",
+      "sfir_ae059982982c"
+    ]
+  },
+  "promotion_candidates": [
+    {
+      "candidate_id": "sfc_2297cb8586db",
+      "decision_id": "sfad_2133cd3e01f5",
+      "result_ok": true
+    },
+    {
+      "candidate_id": "sfc_dfd0744cc834",
+      "decision_id": "sfad_04462e46891a",
+      "result_ok": true
+    },
+    {
+      "candidate_id": "sfc_e9f2408d000e",
+      "decision_id": "sfad_9f3293b4a89c",
+      "result_ok": true
+    }
+  ],
+  "release_run_id": "sfr_bb2cfac2387c",
+  "signature": {
+    "key_hint": "none",
+    "signature_b64": "dWwfqK7fqFp2caq3/je84xdMsQzKplR8zeLHvVxtxsc=",
+    "signature_type": "sha256-integrity-only"
+  },
+  "summary": {
+    "arbitration_summary": {
+      "below_threshold": 220,
+      "canonical_already_present": 0,
+      "group_count": 223,
+      "source_weights": {
+        "cldr": 0.85,
+        "common_seed": 0.6,
+        "common_seed_local": 0.7,
+        "glottolog": 1.0,
+        "iso639_3": 0.9,
+        "user_custom": 0.5,
+        "user_submission": 0.45
+      },
+      "winner_count": 3
+    },
+    "gap_scan_languages": 0,
+    "import_sources": 3,
+    "promoted_count": 3,
+    "skipped_count": 220
+  }
+}

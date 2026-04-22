@@ -1,0 +1,12 @@
+{
+  "status": "complete_for_now",
+  "bidirectional_roundtrip_ok": true,
+  "restored_tables": 13,
+  "ecosystem_vendored": [
+    "ecosystem/arc-language-module",
+    "ecosystem/omnibinary-runtime",
+    "ecosystem/arc-rar",
+    "ecosystem/arc-core",
+    "ecosystem/cleanroom-runtime"
+  ]
+}

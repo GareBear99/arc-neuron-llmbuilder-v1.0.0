@@ -1,0 +1,18 @@
+{
+  "artifact_id": "lora_train_2372459c744c",
+  "stage": "lora_train",
+  "candidate": "darpa_phase3",
+  "created_at": "2026-04-14T21:28:08.438684+00:00",
+  "status": "scaffold_ready",
+  "config": "/mnt/data/cogphase3/cognition-core-github-launch-ready-alpha (2)/configs/training/sft_lora.yaml",
+  "base_model": "local/base",
+  "execution_mode": "scaffold",
+  "notes": "Training runner still requires real backend/trainer wiring, but artifact layout and manifests are deterministic.",
+  "paths": {
+    "dataset": "/mnt/data/cogphase3/cognition-core-github-launch-ready-alpha (2)/datasets/distillation_sft/seed_records.jsonl",
+    "expected_checkpoint_dir": "/mnt/data/cogphase3/cognition-core-github-launch-ready-alpha (2)/exports/candidates/darpa_phase3/lora_train/checkpoint"
+  },
+  "metrics": {
+    "dataset_records": 50
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_id": "preference_train_1a763e7c2828",
+  "stage": "preference_train",
+  "candidate": "arc_stack_bootstrap",
+  "created_at": "2026-04-16T02:39:30.798908+00:00",
+  "status": "scaffold_ready",
+  "config": "/mnt/data/work/arc-cognition-core-main/arc-cognition-core-main/configs/training/preference_dpo.yaml",
+  "execution_mode": "scaffold",
+  "notes": "Preference stage remains scaffold by default, but now supports an external trainer command with deterministic manifests.",
+  "paths": {
+    "dataset": "/mnt/data/work/arc-cognition-core-main/arc-cognition-core-main/datasets/distillation_preference/seed_pairs.jsonl",
+    "expected_adapter_dir": "/mnt/data/work/arc-cognition-core-main/arc-cognition-core-main/exports/candidates/arc_stack_bootstrap/preference_train/adapter"
+  },
+  "metrics": {
+    "dataset_records": 45
+  }
+}

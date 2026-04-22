@@ -1,0 +1,60 @@
+<!doctype html><html><head><meta charset="utf-8"/><title>ARC Cases</title>
+<style>
+body{font-family:Inter,system-ui,Arial,sans-serif;background:#0a0a12;color:#ececff;margin:0}
+a{color:#c9b3ff;text-decoration:none}
+.top{display:flex;gap:18px;align-items:center;padding:18px 22px;background:linear-gradient(90deg,#17142a,#22183d);position:sticky;top:0}
+.brand{font-weight:800;letter-spacing:.08em}
+.wrap{padding:18px 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:#131321;border:1px solid #2b2750;border-radius:18px;padding:16px;box-shadow:0 12px 28px rgba(0,0,0,.25)}
+h1,h2,h3{margin:.1em 0 .5em}
+.small{font-size:12px;opacity:.8}
+pre{white-space:pre-wrap;word-break:break-word;background:#0d0d18;padding:12px;border-radius:12px;border:1px solid #242444}
+.table{width:100%;border-collapse:collapse}
+.table td,.table th{border-bottom:1px solid #26263d;padding:8px 10px;text-align:left;font-size:14px}
+.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#22193e;border:1px solid #4f3d84;font-size:12px}
+button{background:#7b4dff;color:white;border:none;border-radius:12px;padding:10px 14px;cursor:pointer}
+input,select,textarea{width:100%;box-sizing:border-box;background:#0f1020;color:#f5f5ff;border:1px solid #33375e;border-radius:10px;padding:10px}
+label{font-size:13px;display:block;margin:8px 0}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="brand">ARC // CORE</div>
+  <a href="/ui/dashboard.html">Dashboard</a>
+  <a href="/ui/signals.html">Signals</a>
+  <a href="/ui/graph.html">Graph</a>
+  <a href="/ui/timeline.html">Timeline</a>
+  <a href="/ui/cases.html">Cases</a>
+  <a href="/ui/geo.html">Geo</a>
+</div>
+
+<div class="wrap">
+ <h1>Case Management</h1>
+ <div class="grid">
+  <div class="card">
+   <h3>Create Case</h3>
+   <label>Title<input id="title" value="New Review Thread"></label>
+   <label>Priority<select id="priority"><option>low</option><option selected>medium</option><option>high</option><option>critical</option></select></label>
+   <label>Status<select id="status"><option selected>open</option><option>active</option><option>closed</option></select></label>
+   <label>Summary<textarea id="summary">Analyst-created case file.</textarea></label>
+   <button onclick="makeCase()">Create</button>
+   <pre id="caseOut"></pre>
+  </div>
+  <div class="card"><h3>Cases</h3><div id="cases"></div></div>
+ </div>
+</div>
+<script>
+async function refresh(){
+ const data = await fetch('/api/cases').then(r=>r.json());
+ document.getElementById('cases').innerHTML = data.cases.map(c=>`<div class="small"><span class="badge">${c.priority}</span> ${c.title} // ${c.status} // events=${c.event_count}</div>`).join('');
+}
+async function makeCase(){
+ const payload = {title:title.value, priority:priority.value, status:status.value, summary:summary.value};
+ const res = await fetch('/api/cases', {method:'POST', headers:{'Content-Type':'application/json','X-ARC-Role':'analyst'}, body:JSON.stringify(payload)}).then(r=>r.json());
+ caseOut.textContent = JSON.stringify(res,null,2);
+ refresh();
+}
+refresh();
+</script>
+</body></html>

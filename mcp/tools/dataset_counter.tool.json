@@ -1,0 +1,1 @@
+{"name":"dataset_counter","description":"Count dataset records.","entrypoint":"scripts/mcp/dataset_counter_tool.py"}

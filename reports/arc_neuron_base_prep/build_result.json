@@ -1,0 +1,17 @@
+{
+  "release": "ARC-Neuron-Base-Prep-v0.1",
+  "manifest": "reports/arc_neuron_base_prep/prep_manifest.json",
+  "dataset": "datasets/arc_neuron_base/arc_neuron_base_sft.jsonl",
+  "benchmarks": "benchmarks/arc_neuron_base/gate_tasks.jsonl",
+  "ledger": {
+    "path": "/mnt/data/work_arc/arc-cognition-core-gguf-enabled/artifacts/omnibinary/arc-neuron-base-prep-ledger.obin",
+    "event_count": 5,
+    "payload_bytes": 926,
+    "sha256": "7972c902634418bfe24aea1f3016e619ab5da69a74c97acd1626f9d8b8c793f8"
+  },
+  "archive": {
+    "path": "/mnt/data/work_arc/arc-cognition-core-gguf-enabled/artifacts/archives/arc-neuron-base-prep.arcrar.zip",
+    "sha256": "3273a8c69b1e5d57687ebbb4abaf6a21ca3552170cacb2cac02d692c9d280027",
+    "file_count": 5
+  }
+}

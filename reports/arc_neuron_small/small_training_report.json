@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "steps": 140,
+  "seed": 1337,
+  "final_loss": 2.6953988075256348,
+  "initial_loss": 5.520273685455322,
+  "sample": "ARC-Neuron language spinealintid T_arthef oaponitibomacagygectpts pt ad-",
+  "gguf_path": "artifacts/gguf/ARC-Neuron-Small-0.18M-v0.1-F32.gguf",
+  "pt_path": "artifacts/gguf/arc-neuron-small.pt",
+  "ancf_path": "artifacts/ancf/ARC-Neuron-Small-0.18M-v0.1.ancf",
+  "ledger_path": "artifacts/omnibinary/arc-neuron-small-learning-ledger.obin",
+  "archive_path": "artifacts/archives/arc-neuron-small-release.arcrar.zip",
+  "parameter_count": 174656
+}

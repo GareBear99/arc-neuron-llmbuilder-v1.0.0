@@ -1,0 +1,8 @@
+{
+  "program_control": "present",
+  "acceptance_gates": "present",
+  "local_backend_setup": "present",
+  "experiment_runbook": "present",
+  "full_candidate_gate_runner": "present",
+  "backend_health_check": "present"
+}

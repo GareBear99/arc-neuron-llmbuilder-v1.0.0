@@ -1,0 +1,13 @@
+ARC Unified Stack Master Control
+root: /mnt/data/work/unified/arc-unified-stack
+phase: status
+reports: /mnt/data/work/unified/arc-unified-stack/reports/master_operator/20260418T005012Z
+
+Available phases:
+  status
+  truth-latch
+  tiny-floor
+  small-build
+  small-v2-prep
+  base-prep
+  full-native-cycle

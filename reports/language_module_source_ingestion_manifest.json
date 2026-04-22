@@ -1,0 +1,51 @@
+{
+  "source_name": "language_module",
+  "source_path": "/mnt/data/arc-language-module-main (4).zip",
+  "output_path": "datasets/language_reasoning/language_module_seed_records.jsonl",
+  "records_written": 12,
+  "doc_count": 12,
+  "created_at": "2026-04-16T02:39:25.346611+00:00",
+  "top_documents": [
+    {
+      "path": "arc-language-module-main/docs/PROVIDER_RUNTIME_AUDIT.md",
+      "summary": "Provider Runtime Audit \u2014 Current State (v0.24) | Three sources of runtime truth | Diagnostics | Current health of all providers | Health of a specific provider | Translation readiness for a specific p"
+    },
+    {
+      "path": "arc-language-module-main/README.md",
+      "summary": "ARC Language Module | At-a-glance feature fit | Quick read of the table | What this repo is, in plain English | If you want a one-line summary: | What it can do today | 1) Store structured language kn"
+    },
+    {
+      "path": "arc-language-module-main/docs/ARCHITECTURE.md",
+      "summary": "ARC Language Module \u2014 Architecture (v0.24.0) | Core separation of concerns | Current state (v0.24.0) | Layer map | Arbitration | Provider model | Data flow: corpus ingestion | import_glottolog_csv / i"
+    },
+    {
+      "path": "arc-language-module-main/docs/ARC_CORE_REUSE_AUDIT.md",
+      "summary": "ARC Core Reuse Audit \u2014 v0.24 | Fully implemented (package-owned, no external dep) | Seeded/partial (package-owned, limited coverage) | Boundary stubs (external runtime required) | ISO runtime code map"
+    },
+    {
+      "path": "arc-language-module-main/docs/GOVERNANCE_WORKFLOW.md",
+      "summary": "Governance Workflow | Review targets | Decisions | Capability maturity | Each language can also track implementation maturity by capability: | Typical capability names: | Examples | Review a pending l"
+    },
+    {
+      "path": "arc-language-module-main/docs/INGESTION_PLAN.md",
+      "summary": "Ingestion Plan \u2014 Current State (v0.24) | Ingestion doctrine | Supported file formats | dry_run mode | Dedup reporting | Import order (recommended) | Real corpus acquisition (external gap \u2014 honest) | U"
+    },
+    {
+      "path": "arc-language-module-main/docs/POLICY_AND_EVIDENCE.md",
+      "summary": "Policy + Evidence Layer | v18 adds three operational hardening pieces: | Default policies | Evidence bundle | The evidence exporter can include:"
+    },
+    {
+      "path": "arc-language-module-main/docs/RUNTIME_ORCHESTRATION.md",
+      "summary": "Runtime Orchestration | Why it exists | Runtime translation flow | Runtime speech flow | Current providers"
+    },
+    {
+      "path": "arc-language-module-main/FINAL_PRODUCTION_COMPLETION_REPORT_v026.md",
+      "summary": "ARC Language Module \u2014 Final Production Completion Report v0.26.0 | Summary | Completed in v0.26.0 | 1) Version truth made authoritative | 2) Release integrity surface added | The release snapshot veri"
+    },
+    {
+      "path": "arc-language-module-main/FINAL_PRODUCTION_READINESS_REPORT_v027.md",
+      "summary": "ARC Language Module \u2014 Final Production Readiness Report v0.27.0 | What was completed in this pass | 1) Seed-ingest maintainability hardening | 2) Release/build verification hardening | 3) Version / re"
+    }
+  ],
+  "notes": "Curated markdown/doc extraction for cognition-core corpus shaping. Review before training."
+}

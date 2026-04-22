@@ -1,0 +1,66 @@
+<!doctype html><html><head><meta charset="utf-8"/><title>ARC Dashboard</title>
+<style>
+body{font-family:Inter,system-ui,Arial,sans-serif;background:#0a0a12;color:#ececff;margin:0}
+a{color:#c9b3ff;text-decoration:none}
+.top{display:flex;gap:18px;align-items:center;padding:18px 22px;background:linear-gradient(90deg,#17142a,#22183d);position:sticky;top:0}
+.brand{font-weight:800;letter-spacing:.08em}
+.wrap{padding:18px 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:#131321;border:1px solid #2b2750;border-radius:18px;padding:16px;box-shadow:0 12px 28px rgba(0,0,0,.25)}
+h1,h2,h3{margin:.1em 0 .5em}
+.small{font-size:12px;opacity:.8}
+pre{white-space:pre-wrap;word-break:break-word;background:#0d0d18;padding:12px;border-radius:12px;border:1px solid #242444}
+.table{width:100%;border-collapse:collapse}
+.table td,.table th{border-bottom:1px solid #26263d;padding:8px 10px;text-align:left;font-size:14px}
+.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#22193e;border:1px solid #4f3d84;font-size:12px}
+button{background:#7b4dff;color:white;border:none;border-radius:12px;padding:10px 14px;cursor:pointer}
+input,select,textarea{width:100%;box-sizing:border-box;background:#0f1020;color:#f5f5ff;border:1px solid #33375e;border-radius:10px;padding:10px}
+label{font-size:13px;display:block;margin:8px 0}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="brand">ARC // CORE</div>
+  <a href="/ui/dashboard.html">Dashboard</a>
+  <a href="/ui/signals.html">Signals</a>
+  <a href="/ui/graph.html">Graph</a>
+  <a href="/ui/timeline.html">Timeline</a>
+  <a href="/ui/cases.html">Cases</a>
+  <a href="/ui/geo.html">Geo</a>
+</div>
+
+<div class="wrap">
+  <h1>Operator Dashboard</h1>
+  <div class="grid">
+    <div class="card"><h3>Health</h3><div id="health" class="small">loading…</div></div>
+    <div class="card"><h3>Recent Signals</h3><div id="signal_count" class="small">loading…</div></div>
+    <div class="card"><h3>Entities</h3><div id="entity_count" class="small">loading…</div></div>
+    <div class="card"><h3>Cases</h3><div id="case_count" class="small">loading…</div></div>
+    <div class="card"><h3>Geo Tracks</h3><div id="track_count" class="small">loading…</div></div>
+  </div>
+  <div class="grid" style="margin-top:16px">
+    <div class="card"><h3>Highest Risk Entities</h3><div id="highrisk"></div></div>
+    <div class="card"><h3>Watchlists</h3><div id="watchlists"></div></div>
+  </div>
+</div>
+<script>
+async function load(){
+ const [health, events, entities, cases, watch, tracks] = await Promise.all([
+   fetch('/health').then(r=>r.json()),
+   fetch('/api/events?limit=12').then(r=>r.json()),
+   fetch('/api/entities?limit=8').then(r=>r.json()),
+   fetch('/api/cases').then(r=>r.json()),
+   fetch('/api/watchlists').then(r=>r.json()),
+   fetch('/api/geo/tracks?limit=12').then(r=>r.json()),
+ ]);
+ document.getElementById('health').textContent = JSON.stringify(health);
+ document.getElementById('signal_count').textContent = events.events.length + ' recent events';
+ document.getElementById('entity_count').textContent = entities.entities.length + ' tracked entities in current view';
+ document.getElementById('case_count').textContent = cases.cases.length + ' case files';
+ document.getElementById('track_count').textContent = tracks.tracks.length + ' recent geo tracks';
+ document.getElementById('highrisk').innerHTML = entities.entities.map(e=>`<div class="small"><span class="badge">${e.risk_score}</span> ${e.label} (${e.entity_type})</div>`).join('');
+ document.getElementById('watchlists').innerHTML = watch.watchlists.map(w=>`<div class="small"><span class="badge">${w.name}</span> ${w.entity_id}</div>`).join('');
+}
+load();
+</script>
+</body></html>

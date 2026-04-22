@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "path": "datasets/distillation_sft/seed_records.jsonl",
+      "records": 50
+    },
+    {
+      "path": "data/observe_infer/seed_examples.jsonl",
+      "records": 20
+    },
+    {
+      "path": "data/plan/seed_examples.jsonl",
+      "records": 20
+    },
+    {
+      "path": "data/critique/seed_examples.jsonl",
+      "records": 20
+    },
+    {
+      "path": "data/repair/seed_examples.jsonl",
+      "records": 20
+    },
+    {
+      "path": "data/compress/seed_examples.jsonl",
+      "records": 20
+    },
+    {
+      "path": "data/calibrate/seed_examples.jsonl",
+      "records": 20
+    }
+  ],
+  "total_records": 170
+}

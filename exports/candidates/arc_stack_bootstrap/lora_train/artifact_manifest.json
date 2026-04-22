@@ -1,0 +1,18 @@
+{
+  "artifact_id": "lora_train_d06bb16a5b4c",
+  "stage": "lora_train",
+  "candidate": "arc_stack_bootstrap",
+  "created_at": "2026-04-16T02:39:28.962478+00:00",
+  "status": "scaffold_ready",
+  "config": "/mnt/data/work/arc-cognition-core-main/arc-cognition-core-main/configs/training/sft_lora.yaml",
+  "base_model": "qwen3_32b_lora",
+  "execution_mode": "scaffold",
+  "notes": "Training runner still requires real backend/trainer wiring, but artifact layout and manifests are deterministic.",
+  "paths": {
+    "dataset": "/mnt/data/work/arc-cognition-core-main/arc-cognition-core-main/datasets/distillation_sft/seed_records.jsonl",
+    "expected_checkpoint_dir": "/mnt/data/work/arc-cognition-core-main/arc-cognition-core-main/exports/candidates/arc_stack_bootstrap/lora_train/checkpoint"
+  },
+  "metrics": {
+    "dataset_records": 50
+  }
+}

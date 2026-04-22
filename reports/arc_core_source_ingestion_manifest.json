@@ -1,0 +1,51 @@
+{
+  "source_name": "arc_core",
+  "source_path": "/mnt/data/ARC-Core-main (18).zip",
+  "output_path": "datasets/system_of_record/arc_core_seed_records.jsonl",
+  "records_written": 12,
+  "doc_count": 12,
+  "created_at": "2026-04-16T02:39:20.071058+00:00",
+  "top_documents": [
+    {
+      "path": "ARC-Core-main/ARC-Core_GitHub_split_bundle/ARC-Core-main 5/ARC_Console/AUDIT_REPORT_v2.md",
+      "summary": "ARC-Core DARPA Authenticity Upgrade Report v2 | Summary | Added system layers | Why this is more authentic | The build now expresses the shape expected from an ARC-like surveillance-analysis system: |"
+    },
+    {
+      "path": "ARC-Core-main/ARC-Core_GitHub_split_bundle/ARC-Core-main 5/ARC_Console/AUDIT_REPORT_v3_GEO.md",
+      "summary": "ARC-Core Audit Report v3 \u2014 Geospatial Expansion | Added | Authenticity impact | Remaining gaps"
+    },
+    {
+      "path": "ARC-Core-main/ARC-Core_GitHub_split_bundle/ARC-Core-main 5/ARC_Console/AUDIT_REPORT_v4_SPATIAL_HARDENING.md",
+      "summary": "ARC-Core v4 Spatial Hardening Audit | Summary | Major upgrades in this pass | Why this matters | The previous build could estimate and store indoor-style tracks, but it still lacked several systems ne"
+    },
+    {
+      "path": "ARC-Core-main/ARC-Core_GitHub_split_bundle/ARC-Core-main 5/ARC_Console/AUDIT_REPORT_v5_DARPA.md",
+      "summary": "ARC-Core v5 DARPA-Style Audit | Executive verdict | Major findings from the line-by-line audit | 1) Version drift | 2) Weak write-path security posture | 3) Query bounds were under-constrained | 4) Se"
+    },
+    {
+      "path": "ARC-Core-main/ARC-Core_GitHub_split_bundle/ARC-Core-main 5/ARC_Console/AUDIT_REPORT_v6_COMPLETION.md",
+      "summary": "ARC-Core v6 Completion Audit | Summary | v6 closes the largest remaining gaps from the prior DARPA-style review by adding four missing system layers that materially improve authenticity and operator c"
+    },
+    {
+      "path": "ARC-Core-main/ARC_Console/AUDIT_REPORT_v2.md",
+      "summary": "ARC-Core DARPA Authenticity Upgrade Report v2 | Summary | Added system layers | Why this is more authentic | The build now expresses the shape expected from an ARC-like surveillance-analysis system: |"
+    },
+    {
+      "path": "ARC-Core-main/ARC_Console/AUDIT_REPORT_v3_GEO.md",
+      "summary": "ARC-Core Audit Report v3 \u2014 Geospatial Expansion | Added | Authenticity impact | Remaining gaps"
+    },
+    {
+      "path": "ARC-Core-main/ARC_Console/AUDIT_REPORT_v4_SPATIAL_HARDENING.md",
+      "summary": "ARC-Core v4 Spatial Hardening Audit | Summary | Major upgrades in this pass | Why this matters | The previous build could estimate and store indoor-style tracks, but it still lacked several systems ne"
+    },
+    {
+      "path": "ARC-Core-main/ARC_Console/AUDIT_REPORT_v5_DARPA.md",
+      "summary": "ARC-Core v5 DARPA-Style Audit | Executive verdict | Major findings from the line-by-line audit | 1) Version drift | 2) Weak write-path security posture | 3) Query bounds were under-constrained | 4) Se"
+    },
+    {
+      "path": "ARC-Core-main/ARC_Console/AUDIT_REPORT_v6_COMPLETION.md",
+      "summary": "ARC-Core v6 Completion Audit | Summary | v6 closes the largest remaining gaps from the prior DARPA-style review by adding four missing system layers that materially improve authenticity and operator c"
+    }
+  ],
+  "notes": "Curated markdown/doc extraction for cognition-core corpus shaping. Review before training."
+}

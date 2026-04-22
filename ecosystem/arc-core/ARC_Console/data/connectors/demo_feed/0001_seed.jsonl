@@ -1,0 +1,2 @@
+{"event_type": "presence", "source": "filesystem-demo", "subject": "RG Sensor Mesh", "object": "Pine House", "location": "Williams Lake", "confidence": 0.84, "severity": 5, "note": "seeded connector event"}
+{"event_type": "geo_ping", "source": "filesystem-demo", "subject": "Demo Device", "location": "Pine House", "confidence": 0.78, "severity": 4, "floor": 1}

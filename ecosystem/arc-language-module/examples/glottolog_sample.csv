@@ -1,0 +1,7 @@
+language_id,name,family,branch,parent_language_id,lineage_confidence,source_ref
+lang:nav,Navajo,Na-Dene,Athabaskan-Eyak-Tlingit,,0.90,glottolog:3.8
+lang:chr,Cherokee,Iroquoian,Southern Iroquoian,,0.90,glottolog:3.8
+lang:crk,Plains Cree,Algic,Cree-Montagnais-Naskapi,,0.88,glottolog:3.8
+lang:swa,Swahili,Niger-Congo,Bantu,,0.92,glottolog:3.8
+lang:amh,Amharic,Afro-Asiatic,Semitic,,0.91,glottolog:3.8
+lang:msa,Malay,Austronesian,Malayo-Polynesian,,0.93,glottolog:3.8

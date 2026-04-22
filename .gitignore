@@ -1,0 +1,79 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+*.tar.gz
+.eggs/
+pip-wheel-metadata/
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.*.example           # keep example files
+
+# ── Pytest / coverage ─────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+*.lcov
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+__MACOSX/
+
+# ── Editor ────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── Rust ──────────────────────────────────────────────────────────────────────
+target/
+Cargo.lock          # optional — remove this line if you want lock files tracked
+
+# ── Node (future tooling) ─────────────────────────────────────────────────────
+node_modules/
+.npm/
+
+# ── SECURITY: private keys and secrets ───────────────────────────────────────
+# These files must NEVER be committed.  Run `scripts/ops/bootstrap_keys.py`
+# to regenerate them locally after a fresh clone.
+ecosystem/arc-core/ARC_Console/data/keys/receipt_signing.key
+ecosystem/arc-core/ARC_Console/data/keys/*.key
+ecosystem/arc-core/ARC_Console/data/keys/*.pem
+ecosystem/arc-core/ARC_Console/data/keys/*.p12
+**/data/keys/*.key
+**/data/keys/*.pem
+**/data/keys/*.p12
+*.key
+*.pem
+*.p12
+# Keep placeholder so the directory itself stays in the repo
+!ecosystem/arc-core/ARC_Console/data/keys/.gitkeep
+
+# ── SQLite runtime databases (generated, not source) ─────────────────────────
+# Only the seed snapshots distributed with releases are tracked.
+ecosystem/arc-core/ARC_Console/data/arc_core.db
+ecosystem/arc-language-module/data/arc_language.db
+!ecosystem/arc-language-module/artifacts/snapshots/*.db   # release snapshots OK
+
+# ── Large model artifacts (use Git LFS or release uploads instead) ────────────
+*.gguf
+*.pt
+*.safetensors
+*.bin
+*.obin
+# Allow the tiny demo artifacts that ship with the repo
+!artifacts/gguf/ARC-Neuron-Tiny-*.gguf
+!artifacts/gguf/ARC-Neuron-Small-*.gguf
+!artifacts/gguf/ARC-Tiny-Demo-*.gguf
