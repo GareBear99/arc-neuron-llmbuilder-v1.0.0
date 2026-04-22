@@ -7,6 +7,8 @@
 [![Tests: 87/87](https://img.shields.io/badge/tests-87%2F87%20passing-brightgreen.svg)](./tests)
 [![Gate: v2](https://img.shields.io/badge/governance-Gate%20v2-blue.svg)](./specs/promotion_gate_v2.yaml)
 [![Release: v1.0.0-governed](https://img.shields.io/badge/release-v1.0.0--governed-blueviolet.svg)](./RELEASE_NOTES_v1.0.0.md)
+[![Sponsor](https://img.shields.io/badge/Sponsor-GareBear99-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/GareBear99)
+[![Ecosystem](https://img.shields.io/badge/ARC%20Ecosystem-7%20repos-orange)](./ECOSYSTEM.md)
 
 ---
 
@@ -17,6 +19,34 @@ ARC-Neuron LLMBuilder is a local-first cognition lab that treats a language mode
 The system ships with a working transformer family (ARC-Neuron Tiny and Small), a retrieval-based exemplar adapter, a canonical conversation pipeline, draft→critique→revise reflection, automatic terminology absorption from conversation, and a regression-aware promotion gate.
 
 **Doctrine closed in v1.0.0-governed:** conversation grows the brain, not just the memory. Three governed promotions in a row have been recorded, the last one (`arc_governed_v6_conversation`) trained entirely from a corpus the canonical conversation pipeline harvested itself.
+
+---
+
+## The ARC Ecosystem
+
+ARC-Neuron LLMBuilder is one of seven repositories in the ARC governed-AI ecosystem. Each repo owns a single frozen role; together they form a local-first AI operating system with full lineage, receipts, and rollback.
+
+| Repo | Role |
+|---|---|
+| **[ARC-Core](https://github.com/GareBear99/ARC-Core)** | Event / receipt / authority spine |
+| **[arc-lucifer-cleanroom-runtime](https://github.com/GareBear99/arc-lucifer-cleanroom-runtime)** | Deterministic local operator kernel |
+| **[arc-cognition-core](https://github.com/GareBear99/arc-cognition-core)** | Model-growth lab |
+| **[arc-language-module](https://github.com/GareBear99/arc-language-module)** | Canonical lexical truth |
+| **[omnibinary-runtime](https://github.com/GareBear99/omnibinary-runtime)** | Binary mirror / runtime ledger |
+| **[Arc-RAR](https://github.com/GareBear99/Arc-RAR)** | Archive / rollback bundles |
+| **ARC-Neuron-LLMBuilder** *(this repo)* | Governed build loop, conversation pipeline, Gate v2 |
+
+Full ecosystem doctrine: **[ECOSYSTEM.md](./ECOSYSTEM.md)**
+
+---
+
+## Support this work
+
+If the governance doctrine, the conversation-driven growth loop, or the evidence-backed promotion pipeline is useful to you or your organization, please consider becoming a sponsor:
+
+[**github.com/sponsors/GareBear99**](https://github.com/sponsors/GareBear99)
+
+Sponsorship funds time across all seven ARC ecosystem repos — not just this one.
 
 ---
 
@@ -258,6 +288,7 @@ python3 scripts/ops/absorb_session.py --text "..." --session-id my_session
 
 - [ARCHITECTURE.md](./ARCHITECTURE.md) — the full system map
 - [GOVERNANCE_DOCTRINE.md](./GOVERNANCE_DOCTRINE.md) — Gate v2, floor model, Arc-RAR, Omnibinary explained
+- [ECOSYSTEM.md](./ECOSYSTEM.md) — the seven-repo ARC ecosystem and how LLMBuilder integrates
 - [QUICKSTART.md](./QUICKSTART.md) — 10-minute tour of every major capability
 - [USAGE.md](./USAGE.md) — detailed usage for every command
 - [CHANGELOG.md](./CHANGELOG.md) — full release history
