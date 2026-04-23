@@ -97,4 +97,36 @@ with a descriptive suffix for major doctrine milestones.
 [v1.0.0-governed]: https://github.com/GareBear99/ARC-Neuron-LLMBuilder/releases/tag/v1.0.0-governed
 [v0.3.1-alpha]: https://github.com/GareBear99/ARC-Neuron-LLMBuilder/releases/tag/v0.3.1-alpha
 [v0.3.0-alpha]: https://github.com/GareBear99/ARC-Neuron-LLMBuilder/releases/tag/v0.3.0-alpha
-[v0.1.0-alpha]: https://github.com/GareBear99/ARC-Neuron-LLMBuilder/releases/tag/v0.1.0-alpha
+[v0.1.0-alpha]: https://github.com/GareBear99/ARC-Neuron-LLMBuilder/releases/tag/v0.1.0-alpha## [Unreleased] — Audit remediation
+
+### Fixed — benchmark integrity
+* **reasoning/seed_tasks.jsonl** — replaced 10 word-for-word identical
+  "scenario N" variants with 10 genuinely distinct scenarios covering
+  cache invalidation, circuit-breaker logic, Gate v2 decisions, patch
+  tradeoffs, schema migration safety, path-traversal security, canary
+  statistics, CI test-selection failure modes, rollback/schema conflicts,
+  and feature-flag consistency.  The incumbent scores 0.550 (was 1.000)
+  — a more honest signal.
+* **quantization_retention/seed_tasks.jsonl** — replaced 10 "bundle N"
+  variants with 10 distinct quantization-reasoning tasks covering
+  retention calculations, q8_0-vs-q4_K_M tradeoffs, gate decisions,
+  byte-level architecture implications, SHA-256 integrity expectations,
+  and RAG interaction effects.
+
+### Changed — rubric hardening (scorers/rubric.py)
+* Added `_is_keyword_soup()` guard: a response with no sentence-ending
+  punctuation and fewer than 60 words scores 0 on all keyword-presence
+  checks regardless of which keywords appear.  Responses shorter than
+  80 chars or fewer than 12 words are also flagged.
+* All `_contains_any()` calls inside `score_record` and
+  `_score_retention` now accept a `soup: bool` parameter; when True,
+  content checks short-circuit to False.
+* `_is_substantial()` now requires both character length ≥ 80 AND
+  sentence-ending punctuation (was: length ≥ 60 only).
+* `score_record` and `_score_retention` both return
+  `keyword_soup_detected: bool` in their result dicts.
+* A pure keyword-dump response ("constraint preserve boundary interface
+  risk tradeoff...") that previously scored 1.0 on reasoning, planning,
+  critique, repair, calibration, and compression now scores 0.0 on all.
+
+
