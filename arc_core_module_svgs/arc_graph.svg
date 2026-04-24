@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ARC Graph</title>
+  <desc id="desc">Original ARC Core module glyph for ARC Graph.</desc>
+  <defs>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F2F2F2" stop-opacity="0.30"/>
+      <stop offset="55%" stop-color="#F2F2F2" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#F2F2F2" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .arc-stroke {
+        stroke: #F2F2F2;
+        stroke-width: 34;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#glow);
+      }
+      .arc-thin {
+        stroke: #F2F2F2;
+        stroke-width: 18;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#glow);
+      }
+      .arc-dot {
+        fill: #F2F2F2;
+        filter: url(#glow);
+      }
+      .arc-fill {
+        fill: #F2F2F2;
+        filter: url(#glow);
+      }
+      .arc-faint {
+        stroke: #F2F2F2;
+        stroke-width: 10;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        opacity: 0.45;
+      }
+    </style>
+  </defs>
+  <rect width="1024" height="1024" rx="128" fill="#05070A"/>
+  <circle cx="512" cy="512" r="390" fill="url(#halo)"/>
+  <g transform="translate(0 0)">
+
+    <path class="arc-thin" d="M314 590L398 388L586 324L732 476L672 690L458 720Z"/>
+    <path class="arc-thin" d="M398 388L512 542L586 324"/>
+    <path class="arc-thin" d="M512 542L732 476"/>
+    <path class="arc-thin" d="M512 542L672 690"/>
+    <path class="arc-thin" d="M512 542L458 720"/>
+    <path class="arc-thin" d="M314 590L512 542"/>
+    <circle class="arc-fill" cx="314" cy="590" r="34"/>
+    <circle class="arc-fill" cx="398" cy="388" r="34"/>
+    <circle class="arc-fill" cx="586" cy="324" r="34"/>
+    <circle class="arc-fill" cx="732" cy="476" r="34"/>
+    <circle class="arc-fill" cx="672" cy="690" r="34"/>
+    <circle class="arc-fill" cx="458" cy="720" r="34"/>
+    <circle class="arc-fill" cx="512" cy="542" r="42"/>
+    <circle cx="314" cy="590" r="16" fill="#05070A"/>
+    <circle cx="398" cy="388" r="16" fill="#05070A"/>
+    <circle cx="586" cy="324" r="16" fill="#05070A"/>
+    <circle cx="732" cy="476" r="16" fill="#05070A"/>
+    <circle cx="672" cy="690" r="16" fill="#05070A"/>
+    <circle cx="458" cy="720" r="16" fill="#05070A"/>
+    <circle cx="512" cy="542" r="20" fill="#05070A"/>
+
+  </g>
+</svg>

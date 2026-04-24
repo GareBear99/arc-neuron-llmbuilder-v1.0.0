@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ARC Correlate</title>
+  <desc id="desc">Original ARC Core module glyph for ARC Correlate.</desc>
+  <defs>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B35CFF" stop-opacity="0.30"/>
+      <stop offset="55%" stop-color="#B35CFF" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#B35CFF" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .arc-stroke {
+        stroke: #B35CFF;
+        stroke-width: 34;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#glow);
+      }
+      .arc-thin {
+        stroke: #B35CFF;
+        stroke-width: 18;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#glow);
+      }
+      .arc-dot {
+        fill: #B35CFF;
+        filter: url(#glow);
+      }
+      .arc-fill {
+        fill: #B35CFF;
+        filter: url(#glow);
+      }
+      .arc-faint {
+        stroke: #B35CFF;
+        stroke-width: 10;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        opacity: 0.45;
+      }
+    </style>
+  </defs>
+  <rect width="1024" height="1024" rx="128" fill="#05070A"/>
+  <circle cx="512" cy="512" r="390" fill="url(#halo)"/>
+  <g transform="translate(0 0)">
+
+    <circle class="arc-thin" cx="416" cy="450" r="138"/>
+    <circle class="arc-thin" cx="608" cy="450" r="138"/>
+    <circle class="arc-thin" cx="512" cy="614" r="138"/>
+    <path class="arc-thin" d="M338 334L686 690"/>
+    <path class="arc-thin" d="M686 334L338 690"/>
+    <circle class="arc-dot" cx="416" cy="450" r="26"/>
+    <circle class="arc-dot" cx="608" cy="450" r="26"/>
+    <circle class="arc-dot" cx="512" cy="614" r="26"/>
+    <circle class="arc-dot" cx="512" cy="314" r="20"/>
+    <path class="arc-faint" d="M512 314C650 338 734 444 722 570"/>
+    <path class="arc-faint" d="M302 570C290 444 374 338 512 314"/>
+    <path class="arc-faint" d="M352 742H672"/>
+
+  </g>
+</svg>

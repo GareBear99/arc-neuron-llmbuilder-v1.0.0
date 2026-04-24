@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ARC Ingest</title>
+  <desc id="desc">Original ARC Core module glyph for ARC Ingest.</desc>
+  <defs>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2EA8FF" stop-opacity="0.30"/>
+      <stop offset="55%" stop-color="#2EA8FF" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#2EA8FF" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .arc-stroke {
+        stroke: #2EA8FF;
+        stroke-width: 34;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#glow);
+      }
+      .arc-thin {
+        stroke: #2EA8FF;
+        stroke-width: 18;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        filter: url(#glow);
+      }
+      .arc-dot {
+        fill: #2EA8FF;
+        filter: url(#glow);
+      }
+      .arc-fill {
+        fill: #2EA8FF;
+        filter: url(#glow);
+      }
+      .arc-faint {
+        stroke: #2EA8FF;
+        stroke-width: 10;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        opacity: 0.45;
+      }
+    </style>
+  </defs>
+  <rect width="1024" height="1024" rx="128" fill="#05070A"/>
+  <circle cx="512" cy="512" r="390" fill="url(#halo)"/>
+  <g transform="translate(0 0)">
+
+    <circle class="arc-thin" cx="512" cy="560" r="142"/>
+    <circle class="arc-thin" cx="512" cy="560" r="70"/>
+    <circle class="arc-dot" cx="512" cy="560" r="18"/>
+    <path class="arc-thin" d="M512 228V420"/>
+    <path class="arc-thin" d="M292 294C353 330 415 374 462 448"/>
+    <path class="arc-thin" d="M732 294C671 330 609 374 562 448"/>
+    <circle class="arc-dot" cx="512" cy="228" r="22"/>
+    <circle class="arc-dot" cx="292" cy="294" r="20"/>
+    <circle class="arc-dot" cx="732" cy="294" r="20"/>
+    <circle class="arc-dot" cx="386" cy="366" r="15"/>
+    <circle class="arc-dot" cx="638" cy="366" r="15"/>
+    <path class="arc-faint" d="M224 560H318"/>
+    <path class="arc-faint" d="M706 560H800"/>
+    <path class="arc-faint" d="M512 272V312"/>
+    <path class="arc-stroke" d="M454 560L512 502L570 560L512 618Z"/>
+
+  </g>
+</svg>
