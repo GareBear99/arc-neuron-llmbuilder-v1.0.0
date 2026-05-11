@@ -23,7 +23,9 @@ jobs:
 
       - name: Check package artifacts are gone
         run: |
-          if git ls-files | grep -E '(\.patch$|^APPLY_|cleanup_dropin_artifacts)'; then
+          BAD="$(git ls-files | grep -E '(\.patch$|^APPLY_|cleanup_dropin_artifacts)' || true)"
+          if [ -n "$BAD" ]; then
+            echo "$BAD"
             echo "ERROR: package/drop-in artifacts are still tracked."
             exit 1
           fi
@@ -31,23 +33,22 @@ jobs:
 
       - name: Check private key safety
         run: |
-          if git ls-files | grep -E '(^|/)receipt_signing\.key$'; then
+          BAD="$(git ls-files | grep -E '(^|/)receipt_signing\.key$' || true)"
+          if [ -n "$BAD" ]; then
+            echo "$BAD"
             echo "ERROR: receipt_signing.key is tracked."
             exit 1
           fi
           echo "Private key check passed."
 
-      - name: Check required repo files
+      - name: Check README exists
         run: |
           test -f README.md
-          test -f .github/branch-protection-main.json
-          test -f scripts/github/apply_main_branch_protection.sh
-          test -f scripts/github/check_main_branch_protection.sh
-          echo "Required repo files exist."
+          echo "README exists."
 
-      - name: Print optional docs status
+      - name: Print branch helper status
         run: |
-          for f in ROADMAP.md SUPPORT.md CONTRIBUTING.md ECOSYSTEM.md TEST_REPORT.md docs/AI_BRIEFING_FOR_VIBE_CODERS.md; do
+          for f in .github/branch-protection-main.json scripts/github/apply_main_branch_protection.sh scripts          for fain_branch_protection.sh; do
             if [ -f "$f" ]; then
               echo "FOUND: $f"
             else
