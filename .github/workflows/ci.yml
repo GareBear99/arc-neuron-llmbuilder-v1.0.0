@@ -47,7 +47,7 @@ jobs:
       - name: Check core docs exist
         run: |
           test -f README.md
-          te   -f ROADMAP.md
+          test -f ROADMAP.md
           test -f SUPPORT.md
           test -f CONTRIBUTING.md
           echo "Core docs exist."
