@@ -425,6 +425,9 @@ This is why parameter count alone is not the right benchmark for ARC-Neuron. The
 
 The main repository now includes benchmark documentation and validation records that support this direction. The target is not simply “bigger model equals better model.” The target is higher intelligence density: better language structure, better receipts, and a better training path producing more useful output from fewer parameters.
 
+- **ARC-Neuron LLMBuilder Current Release:**  
+  https://github.com/GareBear99/ARC-Neuron-LLMBuilder
+
 ### Progress toward each milestone
 
 ```mermaid
