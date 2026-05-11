@@ -144,6 +144,9 @@ Assembly of the other six into a working train → benchmark → gate → archiv
 
 Full per-repo writeups, integration flow, and role contract: **[ECOSYSTEM.md](./ECOSYSTEM.md)**
 
+**ARC-Neuron LLMBuilder Current Release:**  
+  https://github.com/GareBear99/ARC-Neuron-LLMBuilder
+
 ---
 
 ## 💖 Support this work
