@@ -567,8 +567,8 @@ ARC-Neuron LLMBuilder v1 is the cognition-building layer of the ARC ecosystem. P
 
 ![ProtoSynth integration path preview showing neural graph views, voxel/grid layouts, and cognition-cluster visualizations.](./assets/protosynth-integration-path-preview.jpg)
 
-- **ARC-Neuron LLMBuilder v1 Release:**  
-  https://github.com/GareBear99/arc-neuron-llmbuilder-v1.0.0
+- **ARC-Neuron LLMBuilder Current Release:**  
+  https://github.com/GareBear99/ARC-Neuron-LLMBuilder
 
 - **ProtoSynth Grid Engine:**  
   https://github.com/GareBear99/Proto-Synth_Grid_Engine
