@@ -731,3 +731,5 @@ MIT — see [LICENSE](./LICENSE).
 ## 🎯 One-line verdict
 
 **The machine is lawful. The measurement is honest. The loop grows a better brain on demand, preserves the prior one, rejects worse ones with attribution, and does so repeatedly.**
+
+  <a href="https://www.buymeacoffee.com/YOUR_HANDLE"><img alt="Buy Me a Coffee" src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-ffdd00?style=for-the-badge&logo=buymeacoffee&logoColor=000000"></a>
