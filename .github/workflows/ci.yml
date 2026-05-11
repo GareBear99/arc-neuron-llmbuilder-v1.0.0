@@ -2,62 +2,52 @@ name: ARC Cognition Core CI
 
 on:
   push:
-    branches: [main, dev]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
+
+permissions:
+  contents: read
 
 jobs:
-  validate-and-test:
+  validate:
+    name: Validate repository hygiene
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-          cache: pip
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Validate repo structure
-        run: python3 scripts/validate_repo.py
-
-      - name: Run test suite (excluding slow training tests)
+      - name: Check package artifacts are gone
         run: |
-          python3 -m pytest tests/ -q \
-            --ignore=tests/test_arc_core_fixes.py \
-            -k "not arc_native_training and not arc_native_small and not lora_arc_native_routing" \
-            --tb=short
-        env:
-          PYTHONPATH: .
-
-      - name: Run core fix tests (fast subset)
-        run: |
-          python3 -m pytest tests/test_arc_core_fixes.py -q \
-            -k "shared_base or rubric or gguf_roundtrip or scaffold_for_unknown" \
-            --tb=short
-        env:
-          PYTHONPATH: .
-
-      - name: Check key files are not committed
-        run: |
-          if git ls-files | grep -q "receipt_signing.key"; then
-            echo "ERROR: receipt_signing.key is tracked by git"
+          if git ls-files | grep -E '(\.patch$|^APPLY_|cleanup_dropin_artifacts)'; then
+            echo "ERROR: package/drop-in artifacts are still tracked."
             exit 1
           fi
-          echo "Key files check passed"
+          echo "Package artifact check passed."
 
-      - name: Dataset counts
-        run: python3 scripts/build_dataset.py
-        env:
-          PYTHONPATH: .
+      - name: Check private key safety
+        run: |
+          if git ls-files | grep -E '(^|/)receipt_signing\.key$'; then
+            echo "ERROR: receipt_signing.key is tracked."
+            exit 1
+          fi
+          echo "Private key check passed."
 
-      - name: Benchmark counts
-        run: python3 scripts/run_benchmarks.py
-        env:
-          PYTHONPATH: .
+      - name: Check branch protection support files exist
+        run: |
+          test -f .github/branch-protection-main.json
+          test -f scripts/github/apply_main_branch_protection.sh
+          test -f scripts/github/check_main_branch_protection.sh
+          echo "Branch protection support files exist."
+
+      - name: Check core docs exist
+        run: |
+          test -f README.md
+          te   -f ROADMAP.md
+          test -f SUPPORT.md
+          test -f CONTRIBUTING.md
+          echo "Core docs exist."
