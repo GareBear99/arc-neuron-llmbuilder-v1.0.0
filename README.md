@@ -428,6 +428,9 @@ The main repository now includes benchmark documentation and validation records 
 - **ARC-Neuron LLMBuilder Current Release:**  
   https://github.com/GareBear99/ARC-Neuron-LLMBuilder
 
+  ### [arc-language-module](https://github.com/GareBear99/arc-language-module) — governed multilingual language backend
+
+
 ### Progress toward each milestone
 
 ```mermaid
