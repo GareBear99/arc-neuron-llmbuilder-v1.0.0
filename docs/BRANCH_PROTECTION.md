@@ -1,35 +1,25 @@
 # Main Branch Protection
 
-Branch protection is a GitHub repository setting. It is not activated by committing files alone.
+This repository includes a GitHub API payload for protecting `main`.
 
-This repo includes the payload and helper scripts required to apply the rule from the terminal.
+Branch protection is not activated by committing a file. It must be applied by a repository owner/admin through GitHub Settings or the GitHub CLI.
 
-## Apply protection
+## Apply with GitHub CLI
 
 ```bash
 gh auth login
 bash scripts/github/apply_main_branch_protection.sh GareBear99 arc-neuron-llmbuilder-v1.0.0 main
-```
-
-## Verify protection
-
-```bash
 bash scripts/github/check_main_branch_protection.sh GareBear99 arc-neuron-llmbuilder-v1.0.0 main
 ```
 
-## Manual route
+## What the payload enforces
 
-GitHub repo → Settings → Branches → Add branch protection rule → Branch name pattern: `main`
+- Pull request required before merge
+- One approval required
+- Stale approvals dismissed after new commits
+- Conversation resolution required
+- Admins included
+- Force pushes disabled
+- Branch deletion disabled
 
-Recommended settings:
-
-- Require a pull request before merging
-- Require 1 approval
-- Require conversation resolution before merging
-- Include administrators
-- Do not allow force pushes
-- Do not allow deletions
-
-## Notes
-
-The `.github/branch-protection-main.json` file is the source-controlled policy payload. The active rule still must be applied through GitHub settings or the GitHub API.
+Status checks are intentionally not required in the payload until CI is green, so branch protection can be turned on without locking the repo behind a failing workflow.
