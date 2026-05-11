@@ -299,4 +299,4 @@ Make the project easier to verify. Make every claim easier to trace. Make every 
 
 Speed is useful only when the evidence survives it.
 
-**If all else fails - ##"Do What DARPA Would Do"##**
+**If all else fails - "Do What DARPA Would Do"**
