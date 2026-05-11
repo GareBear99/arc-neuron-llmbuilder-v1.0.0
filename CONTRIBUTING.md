@@ -116,4 +116,10 @@ By contributing, you agree that your contributions will be licensed under the MI
 
 - [💬 GitHub Discussions](https://github.com/GareBear99/ARC-Neuron-LLMBuilder/discussions) for general questions.
 - [SUPPORT.md](./SUPPORT.md) for routing to the right channel.
-- [github.com/sponsors/GareBear99](https://github.com/sponsors/GareBear99) or [buymeacoffee.com/garebear99](https://buymeacoffee.com/garebear99) if you want to fund the work.
+- [github.com/sponsors/GareBear99](https://github.com/sponsors/GareBear99) if you want to fund the work.
+
+## AI-Assisted / Vibe-Coder Contributions
+
+AI-assisted contributions are welcome when they preserve the project evidence trail. Before submitting AI-generated or heavily AI-assisted changes, read [`docs/AI_BRIEFING_FOR_VIBE_CODERS.md`](docs/AI_BRIEFING_FOR_VIBE_CODERS.md).
+
+Every meaningful patch should state its mission, files changed, tests run, docs updated, known risks, and rollback path. Do not remove receipts, benchmark context, or historical lineage to make a change look cleaner.
