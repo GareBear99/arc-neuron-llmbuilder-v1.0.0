@@ -1,0 +1,33 @@
+# ARC-Neuron LLMBuilder CODEOWNERS
+# These paths require explicit owner review before protected-branch merge
+# once "Require review from Code Owners" is enabled.
+
+# Global default owner
+* @GareBear99
+
+# GitHub automation, CI, funding, branch protection, issue templates
+.github/ @GareBear99
+
+# Core project documentation and public-facing repo identity
+README.md @GareBear99
+ROADMAP.md @GareBear99
+SUPPORT.md @GareBear99
+CONTRIBUTING.md @GareBear99
+ECOSYSTEM.md @GareBear99
+docs/ @GareBear99
+
+# Runtime, scripts, governance, validators
+scripts/ @GareBear99
+arc_core/ @GareBear99
+arc_neuron_small/ @GareBear99
+arc_neuron_tokenizer/ @GareBear99
+arc_tiny/ @GareBear99
+
+# Data, benchmarks, tests, receipts
+datasets/ @GareBear99
+benchmarks/ @GareBear99
+tests/ @GareBear99
+receipts/ @GareBear99
+
+# Assets and ProtoSynth integration material
+assets/ @GareBear99
