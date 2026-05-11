@@ -561,10 +561,17 @@ python3 scripts/ops/absorb_session.py --text "..." --session-id my_session
 
 ## ProtoSynth Integration PathARC-Neuron LLMBuilder v1
 
-- is designed to act as the cognition and model-building layer of the ARC ecosystem, while ProtoSynth provides the visual/spatial interface layer for exploring, projecting, and interacting with structured intelligence systems.- **ARC-Neuron LLMBuilder v1 Release:**    https://github.com/GareBear99/arc-neuron-llmbuilder-v1.0.0- **ProtoSynth Grid Engine:**    https://github.com/GareBear99/Proto-Synth_Grid_EngineTogether, these projects form a practical foundation for a local-first AI development loop:```textDatasets / prompts / evals        ↓ARC-Neuron LLMBuilder        ↓trained checkpoints / GGUF targets / scoring receipts        ↓ARC governance + archival layers        ↓ProtoSynth visual projection        ↓interactive spatial cognition interface
-How They Work Together
-ARC-Neuron LLMBuilder v1 focuses on the backend intelligence pipeline:
+## ProtoSynth Integration Path
 
+ARC-Neuron LLMBuilder v1 is designed to act as the cognition and model-building layer of the ARC ecosystem, while ProtoSynth provides the visual/spatial interface layer for exploring, projecting, and interacting with structured intelligence systems.
+
+- **ARC-Neuron LLMBuilder v1 Release:**  
+  https://github.com/GareBear99/arc-neuron-llmbuilder-v1.0.0
+
+- **ProtoSynth Grid Engine:**  
+  https://github.com/GareBear99/Proto-Synth_Grid_Engine
+
+Together, these projects form a practical foundation for a local-first AI development loop
 
 dataset preparation
 
