@@ -734,32 +734,5 @@ MIT — see [LICENSE](./LICENSE).
 
   <a href="https://buymeacoffee.com/garebear99"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" /></a>
 
-## Repository Protection Status
-
-The `main` branch is intended to be protected. The repo includes the policy payload and helper scripts, but GitHub branch protection is an external repository setting and must be applied by an owner/admin.
-
-```bash
-gh auth login
-bash scripts/github/apply_main_branch_protection.sh GareBear99 ARC-Neuron-LLMBuilder main
-bash scripts/github/check_main_branch_protection.sh GareBear99 ARC-Neuron-LLMBuilder main
-```
-
-Policy files:
-
-```text
-.github/branch-protection-main.json
-docs/BRANCH_PROTECTION.md
-scripts/github/apply_main_branch_protection.sh
-scripts/github/check_main_branch_protection.sh
-```
-
-## Support / Funding
-
 If this project helps your local-first AI, benchmark, or ARC research workflow, support is welcome.
 
-```text
-GitHub Sponsors: GareBear99
-Buy Me a Coffee: GareBear99
-```
-
-See `SUPPORT.md` and `.github/FUNDING.yml` for the active support configuration.
