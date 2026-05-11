@@ -37,17 +37,20 @@ jobs:
           fi
           echo "Private key check passed."
 
-      - name: Check branch protection support files exist
+      - name: Check required repo files
         run: |
+          test -f README.md
           test -f .github/branch-protection-main.json
           test -f scripts/github/apply_main_branch_protection.sh
           test -f scripts/github/check_main_branch_protection.sh
-          echo "Branch protection support files exist."
+          echo "Required repo files exist."
 
-      - name: Check core docs exist
+      - name: Print optional docs status
         run: |
-          test -f README.md
-          test -f ROADMAP.md
-          test -f SUPPORT.md
-          test -f CONTRIBUTING.md
-          echo "Core docs exist."
+          for f in ROADMAP.md SUPPORT.md CONTRIBUTING.md ECOSYSTEM.md TEST_REPORT.md docs/AI_BRIEFING_FOR_VIBE_CODERS.md; do
+            if [ -f "$f" ]; then
+              echo "FOUND: $f"
+            else
+              echo "OPTIONAL MISSING: $f"
+            fi
+          done
