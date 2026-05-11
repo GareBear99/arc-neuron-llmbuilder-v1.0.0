@@ -61,6 +61,7 @@ In doubt? File here and we'll route. See [ECOSYSTEM.md](./ECOSYSTEM.md) for the 
 
 If you rely on ARC-Neuron LLMBuilder or any of the seven ARC ecosystem repos in your work:
 
-**[github.com/sponsors/GareBear99](https://github.com/sponsors/GareBear99)**
+- **GitHub Sponsors:** [github.com/sponsors/GareBear99](https://github.com/sponsors/GareBear99)
+- **Buy Me a Coffee:** [buymeacoffee.com/garebear99](https://buymeacoffee.com/garebear99)
 
-Sponsorship funds maintenance time across the whole ecosystem, not just this repo.
+Support funds maintenance time across the whole ecosystem, not just this repo.

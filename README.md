@@ -6,7 +6,7 @@
 
 > 🖥️ **Built, tested, and verified on a 2012 Intel Mac running macOS Catalina.** If it runs there, it runs anywhere. The three governed promotions, the 87-test suite, the Omnibinary throughput numbers, and the 9-step proof workflow were all produced on 12-year-old consumer hardware with a pre-Retina Intel CPU. No GPU. No cloud. No accelerator. Just Python and a lot of discipline.
 
-<sub>**Topics**: local AI
+<sub>**Topics**: local AI · governed AI · local LLM · model training · GGUF · reproducible ML · ARC ecosystem</sub>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -14,10 +14,12 @@
 [![Gate: v2](https://img.shields.io/badge/governance-Gate%20v2-blue.svg)](./specs/promotion_gate_v2.yaml)
 [![Release: v1.0.0-governed](https://img.shields.io/badge/release-v1.0.0--governed-blueviolet.svg)](./RELEASE_NOTES_v1.0.0.md)
 [![Sponsor](https://img.shields.io/badge/Sponsor-GareBear99-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/GareBear99)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-garebear99-ffdd00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/garebear99)
 [![Ecosystem](https://img.shields.io/badge/ARC%20Ecosystem-7%20repos-orange)](./ECOSYSTEM.md)
 [![Discussions](https://img.shields.io/github/discussions/GareBear99/ARC-Neuron-LLMBuilder)](https://github.com/GareBear99/ARC-Neuron-LLMBuilder/discussions)
 [![Runs on a 2012 Intel Mac](https://img.shields.io/badge/runs_on-2012_Intel_Mac-silver?logo=apple)](./PROOF.md#hardware-provenance)
 [![CPU only](https://img.shields.io/badge/CPU-only_required-green)](./STORAGE_ECONOMICS.md)
+[![Branch protection guide](https://img.shields.io/badge/main_branch-protection_guide-orange.svg)](./docs/BRANCH_PROTECTION.md)
 
 ## Table of contents
 
@@ -25,22 +27,24 @@
 - [Operator evidence log](./docs/OPERATOR_EVIDENCE.md)
 - [What this is](#what-this-is)
 - [The ARC Ecosystem](#the-arc-ecosystem)
-- [Roadmap, open review window, and 3.0 license direction](#roadmap-open-review-window-and-30-license-direction)
-- [Language Module and lexical intelligence direction](#language-module-and-lexical-intelligence-direction)
-- [ProtoSynth Integration Path](#protosynth-integration-path)
 - [Support this work](#support-this-work)
 - [What it does, in plain English](#what-it-does-in-plain-english)
 - [Current state](#current-state)
 - [Quick start](#quick-start)
 - [Architecture at a glance](#architecture-at-a-glance)
 - [The governance doctrine](#the-governance-doctrine)
+- [Roadmap](#roadmap)
+  - [Open review window and 3.0 license direction](#roadmap-open-review-window-and-30-license-direction)
+  - [Language Module and lexical intelligence direction](#language-module-and-lexical-intelligence-direction)
 - [Benchmark surface](#benchmark-surface)
 - [Repository layout](#repository-layout)
 - [One-command operations](#one-command-operations)
 - [Proof runners](#proof-runners)
 - [Documentation](#documentation)
 - [Community](#community)
+- [Repository protection](#repository-protection)
 - [Status and scope](#status-and-scope)
+- [ProtoSynth Integration Path](#protosynth-integration-path)
 - [Citation](#citation)
 - [License](#license)
 
@@ -151,11 +155,12 @@ Full per-repo writeups, integration flow, and role contract: **[ECOSYSTEM.md](./
 
 ## 💖 Support this work
 
-If the governance doctrine, the conversation-driven growth loop, or the evidence-backed promotion pipeline is useful to you or your organization, please consider becoming a sponsor:
+If the governance doctrine, the conversation-driven growth loop, or the evidence-backed promotion pipeline is useful to you or your organization, you can support the work through either funding path:
 
-[**github.com/sponsors/GareBear99**](https://github.com/sponsors/GareBear99)
+- [**GitHub Sponsors — GareBear99**](https://github.com/sponsors/GareBear99)
+- [**Buy Me a Coffee — garebear99**](https://buymeacoffee.com/garebear99)
 
-Sponsorship funds time across all seven ARC ecosystem repos — not just this one.
+Funding supports maintenance across all seven ARC ecosystem repos — not just this one.
 
 ---
 
@@ -468,7 +473,7 @@ gantt
 
 - File a [✨ feature request](./.github/ISSUE_TEMPLATE/02_feature_request.yml) tagged with the target version.
 - Open a PR that preserves all ten [governance invariants](./GOVERNANCE_DOCTRINE.md).
-- [💖 Sponsor](https://github.com/sponsors/GareBear99) to fund maintenance time across the whole ARC ecosystem.
+- [💖 Sponsor](https://github.com/sponsors/GareBear99) or [Buy Me a Coffee](https://buymeacoffee.com/garebear99) to fund maintenance time across the whole ARC ecosystem.
 - Discuss architectural direction in [💬 GitHub Discussions](https://github.com/GareBear99/ARC-Neuron-LLMBuilder/discussions).
 
 ### Explicitly not on the roadmap
@@ -590,6 +595,7 @@ python3 scripts/ops/absorb_session.py --text "..." --session-id my_session
 - [ROADMAP.md](./ROADMAP.md) — v1.1 → v2.0 milestones
 - [COMPARISON.md](./COMPARISON.md) — vs MLflow, W&B, Langfuse, llama.cpp
 - [MODEL_CARD_v6_conversation.md](./MODEL_CARD_v6_conversation.md) — current incumbent
+- [docs/BRANCH_PROTECTION.md](./docs/BRANCH_PROTECTION.md) — main-branch protection setup and optional CLI apply path
 
 ### Release
 - [CHANGELOG.md](./CHANGELOG.md) — full release history
@@ -606,8 +612,20 @@ python3 scripts/ops/absorb_session.py --text "..." --session-id my_session
 - 💬 [GitHub Discussions](https://github.com/GareBear99/ARC-Neuron-LLMBuilder/discussions) — ask questions, share runs, propose directions
 - 🐛 [Issues](https://github.com/GareBear99/ARC-Neuron-LLMBuilder/issues) — bug reports, feature requests, gate behavior reports, benchmark contributions
 - 🔒 [Security advisories](https://github.com/GareBear99/ARC-Neuron-LLMBuilder/security/advisories/new) — private disclosure
-- 💖 [Sponsor](https://github.com/sponsors/GareBear99) — support the ecosystem
+- 💖 [Sponsor](https://github.com/sponsors/GareBear99) / [Buy Me a Coffee](https://buymeacoffee.com/garebear99) — support the ecosystem
 - 📦 [Releases](https://github.com/GareBear99/ARC-Neuron-LLMBuilder/releases) — all versions with evidence bundles
+
+---
+
+## 🛡️ Repository protection
+
+The repository includes a checked-in protection guide and an optional `gh` CLI helper for locking down `main`. GitHub branch protection itself is a repository setting, so it must be applied by an owner/admin after these files are committed.
+
+- [docs/BRANCH_PROTECTION.md](./docs/BRANCH_PROTECTION.md) — recommended settings and UI path
+- [scripts/github/apply_main_branch_protection.sh](./scripts/github/apply_main_branch_protection.sh) — optional CLI/API apply helper
+- [.github/branch-protection-main.json](./.github/branch-protection-main.json) — branch protection payload used by the helper
+
+Recommended baseline: require pull requests, require the CI workflow before merge, dismiss stale approvals, require conversation resolution, block force pushes, and block deletions.
 
 ---
 

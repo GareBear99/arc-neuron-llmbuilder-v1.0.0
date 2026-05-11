@@ -347,6 +347,7 @@ Roles never swap. If a new capability is needed, it goes in the repo whose role 
 All seven repositories share a single author and a single funding target:
 
 - **GitHub Sponsors**: https://github.com/sponsors/GareBear99
+- **Buy Me a Coffee**: https://buymeacoffee.com/garebear99
 - **Direct contribution**: open issues and PRs in whichever repo addresses your use case
 
 Sponsorship funds time for:

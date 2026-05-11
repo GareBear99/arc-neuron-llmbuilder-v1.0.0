@@ -132,7 +132,7 @@ These are not tied to a specific release:
 
 - File a ✨ Feature request issue targeting the right version.
 - Open a pull request that preserves all ten governance invariants.
-- Sponsor the work: [github.com/sponsors/GareBear99](https://github.com/sponsors/GareBear99).
+- Sponsor the work: [GitHub Sponsors](https://github.com/sponsors/GareBear99) or [Buy Me a Coffee](https://buymeacoffee.com/garebear99).
 - Discuss architectural direction in [GitHub Discussions](https://github.com/GareBear99/ARC-Neuron-LLMBuilder/discussions).
 
 ## What won't be on the roadmap

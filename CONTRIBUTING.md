@@ -116,4 +116,4 @@ By contributing, you agree that your contributions will be licensed under the MI
 
 - [💬 GitHub Discussions](https://github.com/GareBear99/ARC-Neuron-LLMBuilder/discussions) for general questions.
 - [SUPPORT.md](./SUPPORT.md) for routing to the right channel.
-- [github.com/sponsors/GareBear99](https://github.com/sponsors/GareBear99) if you want to fund the work.
+- [github.com/sponsors/GareBear99](https://github.com/sponsors/GareBear99) or [buymeacoffee.com/garebear99](https://buymeacoffee.com/garebear99) if you want to fund the work.
