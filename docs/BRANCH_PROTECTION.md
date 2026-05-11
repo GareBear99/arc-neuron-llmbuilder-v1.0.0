@@ -1,49 +1,79 @@
 # Main Branch Protection
 
-This repository should protect `main` so the public release line cannot be overwritten, force-pushed, or merged without review.
+This repository should protect `main` so the public release line cannot be overwritten, force-pushed, deleted, or merged without review.
 
-> Important: branch protection is a GitHub repository setting. Committing this file documents the intended policy, but the repo owner/admin still has to enable the rule in GitHub or apply the helper script below.
+> Important: branch protection is a GitHub repository setting. Committing `.github/branch-protection-main.json` documents the intended policy, but it does **not** activate protection by itself. The repo owner/admin must apply the rule in GitHub settings or run the helper script below.
 
-## Recommended baseline
+## Current intended rule
 
-Use this baseline for `main`:
+The committed protection payload lives here:
 
-- Require a pull request before merging.
-- Require at least 1 approving review.
-- Dismiss stale approvals when new commits are pushed.
-- Require review from Code Owners when the changed files match `CODEOWNERS`.
-- Require status checks to pass before merging.
-- Require branches to be up to date before merging.
-- Require conversation resolution before merging.
-- Require linear history.
-- Do not allow force pushes.
-- Do not allow deletions.
-- Include administrators, unless you intentionally need an emergency bypass.
+```text
+.github/branch-protection-main.json
+```
 
-## GitHub UI path
+It is configured for:
+
+- branch name: `main`
+- pull request review required before merging
+- 1 approving review required
+- stale approvals dismissed after new commits
+- Code Owners review required where `CODEOWNERS` matches
+- status check required: `validate-and-test`
+- branches required to be up to date before merging
+- conversation resolution required
+- linear history required
+- administrators included
+- force pushes disabled
+- branch deletions disabled
+
+## Apply with GitHub CLI
+
+From the repo root:
+
+```bash
+gh auth login
+bash scripts/github/apply_main_branch_protection.sh GareBear99 ARC-Neuron-LLMBuilder main
+```
+
+Then verify:
+
+```bash
+bash scripts/github/check_main_branch_protection.sh GareBear99 ARC-Neuron-LLMBuilder main
+```
+
+Or directly:
+
+```bash
+gh api repos/GareBear99/ARC-Neuron-LLMBuilder/branches/main/protection
+```
+
+## Manual GitHub UI path
 
 1. Open the repository on GitHub.
 2. Go to **Settings → Branches**.
-3. Under **Branch protection rules**, choose **Add rule**.
+3. Under **Branch protection rules**, choose **Add branch protection rule**.
 4. Set **Branch name pattern** to `main`.
-5. Enable the recommended baseline above.
+5. Enable the intended rule above.
 6. Save changes.
 
-## Optional CLI apply path
+## If GitHub still says `main` is not protected
 
-This repo includes an optional helper script:
+Check these first:
 
 ```bash
-bash scripts/github/apply_main_branch_protection.sh GareBear99 ARC-Neuron-LLMBuilder
+gh auth status
+gh repo view GareBear99/ARC-Neuron-LLMBuilder --json nameWithOwner,viewerPermission
+bash scripts/github/check_main_branch_protection.sh GareBear99 ARC-Neuron-LLMBuilder main
 ```
 
-Requirements:
+Common causes:
 
-- GitHub CLI installed: `gh`
-- logged in with a token that has repository administration access
-- permission to edit branch protection settings
-
-The script uses `.github/branch-protection-main.json` as the protection payload.
+- the branch protection JSON exists in the repo, but the setting was never applied
+- the GitHub CLI account does not have admin permission on the repo
+- the script was run from the wrong repo root
+- the repo name or owner argument was different from the actual GitHub repository
+- the GitHub page needs a refresh after the API call
 
 ## Why this matters for ARC-Neuron
 

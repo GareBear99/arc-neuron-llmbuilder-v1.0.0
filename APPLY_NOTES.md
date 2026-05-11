@@ -1,18 +1,40 @@
-# AI Briefing Drop-In Notes
+# Apply Notes — Branch Protection + Funding Flow
 
-Drop these files into the root of `ARC-Neuron-LLMBuilder`.
+This drop-in adds the missing branch protection payload and makes the branch-protection flow explicit.
 
-Changed / added:
+## Added / Updated
 
-- `README.md` — adds a visible AI / vibe-coder briefing callout.
-- `CONTRIBUTING.md` — adds AI-assisted contribution standards.
-- `docs/AI_BRIEFING_FOR_VIBE_CODERS.md` — canonical standards doc for AI assistants and vibe coders.
-- `.github/copilot-instructions.md` — short repo instruction file for AI coding assistants.
+```text
+.github/branch-protection-main.json
+.github/FUNDING.yml
+.github/workflows/branch-protection-audit.yml
+README.md
+SUPPORT.md
+docs/BRANCH_PROTECTION.md
+scripts/github/apply_main_branch_protection.sh
+scripts/github/check_main_branch_protection.sh
+```
 
-Commit:
+## Commit
 
 ```bash
-git add README.md CONTRIBUTING.md docs/AI_BRIEFING_FOR_VIBE_CODERS.md .github/copilot-instructions.md
-git commit -m "Add AI briefing for vibe coders"
+git add .github/branch-protection-main.json .github/FUNDING.yml .github/workflows/branch-protection-audit.yml README.md SUPPORT.md docs/BRANCH_PROTECTION.md scripts/github/apply_main_branch_protection.sh scripts/github/check_main_branch_protection.sh APPLY_NOTES.md
+git commit -m "Add branch protection payload and funding flow"
 git push
+```
+
+## Activate branch protection on GitHub
+
+Committing the JSON does not activate the GitHub setting. After pushing, run:
+
+```bash
+gh auth login
+bash scripts/github/apply_main_branch_protection.sh GareBear99 ARC-Neuron-LLMBuilder main
+bash scripts/github/check_main_branch_protection.sh GareBear99 ARC-Neuron-LLMBuilder main
+```
+
+Or use GitHub UI:
+
+```text
+Repo → Settings → Branches → Add branch protection rule → main
 ```
