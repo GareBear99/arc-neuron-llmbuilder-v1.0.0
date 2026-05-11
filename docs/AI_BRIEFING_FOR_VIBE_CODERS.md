@@ -298,3 +298,5 @@ Build like the next reviewer is skeptical, technical, and fair.
 Make the project easier to verify. Make every claim easier to trace. Make every future version easier to compare against the past.
 
 Speed is useful only when the evidence survives it.
+
+**If all else fails - ##"Do What DARPA Would Do"##**
