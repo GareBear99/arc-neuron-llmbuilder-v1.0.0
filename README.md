@@ -559,6 +559,79 @@ python3 scripts/ops/absorb_session.py --text "..." --session-id my_session
 
 ---
 
+## ProtoSynth Integration PathARC-Neuron LLMBuilder v1 is designed to act as the cognition and model-building layer of the ARC ecosystem, while ProtoSynth provides the visual/spatial interface layer for exploring, projecting, and interacting with structured intelligence systems.- **ARC-Neuron LLMBuilder v1 Release:**    https://github.com/GareBear99/arc-neuron-llmbuilder-v1.0.0- **ProtoSynth Grid Engine:**    https://github.com/GareBear99/Proto-Synth_Grid_EngineTogether, these projects form a practical foundation for a local-first AI development loop:```textDatasets / prompts / evals        ↓ARC-Neuron LLMBuilder        ↓trained checkpoints / GGUF targets / scoring receipts        ↓ARC governance + archival layers        ↓ProtoSynth visual projection        ↓interactive spatial cognition interface
+How They Work Together
+ARC-Neuron LLMBuilder v1 focuses on the backend intelligence pipeline:
+
+
+dataset preparation
+
+
+tokenizer and model training experiments
+
+
+benchmark and scoring workflows
+
+
+local-first model artifact generation
+
+
+reproducible evidence trails for model improvement
+
+
+groundwork for future GGUF/local runtime deployment
+
+
+ProtoSynth focuses on the front-facing visualization and interaction layer:
+
+
+2D/3D-style grid projection
+
+
+node-based cognition visualization
+
+
+spatial organization of files, models, datasets, and systems
+
+
+visual “brain lab” style interaction
+
+
+future neural-map views for ARC-Neuron states, evals, and training progress
+
+
+Tandem Usage Vision
+The intended workflow is that LLMBuilder produces the intelligence artifacts, while ProtoSynth makes those artifacts visible, navigable, and interactive.
+For example:
+
+
+training runs from LLMBuilder can be represented as ProtoSynth nodes
+
+
+datasets can appear as spatial clusters or voxel directories
+
+
+benchmark results can become live visual signals
+
+
+stronger model versions can be promoted visually through the grid
+
+
+failed runs can be archived, inspected, and compared
+
+
+future ARC-Neuron models can be connected to ProtoSynth as an embodied visual cognition layer
+
+
+This creates a path toward a local AI workshop where the user is not just running scripts, but visually operating a reproducible intelligence system.
+Long-Term ARC Stack Role
+In the larger ARC ecosystem, the relationship can be understood as:
+ARC-Neuron LLMBuilder = builds the brainProtoSynth = visualizes the brainARC Core = governs the brainArc-RAR = archives the brainOmnibinary = mirrors the brain stateCleanroom Runtime = safely executes the brain
+This makes ARC-Neuron LLMBuilder v1 the first public cognition-building milestone, while ProtoSynth acts as the future spatial UI layer for inspecting and interacting with that cognition in a lightweight, local-first environment.
+The v1 release should therefore be viewed not only as a standalone model-building repository, but as the backend foundation for a larger visual AI lab experience powered by ProtoSynth.
+
+---
+
 ## 📝 Citation
 
 If you use ARC-Neuron LLMBuilder in research or production, please cite:
