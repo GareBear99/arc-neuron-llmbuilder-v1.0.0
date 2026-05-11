@@ -1,0 +1,120 @@
+--- README.md.orig
++++ README.md
+@@ -25,6 +25,8 @@
+ - [Operator evidence log](./docs/OPERATOR_EVIDENCE.md)
+ - [What this is](#what-this-is)
+ - [The ARC Ecosystem](#the-arc-ecosystem)
++- [Roadmap, open review window, and 3.0 license direction](#roadmap-open-review-window-and-30-license-direction)
++- [Language Module and lexical intelligence direction](#language-module-and-lexical-intelligence-direction)
+ - [ProtoSynth Integration Path](#protosynth-integration-path)
+ - [Support this work](#support-this-work)
+ - [What it does, in plain English](#what-it-does-in-plain-english)
+@@ -372,6 +374,56 @@
+ | **v1.2.0** | 🔮 Planned | **External Backend Integration** | Reference docs for Qwen3-32B / Llama-4 / DeepSeek via `llama_cpp_http`, per-adapter scoreboard namespacing, command-adapter timeout tuning, reflection loop v2 |
+ | **v1.3.0** | 🔮 Planned | **Multi-Repo Integration** | OmniBinary ↔ LLMBuilder federation, ARC-Core event attestation (co-signed receipts), Arc-RAR ↔ Cleanroom replay, Language Module canonicalization |
+ | **v2.0.0** | 🎯 Future | **Production Governance** | Formal governance spec (machine-checkable), sandboxed gate execution, audit-trail export, per-org scoreboards, SOC 2 / ISO 27001 hooks |
++
++
++### Roadmap, open review window, and 3.0 license direction
++
++ARC-Neuron LLMBuilder is being developed in staged public phases so the path toward the commercial 3.0 system stays transparent, inspectable, and independently useful.
++
++```text
++1.0+    public foundation / self-coded baseline / open review
++2.0     development bridge / expanded systems / open-source review window
++2.1-2.9 unreleased development corridor; public code may appear, but no formal 2.9 release is planned
++3.0     commercial base-model milestone / protected license direction for later commercial artifacts
++```
++
++The **1.0+ through 2.9 development path** is intentionally available for open-source use, review, learning, auditing, and independent experimentation. That preserves the evidence trail: developers can inspect the validators, benchmark logic, training scaffolding, governance receipts, and design choices that led toward 3.0.
++
++The planned **3.0 milestone** is the first major commercial base-model class direction. At that point, future commercial outputs may move under a more protective license so production weights, packaged systems, and business-facing releases cannot be freely resold, repackaged, or extracted as competing closed products.
++
++```text
++The road to 3.0 stays visible.
++The commercial product that comes after 3.0 can be protected.
++```
++
++This does not retroactively erase the open-source foundation. It separates the independently reviewable development path from later commercial model artifacts and protected production releases.
++
++### Language Module and lexical intelligence direction
++
++ARC-Neuron LLMBuilder is not only a dataset-scaling project. A core direction is to build a stronger language foundation through structured lexical configuration, symbolic grounding, language lineage, mathematics, and cross-language meaning alignment.
++
++The connected ARC Language Module is planned as a canonical language spine covering:
++
++- 35-language lexical configuration
++- multilingual word structure and lineage
++- orthography, transliteration, and symbol relationships
++- mathematical language and notation
++- root-word and meaning-family mapping
++- symbolic compression of concepts
++- reproducible vocabulary growth
++- benchmarkable language behavior
++
++Most model improvements are usually framed as dataset expansion: more text, more examples, bigger model, better output. ARC-Neuron is pursuing a different efficiency path:
++
++```text
++structured language truth -> lexical compression -> symbol grounding -> lower-weight reasoning -> better output per parameter
++```
++
++The goal is to reduce purely synthetic pattern imitation by giving the model a governed lexical spine before and during training. Datasets are still required, but they become training material on top of structured language relationships instead of being the only source of language behavior.
++
++This is why parameter count alone is not the right benchmark for ARC-Neuron. The project should be evaluated by benchmark pass records, lexical coverage, math and symbol handling, local runtime performance, output usefulness per parameter, governance receipts, promotion evidence, and low-weight deployment viability.
++
++The main repository now includes benchmark documentation and validation records that support this direction. The target is not simply “bigger model equals better model.” The target is higher intelligence density: better language structure, better receipts, and a better training path producing more useful output from fewer parameters.
+ 
+ ### Progress toward each milestone
+ 
+--- ROADMAP.md.orig
++++ ROADMAP.md
+@@ -12,6 +12,42 @@
+ - Omnibinary ledger measured: 6,600 ev/s append, 8,900 lookups/sec O(1)
+ - Arc-RAR bundles restorable end-to-end
+ - 87/87 tests passing, 9/9 demo proof workflow green
++
++---
++
++
++## Licensing track and open review corridor
++
++ARC-Neuron LLMBuilder uses a staged public roadmap so the path to the commercial 3.0 system remains independently reviewable.
++
++| Range | Release policy | Intended use | License direction |
++|---|---|---|---|
++| **1.0+** | Public foundation | self-coded baseline, review, learning, reproducible tests | current open-source repository license |
++| **2.0** | Development bridge | expanded systems, public review, governance hardening | open-source review window |
++| **2.1-2.9** | No formal release planned | unreleased development corridor; public code may appear for inspection | transitional/open review path |
++| **3.0** | Commercial base-model milestone | protected production artifacts, model packaging, business-facing release | new commercial license direction for later outputs |
++
++The intent is to keep the road to 3.0 visible while allowing the 3.0-era commercial model artifacts, production weights, packaged systems, and downstream business releases to be protected separately. Existing public releases remain governed by the license shipped with those releases.
++
++---
++
++## Language Module and lexical configuration track
++
++The Language Module is planned as the lexical truth spine for ARC-Neuron. Its job is to give the model structured language material before the model relies only on dataset-scale pattern learning.
++
++Planned scope:
++
++- 35-language lexical configuration
++- lineage-aware word families
++- orthography and transliteration support
++- mathematical notation and symbolic relationships
++- root-word and meaning-family mapping
++- concept compression for low-weight output
++- benchmarkable language behavior
++
++This track exists because ARC-Neuron is optimizing for **intelligence density**, not raw parameter count. A model with stronger lexical structure, symbol grounding, reproducible receipts, and compact training data may produce more useful output per parameter than a larger model trained only by scale.
++
++Acceptance criteria for this track should be measured through benchmark pass records, lexical coverage, math/symbol handling, local runtime behavior, promotion receipts, and output usefulness per parameter.
+ 
+ ---
+ 
+@@ -103,5 +139,5 @@
+ 
+ - **Alignment or safety filtering.** The gate is a capability + regression gate. Safety is an orthogonal concern best handled by the operator's policy layer.
+ - **Hosted cloud service.** This is a local-first project. Hosted offerings are out of scope.
+-- **Closed-source components.** MIT all the way down.
++- **Retroactive license confusion.** Public 1.0+ and 2.x-path materials remain governed by the license they ship with; later 3.0 commercial artifacts may use a separate protective license.
+ - **Role inversion.** The seven-repo contract is permanent. New capabilities go into their correct home repo, not into whichever one is most convenient.

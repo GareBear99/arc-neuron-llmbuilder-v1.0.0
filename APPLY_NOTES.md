@@ -1,24 +1,16 @@
-# ProtoSynth Integration Drop-In
+# Apply notes
 
-Copy these files into the root of the ARC-Neuron LLMBuilder repo:
+Drop these files into the repository root. This updates:
 
-```text
-README.md
-assets/protosynth-integration-path-preview.jpg
-```
+- `README.md`
+- `ROADMAP.md`
+- `docs/OPEN_REVIEW_AND_3_LICENSE_DIRECTION.md`
+- `README_roadmap_license_language.patch`
 
-This update:
-
-- fixes the malformed ProtoSynth Integration Path section in `README.md`
-- adds the uploaded ProtoSynth visual preview image
-- links ARC-Neuron LLMBuilder v1 release to the ProtoSynth Grid Engine repo
-- adds a Table of Contents link for the ProtoSynth section
-- includes `README_protosynth_integration.patch` for review if you prefer applying the diff manually
-
-Suggested commit:
+Then commit:
 
 ```bash
-git add README.md assets/protosynth-integration-path-preview.jpg
-git commit -m "Add ProtoSynth integration preview path"
+git add README.md ROADMAP.md docs/OPEN_REVIEW_AND_3_LICENSE_DIRECTION.md README_roadmap_license_language.patch
+git commit -m "Document open review corridor and language-module roadmap"
 git push
 ```

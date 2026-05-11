@@ -15,6 +15,42 @@ Concrete milestones for future releases of ARC-Neuron LLMBuilder. Items are orde
 
 ---
 
+
+## Licensing track and open review corridor
+
+ARC-Neuron LLMBuilder uses a staged public roadmap so the path to the commercial 3.0 system remains independently reviewable.
+
+| Range | Release policy | Intended use | License direction |
+|---|---|---|---|
+| **1.0+** | Public foundation | self-coded baseline, review, learning, reproducible tests | current open-source repository license |
+| **2.0** | Development bridge | expanded systems, public review, governance hardening | open-source review window |
+| **2.1-2.9** | No formal release planned | unreleased development corridor; public code may appear for inspection | transitional/open review path |
+| **3.0** | Commercial base-model milestone | protected production artifacts, model packaging, business-facing release | new commercial license direction for later outputs |
+
+The intent is to keep the road to 3.0 visible while allowing the 3.0-era commercial model artifacts, production weights, packaged systems, and downstream business releases to be protected separately. Existing public releases remain governed by the license shipped with those releases.
+
+---
+
+## Language Module and lexical configuration track
+
+The Language Module is planned as the lexical truth spine for ARC-Neuron. Its job is to give the model structured language material before the model relies only on dataset-scale pattern learning.
+
+Planned scope:
+
+- 35-language lexical configuration
+- lineage-aware word families
+- orthography and transliteration support
+- mathematical notation and symbolic relationships
+- root-word and meaning-family mapping
+- concept compression for low-weight output
+- benchmarkable language behavior
+
+This track exists because ARC-Neuron is optimizing for **intelligence density**, not raw parameter count. A model with stronger lexical structure, symbol grounding, reproducible receipts, and compact training data may produce more useful output per parameter than a larger model trained only by scale.
+
+Acceptance criteria for this track should be measured through benchmark pass records, lexical coverage, math/symbol handling, local runtime behavior, promotion receipts, and output usefulness per parameter.
+
+---
+
 ## v1.1.0 — Expanded Native Lane
 
 **Target**: widen the native ARC-Neuron lane without relying on external backends.
@@ -103,5 +139,5 @@ These are not tied to a specific release:
 
 - **Alignment or safety filtering.** The gate is a capability + regression gate. Safety is an orthogonal concern best handled by the operator's policy layer.
 - **Hosted cloud service.** This is a local-first project. Hosted offerings are out of scope.
-- **Closed-source components.** MIT all the way down.
+- **Retroactive license confusion.** Public 1.0+ and 2.x-path materials remain governed by the license they ship with; later 3.0 commercial artifacts may use a separate protective license.
 - **Role inversion.** The seven-repo contract is permanent. New capabilities go into their correct home repo, not into whichever one is most convenient.
