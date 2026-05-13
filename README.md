@@ -51,14 +51,14 @@
 
 ## 🤖 Live deployment — continuous-learning AI operative
 
-**A real AI operative feeds this corpus every day.** The [ARC GitHub AI Operator](https://github.com/GareBear99/gh-ai-operator) answers code-review issues on the [Portfolio](https://github.com/GareBear99/Portfolio) via [Cloudflare Workers AI](https://github.com/GareBear99/gh-ai-operator/blob/main/cloudflare/README.md), posts a verdict back on the issue, and emits every production review as a supervised training example in this repo's seed-examples schema. The nightly workflow `ingest-operator-reviews.yml` pulls those artifacts into `data/critique/operator_reviews.jsonl`, dedupes by id, and bumps human-correction records (from Portfolio Follow-up issues) by +0.05 confidence so Gate v2 weights them higher.
+**A real AI operative can feed this corpus through a manual operator-review ingest workflow.** The [ARC GitHub AI Operator](https://github.com/GareBear99/gh-ai-operator) answers code-review issues on the [Portfolio](https://github.com/GareBear99/Portfolio) via [Cloudflare Workers AI](https://github.com/GareBear99/gh-ai-operator/blob/main/cloudflare/README.md), posts a verdict back on the issue, and emits every production review as a supervised training example in this repo's seed-examples schema. The manual workflow `ingest-operator-reviews.yml` can pull those artifacts into `data/critique/operator_reviews.jsonl`, dedupe by id, and bump human-correction records (from Portfolio Follow-up issues) by +0.05 confidence so Gate v2 weights them higher when operator export credentials/artifacts are ready.
 
 ```mermaid
 flowchart LR
     P["Portfolio<br/>code-review issue"] --> OP["gh-ai-operator<br/>CF Workers AI + Actions"]
     OP -- "verdict comment" --> P
     OP -- "training JSONL" --> A["llmbuilder-training-export<br/>artifact"]
-    A --> IN["this repo<br/>ingest-operator-reviews.yml (daily 03:17 UTC)"]
+    A --> IN["this repo<br/>ingest-operator-reviews.yml (manual workflow_dispatch)"]
     IN --> C["data/critique/operator_reviews.jsonl"]
     C --> G["next Gate v2 candidate"]
     P -. follow-up .-> COR["correction JSONL<br/>+0.05 confidence"]
