@@ -13,7 +13,7 @@ flowchart LR
     C --> D["gh issue comment<br/>→ Portfolio issue (verdict)"]
     C --> E["training_export.py<br/>seed-examples JSONL"]
     E --> F["llmbuilder-training-export artifact"]
-    F --> G["LLMBuilder<br/>ingest-operator-reviews.yml (daily)"]
+    F --> G["LLMBuilder<br/>ingest-operator-reviews.yml (manual workflow_dispatch)"]
     G --> H["data/critique/operator_reviews.jsonl"]
     H --> I["Next Gate v2 candidate training run"]
     D -.follow-up.-> J["Portfolio Follow-up issue"]
@@ -75,7 +75,7 @@ The LLMBuilder ingest script recognises the `correction` tag and bumps its confi
 
 ## Secrets
 
-- **LLMBuilder → `OPERATOR_READ_TOKEN`** — a PAT with `actions: read` on `GareBear99/gh-ai-operator` so the nightly workflow can `gh run download` artifacts. Graceful no-op when unset.
+- **LLMBuilder → `OPERATOR_READ_TOKEN`** — a PAT with `actions: read` on `GareBear99/gh-ai-operator` so the manual workflow can `gh run download` artifacts. Graceful no-op when unset.
 - All other secrets (CF Workers AI creds, Portfolio write token, etc.) live with the operator.
 
 ## Safety model
