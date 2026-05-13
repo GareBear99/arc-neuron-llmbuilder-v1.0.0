@@ -4,7 +4,7 @@ This doc captures the real live-deployment runs that feed
 `data/critique/operator_reviews.jsonl`. Each entry is an auditable
 record of a production review the [ARC GitHub AI Operator](https://github.com/GareBear99/gh-ai-operator)
 performed and the corresponding JSONL record that landed in this repo's
-critique corpus via the nightly ingest.
+critique corpus via the manual ingest.
 
 See also: [LIVE_DEPLOYMENT_LEARNING.md](./LIVE_DEPLOYMENT_LEARNING.md) for the
 pipeline design; [gh-ai-operator/docs/FIRST_LIVE_RUN.md](https://github.com/GareBear99/gh-ai-operator/blob/main/docs/FIRST_LIVE_RUN.md) for the
@@ -81,7 +81,7 @@ required field in this repo's seed-examples schema.
 - **Phase 1** (round-trip CI): **PROVED AUTOMATICALLY** via gh-ai-operator's `loop-integration.yml`.
 - **Phase 2** (dispatch hop): **PROVED** as of 2026-04-22. Cloudflare Worker at `https://arc-ai-operator.admension.workers.dev` is live, CORS-allowlisted for `https://garebear99.github.io`, and accepts authed POSTs that successfully fire `repository_dispatch` (HTTP 202; GitHub triggers `ai-review-dispatch.yml` run `24807014943`). Static intake form at `https://garebear99.github.io/Portfolio/review.html`.
 - **Phase 2a** (runner actually executes): **HELD** by a GitHub Actions billing hold on `GareBear99`. Every dispatch-triggered run is queued then annotated "The job was not started because your account is locked due to a billing issue." Non-code blocker.
-- **Phase 3–4** (verdict on issue → nightly ingest commit): pending Phase 2a unblock. The three cross-repo PATs (`PORTFOLIO_WRITE_TOKEN`, `AI_OPERATOR_DISPATCH_TOKEN`, `OPERATOR_READ_TOKEN`) are set as bootstrap values today and should be rotated to fine-grained PATs once the loop is live. A fifth secret, `CLOUDFLARE_API_TOKEN` on gh-ai-operator (Workers AI: Read + Edit), still needs to be created at `https://dash.cloudflare.com/profile/api-tokens` and set — the wrangler OAuth token used for deploy is session-bound and cannot be used as a long-lived Actions secret.
+- **Phase 3–4** (verdict on issue → manual ingest commit): pending Phase 2a unblock. The three cross-repo PATs (`PORTFOLIO_WRITE_TOKEN`, `AI_OPERATOR_DISPATCH_TOKEN`, `OPERATOR_READ_TOKEN`) are set as bootstrap values today and should be rotated to fine-grained PATs once the loop is live. A fifth secret, `CLOUDFLARE_API_TOKEN` on gh-ai-operator (Workers AI: Read + Edit), still needs to be created at `https://dash.cloudflare.com/profile/api-tokens` and set — the wrangler OAuth token used for deploy is session-bound and cannot be used as a long-lived Actions secret.
 - **Phase 5** (A/B proof that operator-enriched corpus improves a candidate): **pending ≥ 50 ingested records** — tracks Stage 5 of [STAGED_VALIDATION.md](./STAGED_VALIDATION.md).
 
 ---

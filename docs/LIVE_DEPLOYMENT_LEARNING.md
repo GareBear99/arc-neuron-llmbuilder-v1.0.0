@@ -75,7 +75,7 @@ The LLMBuilder ingest script recognises the `correction` tag and bumps its confi
 
 ## Secrets
 
-- **LLMBuilder → `OPERATOR_READ_TOKEN`** — a PAT with `actions: read` on `GareBear99/gh-ai-operator` so the nightly workflow can `gh run download` artifacts. Graceful no-op when unset.
+- **LLMBuilder → `OPERATOR_READ_TOKEN`** — a PAT with `actions: read` on `GareBear99/gh-ai-operator` so the manual workflow can `gh run download` artifacts. Graceful no-op when unset.
 - All other secrets (CF Workers AI creds, Portfolio write token, etc.) live with the operator.
 
 ## Safety model

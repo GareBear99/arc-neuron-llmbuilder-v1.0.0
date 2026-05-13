@@ -1,5 +1,5 @@
 name: Ingest operator reviews (live-deployment learning)
-# Daily (and on-demand) pull of gh-ai-operator's live-deployment reviews into
+# Manual on-demand pull of gh-ai-operator's live-deployment reviews into
 # LLMBuilder's critique corpus. Every production review the operator makes
 # becomes a supervised training example here — this is the "AI helper that
 # learns from itself" loop described in the READMEs.
