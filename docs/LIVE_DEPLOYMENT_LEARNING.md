@@ -13,7 +13,7 @@ flowchart LR
     C --> D["gh issue comment<br/>→ Portfolio issue (verdict)"]
     C --> E["training_export.py<br/>seed-examples JSONL"]
     E --> F["llmbuilder-training-export artifact"]
-    F --> G["LLMBuilder<br/>ingest-operator-reviews.yml (daily)"]
+    F --> G["LLMBuilder<br/>ingest-operator-reviews.yml (manual workflow_dispatch)"]
     G --> H["data/critique/operator_reviews.jsonl"]
     H --> I["Next Gate v2 candidate training run"]
     D -.follow-up.-> J["Portfolio Follow-up issue"]
