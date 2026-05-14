@@ -1,0 +1,23 @@
+name: Repo discovery audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "42 15 * * 1" # Mondays 15:42 UTC
+
+permissions:
+  contents: read
+  pull-requests: read
+  issues: read
+  actions: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Run repo discovery audit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/audit/repo_discovery_audit.py
