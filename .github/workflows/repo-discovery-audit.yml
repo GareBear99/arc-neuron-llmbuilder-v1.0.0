@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: read
-  administration: read
   pull-requests: read
   issues: read
   actions: read
